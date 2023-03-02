@@ -4,3 +4,5 @@ theme: jekyll-theme-cayman
 markdown: kramdown
 kramdown:
   parse_block_html: true
+github:
+  is_project_page: false
