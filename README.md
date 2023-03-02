@@ -709,3 +709,70 @@ Dim app As Application
 Set app = Application
 app.Run "NomDeLaMacro", "param1", "param2"
 ```
+
+### Exercices Corrigés <a name="exercices-corriges-4"></a>
+
+#### Exercice 1 <a name="exercice-1-4"></a>
+
+Ecrire une fonction qui demande à l'utilisateur un entier **n** et fait la somme des entiers de 1 à **n**.
+Ecrire une procédure qui affiche le résultat de la fonction.
+
+Voici une solution possible :
+
+<details>
+
+```php
+Function sommeEntiers() As Integer
+    Dim nombre As Integer
+    Dim somme As Integer
+    Dim i As Integer
+
+    n = InputBox("Entrez un nombre", "Nombre")
+    somme = 0
+    i = 1
+
+    Do While i <= n
+        somme = somme + i
+        i = i + 1
+    Loop
+
+    sommeEntiers = somme
+End Function
+
+Sub afficherSomme()
+    MsgBox sommeEntiers()
+End Sub
+```
+
+</details>
+
+#### Exercice 2 <a name="exercice-2-4"></a>
+
+Ecrire une fonction ``double_tableau`` qui prend en paramètre un tableau d'entiers ``tab`` et sa taille ``n``. La fonction renvoie un booléen indiquant si le tableau ne contient que des entiers pairs.
+
+Par exemple, si ``tab`` contient les valeurs ``1, 2, 3, 4``, la fonction renvoie ``False`` mais renvoie ``True`` si ``tab`` contient les valeurs ``2, 4, 6, 8``.
+
+Vous pouvez utiliser l'opérateur ``Mod`` pour calculer le modulo. Par exemple, ``5 Mod 2`` renvoie ``1``.
+
+Voici une solution possible :
+
+<details>
+
+```php
+Function double_tableau(tab() As Integer, n As Integer) As Boolean
+    Dim i As Integer
+    Dim resultat As Boolean
+
+    resultat = True
+    i = 0
+
+    Do While i < n And resultat = True
+        If tab(i) Mod 2 <> 0 Then
+            resultat = False
+        End If
+        i = i + 1
+    Loop
+
+    double_tableau = resultat
+End Function
+```
