@@ -19,7 +19,7 @@ Vous pouvez trouver le cours sur cette page [moodle](https://fad4.u-bordeaux.fr/
   - [Les conditions](#-les-conditions)
   - [Select Case](#-select-case)
   - [Les fenêtres prédéfinies](#-les-fenêtres-prédéfinies)
-  - [Exemples supplémentaires ](#-exemples-supplémentaires-a-nameexemplesa)
+  - [Exemples supplémentaires](#-exemples-supplémentaires-a-nameexemplesa)
   - [Exercices Corrigés](#-exercices-corrigés)
 
 <!-- /code_chunk_output -->
@@ -444,18 +444,15 @@ Ecrire une fonction `perimetre` calculant le perimètre d'un cercle prenant en p
 La valeur 3.14 sera utilisée pour la constante pi.
 On affichera le résultat à l'aide d'une procédure `afficher_perimetre`.
 
-
+Une solution possible est la suivante :
 <details>
-    <summary>Solution</summary>
-
 {% highlight php %}
 Function perimetre(rayon As Integer) As Single
-perimetre = 2 _ 3.14 _ rayon
+perimetre = 2 _3.14_ rayon
 End Function
 
 Sub afficher_perimetre()
 MsgBox perimetre(1)
 End Sub
 {% endhighlight %}
-
 </details>
