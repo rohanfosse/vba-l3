@@ -7,21 +7,21 @@ Vous pouvez trouver le cours sur cette page [moodle](https://fad4.u-bordeaux.fr/
 
 ## Table des matières
 
-<!--@import "[TOC]" {cmd="toc" depthFrom=2 depthTo=3 orderedList=false}-->
 
 <!-- code_chunk_output -->
 
-- [Avant de commencer](#-avant-de-commencer)
-- [Séance 3](#-seance-3)
-  - [Les variables](#-les-variables)
-  - [Les procédures](#-les-procédures)
-  - [Les fonctions](#-les-fonctions)
-  - [Les conditions](#-les-conditions)
-  - [Select Case](#-select-case)
-  - [Les fenêtres prédéfinies](#-les-fenêtres-prédéfinies)
-  - [Exemples supplémentaires](#-exemples-supplémentaires-a-nameexemplesa)
-  - [Exercices Corrigés](#-exercices-corrigés)
-
+- [Avant de commencer ](#-avant-de-commencer)
+- [Séance 3 ](#-séance-3)
+  - [Les variables ](#-les-variables)
+  - [Les procédures ](#-les-procédures)
+  - [Les fonctions ](#-les-fonctions)
+  - [Les conditions ](#-les-conditions)
+  - [Select Case ](#-select-case)
+  - [Les fenêtres prédéfinies ](#-les-fenêtres-prédéfinies)
+  - [Exercices Corrigés ](#-exercices-corrigés)
+- [Séance 4 ](#-séance-4)
+  - [Les boucles ](#-les-boucles)
+  - [Communication avec Excel ](#-communication-avec-excel)
 <!-- /code_chunk_output -->
 
 ---
@@ -75,7 +75,7 @@ En effet, cette syntaxe défini les variables `a` et `b` comme étant de type `V
 
 ---
 
-### Les procédures <a name="-les-procédures"></a>
+### Les procédures <a name="-les-procedures"></a>
 
 Une procédure est une fonction qui ne renvoie pas de valeur. Pour déclarer une procédure, on utilise la syntaxe suivante :
 
@@ -318,7 +318,7 @@ End Sub
 
 ---
 
-### Les fenêtres prédéfinies <a name="-les-fenêtres-prédéfinies"></a>
+### Les fenêtres prédéfinies <a name="-les-fenêtres-predefinies"></a>
 
 Il existe plusieurs fenêtres prédéfinies en VBA.
 
@@ -366,25 +366,25 @@ Pour d'autres exemples, voir la section [Exemples supplémentaires](#exemples).
 L'affichage d'un message se fait avec la fenêtre `MsgBox`. Par exemple, pour afficher la fenêtre `MsgBox` avec le message "a", on utilise la syntaxe suivante :
 
 ```php
-MsgBox "a"
+MsgBox("a")
 ```
 
 Pour afficher la fenêtre `MsgBox` avec le message "a" et le titre "Message", on utilise la syntaxe suivante :
 
 ```php
-MsgBox "a", vbInformation, "Message"
+MsgBox("a", vbInformation, "Message")
 ```
 
 Pour afficher la fenêtre `MsgBox` avec le message "a", le titre "Message" et le bouton "OK", on utilise la syntaxe suivante :
 
 ```php
-MsgBox "a", vbInformation + vbOKOnly, "Message"
+MsgBox("a", vbInformation + vbOKOnly, "Message")
 ```
 
 Pour afficher la fenêtre `MsgBox` avec le message "a", le titre "Message" et les boutons "Oui" et "Non", on utilise la syntaxe suivante :
 
 ```php
-MsgBox "a", vbInformation + vbYesNo, "Message"
+MsgBox("a", vbInformation + vbYesNo, "Message")
 ```
 
 ---
@@ -445,3 +445,267 @@ calculer_somme = nombre1 + nombre2
 End Function
 {% endhighlight %}
 </details>
+
+## Séance 4 <a name="séance-4"></a>
+
+### Les boucles <a name="les-boucles"></a>
+
+#### Boucle `While` <a name="boucle-while"></a>
+
+La boucle `While` permet d'exécuter une instruction tant qu'une condition est vraie.
+
+La syntaxe est la suivante :
+
+```php
+While condition
+    instruction
+Wend
+```
+
+Par exemple, pour afficher les nombres de 1 à 10, on utilise la syntaxe suivante :
+
+```php
+Dim i As Integer
+i = 1
+
+While i <= 10
+    MsgBox i
+    i = i + 1
+Wend
+```
+
+Un autre exemple serait de demander à l'utilisateur de saisir un nombre tant que ce nombre n'est pas compris entre 1 et 10.
+
+```php
+Dim nombre As Integer
+
+nombre = InputBox("Entrez un nombre", "Nombre")
+
+While nombre < 1 Or nombre > 10
+    nombre = InputBox("Entrez un nombre", "Nombre")
+Wend
+```
+
+#### Boucle `Do While` <a name="boucle-do-while"></a>
+
+La boucle `Do While` permet d'exécuter une instruction tant qu'une condition est vraie. Elle est similaire à la boucle `While` mais la condition est testée à la fin de l'exécution de l'instruction.
+
+La syntaxe est la suivante :
+
+```php
+Do
+    instruction
+Loop While condition
+```
+
+Par exemple, pour afficher les nombres de 1 à 10, on utilise la syntaxe suivante :
+
+```php
+Dim i As Integer
+i = 1
+
+Do
+    MsgBox i
+    i = i + 1
+Loop While i <= 10
+```
+
+Si nous reprenons le même exemple que la boucle `While`, on obtient le code suivant :
+
+```php
+Dim nombre As Integer
+
+nombre = InputBox("Entrez un nombre", "Nombre")
+
+Do
+    nombre = InputBox("Entrez un nombre", "Nombre")
+Loop While nombre < 1 Or nombre > 10
+```
+
+#### Boucle `Do Loop Until` <a name="boucle-do-until"></a>
+
+La boucle `Do Loop Until` permet d'exécuter une instruction tant qu'une condition est **fausse**. Elle est similaire à la boucle `Do While` mais la condition est testée à la fin de l'exécution de l'instruction.
+
+La syntaxe est la suivante :
+
+```php
+Do
+    instruction
+Loop Until condition
+```
+
+Par exemple, pour afficher les nombres de 1 à 10, on utilise la syntaxe suivante :
+
+```php
+Dim i As Integer
+i = 1
+
+Do
+    MsgBox i
+    i = i + 1
+Loop Until i > 10
+```
+
+Si nous reprenons le même exemple que la boucle `While`, on obtient le code suivant :
+
+```php
+Dim nombre As Integer
+
+nombre = InputBox("Entrez un nombre", "Nombre")
+
+Do
+    nombre = InputBox("Entrez un nombre", "Nombre")
+Loop Until nombre >= 1 And nombre <= 10
+```
+
+#### Boucle `For` <a name="boucle-for"></a>
+
+La boucle `For` permet d'exécuter une instruction un certain nombre de fois.
+
+La syntaxe est la suivante :
+
+```php
+For i = valeur_de_depart To valeur_de_fin Step pas
+    'instruction'
+Next i
+```
+
+Step sert à définir le pas d'itération. Il est toutefois optionnel. Si on ne le précise pas, le pas vaut 1.
+
+Par exemple, pour afficher les nombres de 1 à 10, on utilise la syntaxe suivante :
+
+```php
+For i = 1 To 10 
+    MsgBox i
+Next i
+```
+
+On peut aussi utiliser la boucle `For` pour parcourir un tableau. Par exemple, pour afficher les valeurs d'un tableau `tab` de taille 3, on utilise la syntaxe suivante :
+
+```php
+Dim tab(2) As Integer
+tab(0) = 1
+tab(1) = 2
+tab(2) = 3
+
+For i = 0 To 2
+    MsgBox tab(i)
+Next i
+```
+
+Une autre façon de définir le tableau est la suivante :
+
+```php
+Dim tab() As Variant
+tab = Array(1, 2, 3)
+
+For i = 0 To 2
+    MsgBox tab(i)
+    Next i
+```
+
+#### Boucle `For Each In Next` <a name="boucle-for-each-in-next"></a>
+
+La boucle `For Each In Next` permet d'exécuter une instruction pour chaque élément d'un tableau.
+
+La syntaxe est la suivante :
+
+```php
+For Each element In tableau
+    'instruction'
+Next element
+```
+
+Par exemple, pour afficher les valeurs d'un tableau `tab` de taille 3, on utilise la syntaxe suivante :
+
+```php
+Dim tab(2) As Integer
+tab(0) = 1
+tab(1) = 2
+tab(2) = 3
+
+For Each element In tab
+    MsgBox element
+Next element
+```
+
+### Communication avec Excel <a name="communication-avec-excel"></a>
+
+#### Range <a name="range"></a>
+
+Le type `Range` permet de manipuler des cellules ou des plages de cellules.
+
+Pour créer un objet `Range`, on utilise la syntaxe suivante :
+
+```php
+Dim range As Range
+Set range = Range("A1")
+```
+
+On peut aussi créer un objet `Range` à partir d'une plage de cellules :
+
+```php
+Dim range As Range
+Set range = Range("A1:B2")
+```
+
+On peut aussi créer un objet `Range` à partir d'une plage de cellules en utilisant les coordonnées :
+
+```php
+Dim range As Range
+Set range = Range(Cells(1, 1), Cells(2, 2))
+```
+
+La méthode `Clear` permet de supprimer le contenu d'une cellule ou d'une plage de cellules :
+
+```php
+Dim range As Range
+Set range = Range("A1:B2")
+range.Clear
+```
+
+La méthode `Value` permet de récupérer la valeur d'une cellule ou d'une plage de cellules :
+
+```php
+Dim range As Range
+Set range = Range("A1:B2")
+MsgBox range.Value
+```
+
+La méthode `Cells` permet de spécifier une cellule à partir d'une plage de cellules :
+
+```php
+Dim range As Range
+Set range = Range("A1:B2")
+range.Cells(1, 1).Value = 1
+range.Cells(1, 2).Value = 2
+range.Cells(2, 1).Value = 3
+range.Cells(2, 2).Value = 4
+```
+
+#### Application <a name="application"></a>
+
+L'objet `Application` permet de manipuler Excel.
+
+Pour créer un objet `Application`, on utilise la syntaxe suivante :
+
+```php
+Dim app As Application
+Set app = Application
+```
+
+La méthode `Run` permet d'exécuter une macro :
+
+```php
+Dim app As Application
+Set app = Application
+app.Run "NomDeLaMacro"
+```
+
+La méthode `Run` permet aussi d'exécuter une macro avec des paramètres :
+
+```php
+Dim app As Application
+Set app = Application
+app.Run "NomDeLaMacro", "param1", "param2"
+```
