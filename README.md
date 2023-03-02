@@ -447,7 +447,7 @@ Voici une solution possible:
 <details>
 {% highlight php %}
 Function perimetre(rayon As Integer) As Single
-perimetre = 2 x 3.14 x rayon
+perimetre = 2 * 3.14 * rayon
 End Function
 
 Sub afficher_perimetre()
