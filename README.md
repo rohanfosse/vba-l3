@@ -8,7 +8,9 @@ Vous pouvez trouver les slides sur la plateforme moodle [ici](https://fad4.u-bor
 Pensez à activer la case Développeur dans les options d'Excel. Pour cela, allez dans le menu `Fichier` puis `Options` et cliquez sur `Personnaliser le ruban`. Dans la fenêtre qui s'ouvre, cliquez sur `Développeur` dans la liste de gauche et cochez la case `Afficher la barre de développeur`.
 
 ## Les bases
+
 ---
+
 ### Les variables
 
 Une variable est un espace mémoire qui permet de stocker une valeur. En `VBA`, on peut déclarer des variables de plusieurs types :
@@ -27,6 +29,7 @@ Pour déclarer une variable, on utilise la syntaxe suivante :
 ```vba
 Dim nom_variable As type_variable
 ```
+
 Par exemple, pour déclarer une variable `a` de type `Integer`, on utilise la syntaxe suivante :
 
 ```vba
@@ -40,6 +43,7 @@ Dim a As Integer, b As Integer, c As Integer
 ```
 
 Attention, la syntaxe suivante n'est pas valide:
+
 ```vba
 Dim a, b, c As Integer
 ```
@@ -364,7 +368,6 @@ MsgBox "a", vbInformation + vbYesNo, "Message"
 
 ## Exemples supplémentaires <a name="exemples"></a>
 
-
 ### Exemple de fonction utilisant une condition (vérification de notes)
 
 #### En utilisant une structure `if`
@@ -414,13 +417,11 @@ End Function
 
 ### Exercice 1
 
-
 Ecrire une fonction `perimetre` calculant le perimètre d'un cercle prenant en paramètre un entier correspondant à son rayon. Le résultat sera un réel.
 La valeur 3.14 sera utilisée pour la constante pi.
 On affichera le résultat à l'aide d'une procédure `afficher_perimetre`.
 
-<details>
-  <summary>Solution</summary>
+<details><summary markdown="span">Solution</summary>
 
 ```vba
 
@@ -434,6 +435,3 @@ End Sub
 ```
 
 </details>
-
-
-
