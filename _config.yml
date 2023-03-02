@@ -3,7 +3,7 @@ description: L3 Management/ Comptabilité Contrôle Finances/ Economie de la Fir
 markdown: kramdown
 theme: jekyll-theme-cayman
 footer_content: "© 2023 - Rohan Fossé"
-favicon: /vba.ico
+logo_url: ./vba.ico
 
 kramdown:
   parse_block_html: true

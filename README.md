@@ -1,3 +1,5 @@
+<div id="container">
+    <div id="main">
 # Programmation VBA
 
 Vous trouverez ici des notes de cours relatives au cours de VBA de l'Université de Bordeaux Montaigne.
@@ -820,3 +822,13 @@ Function double_tableau(tab() As Integer, n As Integer) As Boolean
     double_tableau = resultat
 End Function
 ```
+
+</div>
+</div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+  <script src="js/script.js"></script>
+  <script>
+    PageScrollIndicator.createProgressBar("#container", "#main");
+  </script>

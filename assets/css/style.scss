@@ -13,3 +13,16 @@ details{
   background-color: #1ffe36 !important;
   color: white !important;
 }
+
+#progress-cont {
+  height: 5px;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+#progress-bar {
+  height: 100%;
+  background-color: #374884;
+}
