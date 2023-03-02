@@ -1,7 +1,7 @@
 # Programmation VBA
 
 Vous trouverez ici des notes de cours relatives au cours de VBA de l'Université de Bordeaux Montaigne.
-Vous pouvez trouver le cours sur cette page [moodle](https://fad4.u-bordeaux.fr/pluginfile.php/2050621/)
+Vous pouvez trouver le cours sur cette page [moodle](https://fad4.u-bordeaux.fr/enrol/index.php?id=17638)
 
 ---
 
