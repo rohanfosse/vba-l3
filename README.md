@@ -242,8 +242,9 @@ Ecrire une fonction `perimetre` calculant le perimètre d'un cercle prenant en p
 
 <details>
   <summary>Solution</summary>
-  
+
     Function perimetre(rayon As Integer) As Integer
         perimetre = 2 * 3.14 * rayon
     End Function
+    
 </details>
