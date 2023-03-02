@@ -322,16 +322,16 @@ End Sub
 
 Il existe plusieurs fenêtres prédéfinies en VBA.
 
-#### Fenêtre de saisie de texte (_InputBox_)
+#### Fenêtre de saisit de texte (_InputBox_)
 
-La saisie de texte se fait avec la fenêtre `InputBox`. Par exemple, pour afficher la fenêtre `InputBox` avec le message `Entrez un nombre` et stocker le résultat dans la variable `nombre`, on utilise la syntaxe suivante :
+La saisit de texte se fait avec la fenêtre `InputBox`. Par exemple, pour afficher la fenêtre `InputBox` avec le message `Entrez un nombre` et stocker le résultat dans la variable `nombre`, on utilise la syntaxe suivante :
 
 ```php
 Dim nombre As Integer ' Déclaration de la variable nombre de type Integer '
 nombre = InputBox("Entrez un nombre")
 ```
 
-A la suite de ça, la variable `nombre` contient la valeur saisie par l'utilisateur.
+A la suite de ça, la variable `nombre` contient la valeur saisit par l'utilisateur.
 
 Si l'on souhaite maintenant afficher la même fenêtre mais en changeant le titre par `Mon titre`, on utilise la syntaxe suivante :
 
@@ -447,7 +447,7 @@ Voici une solution possible:
 <details>
 {% highlight php %}
 Function perimetre(rayon As Integer) As Single
-perimetre = 2 _3.14_ rayon
+perimetre = 2 x 3.14 x rayon
 End Function
 
 Sub afficher_perimetre()
@@ -472,7 +472,7 @@ End Function
 
 #### Exercice 3 <a name="exercice-3"></a>
 
-Ecrire une fonction `calculer_somme` calculant la somme de 2 entiers que l'utilisateur saisira à l'aide de deux fenêtres `InputBox`. Si l'utilisateur ne saisie pas de valeur, la valeur par défaut sera 0.
+Ecrire une fonction `calculer_somme` calculant la somme de 2 entiers que l'utilisateur saisira à l'aide de deux fenêtres `InputBox`. Si l'utilisateur ne saisit pas de valeur, la valeur par défaut sera 0.
 
 Voici une solution possible:
 
