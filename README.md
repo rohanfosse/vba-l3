@@ -389,53 +389,6 @@ MsgBox "a", vbInformation + vbYesNo, "Message"
 
 ---
 
-### Exemples supplémentaires <a name="exemples"></a>
-
-#### Exemple de fonction utilisant une condition (vérification de notes)
-
-#### En utilisant une structure `if`
-
-```php
-Function verifier_note(note As Integer) As String
-    If note < 10 Then
-        verifier_note = "Insuffisant"
-    ElseIf note < 12 Then
-        verifier_note = "Passable"
-    ElseIf note < 14 Then
-        verifier_note = "Assez bien"
-    ElseIf note < 16 Then
-        verifier_note = "Bien"
-    ElseIf note < 20 Then
-        verifier_note = "Très bien"
-    Else
-        verifier_note = "Erreur"
-    End If
-End Function
-```
-
-#### En utilisant une structure `select case`
-
-```php
-Function verifier_note_case(note As Integer) As String
-    Select Case note
-        Case 0 To 9
-            verifier_note_case = "Insuffisant"
-        Case 10 To 11
-            verifier_note_case = "Passable"
-        Case 12 To 13
-            verifier_note_case = "Assez bien"
-        Case 14 To 15
-            verifier_note_case = "Bien"
-        Case 16 To 19
-            verifier_note_case = "Très bien"
-        Case Else
-            verifier_note_case = "Erreur"
-    End Select
-End Function
-```
-
----
-
 ### Exercices Corrigés <a name="exercices-corrigés"></a>
 
 Si vous souhaitez vous entrainer, voici quelques exercices corrigés.
