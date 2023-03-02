@@ -5,16 +5,14 @@ Vous pouvez trouver le cours sur cette page [moodle](https://fad4.u-bordeaux.fr/
 
 ---
 
-
 ## Table des matières
-
 
 <!--@import "[TOC]" {cmd="toc" depthFrom=2 depthTo=3 orderedList=false}-->
 
 <!-- code_chunk_output -->
 
 - [Avant de commencer](#-avant-de-commencer)
-- [Séance 3](#-séance-3)
+- [Séance 3](#-seance-3)
   - [Les variables](#-les-variables)
   - [Les procédures](#-les-procédures)
   - [Les fonctions](#-les-fonctions)
@@ -28,26 +26,24 @@ Vous pouvez trouver le cours sur cette page [moodle](https://fad4.u-bordeaux.fr/
 
 ---
 
-## Avant de commencer
+## Avant de commencer <a name="-avant-de-commencer"></a>
 
 Pensez à activer la case Développeur dans les options d'Excel. Pour cela, allez dans le menu `Fichier` puis `Options` et cliquez sur `Personnaliser le ruban`. Dans la fenêtre qui s'ouvre, cliquez sur `Développeur` dans la liste de gauche et cochez la case `Afficher la barre de développeur`.
 
 ---
 
-## Séance 3
+## Séance 3 <a name="-seance-3"></a>
 
-
-
-### Les variables
+### Les variables <a name="-les-variables"></a>
 
 Une variable est un espace mémoire qui permet de stocker une valeur. En `VBA`, on peut déclarer des variables de plusieurs types :
 
-* `Integer` : entier
-* `Long` : entier long
-* `Single` : nombre à virgule flottante
-* `Double` : nombre à virgule flottante
-* `String` : chaîne de caractères
-* `Boolean` : booléen (vrai ou faux)
+- `Integer` : entier
+- `Long` : entier long
+- `Single` : nombre à virgule flottante
+- `Double` : nombre à virgule flottante
+- `String` : chaîne de caractères
+- `Boolean` : booléen (vrai ou faux)
 
 Il existe aussi un type `Variant` qui permet de stocker n'importe quel type de variable.
 
@@ -79,7 +75,7 @@ En effet, cette syntaxe défini les variables `a` et `b` comme étant de type `V
 
 ---
 
-### Les procédures
+### Les procédures <a name="-les-procédures"></a>
 
 Une procédure est une fonction qui ne renvoie pas de valeur. Pour déclarer une procédure, on utilise la syntaxe suivante :
 
@@ -101,7 +97,7 @@ Pour appeler une procédure, il suffit de cliquer sur le code de la procédure e
 
 ---
 
-### Les fonctions
+### Les fonctions <a name="-les-fonctions"></a>
 
 Une fonction est une procédure qui renvoie une valeur. Pour déclarer une fonction, on utilise la syntaxe suivante :
 
@@ -179,7 +175,7 @@ End Sub
 
 ---
 
-### Les conditions
+### Les conditions <a name="-les-conditions"></a>
 
 Pour définir une condition, on utilise la syntaxe suivante :
 
@@ -241,10 +237,10 @@ End Function
 
 Dans ce code, plusieurs points sont à noter :
 
-* La fonction `appreciation` retourne une valeur de type `String`.
-* La fonction `appreciation` a un paramètre `note` de type `Integer`.
-* Si jamais une condition n'est pas vérifiée, alors on passe à la condition suivante.
-* Si jamais aucune condition n'est vérifiée, alors on exécute le `else`.
+- La fonction `appreciation` retourne une valeur de type `String`.
+- La fonction `appreciation` a un paramètre `note` de type `Integer`.
+- Si jamais une condition n'est pas vérifiée, alors on passe à la condition suivante.
+- Si jamais aucune condition n'est vérifiée, alors on exécute le `else`.
 
 Pour appeler cette fonction, on peut définir la procédure suivante :
 
@@ -258,7 +254,7 @@ De la même façon que précédement, il est à noter que la valeur du paramètr
 
 ---
 
-### Select Case
+### Select Case <a name="-select-case"></a>
 
 Pour définir une condition avec plusieurs `else if`, il existe une autre méthode utilisant la syntaxe suivante :
 
@@ -275,7 +271,7 @@ Pour définir une condition avec plusieurs `else if`, il existe une autre métho
     End Select
 ```
 
-Les deux façons de définir une condition sont ***équivalentes***, le `Select Case` est simplement une méthode plus concise.
+Les deux façons de définir une condition sont **_équivalentes_**, le `Select Case` est simplement une méthode plus concise.
 
 Si nous reprenons l'exemple de la fonction `appreciation` précédente, on peut définir cette fonction comme suit :
 
@@ -310,7 +306,7 @@ Je sélectionne la variable note.
 - Si je suis dans le cas où la note est comprise entre 14 et 15, alors appréciation = "bien"
 - Si je suis dans le cas où la note est comprise entre 16 et 17, alors appréciation = "très bien"
 - Sinon, appréciation = "excellent"
-````
+```
 
 De la même façon que pour les `Else If`, on peut définir la procédure suivante pour appeler la fonction:
 
@@ -322,11 +318,11 @@ End Sub
 
 ---
 
-### Les fenêtres prédéfinies
+### Les fenêtres prédéfinies <a name="-les-fenêtres-prédéfinies"></a>
 
 Il existe plusieurs fenêtres prédéfinies en VBA.
 
-#### Fenêtre de saisie de texte (*InputBox*)
+#### Fenêtre de saisie de texte (_InputBox_)
 
 La saisie de texte se fait avec la fenêtre `InputBox`. Par exemple, pour afficher la fenêtre `InputBox` avec le message `Entrez un nombre` et stocker le résultat dans la variable `nombre`, on utilise la syntaxe suivante :
 
@@ -365,13 +361,13 @@ Pour d'autres exemples, voir la section [Exemples supplémentaires](#exemples).
 
 ---
 
-#### Fenêtre d'affichage de message (*MsgBox*)
+#### Fenêtre d'affichage de message (_MsgBox_)
 
 L'affichage d'un message se fait avec la fenêtre `MsgBox`. Par exemple, pour afficher la fenêtre `MsgBox` avec le message "a", on utilise la syntaxe suivante :
 
 ```php
 MsgBox "a"
-````
+```
 
 Pour afficher la fenêtre `MsgBox` avec le message "a" et le titre "Message", on utilise la syntaxe suivante :
 
@@ -440,24 +436,23 @@ End Function
 
 ---
 
-### Exercices Corrigés
+### Exercices Corrigés <a name="exercices-corrigés"></a>
 
-#### Exercice 1
+#### Exercice 1 <a name="exercice-1"></a>
 
 Ecrire une fonction `perimetre` calculant le perimètre d'un cercle prenant en paramètre un entier correspondant à son rayon. Le résultat sera un réel.
 La valeur 3.14 sera utilisée pour la constante pi.
 On affichera le résultat à l'aide d'une procédure `afficher_perimetre`.
 
-<details>
-<summary>Solution</summary>
+<details><summary>Solution</summary>
 
 {% highlight php %}
 Function perimetre(rayon As Integer) As Single
-        perimetre = 2 * 3.14 * rayon
+perimetre = 2 _ 3.14 _ rayon
 End Function
 
 Sub afficher_perimetre()
-    MsgBox perimetre(1)
+MsgBox perimetre(1)
 End Sub
 {% endhighlight %}
 
