@@ -445,8 +445,8 @@ La valeur 3.14 sera utilisée pour la constante pi.
 On affichera le résultat à l'aide d'une procédure `afficher_perimetre`.
 
 
-<details><summary>Solution</summary>
-<p>
+<details>
+<summary>Solution</summary>
 
 {% highlight php %}
 Function perimetre(rayon As Integer) As Single
@@ -458,5 +458,4 @@ MsgBox perimetre(1)
 End Sub
 {% endhighlight %}
 
-</p>
 </details>
