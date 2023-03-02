@@ -413,6 +413,24 @@ resultat = MsgBox("Mon Message", vbYesNo, "Titre")
 
 On stocke la réponse de l'utilisateur dans la variable `resultat`. Si l'utilisateur clique sur le bouton "Oui", la variable `resultat` contient la valeur `6`. Si l'utilisateur clique sur le bouton "Non", la variable `resultat` contient la valeur `7`.
 
+Par exemple, si l'on souhaite poser une question à l'utilisateur et afficher un message différent en fonction de sa réponse, on peut utiliser le faire de la façon suivante :
+
+```php
+Sub afficher_message()
+    Dim resultat As Integer
+    resultat = MsgBox("Voulez-vous continuer ?", vbYesNo, "Titre")
+    If resultat = 6 Then
+        MsgBox("Vous avez cliqué sur Oui")
+    Else
+        MsgBox("Vous avez cliqué sur Non")
+    End If
+End Sub
+```
+
+
+
+
+
 ---
 
 ### Exercices Corrigés <a name="exercices-corriges"></a>
