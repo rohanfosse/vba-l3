@@ -3,11 +3,14 @@
 Vous trouverez ici des notes de cours relatives au cours de VBA de l'Université de Bordeaux Montaigne.
 Vous pouvez trouver les slides sur la plateforme moodle [ici](https://fad4.u-bordeaux.fr/pluginfile.php/2050621/mod_resource/content/1/3_S%C3%A9ance_3_VBA%20pour%20Excel_L3_Part1.pdf)
 
+## Table des matières
+
 
 @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=3 orderedList=false}
 
 <!-- code_chunk_output -->
 
+- [Table des matières](#-table-des-matières)
 - [Avant de commencer](#-avant-de-commencer)
 - [Séance 3](#-séance-3)
   - [Les variables](#-les-variables)
@@ -16,13 +19,10 @@ Vous pouvez trouver les slides sur la plateforme moodle [ici](https://fad4.u-bor
   - [Les conditions](#-les-conditions)
   - [Select Case](#-select-case)
   - [Les fenêtres prédéfinies](#-les-fenêtres-prédéfinies)
-- [Exemples supplémentaires ](#-exemples-supplémentaires-a-nameexemplesa)
-  - [Exemple de fonction utilisant une condition (vérification de notes)](#-exemple-de-fonction-utilisant-une-condition-vérification-de-notes)
-- [Exercices Corrigés ](#-exercices-corrigés-a-nameexercicesa)
-  - [Exercice 1](#-exercice-1)
+  - [Exemples supplémentaires ](#-exemples-supplémentaires-a-nameexemplesa)
+  - [Exercices Corrigés](#-exercices-corrigés)
 
 <!-- /code_chunk_output -->
-
 
 ## Avant de commencer
 
@@ -387,9 +387,9 @@ MsgBox "a", vbInformation + vbYesNo, "Message"
 
 ---
 
-## Exemples supplémentaires <a name="exemples"></a>
+### Exemples supplémentaires <a name="exemples"></a>
 
-### Exemple de fonction utilisant une condition (vérification de notes)
+#### Exemple de fonction utilisant une condition (vérification de notes)
 
 #### En utilisant une structure `if`
 
@@ -434,9 +434,9 @@ End Function
 
 ---
 
-## Exercices Corrigés <a name="exercices"></a>
+### Exercices Corrigés
 
-### Exercice 1
+#### Exercice 1
 
 Ecrire une fonction `perimetre` calculant le perimètre d'un cercle prenant en paramètre un entier correspondant à son rayon. Le résultat sera un réel.
 La valeur 3.14 sera utilisée pour la constante pi.
