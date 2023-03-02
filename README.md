@@ -446,7 +446,7 @@ On affichera le résultat à l'aide d'une procédure `afficher_perimetre`.
 
 
 <details>
-<summary>Solution</summary>
+    <summary>Solution</summary>
 
 {% highlight php %}
 Function perimetre(rayon As Integer) As Single
