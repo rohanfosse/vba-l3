@@ -26,7 +26,7 @@ Il existe aussi un type `Variant` qui permet de stocker n'importe quel type de v
 
 Pour déclarer une variable, on utilise la syntaxe suivante :
 
-```vba
+```php
 Dim nom_variable As type_variable
 ```
 
