@@ -3,10 +3,12 @@
 Vous trouverez ici des notes de cours relatives au cours de VBA de l'Université de Bordeaux Montaigne.
 Vous pouvez trouver les slides sur la plateforme moodle [ici](https://fad4.u-bordeaux.fr/pluginfile.php/2050621/mod_resource/content/1/3_S%C3%A9ance_3_VBA%20pour%20Excel_L3_Part1.pdf)
 
-## Table des matières {ignore=true}
+---
+
+## Table des matières
 
 
-@import "[TOC]" {cmd="toc" depthFrom=2 depthTo=3 orderedList=false}
+<!--@import "[TOC]" {cmd="toc" depthFrom=2 depthTo=3 orderedList=false}-->
 
 <!-- code_chunk_output -->
 
@@ -23,13 +25,17 @@ Vous pouvez trouver les slides sur la plateforme moodle [ici](https://fad4.u-bor
 
 <!-- /code_chunk_output -->
 
+---
+
 ## Avant de commencer
 
 Pensez à activer la case Développeur dans les options d'Excel. Pour cela, allez dans le menu `Fichier` puis `Options` et cliquez sur `Personnaliser le ruban`. Dans la fenêtre qui s'ouvre, cliquez sur `Développeur` dans la liste de gauche et cochez la case `Afficher la barre de développeur`.
 
+---
+
 ## Séance 3
 
----
+
 
 ### Les variables
 
