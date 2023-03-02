@@ -448,8 +448,7 @@ Ecrire une fonction `perimetre` calculant le perimètre d'un cercle prenant en p
 La valeur 3.14 sera utilisée pour la constante pi.
 On affichera le résultat à l'aide d'une procédure `afficher_perimetre`.
 
-<details>
-    <summary>Solution</summary>
+<details><summary>Solution</summary>
 
 ```php
 Function perimetre(rayon As Integer) As Single
