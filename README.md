@@ -451,7 +451,7 @@ On affichera le résultat à l'aide d'une procédure `afficher_perimetre`.
 <details>
 <summary>Solution</summary>
 
-{% hightlight php %}
+{% highlight php %}
 Function perimetre(rayon As Integer) As Single
         perimetre = 2 * 3.14 * rayon
 End Function
@@ -459,6 +459,6 @@ End Function
 Sub afficher_perimetre()
     MsgBox perimetre(1)
 End Sub
-{% endhightlight %}
+{% endhighlight %}
 
 </details>
