@@ -11,15 +11,15 @@ Vous pouvez trouver le cours sur cette page [moodle](https://fad4.u-bordeaux.fr/
 <!-- code_chunk_output -->
 
 - [Avant de commencer ](#-avant-de-commencer)
-- [Séance 3 ](#-séance-3)
+- [Séance 3 ](#-seance-3)
   - [Les variables ](#-les-variables)
-  - [Les procédures ](#-les-procédures)
+  - [Les procédures ](#-les-procedures)
   - [Les fonctions ](#-les-fonctions)
   - [Les conditions ](#-les-conditions)
   - [Select Case ](#-select-case)
-  - [Les fenêtres prédéfinies ](#-les-fenêtres-prédéfinies)
-  - [Exercices Corrigés ](#-exercices-corrigés)
-- [Séance 4 ](#-séance-4)
+  - [Les fenêtres prédéfinies ](#-les-fenetres-predefinies)
+  - [Exercices Corrigés ](#-exercices-corriges)
+- [Séance 4 ](#-seance-4)
   - [Les boucles ](#-les-boucles)
   - [Communication avec Excel ](#-communication-avec-excel)
 <!-- /code_chunk_output -->
@@ -318,7 +318,7 @@ End Sub
 
 ---
 
-### Les fenêtres prédéfinies <a name="-les-fenêtres-predefinies"></a>
+### Les fenêtres prédéfinies <a name="-les-fenetres-predefinies"></a>
 
 Il existe plusieurs fenêtres prédéfinies en VBA.
 
@@ -389,7 +389,7 @@ MsgBox("a", vbInformation + vbYesNo, "Message")
 
 ---
 
-### Exercices Corrigés <a name="exercices-corrigés"></a>
+### Exercices Corrigés <a name="exercices-corriges"></a>
 
 Si vous souhaitez vous entrainer, voici quelques exercices corrigés.
 
@@ -446,7 +446,7 @@ End Function
 {% endhighlight %}
 </details>
 
-## Séance 4 <a name="séance-4"></a>
+## Séance 4 <a name="seance-4"></a>
 
 ### Les boucles <a name="les-boucles"></a>
 
