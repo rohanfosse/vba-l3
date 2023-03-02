@@ -438,13 +438,15 @@ End Function
 
 ### Exercices Corrigés <a name="exercices-corrigés"></a>
 
+Si vous souhaitez vous entrainer, voici quelques exercices corrigés.
+
 #### Exercice 1 <a name="exercice-1"></a>
 
 Ecrire une fonction `perimetre` calculant le perimètre d'un cercle prenant en paramètre un entier correspondant à son rayon. Le résultat sera un réel.
 La valeur 3.14 sera utilisée pour la constante pi.
 On affichera le résultat à l'aide d'une procédure `afficher_perimetre`.
 
-Une solution possible est la suivante :
+Voici une solution possible:
 <details>
 {% highlight php %}
 Function perimetre(rayon As Integer) As Single
@@ -454,5 +456,39 @@ End Function
 Sub afficher_perimetre()
 MsgBox perimetre(1)
 End Sub
+{% endhighlight %}
+</details>
+
+#### Exercice 2 <a name="exercice-2"></a>
+
+Ecrire une fonction `calculer_moyenne` calculant la moyenne de 3 notes qui seront données en paramètre de la fonction. Le résultat sera un réel.
+
+Voici une solution possible:
+
+<details>
+{% highlight php %}
+Function calculer_moyenne(note1 As Integer, note2 As Integer, note3 As Integer) As Single
+calculer_moyenne = (note1 + note2 + note3) / 3
+End Function
+{% endhighlight %}
+</details>
+
+#### Exercice 3 <a name="exercice-3"></a>
+
+Ecrire une fonction `calculer_somme` calculant la somme de 2 entiers que l'utilisateur saisira à l'aide de deux fenêtres `InputBox`. Si l'utilisateur ne saisie pas de valeur, la valeur par défaut sera 0.
+
+Voici une solution possible:
+
+<details>
+{% highlight php %}
+Function calculer_somme() As Integer
+Dim nombre1 As Integer
+Dim nombre2 As Integer
+
+nombre1 = InputBox("Entrez un nombre", "Nombre 1", 0)
+nombre2 = InputBox("Entrez un nombre", "Nombre 2", 0)
+
+calculer_somme = nombre1 + nombre2
+End Function
 {% endhighlight %}
 </details>
