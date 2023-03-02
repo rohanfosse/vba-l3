@@ -449,7 +449,7 @@ La valeur 3.14 sera utilisée pour la constante pi.
 On affichera le résultat à l'aide d'une procédure `afficher_perimetre`.
 
 <details>
-    <summary markdown="span">Solution</kbd></summary>
+    <summary>Solution</summary>
 
 ```php
 Function perimetre(rayon As Integer) As Single
