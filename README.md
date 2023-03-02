@@ -366,26 +366,52 @@ Pour d'autres exemples, voir la section [Exemples supplémentaires](#exemples).
 L'affichage d'un message se fait avec la fenêtre `MsgBox`. Par exemple, pour afficher la fenêtre `MsgBox` avec le message "a", on utilise la syntaxe suivante :
 
 ```php
-MsgBox("a")
+MsgBox("Mon message")
 ```
 
-Pour afficher la fenêtre `MsgBox` avec le message "a" et le titre "Message", on utilise la syntaxe suivante :
+Si l'on souhaite afficher un message comportant une variable **v**, on utilise la syntaxe suivante :
 
 ```php
-MsgBox("a", vbInformation, "Message")
+MsgBox("Mon message" & v)
 ```
 
-Pour afficher la fenêtre `MsgBox` avec le message "a", le titre "Message" et le bouton "OK", on utilise la syntaxe suivante :
+Il est possible de modifier les boutons affichés dans la fenêtre `MsgBox` en ajoutant des valeurs à la fin de la fonction.
+
+Les noms, valeurs et significations pour les principaux boutons peuvent être trouvés dans le tableau suivant :
+
+| Nom | Valeur | Signification |
+| :--- | :--- | :--- |
+| vbOKOnly | 0 | Affiche uniquement le bouton "OK" |
+| vbOKCancel | 1 | Affiche les boutons "OK" et "Annuler" |
+| vbAbortRetryIgnore | 2 | Affiche les boutons "Annuler", "Réessayer" et "Ignorer" |
+| vbYesNoCancel | 3 | Affiche les boutons "Oui", "Non" et "Annuler" |
+| vbYesNo | 4 | Affiche les boutons "Oui" et "Non" |
+| vbRetryCancel | 5 | Affiche les boutons "Réessayer" et "Annuler" |
+
+
+Par exemple, pour afficher la fenêtre `MsgBox` avec le message "Mon message" et le bouton "OK", on utilise la syntaxe suivante :
 
 ```php
-MsgBox("a", vbInformation + vbOKOnly, "Message")
+resultat = MsgBox("Mon message", vbOKOnly)
 ```
 
-Pour afficher la fenêtre `MsgBox` avec le message "a", le titre "Message" et les boutons "Oui" et "Non", on utilise la syntaxe suivante :
+
+
+La variable `resultat` contient la valeur `1` si l'utilisateur clique sur le bouton "OK".
+
+Pour afficher la fenêtre `MsgBox` avec le message "Mon message", un bouton "OK' et le titre "Titre", on utilise la syntaxe suivante :
 
 ```php
-MsgBox("a", vbInformation + vbYesNo, "Message")
+resultat = MsgBox("Mon message", vbOKOnly, "Titre")
 ```
+
+Pour afficher la fenêtre `MsgBox` avec le message "Mon message", le titre "Titre" et les boutons "Oui" et "Non", on utilise la syntaxe suivante :
+
+```php
+resultat = MsgBox("Mon Message", vbYesNo, "Titre")
+```
+
+On stocke la réponse de l'utilisateur dans la variable `resultat`. Si l'utilisateur clique sur le bouton "Oui", la variable `resultat` contient la valeur `6`. Si l'utilisateur clique sur le bouton "Non", la variable `resultat` contient la valeur `7`.
 
 ---
 
