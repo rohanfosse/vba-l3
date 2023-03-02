@@ -2,6 +2,7 @@ title: Programmation VBA
 description: L3 Management/ Comptabilité Contrôle Finances/ Economie de la Firme
 markdown: kramdown
 theme: jekyll-theme-cayman
+footer_content: "© 2023 - Rohan Fossé"
 
 kramdown:
   parse_block_html: true
