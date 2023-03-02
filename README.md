@@ -276,12 +276,12 @@ Il faut noter que puisque j'ai changé le nom de la fonction en `appreciation_se
 Une façon de traduire ce code en français serait :
 
 ```php
-Je sélectionne la variable `note`.
-- Si je suis dans le cas où la `note`est comprise entre 0 et 9, alors appréciation = "ajournée"
-- Si je suis dans le cas où la `note`est comprise entre 10 et 11, alors appréciation = "passable"
-- Si je suis dans le cas où la `note`est comprise entre 12 et 13, alors appréciation = "assez bien"
-- Si je suis dans le cas où la `note`est comprise entre 14 et 15, alors appréciation = "bien"
-- Si je suis dans le cas où la `note`est comprise entre 16 et 17, alors appréciation = "très bien"`
+Je sélectionne la variable note.
+- Si je suis dans le cas où la note est comprise entre 0 et 9, alors appréciation = "ajournée"
+- Si je suis dans le cas où la note est comprise entre 10 et 11, alors appréciation = "passable"
+- Si je suis dans le cas où la note est comprise entre 12 et 13, alors appréciation = "assez bien"
+- Si je suis dans le cas où la note est comprise entre 14 et 15, alors appréciation = "bien"
+- Si je suis dans le cas où la note est comprise entre 16 et 17, alors appréciation = "très bien"
 - Sinon, appréciation = "excellent"
 ````
 
@@ -304,7 +304,7 @@ Il existe plusieurs fenêtres prédéfinies en VBA.
 La saisie de texte se fait avec la fenêtre `InputBox`. Par exemple, pour afficher la fenêtre `InputBox` avec le message `Entrez un nombre` et stocker le résultat dans la variable `nombre`, on utilise la syntaxe suivante :
 
 ```php
-Dim nombre As Integer ' Déclaration de la variable nombre de type Integer
+Dim nombre As Integer ' Déclaration de la variable nombre de type Integer '
 nombre = InputBox("Entrez un nombre")
 ```
 
@@ -313,8 +313,8 @@ A la suite de ça, la variable `nombre` contient la valeur saisie par l'utilisat
 Si l'on souhaite maintenant afficher la même fenêtre mais en changeant le titre par `Mon titre`, on utilise la syntaxe suivante :
 
 ```php
-Dim nombre As Integer ' Déclaration de la variable nombre de type Integer
-Dim titre As String ' Déclaration de la variable titre de type String
+Dim nombre As Integer ' Déclaration de la variable nombre de type Integer'
+Dim titre As String ' Déclaration de la variable titre de type String'
 
 titre = "Mon titre"
 nombre = InputBox("Entrez un nombre", titre)
@@ -323,9 +323,9 @@ nombre = InputBox("Entrez un nombre", titre)
 Enfin, si l'on souhaite en plus que la valeur par défaut soit `1`, on utilise la syntaxe suivante :
 
 ```php
-Dim nombre As Integer ' Déclaration de la variable nombre de type Integer
-Dim titre As String ' Déclaration de la variable titre de type String
-Dim defaut As Integer ' Déclaration de la variable defaut de type Integer
+Dim nombre As Integer ' Déclaration de la variable nombre de type Integer'
+Dim titre As String ' Déclaration de la variable titre de type String'
+Dim defaut As Integer ' Déclaration de la variable defaut de type Integer'
 
 titre = "Mon titre"
 valeur_par_defaut = 1
