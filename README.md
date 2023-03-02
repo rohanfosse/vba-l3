@@ -20,6 +20,8 @@ Une variable est un espace mémoire qui permet de stocker une valeur. En VBA, on
 * `String` : chaîne de caractères
 * `Boolean` : booléen (vrai ou faux)
 
+Il existe aussi un type `Variant` qui permet de stocker n'importe quel type de variable.
+
 Pour déclarer une variable, on utilise la syntaxe suivante :
 
     Dim nom_variable As type_variable
@@ -30,7 +32,8 @@ Par exemple, pour déclarer une variable `a` de type `Integer`, on utilise la sy
 
 Pour déclarer plusieurs variables du même type, on peut utiliser la syntaxe suivante :
 
-    Dim a, b, c As Integer
+    Dim a As Integer, b As Integer, c As Integer
+
 
 ### Les procédures
 
