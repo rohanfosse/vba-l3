@@ -824,6 +824,8 @@ Function double_tableau(tab() As Integer, n As Integer) As Boolean
 End Function
 ```
 
+</details>
+
 </div>
 </div>
 
