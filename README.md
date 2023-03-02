@@ -231,3 +231,19 @@ Pour afficher la fenêtre `MsgBox` avec le message "a", le titre "Message" et le
                 verifier_note_case = "Erreur"
         End Select
     End Function
+
+# Exercices
+
+## Exercice 1
+
+### Enoncé
+
+Ecrire une fonction `perimetre` calculant le perimètre d'un cercle prenant en paramètre un entier correspondant à son rayon.
+
+<details>
+  <summary>Solution</summary>
+  
+    Function perimetre(rayon As Integer) As Integer
+        perimetre = 2 * 3.14 * rayon
+    End Function
+</details>
