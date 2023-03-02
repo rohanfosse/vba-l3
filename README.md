@@ -32,19 +32,19 @@ Dim nom_variable As type_variable
 
 Par exemple, pour déclarer une variable `a` de type `Integer`, on utilise la syntaxe suivante :
 
-```vba
+```php
 Dim a As Integer
 ```
 
 Pour déclarer plusieurs variables du même type, on peut utiliser la syntaxe suivante :
 
-```vba
+```php
 Dim a As Integer, b As Integer, c As Integer
 ```
 
 Attention, la syntaxe suivante n'est pas valide:
 
-```vba
+```php
 Dim a, b, c As Integer
 ```
 
@@ -56,7 +56,7 @@ En effet, cette syntaxe défini les variables `a` et `b` comme étant de type `V
 
 Une procédure est une fonction qui ne renvoie pas de valeur. Pour déclarer une procédure, on utilise la syntaxe suivante :
 
-```vba
+```php
 Sub nom_procédure()
     ' instructions
 End Sub
@@ -64,7 +64,7 @@ End Sub
 
 Par exemple, pour déclarer une procédure `afficher_a`, on utilise la syntaxe suivante :
 
-```vba
+```php
 Sub afficher_a()
     MsgBox "a"
 End Sub
@@ -78,7 +78,7 @@ Pour appeler une procédure, il suffit de cliquer sur le code de la procédure e
 
 Une fonction est une procédure qui renvoie une valeur. Pour déclarer une fonction, on utilise la syntaxe suivante :
 
-```vba
+```php
 Function nom_fonction() As type_variable
     ' instructions
     nom_fonction = valeur
@@ -91,7 +91,7 @@ Il est important de noter que la valeur retournée doit être du même type que 
 
 Par exemple, pour déclarer une fonction `retourner_a` qui retourne la lettre "a", on utilise la syntaxe suivante :
 
-```vba
+```php
 Function retourner_a() As String
     retourner_a = "a"
 End Function
@@ -101,7 +101,7 @@ Dans notre exemple, la fonction `retourner_a` retourne une valeur de type `Strin
 
 Si jamais nous souhaitons retourner une valeur de type `Integer`, par exemple 1, il faudra modifier la fonction comme suit :
 
-```vba
+```php
 Function retourner_a() As Integer
     retourner_a = 1
 End Function
@@ -109,7 +109,7 @@ End Function
 
 Pour afficher cette fonction, on peut définir la procédure suivante :
 
-```vba
+```php
 Sub afficher_a()
     MsgBox retourner_a()
 End Sub
@@ -117,7 +117,7 @@ End Sub
 
 Une fonction peut avoir plusieurs paramètres. Pour déclarer une fonction avec plusieurs paramètres, on utilise la syntaxe suivante :
 
-```vba
+```php
 Function nom_fonction(paramètre1 As type_variable, paramètre2 As type_variable) As type_variable
     ' instructions
     nom_fonction = valeur
@@ -126,7 +126,7 @@ End Function
 
 Par exemple, si nous souhaitons déclarer une fonction `aire_rectangle` qui retourne l'aire d'un rectangle, on utilise la syntaxe suivante :
 
-```vba
+```php
 Function aire_rectangle(longueur As Integer, largeur As Integer) As Integer
     aire_rectangle = longueur * largeur
 End Function
@@ -134,7 +134,7 @@ End Function
 
 Pour appeler cette fonction, on peut définir la procédure suivante :
 
-```vba
+```php
 Sub afficher_aire_rectangle()
     MsgBox aire_rectangle(10, 5)
 End Sub
@@ -144,7 +144,7 @@ Il est important de noter que dans l'appel de la fonction `aire_rectangle`, on n
 
 Ainsi, une autre façon d'appeler cette procédure serait par exemple :
 
-```vba
+```php
 Sub afficher_aire_rectangle()
     MsgBox aire_rectangle(8, 10)
 End Sub
@@ -156,7 +156,7 @@ End Sub
 
 Pour définir une condition, on utilise la syntaxe suivante :
 
-```vba
+```php
 If condition Then
     ' instructions
 End If
@@ -164,7 +164,7 @@ End If
 
 Pour définir une condition avec un `else`, on utilise la syntaxe suivante :
 
-```vba
+```php
 If condition Then
     ' instructions
 Else
@@ -176,7 +176,7 @@ Le `else` est exécuté si la condition n'est pas vérifiée. Il peut se traduir
 
 Pour définir une condition avec plusieurs `else if`, on utilise la syntaxe suivante :
 
-```vba
+```php
 If condition Then
     ' instructions
 ElseIf condition Then
@@ -194,7 +194,7 @@ Prenons l'exemple d'une fonction `appreciation` qui retourne une appréciation d
 
 On peut définir cette fonction comme suit :
 
-```vba
+```php
 Function appreciation(note As Integer) As String
     If note < 10 Then
         appreciation = "ajourné"
@@ -221,7 +221,7 @@ Dans ce code, plusieurs points sont à noter :
 
 Pour appeler cette fonction, on peut définir la procédure suivante :
 
-```vba
+```php
 Sub afficher_appreciation()
     MsgBox appreciation(15)
 End Sub
@@ -235,7 +235,7 @@ De la même façon que précédement, il est à noter que la valeur du paramètr
 
 Pour définir une condition avec plusieurs `else if`, il existe une autre méthode utilisant la syntaxe suivante :
 
-```vba
+```php
     Select Case variable
         Case valeur1
             ' instructions
@@ -252,7 +252,7 @@ Les deux façons de définir une condition sont ***équivalentes***, le `Select 
 
 Si nous reprenons l'exemple de la fonction `appreciation` précédente, on peut définir cette fonction comme suit :
 
-```vba
+```php
 Function appreciation_select(note As Integer) As String
     Select Case note
         Case 0 To 9
@@ -275,7 +275,7 @@ Il faut noter que puisque j'ai changé le nom de la fonction en `appreciation_se
 
 Une façon de traduire ce code en français serait :
 
-```vba
+```php
 Je sélectionne la variable `note`.
 - Si je suis dans le cas où la `note`est comprise entre 0 et 9, alors appréciation = "ajournée"
 - Si je suis dans le cas où la `note`est comprise entre 10 et 11, alors appréciation = "passable"
@@ -287,7 +287,7 @@ Je sélectionne la variable `note`.
 
 De la même façon que pour les `Else If`, on peut définir la procédure suivante pour appeler la fonction:
 
-```vba
+```php
 Sub afficher_appreciation()
     MsgBox appreciation(15)
 End Sub
@@ -303,7 +303,7 @@ Il existe plusieurs fenêtres prédéfinies en VBA.
 
 La saisie de texte se fait avec la fenêtre `InputBox`. Par exemple, pour afficher la fenêtre `InputBox` avec le message `Entrez un nombre` et stocker le résultat dans la variable `nombre`, on utilise la syntaxe suivante :
 
-```vba
+```php
 Dim nombre As Integer ' Déclaration de la variable nombre de type Integer
 nombre = InputBox("Entrez un nombre")
 ```
@@ -312,7 +312,7 @@ A la suite de ça, la variable `nombre` contient la valeur saisie par l'utilisat
 
 Si l'on souhaite maintenant afficher la même fenêtre mais en changeant le titre par `Mon titre`, on utilise la syntaxe suivante :
 
-```vba
+```php
 Dim nombre As Integer ' Déclaration de la variable nombre de type Integer
 Dim titre As String ' Déclaration de la variable titre de type String
 
@@ -322,7 +322,7 @@ nombre = InputBox("Entrez un nombre", titre)
 
 Enfin, si l'on souhaite en plus que la valeur par défaut soit `1`, on utilise la syntaxe suivante :
 
-```vba
+```php
 Dim nombre As Integer ' Déclaration de la variable nombre de type Integer
 Dim titre As String ' Déclaration de la variable titre de type String
 Dim defaut As Integer ' Déclaration de la variable defaut de type Integer
@@ -342,25 +342,25 @@ Pour d'autres exemples, voir la section [Exemples supplémentaires](#exemples).
 
 L'affichage d'un message se fait avec la fenêtre `MsgBox`. Par exemple, pour afficher la fenêtre `MsgBox` avec le message "a", on utilise la syntaxe suivante :
 
-```vba
+```php
 MsgBox "a"
 ````
 
 Pour afficher la fenêtre `MsgBox` avec le message "a" et le titre "Message", on utilise la syntaxe suivante :
 
-```vba
+```php
 MsgBox "a", vbInformation, "Message"
 ```
 
 Pour afficher la fenêtre `MsgBox` avec le message "a", le titre "Message" et le bouton "OK", on utilise la syntaxe suivante :
 
-```vba
+```php
 MsgBox "a", vbInformation + vbOKOnly, "Message"
 ```
 
 Pour afficher la fenêtre `MsgBox` avec le message "a", le titre "Message" et les boutons "Oui" et "Non", on utilise la syntaxe suivante :
 
-```vba
+```php
 MsgBox "a", vbInformation + vbYesNo, "Message"
 ```
 
@@ -372,7 +372,7 @@ MsgBox "a", vbInformation + vbYesNo, "Message"
 
 #### En utilisant une structure `if`
 
-```vba
+```php
 Function verifier_note(note As Integer) As String
     If note < 10 Then
         verifier_note = "Insuffisant"
@@ -392,7 +392,7 @@ End Function
 
 #### En utilisant une structure `select case`
 
-```vba
+```php
 Function verifier_note_case(note As Integer) As String
     Select Case note
         Case 0 To 9
@@ -423,7 +423,7 @@ On affichera le résultat à l'aide d'une procédure `afficher_perimetre`.
 
 <details><summary markdown="span">Solution</summary>
 
-```vba
+```php
 Function perimetre(rayon As Integer) As Single
         perimetre = 2 * 3.14 * rayon
 End Function
