@@ -3,13 +3,32 @@
 Vous trouverez ici des notes de cours relatives au cours de VBA de l'Université de Bordeaux Montaigne.
 Vous pouvez trouver les slides sur la plateforme moodle [ici](https://fad4.u-bordeaux.fr/pluginfile.php/2050621/mod_resource/content/1/3_S%C3%A9ance_3_VBA%20pour%20Excel_L3_Part1.pdf)
 
-{:toc}
+
+@import "[TOC]" {cmd="toc" depthFrom=2 depthTo=3 orderedList=false}
+
+<!-- code_chunk_output -->
+
+- [Avant de commencer](#-avant-de-commencer)
+- [Séance 3](#-séance-3)
+  - [Les variables](#-les-variables)
+  - [Les procédures](#-les-procédures)
+  - [Les fonctions](#-les-fonctions)
+  - [Les conditions](#-les-conditions)
+  - [Select Case](#-select-case)
+  - [Les fenêtres prédéfinies](#-les-fenêtres-prédéfinies)
+- [Exemples supplémentaires ](#-exemples-supplémentaires-a-nameexemplesa)
+  - [Exemple de fonction utilisant une condition (vérification de notes)](#-exemple-de-fonction-utilisant-une-condition-vérification-de-notes)
+- [Exercices Corrigés ](#-exercices-corrigés-a-nameexercicesa)
+  - [Exercice 1](#-exercice-1)
+
+<!-- /code_chunk_output -->
+
 
 ## Avant de commencer
 
 Pensez à activer la case Développeur dans les options d'Excel. Pour cela, allez dans le menu `Fichier` puis `Options` et cliquez sur `Personnaliser le ruban`. Dans la fenêtre qui s'ouvre, cliquez sur `Développeur` dans la liste de gauche et cochez la case `Afficher la barre de développeur`.
 
-## Les bases
+## Séance 3
 
 ---
 
