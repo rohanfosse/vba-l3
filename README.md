@@ -448,9 +448,10 @@ Ecrire une fonction `perimetre` calculant le perimètre d'un cercle prenant en p
 La valeur 3.14 sera utilisée pour la constante pi.
 On affichera le résultat à l'aide d'une procédure `afficher_perimetre`.
 
-<details><summary>Solution</summary>
+<details>
+<summary>Solution</summary>
 
-```php
+{% hightlight php %}
 Function perimetre(rayon As Integer) As Single
         perimetre = 2 * 3.14 * rayon
 End Function
@@ -458,6 +459,6 @@ End Function
 Sub afficher_perimetre()
     MsgBox perimetre(1)
 End Sub
-```
+{% endhightlight %}
 
 </details>
