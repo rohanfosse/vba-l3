@@ -424,7 +424,6 @@ On affichera le résultat à l'aide d'une procédure `afficher_perimetre`.
 <details><summary markdown="span">Solution</summary>
 
 ```vba
-
 Function perimetre(rayon As Integer) As Single
         perimetre = 2 * 3.14 * rayon
 End Function
