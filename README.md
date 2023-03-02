@@ -58,7 +58,7 @@ Une procédure est une fonction qui ne renvoie pas de valeur. Pour déclarer une
 
 ```php
 Sub nom_procédure()
-    ' instructions
+    ' instructions '
 End Sub
 ```
 
@@ -80,7 +80,7 @@ Une fonction est une procédure qui renvoie une valeur. Pour déclarer une fonct
 
 ```php
 Function nom_fonction() As type_variable
-    ' instructions
+    ' instructions '
     nom_fonction = valeur
 End Function
 ```
@@ -119,7 +119,7 @@ Une fonction peut avoir plusieurs paramètres. Pour déclarer une fonction avec 
 
 ```php
 Function nom_fonction(paramètre1 As type_variable, paramètre2 As type_variable) As type_variable
-    ' instructions
+    ' instructions '
     nom_fonction = valeur
 End Function
 ```
@@ -158,7 +158,7 @@ Pour définir une condition, on utilise la syntaxe suivante :
 
 ```php
 If condition Then
-    ' instructions
+    ' instructions '
 End If
 ```
 
@@ -166,9 +166,9 @@ Pour définir une condition avec un `else`, on utilise la syntaxe suivante :
 
 ```php
 If condition Then
-    ' instructions
+    ' instructions '
 Else
-    ' instructions
+    ' instructions '
 End If
 ```
 
@@ -178,13 +178,13 @@ Pour définir une condition avec plusieurs `else if`, on utilise la syntaxe suiv
 
 ```php
 If condition Then
-    ' instructions
+    ' instructions '
 ElseIf condition Then
-    ' instructions
+    ' instructions '
 ElseIf condition Then
-    ' instructions
+    ' instructions '
 Else
-    ' instructions
+    ' instructions '
 End If
 ```
 
@@ -238,13 +238,13 @@ Pour définir une condition avec plusieurs `else if`, il existe une autre métho
 ```php
     Select Case variable
         Case valeur1
-            ' instructions
+            ' instructions '
         Case valeur2
-            ' instructions
+            ' instructions '
         Case valeur3
-            ' instructions
+            ' instructions '
         Case Else
-            ' instructions
+            ' instructions '
     End Select
 ```
 
