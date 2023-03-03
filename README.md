@@ -506,7 +506,7 @@ End Sub
 
 ---
 
-### Exercices Corrigés <a name="exercices-corriges"></a>
+### Exercices Corrigés <a name="-exercices-corriges"></a>
 
 Si vous souhaitez vous entrainer, voici quelques exercices corrigés.
 
@@ -832,7 +832,7 @@ Set app = Application
 app.Run "NomDeLaMacro", "param1", "param2"
 ```
 
-### Exercices Corrigés <a name="exercices-corriges-4"></a>
+### Exercices Corrigés <a name="-exercices-corriges-4"></a>
 
 #### Exercice 1 <a name="exercice-1-4"></a>
 
