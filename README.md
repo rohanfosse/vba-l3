@@ -99,7 +99,6 @@ Les différents blocs de code sont :
 - `Do` : pour définir une boucle do while
 - `Select Case` : pour définir une condition switch
 
-
 ---
 
 ### Les procédures <a name="-les-procedures"></a>
