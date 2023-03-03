@@ -11,7 +11,7 @@ Vous pouvez trouver le cours sur cette page [moodle](https://fad4.u-bordeaux.fr/
 <!-- code_chunk_output -->
 
 - [Avant de commencer ](#-avant-de-commencer)
-- [Séance 3 ](#-seance-3)
+- [Première partie ](#-seance-3)
   - [Les variables ](#-les-variables)
   - [Les procédures ](#-les-procedures)
   - [Les fonctions ](#-les-fonctions)
@@ -19,7 +19,7 @@ Vous pouvez trouver le cours sur cette page [moodle](https://fad4.u-bordeaux.fr/
   - [Select Case ](#-select-case)
   - [Les fenêtres prédéfinies ](#-les-fenetres-predefinies)
   - [Exercices Corrigés ](#-exercices-corriges)
-- [Séance 4 ](#-seance-4)
+- [Seconde Partie ](#-seance-4)
   - [Les boucles ](#-les-boucles)
   - [Communication avec Excel ](#-communication-avec-excel)
 <!-- /code_chunk_output -->
@@ -32,7 +32,7 @@ Pensez à activer la case Développeur dans les options d'Excel. Pour cela, alle
 
 ---
 
-## Séance 3 <a name="-seance-3"></a>
+## Première partie <a name="-seance-3"></a>
 
 ### Les variables <a name="-les-variables"></a>
 
@@ -490,7 +490,7 @@ End Function
 {% endhighlight %}
 </details>
 
-## Séance 4 <a name="seance-4"></a>
+## Seconde partie <a name="seance-4"></a>
 
 ### Les boucles <a name="les-boucles"></a>
 
