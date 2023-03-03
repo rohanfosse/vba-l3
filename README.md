@@ -23,6 +23,7 @@ Vous pouvez trouver le cours sur cette page [moodle](https://fad4.u-bordeaux.fr/
 - [Seconde Partie ](#-seance-4)
   - [Les boucles ](#-les-boucles)
   - [Communication avec Excel ](#-communication-avec-excel)
+  - [Exercices Corrigés ](#-exercices-corriges-4)
 <!-- /code_chunk_output -->
 
 ---
@@ -871,6 +872,39 @@ Function double_tableau(tab() As Integer, n As Integer) As Boolean
     Loop
 
     double_tableau = resultat
+End Function
+```
+</details>
+
+#### Exercice 3 <a name="exercice-3-4"></a>
+
+Ecrire une fonction `fibonnacci` qui prend en paramètre un entier `n` et retourne les `n` premiers termes de la suite de Fibonacci. Pour cela, on stockera les termes de la suite dans un tableau.
+
+Pour rappel, la suite de Fibonacci est définie par la relation suivante :
+
+```php
+f(0) = 0
+f(1) = 1
+f(n) = f(n-1) + f(n-2)
+```
+
+Voici une solution possible :
+
+<details>
+
+```php
+Function fibonacci(n As Integer) As Variant
+    Dim tab(n) As Integer
+    Dim i As Integer
+
+    tab(0) = 0
+    tab(1) = 1
+
+    For i = 2 To n
+        tab(i) = tab(i - 1) + tab(i - 2)
+    Next i
+
+    fibonacci = tab
 End Function
 ```
 
