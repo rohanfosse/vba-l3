@@ -77,6 +77,31 @@ En effet, cette syntaxe défini les variables `a` et `b` comme étant de type `V
 
 ---
 
+### Les blocs de code <a name="-les-blocs-de-code"></a>
+
+Un bloc de code est un ensemble d'instructions qui sont exécutées les unes après les autres. Pour définir un bloc de code, on utilise la syntaxe suivante :
+
+```php
+Bloc nom()
+    ' instructions '
+End Bloc
+```
+
+Il est important de noter que si l'on ouvre un bloc de code, il faut le fermer avec `End Bloc`.
+
+Les différents blocs de code sont :
+
+- `Sub` : pour définir une procédure
+- `Function` : pour définir une fonction
+- `If` : pour définir une condition
+- `For` : pour définir une boucle for
+- `While` : pour définir une boucle while
+- `Do` : pour définir une boucle do while
+- `Select Case` : pour définir une condition switch
+
+
+---
+
 ### Les procédures <a name="-les-procedures"></a>
 
 Une procédure est une fonction qui ne renvoie pas de valeur. Pour déclarer une procédure, on utilise la syntaxe suivante :
