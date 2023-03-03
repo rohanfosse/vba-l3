@@ -421,7 +421,7 @@ Enfin, si l'on souhaite en plus que la valeur par défaut soit `1`, on utilise l
 ```php
 Dim nombre As Integer ' Déclaration de la variable nombre de type Integer'
 Dim titre As String ' Déclaration de la variable titre de type String'
-Dim defaut As Integer ' Déclaration de la variable defaut de type Integer'
+Dim valeur_par_defaut As Integer ' Déclaration de la variable defaut de type Integer'
 
 titre = "Mon titre"
 valeur_par_defaut = 1

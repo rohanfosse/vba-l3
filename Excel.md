@@ -132,9 +132,6 @@ La fonction `NB.SI` permet de compter le nombre de cellules qui vérifient une c
 
 La syntaxe est la suivante : `=NB.SI(CL;Condition)` où `CL` est la référence de la plage de cellules et `Condition` est l'expression logique.
 
-Par exemple, considérons le tableau suivant:
-
-
-
+Par exemple, considérons le tableau suivant, représentant un ensemble de ventes:
 
 
