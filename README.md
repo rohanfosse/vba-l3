@@ -878,7 +878,7 @@ End Function
 
 #### Exercice 3 <a name="exercice-3-4"></a>
 
-Ecrire une fonction `fibonnacci` qui prend en paramètre un entier `n` et retourne les `n` premiers termes de la suite de Fibonacci. Pour cela, on stockera les termes de la suite dans un tableau.
+Ecrire une fonction `fibonacci` qui prend en paramètre un entier `n` et retourne les `n` premiers termes de la suite de Fibonacci. Pour cela, on stockera les termes de la suite dans un tableau. Le type de retour de la fonction est `Variant` car on ne connait pas à l'avance la taille du tableau.
 
 Pour rappel, la suite de Fibonacci est définie par la relation suivante :
 
