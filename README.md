@@ -16,6 +16,7 @@ Vous pouvez trouver le cours sur cette page [moodle](https://fad4.u-bordeaux.fr/
   - [Les procédures ](#-les-procedures)
   - [Les fonctions ](#-les-fonctions)
   - [Les conditions ](#-les-conditions)
+  - [Les opérateurs logiques](#-les-operateurs-logiques) 
   - [Select Case ](#-select-case)
   - [Les fenêtres prédéfinies ](#-les-fenetres-predefinies)
   - [Exercices Corrigés ](#-exercices-corriges)
@@ -85,11 +86,11 @@ Sub nom_procédure()
 End Sub
 ```
 
-Par exemple, pour déclarer une procédure `afficher_a`, on utilise la syntaxe suivante :
+Par exemple, pour déclarer une procédure `afficher_message`, on utilise la syntaxe suivante :
 
 ```php
-Sub afficher_a()
-    MsgBox "a"
+Sub afficher_message()
+    MsgBox "Mon message"
 End Sub
 ```
 
@@ -254,6 +255,42 @@ De la même façon que précédement, il est à noter que la valeur du paramètr
 
 ---
 
+### Les opérateurs logiques <a name="-les-operateurs-logiques"></a>
+
+Les opérateurs logiques permettent de comparer des valeurs entre elles. Les opérateurs logiques sont les suivants :
+
+- `=` : égal à
+- `<>` : différent de
+- `>` : supérieur à
+- `<` : inférieur à
+- `>=` : supérieur ou égal à
+- `<=` : inférieur ou égal à
+
+Par exemple, pour comparer deux variables `a` et `b`, on utilise la syntaxe suivante :
+
+```php
+If a = b Then
+    ' instructions '
+End If
+```
+
+Si l'on souhaite faire plusieurs comparaisons à la suite, on peut utiliser les opérateurs logiques suivants :
+
+- `And` : et
+- `Or` : ou
+- `Not` : non
+
+Par exemple, pour comparer deux variables `a` et `b`, on utilise la syntaxe suivante :
+
+```php
+
+If a = b And a > 0 Then
+    ' instructions '
+End If
+```
+
+---
+
 ### Select Case <a name="-select-case"></a>
 
 Pour définir une condition avec plusieurs `else if`, il existe une autre méthode utilisant la syntaxe suivante :
@@ -272,6 +309,17 @@ Pour définir une condition avec plusieurs `else if`, il existe une autre métho
 ```
 
 Les deux façons de définir une condition sont **_équivalentes_**, le `Select Case` est simplement une méthode plus concise.
+
+Les mots clés autorisés dans un `Case` sont les suivants :
+
+- `Is` : égal à
+- `Is Not` : différent de
+- `>` : supérieur à
+- `<` : inférieur à
+- `>=` : supérieur ou égal à
+- `<=` : inférieur ou égal à
+- `To` : entre
+
 
 Si nous reprenons l'exemple de la fonction `appreciation` précédente, on peut définir cette fonction comme suit :
 
@@ -489,6 +537,11 @@ calculer_somme = nombre1 + nombre2
 End Function
 {% endhighlight %}
 </details>
+
+#### Exercice 4 <a name="exercice-4"></a>
+
+Ecrire une fonction `confirmation_
+
 
 ## Seconde partie <a name="seance-4"></a>
 
