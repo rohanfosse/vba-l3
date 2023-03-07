@@ -18,17 +18,19 @@ Vous pouvez retrouver la correction de l'exercice 1 de la séance 3 [ici](s3-ex1
 <!-- code_chunk_output -->
 
 - [Avant de commencer ](#-avant-de-commencer)
-- [Séance 3 ](#-seance-3)
+- [Première partie ](#-seance-3)
   - [Les variables ](#-les-variables)
   - [Les procédures ](#-les-procedures)
   - [Les fonctions ](#-les-fonctions)
   - [Les conditions ](#-les-conditions)
+  - [Les opérateurs logiques](#-les-operateurs-logiques) 
   - [Select Case ](#-select-case)
   - [Les fenêtres prédéfinies ](#-les-fenetres-predefinies)
   - [Exercices Corrigés ](#-exercices-corriges)
-- [Séance 4 ](#-seance-4)
+- [Seconde Partie ](#-seance-4)
   - [Les boucles ](#-les-boucles)
   - [Communication avec Excel ](#-communication-avec-excel)
+  - [Exercices Corrigés ](#-exercices-corriges-4)
 <!-- /code_chunk_output -->
 
 ---
@@ -39,7 +41,7 @@ Pensez à activer la case Développeur dans les options d'Excel. Pour cela, alle
 
 ---
 
-## Séance 3 <a name="-seance-3"></a>
+## Première partie <a name="-seance-3"></a>
 
 ### Les variables <a name="-les-variables"></a>
 
@@ -82,6 +84,30 @@ En effet, cette syntaxe défini les variables `a` et `b` comme étant de type `V
 
 ---
 
+### Les blocs de code <a name="-les-blocs-de-code"></a>
+
+Un bloc de code est un ensemble d'instructions qui sont exécutées les unes après les autres. Pour définir un bloc de code, on utilise la syntaxe suivante :
+
+```php
+Bloc nom()
+    ' instructions '
+End Bloc
+```
+
+Il est important de noter que si l'on ouvre un bloc de code, il faut le fermer avec `End Bloc`.
+
+Les différents blocs de code sont :
+
+- `Sub` : pour définir une procédure
+- `Function` : pour définir une fonction
+- `If` : pour définir une condition
+- `For` : pour définir une boucle for
+- `While` : pour définir une boucle while
+- `Do` : pour définir une boucle do while
+- `Select Case` : pour définir une condition switch
+
+---
+
 ### Les procédures <a name="-les-procedures"></a>
 
 Une procédure est une fonction qui ne renvoie pas de valeur. Pour déclarer une procédure, on utilise la syntaxe suivante :
@@ -92,11 +118,11 @@ Sub nom_procédure()
 End Sub
 ```
 
-Par exemple, pour déclarer une procédure `afficher_a`, on utilise la syntaxe suivante :
+Par exemple, pour déclarer une procédure `afficher_message`, on utilise la syntaxe suivante :
 
 ```php
-Sub afficher_a()
-    MsgBox "a"
+Sub afficher_message()
+    MsgBox "Mon message"
 End Sub
 ```
 
@@ -261,6 +287,42 @@ De la même façon que précédement, il est à noter que la valeur du paramètr
 
 ---
 
+### Les opérateurs logiques <a name="-les-operateurs-logiques"></a>
+
+Les opérateurs logiques permettent de comparer des valeurs entre elles. Les opérateurs logiques sont les suivants :
+
+- `=` : égal à
+- `<>` : différent de
+- `>` : supérieur à
+- `<` : inférieur à
+- `>=` : supérieur ou égal à
+- `<=` : inférieur ou égal à
+
+Par exemple, pour comparer deux variables `a` et `b`, on utilise la syntaxe suivante :
+
+```php
+If a = b Then
+    ' instructions '
+End If
+```
+
+Si l'on souhaite faire plusieurs comparaisons à la suite, on peut utiliser les opérateurs logiques suivants :
+
+- `And` : et
+- `Or` : ou
+- `Not` : non
+
+Par exemple, pour comparer deux variables `a` et `b`, on utilise la syntaxe suivante :
+
+```php
+
+If a = b And a > 0 Then
+    ' instructions '
+End If
+```
+
+---
+
 ### Select Case <a name="-select-case"></a>
 
 Pour définir une condition avec plusieurs `else if`, il existe une autre méthode utilisant la syntaxe suivante :
@@ -279,6 +341,17 @@ Pour définir une condition avec plusieurs `else if`, il existe une autre métho
 ```
 
 Les deux façons de définir une condition sont **_équivalentes_**, le `Select Case` est simplement une méthode plus concise.
+
+Les mots clés autorisés dans un `Case` sont les suivants :
+
+- `Is` : égal à
+- `Is Not` : différent de
+- `>` : supérieur à
+- `<` : inférieur à
+- `>=` : supérieur ou égal à
+- `<=` : inférieur ou égal à
+- `To` : entre
+
 
 Si nous reprenons l'exemple de la fonction `appreciation` précédente, on peut définir cette fonction comme suit :
 
@@ -355,7 +428,7 @@ Enfin, si l'on souhaite en plus que la valeur par défaut soit `1`, on utilise l
 ```php
 Dim nombre As Integer ' Déclaration de la variable nombre de type Integer'
 Dim titre As String ' Déclaration de la variable titre de type String'
-Dim defaut As Integer ' Déclaration de la variable defaut de type Integer'
+Dim valeur_par_defaut As Integer ' Déclaration de la variable defaut de type Integer'
 
 titre = "Mon titre"
 valeur_par_defaut = 1
@@ -440,7 +513,7 @@ End Sub
 
 ---
 
-### Exercices Corrigés <a name="exercices-corriges"></a>
+### Exercices Corrigés <a name="-exercices-corriges"></a>
 
 Si vous souhaitez vous entrainer, voici quelques exercices corrigés.
 
@@ -497,7 +570,12 @@ End Function
 {% endhighlight %}
 </details>
 
-## Séance 4 <a name="seance-4"></a>
+#### Exercice 4 <a name="exercice-4"></a>
+
+Ecrire une fonction `confirmation_
+
+
+## Seconde partie <a name="seance-4"></a>
 
 ### Les boucles <a name="les-boucles"></a>
 
@@ -761,7 +839,7 @@ Set app = Application
 app.Run "NomDeLaMacro", "param1", "param2"
 ```
 
-### Exercices Corrigés <a name="exercices-corriges-4"></a>
+### Exercices Corrigés <a name="-exercices-corriges-4"></a>
 
 #### Exercice 1 <a name="exercice-1-4"></a>
 
@@ -825,6 +903,39 @@ Function double_tableau(tab() As Integer, n As Integer) As Boolean
     Loop
 
     double_tableau = resultat
+End Function
+```
+</details>
+
+#### Exercice 3 <a name="exercice-3-4"></a>
+
+Ecrire une fonction `fibonacci` qui prend en paramètre un entier `n` et retourne un tableau contenant les `n` premiers termes de la suite de Fibonacci. Le type de retour de la fonction est `Variant` car on ne connait pas à l'avance la taille du tableau.
+
+Pour rappel, la suite de Fibonacci est définie par la relation suivante :
+
+```php
+f(0) = 0
+f(1) = 1
+f(n) = f(n-1) + f(n-2)
+```
+
+Voici une solution possible :
+
+<details>
+
+```php
+Function fibonacci(n As Integer) As Variant
+    Dim tab(n) As Integer
+    Dim i As Integer
+
+    tab(0) = 0
+    tab(1) = 1
+
+    For i = 2 To n
+        tab(i) = tab(i - 1) + tab(i - 2)
+    Next i
+
+    fibonacci = tab
 End Function
 ```
 
