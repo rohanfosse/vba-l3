@@ -1,4 +1,4 @@
-# Séance 3
+# Séance 3 - Correction d'exercices
 
 Pour revenir aux notes de cours, [cliquez ici](README.md)
 
