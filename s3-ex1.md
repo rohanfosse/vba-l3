@@ -11,7 +11,11 @@ Ecrire une fonction nommée `taux`renvoyant le taux du livret A à 3,5%.
 
 #### Correction
 
-Pour écrire cette fonction, il suffit de déclarer une fonction `taux` qui renvoie un nombre à virgule flottante, et de renvoyer la valeur 0,035. Pour rappel, si l'on souhaite renvoyer une valeur dans une fonction en VBA, il faut utiliser une variable du même nom que la fonction, et lui affecter la valeur à renvoyer.
+Pour écrire cette fonction, il suffit de déclarer une fonction `taux` qui renvoie un nombre à virgule flottante (un Single en VBA), et de renvoyer la valeur `0,035`.
+
+Pour rappel, si l'on souhaite renvoyer une valeur dans une fonction en VBA, il faut utiliser une variable du **même nom** que la fonction, et lui affecter la valeur à renvoyer.
+
+La procédure sera simplement composée d'un appel de fonction, et d'un affichage de la valeur renvoyée par la fonction.
 
 Voici une solution possible:
 <details>
