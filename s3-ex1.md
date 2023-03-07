@@ -254,7 +254,11 @@ End Sub
 
 ### Question 7
 
-Refaire la question précédente en mettant en oeuvre l'instruction `Application.InputBox`, afin de contrôler la saisie d'un nombre entier. Paramétrer également le messsage de sortie d'écran avec un bouton `Oui`, `Non` et `Annuler`, permettant de récupérer la réponse de l'utilisateur à la question `Etes-vous satisfait?`. Si la réponse est `Oui`, le message `Bien` s'affichera. Si la réponse est `Non`, le message `Dommage` s'affichera. Si la réponse est `Annuler`, le message `Vous n'avez pas répondu` s'affichera.
+Refaire la question précédente en mettant en oeuvre l'instruction `Application.InputBox`, afin de contrôler la saisie d'un nombre entier.
+
+Paramétrer également le messsage de sortie d'écran avec un bouton `Oui`, `Non` et `Annuler`, permettant de récupérer la réponse de l'utilisateur à la question `Etes-vous satisfait?`.
+
+Si la réponse est `Oui`, le message `Bien` s'affichera. Si la réponse est `Non`, le message `Dommage` s'affichera. Si la réponse est `Annuler`, le message `Vous n'avez pas répondu` s'affichera.
 
 #### Correction
 
