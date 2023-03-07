@@ -135,6 +135,18 @@ End Sub
 
 Reprendre la question 2, en ajoutant le message texte `Inconnu` renvoyé par la fonction si l'année est inférieure à 2017 ou supérieure à 2023.
 
+#### Correction
+
+<div style="border-left:solid #17a589 4px;padding-left:10px; ">
+
+Dans cette question, il est demandé  à la fonction de renvoyer deux types de valeurs différentes, un nombre à virgule flottante, et une chaîne de caractères en fonction de la valeur de l'année.
+
+En VBA, il existe un type de variable `Variant`, qui permet de stocker n'importe quel type de valeur. Il est donc possible de renvoyer une valeur de type `Variant` dans une fonction.
+
+Voici une solution possible:
+
+<details>
+
 ```php
 'Question 4'
 
@@ -158,9 +170,29 @@ Sub appel_tauxAnInconnu()    'Procédure d appel de la fonction'
 End Sub
 ```
 
+</details>
+
+</div>
+
 ### Question 5
 
 Reprendre l'exercice en codant cette fois une procédure dans laquelle une fenêtre contextuelle demande à l'utilisateur e saisir une année comprise entre 2017 et 2023, puis affiche en sortie d'écran le taux de l'année saisie. Si l'année saisie n'est pas dans l'intervalle demandé, le programme prend fin.
+
+#### Correction
+
+<div style="border-left:solid #17a589 4px;padding-left:10px; ">
+
+Dans cette question, il est demandé de créer une procédure, et non une fonction.
+
+Pour rappel, les procédures sont des fonctions sans valeur de retour. Elles sont déclarées avec le mot clé `Sub` au lieu de `Function`.
+
+Pour demander à l'utilisateur de saisir une valeur, il faut utiliser la fonction `InputBox`. Cette fonction renvoie la valeur saisie par l'utilisateur sous forme de chaîne de caractères.
+
+Pour quitter une procédure, il faut utiliser la commande `Exit Sub`.
+
+Une solution possible est la suivante:
+
+<details>
 
 ```php
 'Question 5'
@@ -180,9 +212,13 @@ Sub question_5()
     ElseIf a = 2023 Then
         taux = 0.03
     End If
-    MsgBox "Le taux de l'année " & a & " est de: " & taux  'Il s'agit ici de la Fonction MsgBox (pas de parenthèses nécessaires)
+    MsgBox "Le taux de l'année " & a & " est de: " & taux  'Il s agit ici de la Fonction  MsgBox (pas de parenthèses nécessaires)'
 End Sub
 ```
+
+</details>
+
+</div>
 
 ### Question 6
 
