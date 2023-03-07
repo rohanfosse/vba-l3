@@ -13,8 +13,8 @@ Ecrire une fonction nommée `taux`renvoyant le taux du livret A à 3,5%.
 
 Pour écrire cette fonction, il suffit de déclarer une fonction `taux` qui renvoie un nombre à virgule flottante, et de renvoyer la valeur 0,035. Pour rappel, si l'on souhaite renvoyer une valeur dans une fonction en VBA, il faut utiliser une variable du même nom que la fonction, et lui affecter la valeur à renvoyer.
 
+Voici une solution possible:
 <details>
-<summary>Correction</summary>
 
 ```php
 'Question 1'
