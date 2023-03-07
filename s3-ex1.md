@@ -256,6 +256,18 @@ End Sub
 
 Refaire la question précédente en mettant en oeuvre l'instruction `Application.InputBox`, afin de contrôler la saisie d'un nombre entier. Paramétrer également le messsage de sortie d'écran avec un bouton `Oui`, `Non` et `Annuler`, permettant de récupérer la réponse de l'utilisateur à la question `Etes-vous satisfait?`. Si la réponse est `Oui`, le message `Bien` s'affichera. Si la réponse est `Non`, le message `Dommage` s'affichera. Si la réponse est `Annuler`, le message `Vous n'avez pas répondu` s'affichera.
 
+#### Correction
+
+<div style="border-left:solid #17a589 4px;padding-left:10px; ">
+
+Pour contrôler la saisie d'un nombre entier, il faut utiliser la fonction `Int` qui renvoie la partie entière d'un nombre flottant.
+
+Pour récupérer la réponse de l'utilisateur à la question `Etes-vous satisfait?`, il faut utiliser la fonction `MsgBox` qui renvoie la valeur de la réponse de l'utilisateur.
+
+Une solution possible est la suivante:
+
+<details>
+
 ```php
 'Question 7'
 Sub question_7()
@@ -288,3 +300,5 @@ Else
 End If
 End Sub
 ```
+
+</details>
