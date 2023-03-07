@@ -11,7 +11,7 @@ Ecrire une fonction nommée `taux`renvoyant le taux du livret A à 3,5%.
 
 #### Correction
 
-```Markdown
+<div style="border-left:solid #17a589 4px;padding-left:10px; ">
 Pour écrire cette fonction, il suffit de déclarer une fonction `taux` qui renvoie un
 nombre à virgule flottante (un Single en VBA), et de renvoyer la valeur `0,035`.
 
@@ -22,7 +22,7 @@ La procédure sera simplement composée d'un appel de fonction, et d'un affichag
 valeur renvoyée par la fonction.
 
 Voici une solution possible:
-```
+
 
 <details>
 
@@ -38,6 +38,7 @@ End Sub
 ```
 
 </details>
+</div>
 
 ### Question 2
 
