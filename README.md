@@ -7,8 +7,9 @@ Vous pouvez trouver le cours sur cette page [moodle](https://fad4.u-bordeaux.fr/
 
 ## Annonces
 
-Les notes de cours sont en cours de rédaction. Elles seront mises à jour régulièrement.
-Vous pouvez retrouver la correction de l'exercice 1 de la séance 3 [ici](s3-ex1.md).
+- Les notes de cours sont en cours de rédaction. Elles seront mises à jour régulièrement.
+
+- Vous pouvez retrouver la correction de l'exercice 1 de la séance 3 [ici](s3-ex1.md)
 
 ---
 
