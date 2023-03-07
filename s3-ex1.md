@@ -52,6 +52,23 @@ Ecrire une fonction nommée `tauxAn` prenant en paramètre d'entrée un nombre e
 
 Un structure conditionnelle `If ... Then ...`sera mise en oeuvre dans cette question.
 
+#### Correction
+
+<div style="border-left:solid #17a589 4px;padding-left:10px; ">
+
+Dans cette question, il est demandé de créer une fonction prenant en entrée un nombre entier (`l'année`), et renvoyant un nombre à virgule flottante (`le taux`).
+
+Pour rappel, les paramètres d'une fonction sont déclarés entre parenthèses après le nom de la fonction, et sont séparés par une virgule. Les paramètres sont des variables locales à la fonction, et sont utilisés comme des variables classiques.
+
+Pour plus d'informations, lire la section du cours sur les fonctions [ici](README.md#-les-fonctions).
+
+Il est de plus demandé d'utiliser une structure conditionnelle `If ... Then ...` pour déterminer le taux en fonction de l'année.
+
+Pour plus d'informations, lire la section du cours sur les structures conditionnelles [ici](README.md#-les-conditions).
+
+
+<details>
+
 ```php
 'Question 2'
 Function tauxAn(a As Integer) As Single
@@ -72,9 +89,23 @@ Sub appel_tauxAn()    'Procédure d appel de la fonction'
 End Sub
 ```
 
+</details>
+
+</div>
+
 ### Question 3
 
 Reprendre la question 2 avec la structure `Select Case`
+
+#### Correction
+
+<div style="border-left:solid #17a589 4px;padding-left:10px; ">
+
+Pour rappel, la structure `Select Case` permet de tester une variable, et d'exécuter un bloc de code en fonction de la valeur de cette variable.
+
+Pour plus d'informations, lire la section du cours sur les `Select Case` [ici](README.md#-les-conditions).
+
+<details>
 
 ```php
 'Question 3'
@@ -95,6 +126,10 @@ Sub appel_tauxAnSelect()    'Procédure d appel de la fonction'
     MsgBox ("La remise finale est égale à " & tauxAnSelect(2022))
 End Sub
 ```
+
+</details>
+
+</div>
 
 ### Question 4
 
