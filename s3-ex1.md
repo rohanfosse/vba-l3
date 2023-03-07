@@ -114,7 +114,7 @@ Function tauxAnSelect(a As Integer) As Single
         Case 2017 To 2019
             tauxAnSelect = 0.0075
         Case 2020, 2021
-            tauxtauxAnSelectAn = 0.005
+            tauxAnSelect = 0.005
         Case 2022
             tauxAnSelect = 0.02
         Case 2023
