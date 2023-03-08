@@ -3,7 +3,7 @@
 Vous trouverez ici des notes de cours relatives au cours de VBA de l'Université de Bordeaux Montaigne.
 Vous pouvez trouver le cours sur cette page [moodle](https://fad4.u-bordeaux.fr/enrol/index.php?id=17638).
 
-Le responsable du cours est Fabien Schloesser et la page a été crée par [Rohan Fossé](https://rohanfosse.com).  
+Le responsable du cours est Fabien Schloesser et la page a été créée par [Rohan Fossé](https://rohanfosse.com).  
 
 ---
 
