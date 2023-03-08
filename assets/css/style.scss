@@ -23,7 +23,8 @@ section {
 }
 
 .exemple {
-    border-right:solid linear-gradient(120deg, rgb(17, 70, 122), rgb(17, 122, 70)) 4px;
+    border-right:solid 4px;
+    border-image: linear-gradient(120deg, rgb(17, 70, 122), rgb(17, 122, 70));
     padding-right:30px;
 }
 
