@@ -27,11 +27,17 @@ Pour déclarer une variable, on utilise la syntaxe suivante :
 Dim nom_variable As type_variable
 ```
 
+
+
 Par exemple, pour déclarer une variable `a` de type `Integer`, on utilise la syntaxe suivante :
+
+<div class="exemple">
 
 ```php
 Dim a As Integer
 ```
+
+</div>
 
 Pour déclarer plusieurs variables du même type, on peut utiliser la syntaxe suivante :
 
@@ -83,6 +89,8 @@ Sub nom_procédure()
 End Sub
 ```
 
+<div class="exemple">
+
 Par exemple, pour déclarer une procédure `afficher_message`, on utilise la syntaxe suivante :
 
 ```php
@@ -90,6 +98,8 @@ Sub afficher_message()
     MsgBox "Mon message"
 End Sub
 ```
+
+</div>
 
 Pour appeler une procédure, il suffit de cliquer sur le code de la procédure et d'appuyer sur `F5`.
 
