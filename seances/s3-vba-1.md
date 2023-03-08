@@ -27,11 +27,10 @@ Pour déclarer une variable, on utilise la syntaxe suivante :
 Dim nom_variable As type_variable
 ```
 
-
+<div class="exemple">
 
 Par exemple, pour déclarer une variable `a` de type `Integer`, on utilise la syntaxe suivante :
 
-<div class="exemple">
 
 ```php
 Dim a As Integer
@@ -51,7 +50,7 @@ Attention, la syntaxe suivante n'est pas valide:
 Dim a, b, c As Integer
 ```
 
-En effet, cette syntaxe défini les variables `a` et `b` comme étant de type `Variant` et la variable `c` comme étant de type `Integer`.
+En effet, on défini ici les variables `a` et `b` comme étant de type `Variant` et la variable `c` comme étant de type `Integer`.
 
 ---
 
@@ -118,7 +117,9 @@ End Function
 
 La ligne `nom_fonction = valeur` permet de renvoyer une valeur à la fonction.
 
-Il est important de noter que la valeur retournée doit être du même type que le type de la fonction.
+Il est important de noter que le type de la fonction et de la valeur retournée doivent être **identiques**.
+
+<div class="exemple">
 
 Par exemple, pour déclarer une fonction `retourner_a` qui retourne la lettre "a", on utilise la syntaxe suivante :
 
@@ -128,9 +129,11 @@ Function retourner_a() As String
 End Function
 ```
 
+</div>
+
 Dans notre exemple, la fonction `retourner_a` retourne une valeur de type `String`.
 
-Si jamais nous souhaitons retourner une valeur de type `Integer`, par exemple 1, il faudra modifier la fonction comme suit :
+Si jamais nous souhaitons retourner une valeur de type `Integer`, par exemple 1, il faut modifier la fonction comme suit :
 
 ```php
 Function retourner_a() As Integer
