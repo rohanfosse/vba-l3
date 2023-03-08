@@ -23,7 +23,7 @@ section {
 }
 
 .exemple {
-    border-right:solid #1799a5 4px;
+    border-right:solid linear-gradient(120deg, rgb(17, 70, 122), rgb(17, 122, 70)) 4px;
     padding-right:30px;
 }
 
@@ -49,4 +49,5 @@ border-radius: 0.3rem !important;
 
 .highlight, code {
   background-color: #f3f6fa !important;
+  font-family: monospace, monospace !important;
 }
