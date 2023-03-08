@@ -547,3 +547,7 @@ calculer_somme = nombre1 + nombre2
 End Function
 {% endhighlight %}
 </details>
+
+## Correction Exercice 1 du TD
+
+Vous pouvez trouver la correction de l'exercice 1 du TD en cliquant [ici](seances/exercices/s3-ex1.md)
