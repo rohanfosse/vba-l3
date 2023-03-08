@@ -1,32 +1,32 @@
+---
+---
+
 @import "{{ site.theme }}";
 
-.btn {
-  display: none !important;
+// Hide “This site is open source. Improve this page.”
+.footer {
+  display: none;
 }
 
-footer {
-  display: none !important;
+#banner {
+    display: none !important;
 }
 
-summary{
-  background-color: #1ffe36 !important;
-  color: white !important;
+body {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
 }
 
-details{
-  background-color: #1ffe36 !important;
-  color: white !important;
+section {
+    border: 0px !important;
 }
 
-#progress-cont {
-  height: 5px;
-  position: fixed;
-  width: 100%;
-  top: 0px;
-  left: 0px;
+.exemple_atelier {
+    border-left:solid #1799a5 4px;
+    padding-left:10px;
 }
 
-#progress-bar {
-  height: 100%;
-  background-color: #374884;
+.effet_atelier {
+    border-left:solid #1785a5 4px;
+    padding-left:10px;
 }
