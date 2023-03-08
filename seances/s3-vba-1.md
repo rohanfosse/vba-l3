@@ -1,4 +1,8 @@
-## Séance 3 - VBA: Fonctions et procédures, variables, tests et boucles
+# Séance 3 - VBA: Fonctions et procédures, variables, tests et boucles
+
+---
+
+## Avant de commencer
 
 Pensez à activer la case Développeur dans les options d'Excel. Pour cela, allez dans le menu `Fichier` puis `Options` et cliquez sur `Personnaliser le ruban`. Dans la fenêtre qui s'ouvre, cliquez sur `Développeur` dans la liste de gauche et cochez la case `Afficher la barre de développeur`.
 
