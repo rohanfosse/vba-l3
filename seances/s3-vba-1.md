@@ -1,12 +1,10 @@
-## Avant de commencer <a name="-avant-de-commencer"></a>
+## Séance 3 - VBA: Fonctions et procédures, variables, tests et boucles
 
 Pensez à activer la case Développeur dans les options d'Excel. Pour cela, allez dans le menu `Fichier` puis `Options` et cliquez sur `Personnaliser le ruban`. Dans la fenêtre qui s'ouvre, cliquez sur `Développeur` dans la liste de gauche et cochez la case `Afficher la barre de développeur`.
 
 ---
 
-## Première partie <a name="-seance-3"></a>
-
-### Les variables <a name="-les-variables"></a>
+## Les variables <a name="-les-variables"></a>
 
 Une variable est un espace mémoire qui permet de stocker une valeur. En `VBA`, on peut déclarer des variables de plusieurs types :
 
@@ -47,7 +45,7 @@ En effet, cette syntaxe défini les variables `a` et `b` comme étant de type `V
 
 ---
 
-### Les blocs de code <a name="-les-blocs-de-code"></a>
+## Les blocs de code <a name="-les-blocs-de-code"></a>
 
 Un bloc de code est un ensemble d'instructions qui sont exécutées les unes après les autres. Pour définir un bloc de code, on utilise la syntaxe suivante :
 
@@ -71,7 +69,7 @@ Les différents blocs de code sont :
 
 ---
 
-### Les procédures <a name="-les-procedures"></a>
+## Les procédures <a name="-les-procedures"></a>
 
 Une procédure est une fonction qui ne renvoie pas de valeur. Pour déclarer une procédure, on utilise la syntaxe suivante :
 
@@ -93,7 +91,7 @@ Pour appeler une procédure, il suffit de cliquer sur le code de la procédure e
 
 ---
 
-### Les fonctions <a name="-les-fonctions"></a>
+## Les fonctions <a name="-les-fonctions"></a>
 
 Une fonction est une procédure qui renvoie une valeur. Pour déclarer une fonction, on utilise la syntaxe suivante :
 
@@ -171,7 +169,7 @@ End Sub
 
 ---
 
-### Les conditions <a name="-les-conditions"></a>
+## Les conditions <a name="-les-conditions"></a>
 
 Pour définir une condition, on utilise la syntaxe suivante :
 
@@ -250,7 +248,7 @@ De la même façon que précédement, il est à noter que la valeur du paramètr
 
 ---
 
-### Les opérateurs logiques <a name="-les-operateurs-logiques"></a>
+## Les opérateurs logiques <a name="-les-operateurs-logiques"></a>
 
 Les opérateurs logiques permettent de comparer des valeurs entre elles. Les opérateurs logiques sont les suivants :
 
@@ -286,7 +284,7 @@ End If
 
 ---
 
-### Select Case <a name="-select-case"></a>
+## Select Case <a name="-select-case"></a>
 
 Pour définir une condition avec plusieurs `else if`, il existe une autre méthode utilisant la syntaxe suivante :
 
@@ -361,11 +359,11 @@ End Sub
 
 ---
 
-### Les fenêtres prédéfinies <a name="-les-fenetres-predefinies"></a>
+## Les fenêtres prédéfinies <a name="-les-fenetres-predefinies"></a>
 
 Il existe plusieurs fenêtres prédéfinies en VBA.
 
-#### Fenêtre de saisit de texte (_InputBox_)
+### Fenêtre de saisit de texte (_InputBox_)
 
 La saisit de texte se fait avec la fenêtre `InputBox`. Par exemple, pour afficher la fenêtre `InputBox` avec le message `Entrez un nombre` et stocker le résultat dans la variable `nombre`, on utilise la syntaxe suivante :
 
@@ -404,7 +402,7 @@ Pour d'autres exemples, voir la section [Exemples supplémentaires](#exemples).
 
 ---
 
-#### Fenêtre d'affichage de message (_MsgBox_)
+### Fenêtre d'affichage de message (_MsgBox_)
 
 L'affichage d'un message se fait avec la fenêtre `MsgBox`. Par exemple, pour afficher la fenêtre `MsgBox` avec le message "a", on utilise la syntaxe suivante :
 
@@ -476,7 +474,7 @@ End Sub
 
 ---
 
-### Exercices Corrigés <a name="-exercices-corriges"></a>
+## Exercices Corrigés <a name="-exercices-corriges"></a>
 
 Si vous souhaitez vous entrainer, voici quelques exercices corrigés.
 
