@@ -188,6 +188,9 @@ End Sub
 
 ## Les conditions <a name="-les-conditions"></a>
 
+
+une instruction conditionnelle, (aussi appelé expression conditionnelle), est une fonction d'un langage de programmation, qui effectue différents calculs ou actions, en fonction de l'évaluation d'une condition booléenne, à savoir vraie ou fausse. [source](https://fr.wikipedia.org/wiki/Instruction_conditionnelle_(programmation))
+
 Pour définir une condition, on utilise la syntaxe suivante :
 
 ```php
@@ -293,7 +296,6 @@ Si l'on souhaite faire plusieurs comparaisons à la suite, on peut utiliser les 
 Par exemple, pour comparer deux variables `a` et `b`, on utilise la syntaxe suivante :
 
 ```php
-
 If a = b And a > 0 Then
     ' instructions '
 End If
@@ -306,16 +308,16 @@ End If
 Pour définir une condition avec plusieurs `else if`, il existe une autre méthode utilisant la syntaxe suivante :
 
 ```php
-    Select Case variable
-        Case valeur1
-            ' instructions '
-        Case valeur2
-            ' instructions '
-        Case valeur3
-            ' instructions '
-        Case Else
-            ' instructions '
-    End Select
+ Select Case variable
+    Case valeur1
+        ' instructions '
+    Case valeur2
+        ' instructions '
+    Case valeur3
+        ' instructions '
+    Case Else
+        ' instructions '
+End Select
 ```
 
 Les deux façons de définir une condition sont **_équivalentes_**, le `Select Case` est simplement une méthode plus concise.
@@ -352,7 +354,7 @@ Function appreciation_select(note As Integer) As String
 End Function
 ```
 
-Il faut noter que puisque j'ai changé le nom de la fonction en `appreciation_select` (pour ne pas confondre avec la fonction `appreciation` précédente), je dois modifier l'affectation `appreciation_select` à la place de `appreciation`.
+Il faut noter que puisque j'ai changé le nom de la fonction en `appreciation_select` (pour ne pas confondre avec la fonction `appreciation` précédente), je dois modifier l'affectation `appreciation_select` (à la place de `appreciation`).
 
 Une façon de traduire ce code en français serait :
 
@@ -519,7 +521,6 @@ End Sub
 Ecrire une fonction `calculer_moyenne` calculant la moyenne de 3 notes qui seront données en paramètre de la fonction. Le résultat sera un réel.
 
 Voici une solution possible:
-
 <details>
 {% highlight php %}
 Function calculer_moyenne(note1 As Integer, note2 As Integer, note3 As Integer) As Single
@@ -533,7 +534,6 @@ End Function
 Ecrire une fonction `calculer_somme` calculant la somme de 2 entiers que l'utilisateur saisira à l'aide de deux fenêtres `InputBox`. Si l'utilisateur ne saisit pas de valeur, la valeur par défaut sera 0.
 
 Voici une solution possible:
-
 <details>
 {% highlight php %}
 Function calculer_somme() As Integer
