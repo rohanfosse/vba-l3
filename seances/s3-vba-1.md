@@ -363,11 +363,11 @@ End Sub
 
 ---
 
-## Les fenêtres prédéfinies <a name="-les-fenetres-predefinies"></a>
+## Les fenêtres prédéfinies (InputBox et MsgBox) <a name="-les-fenetres-predefinies"></a>
 
 Il existe plusieurs fenêtres prédéfinies en VBA.
 
-### Fenêtre de saisit de texte (_InputBox_)
+#### Fenêtre de saisie de texte (_InputBox_)
 
 La saisit de texte se fait avec la fenêtre `InputBox`. Par exemple, pour afficher la fenêtre `InputBox` avec le message `Entrez un nombre` et stocker le résultat dans la variable `nombre`, on utilise la syntaxe suivante :
 
@@ -406,7 +406,7 @@ Pour d'autres exemples, voir la section [Exemples supplémentaires](#exemples).
 
 ---
 
-### Fenêtre d'affichage de message (_MsgBox_)
+#### Fenêtre d'affichage de message (_MsgBox_)
 
 L'affichage d'un message se fait avec la fenêtre `MsgBox`. Par exemple, pour afficher la fenêtre `MsgBox` avec le message "a", on utilise la syntaxe suivante :
 
