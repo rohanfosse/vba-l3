@@ -5,13 +5,9 @@
     </span>
 </p>
 
-# Séance 3 - Correction d'exercices
+# Correction de l'exercice 1
 
-Pour revenir aux notes de cours, [cliquez ici](README.md)
-
-## Correction de l'exercice 1
-
-### Question 1
+## Question 1
 
 Ecrire une fonction nommée `taux`renvoyant le taux du livret A à 3,5%.
 (la fonction sera testée par un appel de fonction dans une procédure dédiée à cela, ou directement sur une feuille de calcul)
@@ -48,7 +44,7 @@ End Sub
 </details>
 </div>
 
-### Question 2
+## Question 2
 
 Ecrire une fonction nommée `tauxAn` prenant en paramètre d'entrée un nombre entier réprésentant une année, et renvoyant le taux du livret A e l'année, sachant que ce taux est de;
 
@@ -100,7 +96,7 @@ End Sub
 
 </div>
 
-### Question 3
+## Question 3
 
 Reprendre la question 2 avec la structure `Select Case`
 
@@ -138,7 +134,7 @@ End Sub
 
 </div>
 
-### Question 4
+## Question 4
 
 Reprendre la question 2, en ajoutant le message texte `Inconnu` renvoyé par la fonction si l'année est inférieure à 2017 ou supérieure à 2023.
 
@@ -181,7 +177,7 @@ End Sub
 
 </div>
 
-### Question 5
+## Question 5
 
 Reprendre l'exercice en codant cette fois une procédure dans laquelle une fenêtre contextuelle demande à l'utilisateur e saisir une année comprise entre 2017 et 2023, puis affiche en sortie d'écran le taux de l'année saisie. Si l'année saisie n'est pas dans l'intervalle demandé, le programme prend fin.
 
@@ -227,7 +223,7 @@ End Sub
 
 </div>
 
-### Question 6
+## Question 6
 
 Configurer les messages contextuels d'entrée et de sortie de la question précédénte, de manière à:
     - ajouter le titre `Saisie année` à le fenêtre de saisie, et paramétrer la valeur 2023 par défaut;
@@ -254,12 +250,12 @@ If a >= 2017 And a <= 2019 Then
     ElseIf a = 2023 Then
         taux = 0.03
 End If
-MsgBox "Le taux de l'année " & a & " est de: " & Chr(10) & 100 * taux & " %", vbOKOnly + vbExclamation + vbDefaultButton2, "Taux du livert A"
+MsgBox "Le taux de l'année " & a & " est de: " & Chr(10) & 100 * taux & " %", vbOKOnly + vbExclamation, "Taux du livert A"
 'Il s agit encore d un MsgBox en tant que fonction'
 End Sub
 ```
 
-### Question 7
+## Question 7
 
 Refaire la question précédente en mettant en oeuvre l'instruction `Application.InputBox`, afin de contrôler la saisie d'un nombre entier.
 
@@ -300,7 +296,7 @@ If a >= 2017 And a <= 2019 Then
     ElseIf a = 2023 Then
         taux = 0.03
 End If
-rep = MsgBox("Le taux de l'année " & a & " est de: " & Chr(10) & 100 * taux & " %", vbYesNoCancel + vbExclamation + vbDefaultButton2, "Taux du livert A")
+rep = MsgBox("Le taux de l'année " & a & " est de: " & Chr(10) & 100 * taux & " %", vbYesNoCancel + vbExclamation, "Taux du livert A")
 'Il s agit ici de la méthode MsgBox (procédure)= les parenthèses sont obligatoires, ainsi que son affectation à une variable'
 If rep = vbYes Then
     MsgBox "Bien"
