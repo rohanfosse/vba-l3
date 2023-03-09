@@ -5,8 +5,9 @@
     </span>
 </p>
 
+<div style="text-align:center;">
 # Séance 3 - VBA: Fonctions et procédures, variables, tests et boucles
-
+</div>
 ---
 
 ## Avant de commencer
