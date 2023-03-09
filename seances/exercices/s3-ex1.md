@@ -48,6 +48,7 @@ End Sub
 </details>
 </div>
 
+
 ---
 
 ## Question 2
@@ -243,6 +244,12 @@ Configurer les messages contextuels d'entrée et de sortie de la question préc�
     - ajouter le titre `Saisie année` à le fenêtre de saisie, et paramétrer la valeur 2023 par défaut;
     - ajouter le titre `Taux du livret A`, ne paramétrer qu'un seul bouton `OK`, et ajouter une icône d'alerte.
 
+
+#### Correction
+
+<div style="border-left:solid #17a589 4px;padding-left:10px; ">
+<details>
+
 ```php
 'Question 6'
 Sub question_6()
@@ -268,6 +275,11 @@ MsgBox "Le taux de l'année " & a & " est de: " & Chr(10) & 100 * taux & " %", v
 'Il s agit encore d un MsgBox en tant que fonction'
 End Sub
 ```
+
+</details>
+
+</div>
+
 
 ---
 
