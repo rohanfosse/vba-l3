@@ -5,7 +5,11 @@
     </span>
 </p>
 
+<div style="text-align:center;">
 # Correction de l'exercice 1
+</div>
+
+---
 
 ## Question 1
 
@@ -43,6 +47,8 @@ End Sub
 
 </details>
 </div>
+
+---
 
 ## Question 2
 
@@ -96,6 +102,8 @@ End Sub
 
 </div>
 
+---
+
 ## Question 3
 
 Reprendre la question 2 avec la structure `Select Case`
@@ -133,6 +141,8 @@ End Sub
 </details>
 
 </div>
+
+---
 
 ## Question 4
 
@@ -176,6 +186,8 @@ End Sub
 </details>
 
 </div>
+
+---
 
 ## Question 5
 
@@ -223,6 +235,8 @@ End Sub
 
 </div>
 
+---
+
 ## Question 6
 
 Configurer les messages contextuels d'entrée et de sortie de la question précédénte, de manière à:
@@ -254,6 +268,8 @@ MsgBox "Le taux de l'année " & a & " est de: " & Chr(10) & 100 * taux & " %", v
 'Il s agit encore d un MsgBox en tant que fonction'
 End Sub
 ```
+
+---
 
 ## Question 7
 
