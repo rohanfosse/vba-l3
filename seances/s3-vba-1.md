@@ -37,8 +37,7 @@ Dim nom_variable As type_variable
 
 <div class="exemple">
 
-Par exemple, pour déclarer une variable `a` de type `Integer`, on utilise la syntaxe suivante :
-
+Pour déclarer une variable `a` de type `Integer`, on utilise la syntaxe suivante :
 
 ```php
 Dim a As Integer
@@ -46,7 +45,7 @@ Dim a As Integer
 
 </div>
 
-Pour déclarer plusieurs variables du même type, on peut utiliser la syntaxe suivante :
+Pour déclarer plusieurs variables de même type, on peut utiliser la syntaxe suivante :
 
 ```php
 Dim a As Integer, b As Integer, c As Integer
@@ -64,7 +63,9 @@ En effet, on défini ici les variables `a` et `b` comme étant de type `Variant`
 
 ## Les blocs de code <a name="-les-blocs-de-code"></a>
 
-Un bloc de code est un ensemble d'instructions qui sont exécutées les unes après les autres. Pour définir un bloc de code, on utilise la syntaxe suivante :
+Un bloc de code est un ensemble d'instructions qui sont exécutées les unes après les autres.
+
+Pour définir un bloc de code, on utilise la syntaxe suivante :
 
 ```php
 Bloc nom()
@@ -88,7 +89,8 @@ Les différents blocs de code sont :
 
 ## Les procédures <a name="-les-procedures"></a>
 
-Une procédure est une fonction qui ne renvoie pas de valeur. Pour déclarer une procédure, on utilise la syntaxe suivante :
+Une procédure est une fonction qui ne renvoie pas de valeur.
+Pour déclarer une procédure, on utilise la syntaxe suivante :
 
 ```php
 Sub nom_procédure()
@@ -98,7 +100,7 @@ End Sub
 
 <div class="exemple">
 
-Par exemple, pour déclarer une procédure `afficher_message`, on utilise la syntaxe suivante :
+Pour déclarer la procédure `afficher_message`, on utilise la syntaxe suivante :
 
 ```php
 Sub afficher_message()
@@ -123,6 +125,8 @@ Function nom_fonction() As type_variable
 End Function
 ```
 
+Comme la fonction retourne une valeur, il est important de préciser le type de la valeur retournée.
+
 La ligne `nom_fonction = valeur` permet de renvoyer une valeur à la fonction.
 
 Il est important de noter que le type de la fonction et de la valeur retournée doivent être **identiques**.
@@ -141,7 +145,9 @@ End Function
 
 Dans notre exemple, la fonction `retourner_a` retourne une valeur de type `String`.
 
-Si jamais nous souhaitons retourner une valeur de type `Integer`, par exemple 1, il faut modifier la fonction comme suit :
+Si jamais nous souhaitons retourner une valeur de type `Integer`, par exemple `1`, il faut modifier la fonction comme suit :
+
+<div class="exemple">
 
 ```php
 Function retourner_a() As Integer
@@ -149,13 +155,18 @@ Function retourner_a() As Integer
 End Function
 ```
 
+</div>
 Pour afficher cette fonction, on peut définir la procédure suivante :
+
+<div class="exemple">
 
 ```php
 Sub afficher_a()
     MsgBox retourner_a()
 End Sub
 ```
+
+</div>
 
 Une fonction peut avoir plusieurs paramètres. Pour déclarer une fonction avec plusieurs paramètres, on utilise la syntaxe suivante :
 
@@ -168,23 +179,33 @@ End Function
 
 Par exemple, si nous souhaitons déclarer une fonction `aire_rectangle` qui retourne l'aire d'un rectangle, on utilise la syntaxe suivante :
 
+<div class="exemple">
+
 ```php
 Function aire_rectangle(longueur As Integer, largeur As Integer) As Integer
     aire_rectangle = longueur * largeur
 End Function
 ```
 
+</div>
+
 Pour appeler cette fonction, on peut définir la procédure suivante :
 
+<div class="exemple">
 ```php
 Sub afficher_aire_rectangle()
     MsgBox aire_rectangle(10, 5)
 End Sub
 ```
 
+</div>
+
+
 Il est important de noter que dans l'appel de la fonction `aire_rectangle`, on ne met pas les noms des paramètres mais on donne directement les **valeurs** des paramètres.
 
 Ainsi, une autre façon d'appeler cette procédure serait par exemple :
+
+<div class="exemple">
 
 ```php
 Sub afficher_aire_rectangle()
@@ -192,12 +213,13 @@ Sub afficher_aire_rectangle()
 End Sub
 ```
 
+</div>
+
 ---
 
 ## Les conditions <a name="-les-conditions"></a>
 
-
-une instruction conditionnelle, (aussi appelé expression conditionnelle), est une fonction d'un langage de programmation, qui effectue différents calculs ou actions, en fonction de l'évaluation d'une condition booléenne, à savoir vraie ou fausse. [source](https://fr.wikipedia.org/wiki/Instruction_conditionnelle_(programmation))
+Une insctruction conditonnelle est une instruction qui permet d'exécuter un bloc de code si une condition est vérifiée.
 
 Pour définir une condition, on utilise la syntaxe suivante :
 
@@ -207,7 +229,9 @@ If condition Then
 End If
 ```
 
-Pour définir une condition avec un `else`, on utilise la syntaxe suivante :
+Si jamais la condition n'est pas vérifiée, le bloc d'instructions n'est pas exécuté. Pour exécuter un bloc d'instructions si la condition n'est pas vérifiée, on utilise le mot clé `else`.
+
+Dans ce cas, on utilise la syntaxe suivante :
 
 ```php
 If condition Then
@@ -217,7 +241,7 @@ Else
 End If
 ```
 
-Le `else` est exécuté si la condition n'est pas vérifiée. Il peut se traduire par `sinon` en français.
+Le `else if` est une condition supplémentaire qui est exécutée si la condition précédente n'est pas vérifiée. Il peut se traduire par `sinon si` en français.
 
 Pour définir une condition avec plusieurs `else if`, on utilise la syntaxe suivante :
 
@@ -233,9 +257,9 @@ Else
 End If
 ```
 
-Le `else if` est une condition supplémentaire qui est exécutée si la condition précédente n'est pas vérifiée. Il peut se traduire par `sinon si` en français.
+<div class="exemple">
 
-Prenons l'exemple d'une fonction `appreciation` qui retourne une appréciation différante suivant une note donné en paramètre.
+Prenons l'exemple d'une fonction `appreciation` qui retourne une appréciation différente suivant une note donné en paramètre.
 
 On peut définir cette fonction comme suit :
 
@@ -257,6 +281,8 @@ Function appreciation(note As Integer) As String
 End Function
 ```
 
+
+
 Dans ce code, plusieurs points sont à noter :
 
 - La fonction `appreciation` retourne une valeur de type `String`.
@@ -273,6 +299,8 @@ End Sub
 ```
 
 De la même façon que précédement, il est à noter que la valeur du paramètre `note` peut être n'importe quelle valeur de type `Integer`.
+
+</div>
 
 ---
 
@@ -301,6 +329,7 @@ Si l'on souhaite faire plusieurs comparaisons à la suite, on peut utiliser les 
 - `Or` : ou
 - `Not` : non
 
+<div class="exemple">
 Par exemple, pour comparer deux variables `a` et `b`, on utilise la syntaxe suivante :
 
 ```php
@@ -308,6 +337,8 @@ If a = b And a > 0 Then
     ' instructions '
 End If
 ```
+
+</div>
 
 ---
 
@@ -328,7 +359,7 @@ Pour définir une condition avec plusieurs `else if`, il existe une autre métho
 End Select
 ```
 
-Les deux façons de définir une condition sont **_équivalentes_**, le `Select Case` est simplement une méthode plus concise.
+Les deux façons de définir une condition sont **équivalentes**, le `Select Case` est simplement une méthode plus concise.
 
 Les mots clés autorisés dans un `Case` sont les suivants :
 
@@ -340,7 +371,7 @@ Les mots clés autorisés dans un `Case` sont les suivants :
 - `<=` : inférieur ou égal à
 - `To` : entre
 
-
+<div class="exemple">
 Si nous reprenons l'exemple de la fonction `appreciation` précédente, on peut définir cette fonction comme suit :
 
 ```php
@@ -383,7 +414,7 @@ Sub afficher_appreciation()
     MsgBox appreciation(15)
 End Sub
 ```
-
+</div>
 ---
 
 ## Les fenêtres prédéfinies (InputBox et MsgBox) <a name="-les-fenetres-predefinies"></a>
@@ -392,7 +423,10 @@ Il existe plusieurs fenêtres prédéfinies en VBA.
 
 #### Fenêtre de saisie de texte (_InputBox_)
 
-La saisit de texte se fait avec la fenêtre `InputBox`. Par exemple, pour afficher la fenêtre `InputBox` avec le message `Entrez un nombre` et stocker le résultat dans la variable `nombre`, on utilise la syntaxe suivante :
+La saisie de texte se fait avec la fenêtre `InputBox`.
+
+<div class="exemple">
+Par exemple, pour afficher la fenêtre `InputBox` avec le message `Entrez un nombre` et stocker le résultat dans la variable `nombre`, on utilise la syntaxe suivante :
 
 ```php
 Dim nombre As Integer ' Déclaration de la variable nombre de type Integer '
@@ -401,7 +435,11 @@ nombre = InputBox("Entrez un nombre")
 
 A la suite de ça, la variable `nombre` contient la valeur saisit par l'utilisateur.
 
+</div>
+
 Si l'on souhaite maintenant afficher la même fenêtre mais en changeant le titre par `Mon titre`, on utilise la syntaxe suivante :
+
+<div class="exemple">
 
 ```php
 Dim nombre As Integer ' Déclaration de la variable nombre de type Integer'
@@ -411,7 +449,11 @@ titre = "Mon titre"
 nombre = InputBox("Entrez un nombre", titre)
 ```
 
+</div>
+
 Enfin, si l'on souhaite en plus que la valeur par défaut soit `1`, on utilise la syntaxe suivante :
+
+<div class="exemple">
 
 ```php
 Dim nombre As Integer ' Déclaration de la variable nombre de type Integer'
@@ -423,25 +465,36 @@ valeur_par_defaut = 1
 nombre = InputBox("Entrez un nombre", titre, valeur_par_defaut)
 ```
 
-Dans le cas où l'utilisateur ne saisit rien, la variable `nombre` contient la valeur `1`.
+</div>
 
-Pour d'autres exemples, voir la section [Exemples supplémentaires](#exemples).
+
+Dans le cas où l'utilisateur ne saisit rien, la variable `nombre` contient la valeur `1`.
 
 ---
 
 #### Fenêtre d'affichage de message (_MsgBox_)
 
-L'affichage d'un message se fait avec la fenêtre `MsgBox`. Par exemple, pour afficher la fenêtre `MsgBox` avec le message "a", on utilise la syntaxe suivante :
+L'affichage d'un message se fait avec la fenêtre `MsgBox`.
+
+<div class="exemple">
+
+Par exemple, pour afficher la fenêtre `MsgBox` avec le message "a", on utilise la syntaxe suivante :
 
 ```php
 MsgBox("Mon message")
 ```
 
+</div>
+
 Si l'on souhaite afficher un message comportant une variable **v**, on utilise la syntaxe suivante :
+
+<div class="exemple"
 
 ```php
 MsgBox("Mon message" & v)
 ```
+
+</div>
 
 Il est possible de modifier les boutons affichés dans la fenêtre `MsgBox` en ajoutant des valeurs à la fin de la fonction.
 
@@ -456,6 +509,7 @@ Les noms, valeurs et significations pour les principaux boutons peuvent être tr
 | vbYesNo | 4 | Affiche les boutons "Oui" et "Non" |
 | vbRetryCancel | 5 | Affiche les boutons "Réessayer" et "Annuler" |
 
+<div class="exemple">
 
 Par exemple, pour afficher la fenêtre `MsgBox` avec le message "Mon message" et le bouton "OK", on utilise la syntaxe suivante :
 
@@ -463,23 +517,34 @@ Par exemple, pour afficher la fenêtre `MsgBox` avec le message "Mon message" et
 resultat = MsgBox("Mon message", vbOKOnly)
 ```
 
-
+</div>
 
 La variable `resultat` contient la valeur `1` si l'utilisateur clique sur le bouton "OK".
 
 Pour afficher la fenêtre `MsgBox` avec le message "Mon message", un bouton "OK' et le titre "Titre", on utilise la syntaxe suivante :
 
+<div class="exemple">
+
 ```php
 resultat = MsgBox("Mon message", vbOKOnly, "Titre")
 ```
 
+</div>
+
 Pour afficher la fenêtre `MsgBox` avec le message "Mon message", le titre "Titre" et les boutons "Oui" et "Non", on utilise la syntaxe suivante :
+
+<div class="exemple">
 
 ```php
 resultat = MsgBox("Mon Message", vbYesNo, "Titre")
 ```
 
+</div>
+
 On stocke la réponse de l'utilisateur dans la variable `resultat`. Si l'utilisateur clique sur le bouton "Oui", la variable `resultat` contient la valeur `6`. Si l'utilisateur clique sur le bouton "Non", la variable `resultat` contient la valeur `7`.
+
+
+<div class="exemple">
 
 Par exemple, si l'on souhaite poser une question à l'utilisateur et afficher un message différent en fonction de sa réponse, on peut utiliser le faire de la façon suivante :
 
@@ -495,9 +560,7 @@ Sub afficher_message()
 End Sub
 ```
 
-
-
-
+</div>
 
 ---
 
@@ -571,4 +634,4 @@ End Function
 
 ## Correction TD3 <a name="correction-td3"></a>
 
-Vous pouvez trouver la correction du TD3 en cliquant [ici](exercices/s3-td1.md)
+Vous pouvez trouver la correction du TD3 [ici](exercices/s3-td1.md)
