@@ -15,7 +15,7 @@
 Ecrire une fonction nommée `taux`renvoyant le taux du livret A à 3,5%.
 (la fonction sera testée par un appel de fonction dans une procédure dédiée à cela, ou directement sur une feuille de calcul)
 
-#### Correction
+##### Correction
 
 <div style="border-left:solid #17a589 4px;padding-left:10px; ">
 
@@ -50,7 +50,7 @@ End Sub
 
 ---
 
-### Question 2
+#### Question 2
 
 Ecrire une fonction nommée `tauxAn` prenant en paramètre d'entrée un nombre entier réprésentant une année, et renvoyant le taux du livret A e l'année, sachant que ce taux est de;
 
@@ -61,7 +61,7 @@ Ecrire une fonction nommée `tauxAn` prenant en paramètre d'entrée un nombre e
 
 Un structure conditionnelle `If ... Then ...`sera mise en oeuvre dans cette question.
 
-#### Correction
+##### Correction
 
 <div style="border-left:solid #17a589 4px;padding-left:10px; ">
 
@@ -104,11 +104,11 @@ End Sub
 
 ---
 
-### Question 3
+#### Question 3
 
 Reprendre la question 2 avec la structure `Select Case`
 
-#### Correction
+##### Correction
 
 <div style="border-left:solid #17a589 4px;padding-left:10px; ">
 
@@ -144,11 +144,11 @@ End Sub
 
 ---
 
-### Question 4
+#### Question 4
 
 Reprendre la question 2, en ajoutant le message texte `Inconnu` renvoyé par la fonction si l'année est inférieure à 2017 ou supérieure à 2023.
 
-#### Correction
+##### Correction
 
 <div style="border-left:solid #17a589 4px;padding-left:10px; ">
 
@@ -189,11 +189,11 @@ End Sub
 
 ---
 
-### Question 5
+#### Question 5
 
 Reprendre l'exercice en codant cette fois une procédure dans laquelle une fenêtre contextuelle demande à l'utilisateur e saisir une année comprise entre 2017 et 2023, puis affiche en sortie d'écran le taux de l'année saisie. Si l'année saisie n'est pas dans l'intervalle demandé, le programme prend fin.
 
-#### Correction
+##### Correction
 
 <div style="border-left:solid #17a589 4px;padding-left:10px; ">
 
@@ -237,14 +237,14 @@ End Sub
 
 ---
 
-### Question 6
+#### Question 6
 
 Configurer les messages contextuels d'entrée et de sortie de la question précédénte, de manière à:
     - ajouter le titre `Saisie année` à le fenêtre de saisie, et paramétrer la valeur 2023 par défaut;
     - ajouter le titre `Taux du livret A`, ne paramétrer qu'un seul bouton `OK`, et ajouter une icône d'alerte.
 
 
-#### Correction
+##### Correction
 
 <div style="border-left:solid #17a589 4px;padding-left:10px; ">
 <details>
@@ -282,7 +282,7 @@ End Sub
 
 ---
 
-### Question 7
+#### Question 7
 
 Refaire la question précédente en mettant en oeuvre l'instruction `Application.InputBox`, afin de contrôler la saisie d'un nombre entier.
 
@@ -290,7 +290,7 @@ Paramétrer également le messsage de sortie d'écran avec un bouton `Oui`, `Non
 
 Si la réponse est `Oui`, le message `Bien` s'affichera. Si la réponse est `Non`, le message `Dommage` s'affichera. Si la réponse est `Annuler`, le message `Vous n'avez pas répondu` s'affichera.
 
-#### Correction
+##### Correction
 
 <div style="border-left:solid #17a589 4px;padding-left:10px; ">
 
@@ -349,11 +349,11 @@ $$C_n = C_0 \times (1 + i)^n$$
 
 avec $C_0$ le capital placé à la date 0 et $C_n$ la valeur acquise par ce capital après $n$ périodes aux taux d'intérêts $i$ par période.
 
-### Question 1
+#### Question 1
 
 Ecrire une fonction prenant en paramètres le capital, le nombre de périodes et le taux d'intérêts par période, et renvoyant la valeur du capital acquise.
 
-#### Correction
+##### Correction
 
 <div style="border-left:solid #17a589 4px;padding-left:10px; ">
 
@@ -372,7 +372,7 @@ End Function
 
 </div>
 
-### Question 2
+#### Question 2
 
 Ecrire une précédure affichant le capital acquis dans la cellule **D2** du tableau ci-dessous:
 
@@ -381,7 +381,7 @@ Ecrire une précédure affichant le capital acquis dans la cellule **D2** du tab
 | 1 | Capital | Périodes | Intérêts | Capital acquis |
 | 2 | 100 000,00 | 2 | 3% |  |
 
-#### Correction
+##### Correction
 
 <div style="border-left:solid #17a589 4px;padding-left:10px; ">
 
@@ -410,11 +410,11 @@ End Sub
 
 ## Exercice 3
 
-### Question 1
+#### Question 1
 
 Ecrire un programme qui permet de saisir une note comprise entre 0 et 20 (on affichera un message d'erreur si celle-ci n'est pas comprise entre 0 et 20).
 
-#### Correction
+##### Correction
 
 <div style="border-left:solid #17a589 4px;padding-left:10px; ">
 
@@ -436,11 +436,11 @@ End Sub
 
 </div>
 
-### Question 2
+#### Question 2
 
 Ajouter au programme précédent l'affichage de la mention relative à la note obtenue (on affichera `Ajourné(e)`si la note est strictement inférieure à 10).
 
-#### Correction
+##### Correction
 
 <div style="border-left:solid #17a589 4px;padding-left:10px; ">
 
@@ -489,7 +489,7 @@ Une agence de location de véhicules décide d'automatiser le calcul du prix fac
     - Si la catégorie est `berline`, alors la formule est: $60 \times \text{Jour} + 0.2 \times \text{Km}
     - Pour toutes les autres catégories, la formule est: $70 \times \text{Jour} + 0.15 \times \text{Km}
 
-#### Correction
+##### Correction
 
 <div style="border-left:solid #17a589 4px;padding-left:10px; ">
 
@@ -522,7 +522,7 @@ End Function
 
 Ecrire un programme qui permet à son utilisateur de saisir une valeur entière et qui, en retour, lui indique si cette valeur est un nombre premier ou non.
 
-#### Correction
+##### Correction
 
 <div style="border-left:solid #17a589 4px;padding-left:10px; ">
 
