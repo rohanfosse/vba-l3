@@ -6,3 +6,5 @@
 </p>
 
 # Séance 2 - Excel: Fonction de bases - suite
+
+TBA (à compléter)
