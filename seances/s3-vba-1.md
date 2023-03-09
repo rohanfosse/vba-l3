@@ -555,6 +555,7 @@ End Function
 {% endhighlight %}
 </details>
 
+
 ## Correction Exercice 1 du TD
 
-Vous pouvez trouver la correction de l'exercice 1 du TD en cliquant [ici](seances/exercices/s3-ex1.md)
+Vous pouvez trouver la correction de l'exercice 1 du TD en cliquant [ici](exercices/s3-ex1.md)
