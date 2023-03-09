@@ -360,7 +360,14 @@ Function double_tableau(tab() As Integer, n As Integer) As Boolean
     double_tableau = resultat
 End Function
 ```
+
 </details>
+
+---
+
+## Correction TD4 <a name="correction-td4-4"></a>
+
+Une correction du TD4 sera disponible prochainement.
 
 #### Exercice 3 <a name="exercice-3-4"></a>
 
