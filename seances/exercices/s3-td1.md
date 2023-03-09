@@ -1,17 +1,16 @@
 <p style="text-align:left;">
     [Retour au sommaire](../../README.md)
-    <span style="float:right;">
-        [Correction de l'exercice 2](s3-ex2.md)
-    </span>
 </p>
 
 <div style="text-align:center;">
-# Correction de l'exercice 1
+# Correction du TD 3
 </div>
+
+## Exercice 1
 
 ---
 
-## Question 1
+#### Question 1
 
 Ecrire une fonction nommée `taux`renvoyant le taux du livret A à 3,5%.
 (la fonction sera testée par un appel de fonction dans une procédure dédiée à cela, ou directement sur une feuille de calcul)
@@ -51,7 +50,7 @@ End Sub
 
 ---
 
-## Question 2
+### Question 2
 
 Ecrire une fonction nommée `tauxAn` prenant en paramètre d'entrée un nombre entier réprésentant une année, et renvoyant le taux du livret A e l'année, sachant que ce taux est de;
 
@@ -105,7 +104,7 @@ End Sub
 
 ---
 
-## Question 3
+### Question 3
 
 Reprendre la question 2 avec la structure `Select Case`
 
@@ -145,7 +144,7 @@ End Sub
 
 ---
 
-## Question 4
+### Question 4
 
 Reprendre la question 2, en ajoutant le message texte `Inconnu` renvoyé par la fonction si l'année est inférieure à 2017 ou supérieure à 2023.
 
@@ -190,7 +189,7 @@ End Sub
 
 ---
 
-## Question 5
+### Question 5
 
 Reprendre l'exercice en codant cette fois une procédure dans laquelle une fenêtre contextuelle demande à l'utilisateur e saisir une année comprise entre 2017 et 2023, puis affiche en sortie d'écran le taux de l'année saisie. Si l'année saisie n'est pas dans l'intervalle demandé, le programme prend fin.
 
@@ -238,7 +237,7 @@ End Sub
 
 ---
 
-## Question 6
+### Question 6
 
 Configurer les messages contextuels d'entrée et de sortie de la question précédénte, de manière à:
     - ajouter le titre `Saisie année` à le fenêtre de saisie, et paramétrer la valeur 2023 par défaut;
@@ -283,7 +282,7 @@ End Sub
 
 ---
 
-## Question 7
+### Question 7
 
 Refaire la question précédente en mettant en oeuvre l'instruction `Application.InputBox`, afin de contrôler la saisie d'un nombre entier.
 
@@ -337,3 +336,220 @@ End Sub
 ```
 
 </details>
+
+</div>
+
+---
+
+## Exercice 2
+
+Un placement à intérêt composés se calcule par la formule:
+
+$$C_n = C_0 \times (1 + i)^n$$
+
+avec $C_0$ le capital placé à la date 0 et $C_n$ la valeur acquise par ce capital après $n$ périodes aux taux d'intérêts $i$ par période.
+
+### Question 1
+
+Ecrire une fonction prenant en paramètres le capital, le nombre de périodes et le taux d'intérêts par période, et renvoyant la valeur du capital acquise.
+
+#### Correction
+
+<div style="border-left:solid #17a589 4px;padding-left:10px; ">
+
+On nous demande d'écrire une fonction prenant en paramètre le capital (un entier), le nombre de périodes (un entier) et le taux d'intérêts par période (un flottant), et renvoyant la valeur du capital acquise (un flottant).
+
+<details>
+
+```php
+
+Function capital(C0 As Double, n As Integer, i As Double) As Double
+    capital = C0 * (1 + i) ^ n
+End Function
+```
+
+</details>
+
+</div>
+
+### Question 2
+
+Ecrire une précédure affichant le capital acquis dans la cellule **D2** du tableau ci-dessous:
+
+| | A | B | C | D |
+| :---: | :---: | :---: | :---: | :---: |
+| 1 | Capital | Périodes | Intérêts | Capital acquis |
+| 2 | 100 000,00 | 2 | 3% |  |
+
+#### Correction
+
+<div style="border-left:solid #17a589 4px;padding-left:10px; ">
+
+<details>
+
+```php
+
+Sub question_2()
+    Dim C0 As Double
+    Dim n As Integer
+    Dim i As Double
+    Dim Cn As Double
+    C0 = Range("A2").Value
+    n = Range("B2").Value
+    i = Range("C2").Value
+    Cn = capital(C0, n, i)
+    Range("D2").Value = Cn
+End Sub
+```
+
+</details>
+
+</div>
+
+---
+
+## Exercice 3
+
+### Question 1
+
+Ecrire un programme qui permet de saisir une note comprise entre 0 et 20 (on affichera un message d'erreur si celle-ci n'est pas comprise entre 0 et 20).
+
+#### Correction
+
+<div style="border-left:solid #17a589 4px;padding-left:10px; ">
+
+<details>
+
+```php
+
+Sub saisir_note()
+    Dim note As Double
+    note = InputBox("Veuillez saisir une note comprise entre 0 et 20", "Saisie note")
+    If note < 0 Or note > 20 Then
+        MsgBox "La note saisie n'est pas comprise entre 0 et 20"
+        Exit Sub
+    End If
+End Sub
+```
+
+</details>
+
+</div>
+
+### Question 2
+
+Ajouter au programme précédent l'affichage de la mention relative à la note obtenue (on affichera `Ajourné(e)`si la note est strictement inférieure à 10).
+
+#### Correction
+
+<div style="border-left:solid #17a589 4px;padding-left:10px; ">
+
+<details>
+
+```php
+
+Sub saisir_note()
+    Dim note As Double
+    Dim mention As String
+    note = InputBox("Veuillez saisir une note comprise entre 0 et 20", "Saisie note")
+    If note < 0 Or note > 20 Then
+        MsgBox "La note saisie n'est pas comprise entre 0 et 20"
+        Exit Sub
+    End If
+    If note < 10 Then
+        mention = "Ajourné(e)"
+    ElseIf note < 12 Then
+        mention = "Passable"
+    ElseIf note < 14 Then
+        mention = "Assez bien"
+    ElseIf note < 16 Then
+        mention = "Bien"
+    ElseIf note < 18 Then
+        mention = "Très bien"
+    Else
+        mention = "Excellent"
+    End If
+    MsgBox "La mention est: " & mention
+End Sub
+```
+
+</details>
+
+</div>
+
+---
+
+## Exercice 4
+
+Une agence de location de véhicules décide d'automatiser le calcul du prix facturé à ces clients. Ecrire une fonction `Location de véhicules` prenant en paramètres d'entrée le kilométrage, le nombre de jours et la catégorie du véhicule, et renvoyant le prix de la location, sachant que :
+
+- Si le véhicule est loué plys de 30 jours, alors le prix sera calculé par la formule: $75 \times \text{Jour}
+- Sinon:
+    - Si la catégorie est `luxe`, alors la formule est: $80 \times \text{Jour} + 0.2 \times \text{Km}
+    - Si la catégorie est `berline`, alors la formule est: $60 \times \text{Jour} + 0.2 \times \text{Km}
+    - Pour toutes les autres catégories, la formule est: $70 \times \text{Jour} + 0.15 \times \text{Km}
+
+#### Correction
+
+<div style="border-left:solid #17a589 4px;padding-left:10px; ">
+
+<details>
+
+```php
+
+Function Location_de_vehicules(Km As Double, Jour As Integer, Categorie As String) As Double
+    If Jour > 30 Then
+        Location_de_vehicules = 75 * Jour
+    Else
+        If Categorie = "luxe" Then
+            Location_de_vehicules = 80 * Jour + 0.2 * Km
+        ElseIf Categorie = "berline" Then
+            Location_de_vehicules = 60 * Jour + 0.2 * Km
+        Else
+            Location_de_vehicules = 70 * Jour + 0.15 * Km
+        End If
+    End If
+End Function
+```
+
+</details>
+
+</div>
+
+---
+
+## Exercice 5
+
+Ecrire un programme qui permet à son utilisateur de saisir une valeur entière et qui, en retour, lui indique si cette valeur est un nombre premier ou non.
+
+#### Correction
+
+<div style="border-left:solid #17a589 4px;padding-left:10px; ">
+
+<details>
+
+```php
+
+Sub nombre_premier()
+    Dim n As Integer
+    Dim i As Integer
+    Dim est_premier As Boolean
+    n = InputBox("Veuillez saisir un nombre entier", "Saisie nombre")
+    est_premier = True
+    For i = 2 To n - 1
+        If n Mod i = 0 Then
+            est_premier = False
+            Exit For
+        End If
+    Next i
+    If est_premier Then
+        MsgBox "Le nombre est premier"
+    Else
+        MsgBox "Le nombre n'est pas premier"
+    End If
+End Sub
+```
+
+</details>
+
+</div>
