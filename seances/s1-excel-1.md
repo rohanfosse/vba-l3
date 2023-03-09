@@ -1,3 +1,10 @@
+<p style="text-align:left;">
+    [Retour au sommaire](../README.md)
+    <span style="float:right;">
+        [Séance 2 - Excel: Fonction de bases - suite](s2-excel-2.md)
+    </span>
+</p>
+
 # Excel - Fonction de base
 
 ## Rappels

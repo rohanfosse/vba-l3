@@ -1,3 +1,10 @@
+<p style="text-align:left;">
+    [Retour au sommaire](../README.md)
+    <span style="float:right;">
+        [Séance 5 - VBA: Tableaux et Enregistrements](s4-vba-3.md)
+    </span>
+</p>
+
 # Séance 4 - Structures Iteratives et communications avec Excel
 
 ## Les boucles <a name="les-boucles"></a>

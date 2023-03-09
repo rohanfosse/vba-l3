@@ -1,3 +1,9 @@
+<p style="text-align:left;">
+    [Retour au sommaire](../README.md)
+    <span style="float:right;">
+        Séance 6 - VBA: Eléments visuels
+    </span>
+</p>
 # Séance 5 - Tableaux et Enregistrements
 
 ## Les tableaux

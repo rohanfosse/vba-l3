@@ -1,3 +1,10 @@
+<p style="text-align:left;">
+    [Retour au sommaire](../README.md)
+    <span style="float:right;">
+        [Séance 4 - VBA: Structures itératives et communication avec Excel](s4-vba-2.md)
+    </span>
+</p>
+
 # Séance 3 - VBA: Fonctions et procédures, variables, tests et boucles
 
 ---
