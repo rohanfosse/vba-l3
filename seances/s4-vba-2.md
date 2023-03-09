@@ -15,8 +15,6 @@
 
 ## Les boucles <a name="les-boucles"></a>
 
----
-
 ### Boucle `While` <a name="boucle-while"></a>
 
 La boucle `While` permet d'exécuter une instruction tant qu'une condition est vraie.
