@@ -507,6 +507,7 @@ Si vous souhaitez vous entrainer, voici quelques exercices corrigés.
 
 #### Exercice 1 <a name="exercice-1"></a>
 
+<div class="effet_atelier">
 Ecrire une fonction `perimetre` calculant le perimètre d'un cercle prenant en paramètre un entier correspondant à son rayon. Le résultat sera un réel.
 La valeur 3.14 sera utilisée pour la constante pi.
 On affichera le résultat à l'aide d'une procédure `afficher_perimetre`.
@@ -523,6 +524,7 @@ Sub afficher_perimetre()
 End Sub
 {% endhighlight %}
 </details>
+</div>
 
 #### Exercice 2 <a name="exercice-2"></a>
 
@@ -557,6 +559,6 @@ End Function
 </details>
 
 
-## Correction Exercice 1 du TD
+## Correction TD3 <a name="correction-td3"></a>
 
-Vous pouvez trouver la correction de l'exercice 1 du TD en cliquant [ici](exercices/s3-ex1.md)
+Vous pouvez trouver la correction du TD3 en cliquant [ici](exercices/s3-td1.md)
