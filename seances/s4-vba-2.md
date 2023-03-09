@@ -298,10 +298,11 @@ app.Run "NomDeLaMacro", "param1", "param2"
 
 #### Exercice 1 <a name="exercice-1-4"></a>
 
+<div class="exercice">
 Ecrire une fonction qui demande à l'utilisateur un entier **n** et fait la somme des entiers de 1 à **n**.
 Ecrire une procédure qui affiche le résultat de la fonction.
 
-Voici une solution possible :
+##### Correction
 
 <details>
 
@@ -329,8 +330,11 @@ End Sub
 ```
 
 </details>
+</div>
 
 #### Exercice 2 <a name="exercice-2-4"></a>
+
+<div class="exercice">
 
 Ecrire une fonction ``double_tableau`` qui prend en paramètre un tableau d'entiers ``tab`` et sa taille ``n``. La fonction renvoie un booléen indiquant si le tableau ne contient que des entiers pairs.
 
@@ -338,7 +342,7 @@ Par exemple, si ``tab`` contient les valeurs ``1, 2, 3, 4``, la fonction renvoie
 
 Vous pouvez utiliser l'opérateur ``Mod`` pour calculer le modulo. Par exemple, ``5 Mod 2`` renvoie ``1``.
 
-Voici une solution possible :
+##### Correction
 
 <details>
 
@@ -362,8 +366,11 @@ End Function
 ```
 
 </details>
+</div>
 
 #### Exercice 3 <a name="exercice-3-4"></a>
+
+<div class="exercice">
 
 Ecrire une fonction `fibonacci` qui prend en paramètre un entier `n` et retourne un tableau contenant les `n` premiers termes de la suite de Fibonacci. Le type de retour de la fonction est `Variant` car on ne connait pas à l'avance la taille du tableau.
 
@@ -375,7 +382,7 @@ f(1) = 1
 f(n) = f(n-1) + f(n-2)
 ```
 
-Voici une solution possible :
+##### Correction
 
 <details>
 
@@ -396,6 +403,7 @@ End Function
 ```
 
 </details>
+</div>
 
 ---
 
