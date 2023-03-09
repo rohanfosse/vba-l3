@@ -5,9 +5,17 @@
     </span>
 </p>
 
+<div style="text-align:center;">
+
 # Séance 4 - Structures Iteratives et communications avec Excel
 
+</div>
+
+---
+
 ## Les boucles <a name="les-boucles"></a>
+
+---
 
 ### Boucle `While` <a name="boucle-while"></a>
 
@@ -21,7 +29,9 @@ While condition
 Wend
 ```
 
-Par exemple, pour afficher les nombres de 1 à 10, on utilise la syntaxe suivante :
+<div class="exemple">
+
+Par exemple, si l'on souhaite afficher les nombres de 1 à 10, le code sera le suivant :
 
 ```php
 Dim i As Integer
@@ -33,7 +43,11 @@ While i <= 10
 Wend
 ```
 
+</div>
+
 Un autre exemple serait de demander à l'utilisateur de saisir un nombre tant que ce nombre n'est pas compris entre 1 et 10.
+
+<div class ="exemple">
 
 ```php
 Dim nombre As Integer
@@ -45,17 +59,26 @@ While nombre < 1 Or nombre > 10
 Wend
 ```
 
+Dans cet exemple, on doit écrire deux fois le code `nombre = InputBox("Entrez un nombre", "Nombre")`. En effet, il faut d'abord que l'utilisateur saisisse un nombre, puis que le programme vérifie si ce nombre est compris entre 1 et 10.
+Si ce n'est pas le cas, on redemande à l'utilisateur de saisir un nombre.
+
+</div>
+
 ### Boucle `Do While` <a name="boucle-do-while"></a>
 
-La boucle `Do While` permet d'exécuter une instruction tant qu'une condition est vraie. Elle est similaire à la boucle `While` mais la condition est testée à la fin de l'exécution de l'instruction.
+La boucle `Do While` permet d'exécuter une instruction tant qu'une condition est vraie. Elle est similaire à la boucle `While` mais la condition est testée **à la fin** de l'exécution de l'instruction.
 
 La syntaxe est la suivante :
 
 ```php
 Do
-    instruction
+    'instruction'
 Loop While condition
 ```
+
+La différence avec la boucle `While`, c'est que les instructions sont exécutées au moins une fois.
+
+<div class="exemple">
 
 Par exemple, pour afficher les nombres de 1 à 10, on utilise la syntaxe suivante :
 
@@ -69,12 +92,12 @@ Do
 Loop While i <= 10
 ```
 
+</div>
+
 Si nous reprenons le même exemple que la boucle `While`, on obtient le code suivant :
 
 ```php
 Dim nombre As Integer
-
-nombre = InputBox("Entrez un nombre", "Nombre")
 
 Do
     nombre = InputBox("Entrez un nombre", "Nombre")
@@ -188,6 +211,8 @@ For Each element In tab
 Next element
 ```
 
+---
+
 ## Communication avec Excel <a name="communication-avec-excel"></a>
 
 ### Range <a name="range"></a>
@@ -268,6 +293,8 @@ Dim app As Application
 Set app = Application
 app.Run "NomDeLaMacro", "param1", "param2"
 ```
+
+---
 
 ## Exercices Corrigés <a name="-exercices-corriges-4"></a>
 
