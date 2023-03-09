@@ -507,7 +507,7 @@ Si vous souhaitez vous entrainer, voici quelques exercices corrigés.
 
 #### Exercice 1 <a name="exercice-1"></a>
 
-<div class="effet_atelier">
+<div class="exemple_blue">
 Ecrire une fonction `perimetre` calculant le perimètre d'un cercle prenant en paramètre un entier correspondant à son rayon. Le résultat sera un réel.
 La valeur 3.14 sera utilisée pour la constante pi.
 On affichera le résultat à l'aide d'une procédure `afficher_perimetre`.
