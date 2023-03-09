@@ -1,4 +1,4 @@
-# Seconde partie <a name="seance-4"></a>
+# Séance 4 - Structures Iteratives et communications avec Excel
 
 ## Les boucles <a name="les-boucles"></a>
 
