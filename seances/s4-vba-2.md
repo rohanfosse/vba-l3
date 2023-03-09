@@ -363,12 +363,6 @@ End Function
 
 </details>
 
----
-
-## Correction TD4 <a name="correction-td4-4"></a>
-
-Une correction du TD4 sera disponible prochainement.
-
 #### Exercice 3 <a name="exercice-3-4"></a>
 
 Ecrire une fonction `fibonacci` qui prend en paramètre un entier `n` et retourne un tableau contenant les `n` premiers termes de la suite de Fibonacci. Le type de retour de la fonction est `Variant` car on ne connait pas à l'avance la taille du tableau.
@@ -402,3 +396,9 @@ End Function
 ```
 
 </details>
+
+---
+
+## Correction TD4 <a name="correction-td4-4"></a>
+
+Une correction du TD4 sera disponible prochainement.
