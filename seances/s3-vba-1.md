@@ -512,7 +512,8 @@ Ecrire une fonction `perimetre` calculant le perimètre d'un cercle prenant en p
 La valeur 3.14 sera utilisée pour la constante pi.
 On affichera le résultat à l'aide d'une procédure `afficher_perimetre`.
 
-Voici une solution possible:
+##### Solution possible
+
 <details>
 {% highlight php %}
 Function perimetre(rayon As Integer) As Single
@@ -528,9 +529,11 @@ End Sub
 
 #### Exercice 2 <a name="exercice-2"></a>
 
+<div class="exemple_blue">
 Ecrire une fonction `calculer_moyenne` calculant la moyenne de 3 notes qui seront données en paramètre de la fonction. Le résultat sera un réel.
 
-Voici une solution possible:
+##### Solution possible
+
 <details>
 {% highlight php %}
 Function calculer_moyenne(note1 As Integer, note2 As Integer, note3 As Integer) As Single
@@ -539,11 +542,16 @@ End Function
 {% endhighlight %}
 </details>
 
+</div>
+
+
 #### Exercice 3 <a name="exercice-3"></a>
 
+<div class="exemple_blue">
 Ecrire une fonction `calculer_somme` calculant la somme de 2 entiers que l'utilisateur saisira à l'aide de deux fenêtres `InputBox`. Si l'utilisateur ne saisit pas de valeur, la valeur par défaut sera 0.
 
-Voici une solution possible:
+##### Solution possible
+
 <details>
 {% highlight php %}
 Function calculer_somme() As Integer
@@ -557,7 +565,9 @@ calculer_somme = nombre1 + nombre2
 End Function
 {% endhighlight %}
 </details>
+</div>
 
+---
 
 ## Correction TD3 <a name="correction-td3"></a>
 
