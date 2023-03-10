@@ -13,7 +13,7 @@
 
 ## Exercice 1
 
-Ecrire une procédure demandant à l'utilisateur de saisir un nombre *n*, puis affichant *n* fois le message "Message i" (avec i prenant les valeurs de 1 à *n*).
+Ecrire une procédure demandant à l'utilisateur de saisir un nombre *n*, puis affichant *n* fois le message `Message i` (avec i prenant les valeurs de 1 à *n*).
 
 Donner trois variantes de cette procédure: l'une avec une boucle `For`, l'autre avec une boucle `While` et la dernière avec une boucle `Do While`.
 
@@ -47,6 +47,8 @@ End Sub
 ```
 
 </details>
+
+---
 
 ## Exercice 2
 
@@ -87,6 +89,8 @@ End Sub
 
 </details>
 
+---
+
 ## Exercice 3
 
 On considère un placement à intérêt composé, avec capitalisation annuelle des interêts, en notant:
@@ -94,6 +98,8 @@ On considère un placement à intérêt composé, avec capitalisation annuelle d
 - *C* le montant du caputal placé (en euros);
 - *n* la durée du placement (en années);
 - *i* le taux d'intérêt.
+
+---
 
 #### Question 1
 
@@ -134,6 +140,8 @@ End Sub
 
 </details>
 
+---
+
 ##### Question 2
 
 Reprendre la question précédente, en mettant en oeuvre la formule de récurrence du calcul des montatns annuels capitalisés: *C_{n} = C_{n-1} x (1+i)*.
@@ -164,6 +172,8 @@ End Sub
 ```
 
 </details>
+
+---
 
 ## Exercice 4
 
