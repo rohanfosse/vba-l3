@@ -148,8 +148,6 @@ End Sub
 </details>
 </div>
 
----
-
 ##### Question 2
 
 Reprendre la question précédente, en mettant en oeuvre la formule de récurrence du calcul des montatns annuels capitalisés: *C_{n} = C_{n-1} x (1+i)*.
