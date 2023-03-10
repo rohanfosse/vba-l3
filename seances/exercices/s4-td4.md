@@ -13,7 +13,7 @@
 
 ## Exercice 1
 
-Ecrire une procédure demandant à l'utilisateur de saisir un nombre $n$, puis affichant $n$ fois le message "Message i" (avec i prenant les valeurs de 1 à $n$).
+Ecrire une procédure demandant à l'utilisateur de saisir un nombre *n*, puis affichant *n* fois le message "Message i" (avec i prenant les valeurs de 1 à *n*).
 
 Donner trois variantes de cette procédure: l'une avec une boucle `For`, l'autre avec une boucle `While` et la dernière avec une boucle `Do While`.
 
@@ -50,11 +50,11 @@ End Sub
 
 ## Exercice 2
 
-Ecrire une fonction permettant de calculer le prix actualisé d'un produit, après $n$ années écoulées avec un taux d'inflation à 5% (taux annuel).
+Ecrire une fonction permettant de calculer le prix actualisé d'un produit, après *n* années écoulées avec un taux d'inflation à 5% (taux annuel).
 
 *NB: la fonction prendra en paramètres d'entrée le prix initial p et le nombre d'années n.*
 
-Obtiendrait-on la même valeur en appliquant le taux $n \times 5\%$ au prix initial?
+Obtiendrait-on la même valeur en appliquant le taux *n x 5\%* au prix initial?
 
 #### Correction
 
@@ -91,9 +91,9 @@ End Sub
 
 On considère un placement à intérêt composé, avec capitalisation annuelle des interêts, en notant:
 
-- $C$ le montant du caputal placé (en euros);
-- $n$ la durée du placement (en années);
-- $i$ le taux d'intérêt.
+- *C* le montant du caputal placé (en euros);
+- *n* la durée du placement (en années);
+- *i* le taux d'intérêt.
 
 #### Question 1
 
@@ -136,7 +136,7 @@ End Sub
 
 ##### Question 2
 
-Reprendre la question précédente, en mettant en oeuvre la formule de récurrence du calcul des montatns annuels capitalisés: $C_{n} = C_{n-1} \times (1+i)$.
+Reprendre la question précédente, en mettant en oeuvre la formule de récurrence du calcul des montatns annuels capitalisés: *C_{n} = C_{n-1} x (1+i)*.
 
 #### Correction
 
@@ -171,7 +171,7 @@ Ecrire un programme qui affiche tous les nombres parfaits compris entre 2 et 100
 
 Un nombre parfait est un enteier égale à la somme de ses diviseurs, lui exclu.
 
-Par exemple, 28 est un nombre parfait car $1+2+4+7+14=28$.
+Par exemple, 28 est un nombre parfait car *1+2+4+7+14=28*.
 
 #### Correction
 
