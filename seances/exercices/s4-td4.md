@@ -105,7 +105,6 @@ On considère un placement à intérêt composé, avec capitalisation annuelle d
 - *n* la durée du placement (en années);
 - *i* le taux d'intérêt.
 
----
 
 #### Question 1
 
