@@ -17,6 +17,8 @@ Ecrire une procédure demandant à l'utilisateur de saisir un nombre *n*, puis a
 
 Donner trois variantes de cette procédure: l'une avec une boucle `For`, l'autre avec une boucle `While` et la dernière avec une boucle `Do While`.
 
+<div style="border-left:solid #17a589 4px;padding-left:10px; ">
+
 #### Correction
 
 <details>
@@ -47,6 +49,7 @@ End Sub
 ```
 
 </details>
+</div>
 
 ---
 
@@ -57,6 +60,8 @@ Ecrire une fonction permettant de calculer le prix actualisé d'un produit, apr�
 *NB: la fonction prendra en paramètres d'entrée le prix initial p et le nombre d'années n.*
 
 Obtiendrait-on la même valeur en appliquant le taux *n x 5\%* au prix initial?
+
+<div style="border-left:solid #17a589 4px;padding-left:10px; ">
 
 #### Correction
 
@@ -88,6 +93,7 @@ End Sub
 ```
 
 </details>
+</div>
 
 ---
 
@@ -115,6 +121,7 @@ Ecrire un programme qui affiche sur une feuille de calcul (comme ci-dessous), le
 
 #### Correction
 
+<div style="border-left:solid #17a589 4px;padding-left:10px; ">
 <details>
 
 ```php
@@ -139,12 +146,15 @@ End Sub
 ```
 
 </details>
+</div>
 
 ---
 
 ##### Question 2
 
 Reprendre la question précédente, en mettant en oeuvre la formule de récurrence du calcul des montatns annuels capitalisés: *C_{n} = C_{n-1} x (1+i)*.
+
+<div style="border-left:solid #17a589 4px;padding-left:10px; ">
 
 #### Correction
 
@@ -172,6 +182,7 @@ End Sub
 ```
 
 </details>
+</div>
 
 ---
 
@@ -182,6 +193,8 @@ Ecrire un programme qui affiche tous les nombres parfaits compris entre 2 et 100
 Un nombre parfait est un enteier égale à la somme de ses diviseurs, lui exclu.
 
 Par exemple, 28 est un nombre parfait car *1+2+4+7+14=28*.
+
+<div style="border-left:solid #17a589 4px;padding-left:10px; ">
 
 #### Correction
 
@@ -208,3 +221,4 @@ End Sub
 ```
 
 </details>
+</div>
