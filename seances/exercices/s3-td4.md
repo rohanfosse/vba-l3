@@ -58,7 +58,6 @@ Obtiendrait-on la même valeur en appliquant le taux $n \times 5\%$ au prix init
 <details>
 
 ```php
-
 Function prixActualise(p As Double, n As Integer) As Double
     Dim i As Integer
     Dim prix As Double
@@ -93,7 +92,9 @@ On considère un placement à intérêt composé, avec capitalisation annuelle d
 - $n$ la durée du placement (en années);
 - $i$ le taux d'intérêt.
 
-1. Ecrire un programme qui affiche sur une feuille de calcul (comme ci-dessous), les montants annuels capitalisés d'un placement à intérêt composé dont les caractéristiques (capital placé, durée et taux d'intérêt) sont demandées par des messages contextuels.
+#### Question 1
+
+Ecrire un programme qui affiche sur une feuille de calcul (comme ci-dessous), les montants annuels capitalisés d'un placement à intérêt composé dont les caractéristiques (capital placé, durée et taux d'intérêt) sont demandées par des messages contextuels.
 
 | Année | Montant |
 |-------|---------|
@@ -108,7 +109,6 @@ On considère un placement à intérêt composé, avec capitalisation annuelle d
 <details>
 
 ```php
-
 Sub exo3q1()
     Dim C As Double
     Dim n As Integer
@@ -131,14 +131,15 @@ End Sub
 
 </details>
 
-2. Reprendre la question précédente, en mettant en oeuvre la formule de récurrence du calcul des montatns annuels capitalisés: $C_{n} = C_{n-1} \times (1+i)$.
+##### Question 2
+
+Reprendre la question précédente, en mettant en oeuvre la formule de récurrence du calcul des montatns annuels capitalisés: $C_{n} = C_{n-1} \times (1+i)$.
 
 #### Correction
 
 <details>
 
 ```php
-
 Sub exo3q2()
     Dim C As Double
     Dim n As Integer
@@ -174,7 +175,6 @@ Par exemple, 28 est un nombre parfait car $1+2+4+7+14=28$.
 <details>
 
 ```php
-
 Sub exo4()
     Dim i As Integer
     Dim j As Integer
