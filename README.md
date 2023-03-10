@@ -11,7 +11,7 @@ Le responsable du cours est Fabien Schloesser et la page a été créée par [Ro
 
 - Les notes de cours sont en cours de rédaction. Elles seront mises à jour régulièrement.
 
-- Vous pouvez retrouver la correction du TD3 [ici](seances/exercices/s3-td1.md)
+- Vous pouvez retrouver la correction du TD3 [ici](seances/exercices/s3-td3.md)
 
 ---
 
