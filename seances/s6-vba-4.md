@@ -266,7 +266,7 @@ Les formulaires sont des boîtes de dialogue personnalisées qui permettent à l
 
 #### Création d'un formulaire
 
-Pour créer un formulaire, il faut utiliser la méthode **Add** de la collection **UserForms** 
+Pour créer un formulaire, il faut utiliser la méthode **Add** de la collection **UserForms**.
 
 <div class="exemple">
 
