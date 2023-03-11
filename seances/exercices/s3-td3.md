@@ -33,7 +33,7 @@ Voici une solution possible:
 
 <details>
 
-```php
+```vb
 'Question 1'
 Function taux() As Single
     taux = 0.035
@@ -78,7 +78,7 @@ Pour plus d'informations, lire la section du cours sur les structures conditionn
 
 <details>
 
-```php
+```vb
 'Question 2'
 Function tauxAn(a As Integer) As Single
     If a >= 2017 And a <= 2019 Then
@@ -118,7 +118,7 @@ Pour plus d'informations, lire la section du cours sur les `Select Case` [ici](R
 
 <details>
 
-```php
+```vb
 'Question 3'
 Function tauxAnSelect(a As Integer) As Single
     Select Case a
@@ -160,7 +160,7 @@ Voici une solution possible:
 
 <details>
 
-```php
+```vb
 'Question 4'
 
 Function tauxAnInconnu(a As Integer) As Variant
@@ -209,7 +209,7 @@ Une solution possible est la suivante:
 
 <details>
 
-```php
+```vb
 'Question 5'
 Sub question_5()
     Dim a As Integer
@@ -249,7 +249,7 @@ Configurer les messages contextuels d'entrée et de sortie de la question préc�
 <div style="border-left:solid #17a589 4px;padding-left:10px; ">
 <details>
 
-```php
+```vb
 'Question 6'
 Sub question_6()
 Dim a As Integer
@@ -302,7 +302,7 @@ Une solution possible est la suivante:
 
 <details>
 
-```php
+```vb
 'Question 7'
 Sub question_7()
 Dim a As Integer
@@ -361,7 +361,7 @@ On nous demande d'écrire une fonction prenant en paramètre le capital (un enti
 
 <details>
 
-```php
+```vb
 
 Function capital(C0 As Double, n As Integer, i As Double) As Double
     capital = C0 * (1 + i) ^ n
@@ -387,7 +387,7 @@ Ecrire une précédure affichant le capital acquis dans la cellule **D2** du tab
 
 <details>
 
-```php
+```vb
 
 Sub question_2()
     Dim C0 As Double
@@ -420,7 +420,7 @@ Ecrire un programme qui permet de saisir une note comprise entre 0 et 20 (on aff
 
 <details>
 
-```php
+```vb
 
 Sub saisir_note()
     Dim note As Double
@@ -446,7 +446,7 @@ Ajouter au programme précédent l'affichage de la mention relative à la note o
 
 <details>
 
-```php
+```vb
 
 Sub saisir_note()
     Dim note As Double
@@ -495,7 +495,7 @@ Une agence de location de véhicules décide d'automatiser le calcul du prix fac
 
 <details>
 
-```php
+```vb
 
 Function Location_de_vehicules(Km As Double, Jour As Integer, Categorie As String) As Double
     If Jour > 30 Then
@@ -528,7 +528,7 @@ Ecrire un programme qui permet à son utilisateur de saisir une valeur entière 
 
 <details>
 
-```php
+```vb
 
 Sub nombre_premier()
     Dim n As Integer

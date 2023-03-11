@@ -31,7 +31,7 @@ Il existe aussi un type `Variant` qui permet de stocker n'importe quel type de v
 
 Pour déclarer une variable, on utilise la syntaxe suivante :
 
-```php
+```vb
 Dim nom_variable As type_variable
 ```
 
@@ -39,7 +39,7 @@ Dim nom_variable As type_variable
 
 Pour déclarer une variable `a` de type `Integer`, on utilise la syntaxe suivante :
 
-```php
+```vb
 Dim a As Integer
 ```
 
@@ -47,13 +47,13 @@ Dim a As Integer
 
 Pour déclarer plusieurs variables de même type, on peut utiliser la syntaxe suivante :
 
-```php
+```vb
 Dim a As Integer, b As Integer, c As Integer
 ```
 
 Attention, la syntaxe suivante n'est pas valide:
 
-```php
+```vb
 Dim a, b, c As Integer
 ```
 
@@ -67,7 +67,7 @@ Un bloc de code est un ensemble d'instructions qui sont exécutées les unes apr
 
 Pour définir un bloc de code, on utilise la syntaxe suivante :
 
-```php
+```vb
 Bloc nom()
     ' instructions '
 End Bloc
@@ -92,7 +92,7 @@ Les différents blocs de code sont :
 Une procédure est une fonction qui ne renvoie pas de valeur.
 Pour déclarer une procédure, on utilise la syntaxe suivante :
 
-```php
+```vb
 Sub nom_procédure()
     ' instructions '
 End Sub
@@ -102,7 +102,7 @@ End Sub
 
 Pour déclarer la procédure `afficher_message`, on utilise la syntaxe suivante :
 
-```php
+```vb
 Sub afficher_message()
     MsgBox "Mon message"
 End Sub
@@ -118,7 +118,7 @@ Pour appeler une procédure, il suffit de cliquer sur le code de la procédure e
 
 Une fonction est une procédure qui renvoie une valeur. Pour déclarer une fonction, on utilise la syntaxe suivante :
 
-```php
+```vb
 Function nom_fonction() As type_variable
     ' instructions '
     nom_fonction = valeur
@@ -135,7 +135,7 @@ Il est important de noter que le type de la fonction et de la valeur retournée 
 
 Par exemple, pour déclarer une fonction `retourner_a` qui retourne la lettre "a", on utilise la syntaxe suivante :
 
-```php
+```vb
 Function retourner_a() As String
     retourner_a = "a"
 End Function
@@ -149,7 +149,7 @@ Si jamais nous souhaitons retourner une valeur de type `Integer`, par exemple `1
 
 <div class="exemple">
 
-```php
+```vb
 Function retourner_a() As Integer
     retourner_a = 1
 End Function
@@ -160,7 +160,7 @@ Pour afficher cette fonction, on peut définir la procédure suivante :
 
 <div class="exemple">
 
-```php
+```vb
 Sub afficher_a()
     MsgBox retourner_a()
 End Sub
@@ -170,7 +170,7 @@ End Sub
 
 Une fonction peut avoir plusieurs paramètres. Pour déclarer une fonction avec plusieurs paramètres, on utilise la syntaxe suivante :
 
-```php
+```vb
 Function nom_fonction(paramètre1 As type_variable, paramètre2 As type_variable) As type_variable
     ' instructions '
     nom_fonction = valeur
@@ -181,7 +181,7 @@ Par exemple, si nous souhaitons déclarer une fonction `aire_rectangle` qui reto
 
 <div class="exemple">
 
-```php
+```vb
 Function aire_rectangle(longueur As Integer, largeur As Integer) As Integer
     aire_rectangle = longueur * largeur
 End Function
@@ -192,7 +192,7 @@ End Function
 Pour appeler cette fonction, on peut définir la procédure suivante :
 
 <div class="exemple">
-```php
+```vb
 Sub afficher_aire_rectangle()
     MsgBox aire_rectangle(10, 5)
 End Sub
@@ -207,7 +207,7 @@ Ainsi, une autre façon d'appeler cette procédure serait par exemple :
 
 <div class="exemple">
 
-```php
+```vb
 Sub afficher_aire_rectangle()
     MsgBox aire_rectangle(8, 10)
 End Sub
@@ -223,7 +223,7 @@ Une insctruction conditonnelle est une instruction qui permet d'exécuter un blo
 
 Pour définir une condition, on utilise la syntaxe suivante :
 
-```php
+```vb
 If condition Then
     ' instructions '
 End If
@@ -233,7 +233,7 @@ Si jamais la condition n'est pas vérifiée, le bloc d'instructions n'est pas ex
 
 Dans ce cas, on utilise la syntaxe suivante :
 
-```php
+```vb
 If condition Then
     ' instructions '
 Else
@@ -245,7 +245,7 @@ Le `else if` est une condition supplémentaire qui est exécutée si la conditio
 
 Pour définir une condition avec plusieurs `else if`, on utilise la syntaxe suivante :
 
-```php
+```vb
 If condition Then
     ' instructions '
 ElseIf condition Then
@@ -263,7 +263,7 @@ Prenons l'exemple d'une fonction `appreciation` qui retourne une appréciation d
 
 On peut définir cette fonction comme suit :
 
-```php
+```vb
 Function appreciation(note As Integer) As String
     If note < 10 Then
         appreciation = "ajourné"
@@ -292,7 +292,7 @@ Dans ce code, plusieurs points sont à noter :
 
 Pour appeler cette fonction, on peut définir la procédure suivante :
 
-```php
+```vb
 Sub afficher_appreciation()
     MsgBox appreciation(15)
 End Sub
@@ -317,7 +317,7 @@ Les opérateurs logiques permettent de comparer des valeurs entre elles. Les op�
 
 Par exemple, pour comparer deux variables `a` et `b`, on utilise la syntaxe suivante :
 
-```php
+```vb
 If a = b Then
     ' instructions '
 End If
@@ -332,7 +332,7 @@ Si l'on souhaite faire plusieurs comparaisons à la suite, on peut utiliser les 
 <div class="exemple">
 Par exemple, pour comparer deux variables `a` et `b`, on utilise la syntaxe suivante :
 
-```php
+```vb
 If a = b And a > 0 Then
     ' instructions '
 End If
@@ -346,7 +346,7 @@ End If
 
 Pour définir une condition avec plusieurs `else if`, il existe une autre méthode utilisant la syntaxe suivante :
 
-```php
+```vb
  Select Case variable
     Case valeur1
         ' instructions '
@@ -374,7 +374,7 @@ Les mots clés autorisés dans un `Case` sont les suivants :
 <div class="exemple">
 Si nous reprenons l'exemple de la fonction `appreciation` précédente, on peut définir cette fonction comme suit :
 
-```php
+```vb
 Function appreciation_select(note As Integer) As String
     Select Case note
         Case 0 To 9
@@ -397,7 +397,7 @@ Il faut noter que puisque j'ai changé le nom de la fonction en `appreciation_se
 
 Une façon de traduire ce code en français serait :
 
-```php
+```vb
 Je sélectionne la variable note.
 - Si je suis dans le cas où la note est comprise entre 0 et 9, alors appréciation = "ajournée"
 - Si je suis dans le cas où la note est comprise entre 10 et 11, alors appréciation = "passable"
@@ -409,7 +409,7 @@ Je sélectionne la variable note.
 
 De la même façon que pour les `Else If`, on peut définir la procédure suivante pour appeler la fonction:
 
-```php
+```vb
 Sub afficher_appreciation()
     MsgBox appreciation(15)
 End Sub
@@ -428,7 +428,7 @@ La saisie de texte se fait avec la fenêtre `InputBox`.
 <div class="exemple">
 Par exemple, pour afficher la fenêtre `InputBox` avec le message `Entrez un nombre` et stocker le résultat dans la variable `nombre`, on utilise la syntaxe suivante :
 
-```php
+```vb
 Dim nombre As Integer ' Déclaration de la variable nombre de type Integer '
 nombre = InputBox("Entrez un nombre")
 ```
@@ -441,7 +441,7 @@ Si l'on souhaite maintenant afficher la même fenêtre mais en changeant le titr
 
 <div class="exemple">
 
-```php
+```vb
 Dim nombre As Integer ' Déclaration de la variable nombre de type Integer'
 Dim titre As String ' Déclaration de la variable titre de type String'
 
@@ -455,7 +455,7 @@ Enfin, si l'on souhaite en plus que la valeur par défaut soit `1`, on utilise l
 
 <div class="exemple">
 
-```php
+```vb
 Dim nombre As Integer ' Déclaration de la variable nombre de type Integer'
 Dim titre As String ' Déclaration de la variable titre de type String'
 Dim valeur_par_defaut As Integer ' Déclaration de la variable defaut de type Integer'
@@ -480,7 +480,7 @@ L'affichage d'un message se fait avec la fenêtre `MsgBox`.
 
 Par exemple, pour afficher la fenêtre `MsgBox` avec le message "a", on utilise la syntaxe suivante :
 
-```php
+```vb
 MsgBox("Mon message")
 ```
 
@@ -490,7 +490,7 @@ Si l'on souhaite afficher un message comportant une variable **v**, on utilise l
 
 <div class="exemple"
 
-```php
+```vb
 MsgBox("Mon message" & v)
 ```
 
@@ -513,7 +513,7 @@ Les noms, valeurs et significations pour les principaux boutons peuvent être tr
 
 Par exemple, pour afficher la fenêtre `MsgBox` avec le message "Mon message" et le bouton "OK", on utilise la syntaxe suivante :
 
-```php
+```vb
 resultat = MsgBox("Mon message", vbOKOnly)
 ```
 
@@ -525,7 +525,7 @@ Pour afficher la fenêtre `MsgBox` avec le message "Mon message", un bouton "OK'
 
 <div class="exemple">
 
-```php
+```vb
 resultat = MsgBox("Mon message", vbOKOnly, "Titre")
 ```
 
@@ -535,7 +535,7 @@ Pour afficher la fenêtre `MsgBox` avec le message "Mon message", le titre "Titr
 
 <div class="exemple">
 
-```php
+```vb
 resultat = MsgBox("Mon Message", vbYesNo, "Titre")
 ```
 
@@ -548,7 +548,7 @@ On stocke la réponse de l'utilisateur dans la variable `resultat`. Si l'utilisa
 
 Par exemple, si l'on souhaite poser une question à l'utilisateur et afficher un message différent en fonction de sa réponse, on peut utiliser le faire de la façon suivante :
 
-```php
+```vb
 Sub afficher_message()
     Dim resultat As Integer
     resultat = MsgBox("Voulez-vous continuer ?", vbYesNo, "Titre")
@@ -578,7 +578,7 @@ On affichera le résultat à l'aide d'une procédure `afficher_perimetre`.
 ##### Solution possible
 
 <details>
-{% highlight php %}
+{% highlight vb %}
 Function perimetre(rayon As Integer) As Single
     perimetre = 2 * 3.14 * rayon
 End Function
@@ -598,7 +598,7 @@ Ecrire une fonction `calculer_moyenne` calculant la moyenne de 3 notes qui seron
 ##### Solution possible
 
 <details>
-{% highlight php %}
+{% highlight vb %}
 Function calculer_moyenne(note1 As Integer, note2 As Integer, note3 As Integer) As Single
 calculer_moyenne = (note1 + note2 + note3) / 3
 End Function
@@ -616,7 +616,7 @@ Ecrire une fonction `calculer_somme` calculant la somme de 2 entiers que l'utili
 ##### Solution possible
 
 <details>
-{% highlight php %}
+{% highlight vb %}
 Function calculer_somme() As Integer
 Dim nombre1 As Integer
 Dim nombre2 As Integer

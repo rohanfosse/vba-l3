@@ -21,7 +21,7 @@ La boucle `While` permet d'exécuter une instruction tant qu'une condition est v
 
 La syntaxe est la suivante :
 
-```php
+```vb
 While condition
     instruction
 Wend
@@ -31,7 +31,7 @@ Wend
 
 Par exemple, si l'on souhaite afficher les nombres de 1 à 10, le code sera le suivant :
 
-```php
+```vb
 Dim i As Integer
 i = 1
 
@@ -47,7 +47,7 @@ Un autre exemple serait de demander à l'utilisateur de saisir un nombre tant qu
 
 <div class ="exemple">
 
-```php
+```vb
 Dim nombre As Integer
 
 nombre = InputBox("Entrez un nombre", "Nombre")
@@ -68,7 +68,7 @@ La boucle `Do While` permet d'exécuter une instruction tant qu'une condition es
 
 La syntaxe est la suivante :
 
-```php
+```vb
 Do
     'instruction'
 Loop While condition
@@ -80,7 +80,7 @@ La différence avec la boucle `While`, c'est que les instructions sont exécuté
 
 Par exemple, pour afficher les nombres de 1 à 10, on utilise la syntaxe suivante :
 
-```php
+```vb
 Dim i As Integer
 i = 1
 
@@ -94,7 +94,7 @@ Loop While i <= 10
 
 Si nous reprenons le même exemple que la boucle `While`, on obtient le code suivant :
 
-```php
+```vb
 Dim nombre As Integer
 
 Do
@@ -108,7 +108,7 @@ La boucle `Do Loop Until` permet d'exécuter une instruction tant qu'une conditi
 
 La syntaxe est la suivante :
 
-```php
+```vb
 Do
     instruction
 Loop Until condition
@@ -116,7 +116,7 @@ Loop Until condition
 
 Par exemple, pour afficher les nombres de 1 à 10, on utilise la syntaxe suivante :
 
-```php
+```vb
 Dim i As Integer
 i = 1
 
@@ -128,7 +128,7 @@ Loop Until i > 10
 
 Si nous reprenons le même exemple que la boucle `While`, on obtient le code suivant :
 
-```php
+```vb
 Dim nombre As Integer
 
 nombre = InputBox("Entrez un nombre", "Nombre")
@@ -144,7 +144,7 @@ La boucle `For` permet d'exécuter une instruction un certain nombre de fois.
 
 La syntaxe est la suivante :
 
-```php
+```vb
 For i = valeur_de_depart To valeur_de_fin Step pas
     'instruction'
 Next i
@@ -154,7 +154,7 @@ Step sert à définir le pas d'itération. Il est toutefois optionnel. Si on ne 
 
 Par exemple, pour afficher les nombres de 1 à 10, on utilise la syntaxe suivante :
 
-```php
+```vb
 For i = 1 To 10 
     MsgBox i
 Next i
@@ -162,7 +162,7 @@ Next i
 
 On peut aussi utiliser la boucle `For` pour parcourir un tableau. Par exemple, pour afficher les valeurs d'un tableau `tab` de taille 3, on utilise la syntaxe suivante :
 
-```php
+```vb
 Dim tab(2) As Integer
 tab(0) = 1
 tab(1) = 2
@@ -175,7 +175,7 @@ Next i
 
 Une autre façon de définir le tableau est la suivante :
 
-```php
+```vb
 Dim tab() As Variant
 tab = Array(1, 2, 3)
 
@@ -190,7 +190,7 @@ La boucle `For Each In Next` permet d'exécuter une instruction pour chaque él�
 
 La syntaxe est la suivante :
 
-```php
+```vb
 For Each element In tableau
     'instruction'
 Next element
@@ -198,7 +198,7 @@ Next element
 
 Par exemple, pour afficher les valeurs d'un tableau `tab` de taille 3, on utilise la syntaxe suivante :
 
-```php
+```vb
 Dim tab(2) As Integer
 tab(0) = 1
 tab(1) = 2
@@ -219,28 +219,28 @@ Le type `Range` permet de manipuler des cellules ou des plages de cellules.
 
 Pour créer un objet `Range`, on utilise la syntaxe suivante :
 
-```php
+```vb
 Dim range As Range
 Set range = Range("A1")
 ```
 
 On peut aussi créer un objet `Range` à partir d'une plage de cellules :
 
-```php
+```vb
 Dim range As Range
 Set range = Range("A1:B2")
 ```
 
 On peut aussi créer un objet `Range` à partir d'une plage de cellules en utilisant les coordonnées :
 
-```php
+```vb
 Dim range As Range
 Set range = Range(Cells(1, 1), Cells(2, 2))
 ```
 
 La méthode `Clear` permet de supprimer le contenu d'une cellule ou d'une plage de cellules :
 
-```php
+```vb
 Dim range As Range
 Set range = Range("A1:B2")
 range.Clear
@@ -248,7 +248,7 @@ range.Clear
 
 La méthode `Value` permet de récupérer la valeur d'une cellule ou d'une plage de cellules :
 
-```php
+```vb
 Dim range As Range
 Set range = Range("A1:B2")
 MsgBox range.Value
@@ -256,7 +256,7 @@ MsgBox range.Value
 
 La méthode `Cells` permet de spécifier une cellule à partir d'une plage de cellules :
 
-```php
+```vb
 Dim range As Range
 Set range = Range("A1:B2")
 range.Cells(1, 1).Value = 1
@@ -271,14 +271,14 @@ L'objet `Application` permet de manipuler Excel.
 
 Pour créer un objet `Application`, on utilise la syntaxe suivante :
 
-```php
+```vb
 Dim app As Application
 Set app = Application
 ```
 
 La méthode `Run` permet d'exécuter une macro :
 
-```php
+```vb
 Dim app As Application
 Set app = Application
 app.Run "NomDeLaMacro"
@@ -286,7 +286,7 @@ app.Run "NomDeLaMacro"
 
 La méthode `Run` permet aussi d'exécuter une macro avec des paramètres :
 
-```php
+```vb
 Dim app As Application
 Set app = Application
 app.Run "NomDeLaMacro", "param1", "param2"
@@ -306,7 +306,7 @@ Ecrire une procédure qui affiche le résultat de la fonction.
 
 <details>
 
-```php
+```vb
 Function sommeEntiers() As Integer
     Dim nombre As Integer
     Dim somme As Integer
@@ -346,7 +346,7 @@ Vous pouvez utiliser l'opérateur ``Mod`` pour calculer le modulo. Par exemple, 
 
 <details>
 
-```php
+```vb
 Function double_tableau(tab() As Integer, n As Integer) As Boolean
     Dim i As Integer
     Dim resultat As Boolean
@@ -376,7 +376,7 @@ Ecrire une fonction `fibonacci` qui prend en paramètre un entier `n` et retourn
 
 Pour rappel, la suite de Fibonacci est définie par la relation suivante :
 
-```php
+```vb
 f(0) = 0
 f(1) = 1
 f(n) = f(n-1) + f(n-2)
@@ -386,7 +386,7 @@ f(n) = f(n-1) + f(n-2)
 
 <details>
 
-```php
+```vb
 Function fibonacci(n As Integer) As Variant
     Dim tab(n) As Integer
     Dim i As Integer

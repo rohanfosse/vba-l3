@@ -42,6 +42,10 @@ La **zone de texte** (de la classe *TextBox* en `VBA`) permet de saisir une info
 
 - **Text** : permet de récupérer ou de modifier le texte de la zone de texte.
 
+La zone de texte peut être créée à l'aide de la méthode `Add` de la collection `TextBoxes` de la feuille active.
+
+On peut définir la taille et la position de la zone de texte en utilisant les paramètres `Left`, `Top`, `Width` et `Height`.
+
 <div class="exemple">
 
 ```vb

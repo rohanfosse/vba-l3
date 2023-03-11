@@ -18,7 +18,7 @@ Il arrive souvent que l'on ait besoin de stocker plusieurs valeurs d'un même ty
 
 Pour déclarer un tableau, on utilise la syntaxe suivante :
 
-```php
+```vb
 Dim tableau(n) As type
 ```
 
@@ -26,13 +26,13 @@ où `n` est le nombre d'éléments du tableau et `type` est le type des élémen
 
 Par exemple, pour déclarer un tableau `notes` de 10 entiers, on écrit :
 
-```php
+```vb
 Dim notes(10) As Integer
 ```
 
 Si l'on souhaite donner un intervalle de valeurs à un tableau, on utilise la syntaxe suivante :
 
-```php
+```vb
 Dim tableau(a To b) As type
 ```
 
@@ -40,13 +40,13 @@ où `a` et `b` sont les bornes de l'intervalle.
 
 Par exemple, pour déclarer un tableau `notes` d'entiers allant de 5 à 10, on écrit :
 
-```php
+```vb
 Dim notes(5 To 10) As Integer
 ```
 
 Pour remplir les éléments d'un tableau, on utilise la syntaxe suivante :
 
-```php
+```vb
 tableau(i) = valeur
 ```
 
@@ -54,7 +54,7 @@ où `i` est l'indice de l'élément à remplir et `valeur` est la valeur à affe
 
 Par exemple, pour remplir le tableau `notes` avec 3 notes qui sont 10, 12, 14, on écrit :
 
-```php
+```vb
 Dim notes(1 To 3) As Integer
 notes(1) = 10
 notes(2) = 12
@@ -70,7 +70,7 @@ Les tableaux dynamiques sont utilisés lors l'on ne connait pas à l'avance le n
 
 Pour déclarer un tableau dynamique, on utilise la syntaxe suivante :
 
-```php
+```vb
 Dim tableau() As type
 ```
 
@@ -91,7 +91,7 @@ L'algorithme peut être écrit en VBA de la manière suivante :
 
 <details>
 
-```php
+```vb
 Dim tableau1() As Integer
 Dim tableau2() As Integer
 
@@ -118,7 +118,7 @@ L'algorithme peut être écrit en VBA de la manière suivante :
 
 <details>
 
-```php
+```vb
 Dim tableau() As Integer
 Dim element As Integer
 
@@ -143,7 +143,7 @@ L'algorithme peut être écrit en VBA de la manière suivante :
 
 <details>
 
-```php
+```vb
 Dim tableau() As Integer
 Dim element As Integer
 
@@ -161,7 +161,7 @@ L'algorithme peut être écrit en VBA de la manière suivante :
 
 <details>
 
-```php
+```vb
 Dim tableau() As Integer
 Dim element As Integer
 Dim position As Integer
@@ -187,7 +187,7 @@ L'algorithme peut être écrit en VBA de la manière suivante :
 
 <details>
 
-```php
+```vb
 Dim tableau() As Integer
 Dim position As Integer
 
@@ -208,7 +208,7 @@ L'algorithme peut être écrit en VBA de la manière suivante :
 
 <details>
 
-```php
+```vb
 
 Dim tableau() As Integer
 Dim element As Integer
@@ -236,7 +236,7 @@ L'algorithme peut être écrit de la manière suivante :
 
 <details>
 
-```php
+```vb
 Dim tableau() As Integer
 
 For i = 0 To UBound(tableau) - 1
@@ -264,7 +264,7 @@ L'algorithme peut être écrit de la manière suivante :
 
 <details>
 
-```php
+```vb
 
 Dim tableau() As Integer
 
@@ -287,7 +287,7 @@ Next i
 
 Un enregistrement est un type de données qui permet de regrouper plusieurs variables de types différents. Il est possible de déclarer un enregistrement de la manière suivante :
 
-```php
+```vb
 Type Enregistrement
     Champ1 As type1
     Champ2 As type2
@@ -299,7 +299,7 @@ avec `Eregistrement` le nom de l'enregistrement, `Champ1`, `Champ2` et `Champ3` 
 
 Par exemple, si l'on souhaite déclarer un enregistrement `Personne` qui contient un nom, un prénom et un âge, on peut écrire :
 
-```php
+```vb
 Type Personne
     Nom As String
     Prenom As String
@@ -309,13 +309,13 @@ End Type
 
 On peut ensuite déclarer une variable de type `Personne` :
 
-```php
+```vb
 Dim personne As Personne
 ```
 
 On peut ensuite accéder aux champs de l'enregistrement :
 
-```php
+```vb
 personne.Nom = "Dupont"
 personne.Prenom = "Jean"
 personne.Age = 25
@@ -325,13 +325,13 @@ personne.Age = 25
 
 Il est possible de déclarer un tableau d'enregistrements de la manière suivante :
 
-```php
+```vb
 Dim tableau() As Personne
 ```
 
 Dans ce cas là, il est possible d'accéder aux champs de l'enregistrement de la manière suivante :
 
-```php
+```vb
 tableau(0).Nom = "Dupont"
 tableau(0).Prenom = "Jean"
 tableau(0).Age = 25
@@ -343,7 +343,7 @@ tableau(0).Age = 25
 
 L'instruction `With` permet d'accéder aux champs d'un enregistrement de manière plus concise. Par exemple, si l'on souhaite accéder au champ `Nom` de l'enregistrement `personne`, on peut écrire :
 
-```php
+```vb
 With personne
     .Nom = "Dupont"
 End With
@@ -351,7 +351,7 @@ End With
 
 Si l'on souhaite accéder au champ `Nom` de l'enregistrement `tableau(0)`, on peut écrire :
 
-```php
+```vb
 With tableau(0)
     .Nom = "Dupont"
 End With

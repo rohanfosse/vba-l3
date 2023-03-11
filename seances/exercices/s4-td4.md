@@ -23,7 +23,7 @@ Donner trois variantes de cette procédure: l'une avec une boucle `For`, l'autre
 
 <details>
 
-```php
+```vb
 Sub exo1()
     Dim n As Integer
     Dim i As Integer
@@ -67,7 +67,7 @@ Obtiendrait-on la même valeur en appliquant le taux *n x 5\%* au prix initial?
 
 <details>
 
-```php
+```vb
 Function prixActualise(p As Double, n As Integer) As Double
     Dim i As Integer
     Dim prix As Double
@@ -123,7 +123,7 @@ Ecrire un programme qui affiche sur une feuille de calcul (comme ci-dessous), le
 <div style="border-left:solid #17a589 4px;padding-left:10px; ">
 <details>
 
-```php
+```vb
 Sub exo3q1()
     Dim C As Double
     Dim n As Integer
@@ -159,7 +159,7 @@ Reprendre la question précédente, en mettant en oeuvre la formule de récurren
 
 <details>
 
-```php
+```vb
 Sub exo3q2()
     Dim C As Double
     Dim n As Integer
@@ -199,7 +199,7 @@ Par exemple, 28 est un nombre parfait car *1+2+4+7+14=28*.
 
 <details>
 
-```php
+```vb
 Sub exo4()
     Dim i As Integer
     Dim j As Integer
