@@ -29,13 +29,13 @@ Pour plus d'informations sur les affichages et les saisies de données, voir la 
 
 Les contrôles de base sont les éléments visuels les plus simples. Ils peuvent être de la forme suivante :
 
-- Zone de texte
-- Bouton
-- Case à cocher
-- Liste déroulante
-- Liste à choix multiple
+- [Zone de texte](#-zone-de-texte)
+- [Bouton](#-bouton)
+- [Case à cocher](#-case-a-cocher)
+- [Liste à choix multiple](#-liste-a-choix-multiple)
+- [Liste déroulante](#-liste-deroulante)
 
-#### Zone de texte
+#### Zone de texte <a name="-zone-de-texte"></a>
 
 La **zone de texte** (appelée *TextBox* en **VBA**) permet de saisir une information.
 
@@ -68,7 +68,7 @@ Lors de l'exécution de la macro, la zone de texte ci-dessous apparaît dans la 
 
 </div>
 
-#### Bouton
+#### Bouton <a name="-bouton"></a>
 
 Le **bouton** (de la classe *Button* en **VBA`) permet d'exécuter une action.
 
@@ -93,7 +93,7 @@ End Sub
 
 </div>
 
-#### Case à cocher
+#### Case à cocher <a name="-case-a-cocher"></a>
 
 Les cases à cocher (**CheckBox** En **VBA`) permettent à l'utilisateur de sélectionner une ou plusieurs options dans une liste.
 
@@ -133,7 +133,35 @@ End Sub
 
 </div>
 
-#### Liste déroulante
+#### Liste à choix multiple <a name="-liste-a-choix-multiple"></a>
+
+La **liste à choix multiple** (de la classe *ListBox* en **VBA** ) permet à l'utilisateur de sélectionner une ou **plusieurs** options dans une liste.
+
+##### Propriétés
+
+- **Name** : permet de récupérer ou de modifier le nom de la liste à choix multiple.
+- **List** : permet de récupérer ou de modifier la liste des options de la liste à choix multiple.
+- **Value** : permet de récupérer ou de modifier la valeur de l'option sélectionnée dans la liste à choix multiple.
+
+<div class="exemple">
+
+```vb
+
+Sub exemple_listeChoixMultiple()
+    'Déclaration de la liste à choix multiple'
+    Dim liste As ListBox
+    'Création de la liste à choix multiple'
+    Set liste = ActiveSheet.ListBoxes.Add(Left:=100, Top:=100, Width:=100, Height:=20)
+    'Modification de la liste des options de la liste à choix multiple'
+    liste.List = Array("Option 1", "Option 2", "Option 3")
+    'Modification de la valeur de l'option sélectionnée dans la liste à choix multiple'
+    liste.Value = "Option 2" 
+End Sub
+```
+
+</div>
+
+#### Liste déroulante <a name="-liste-deroulante"></a>
 
 La **liste déroulante** (de la classe *DropDown* en **VBA`) permet à l'utilisateur de sélectionner une option dans une liste.
 
@@ -180,34 +208,6 @@ Sub exemple_listeDeroulante()
     liste.AddItem "Option 4"
 End Sub
 
-```
-
-</div>
-
-#### Liste à choix multiple
-
-La **liste à choix multiple** (de la classe *ListBox* en **VBA** ) permet à l'utilisateur de sélectionner une ou **plusieurs** options dans une liste.
-
-##### Propriétés
-
-- **Name** : permet de récupérer ou de modifier le nom de la liste à choix multiple.
-- **List** : permet de récupérer ou de modifier la liste des options de la liste à choix multiple.
-- **Value** : permet de récupérer ou de modifier la valeur de l'option sélectionnée dans la liste à choix multiple.
-
-<div class="exemple">
-
-```vb
-
-Sub exemple_listeChoixMultiple()
-    'Déclaration de la liste à choix multiple'
-    Dim liste As ListBox
-    'Création de la liste à choix multiple'
-    Set liste = ActiveSheet.ListBoxes.Add(Left:=100, Top:=100, Width:=100, Height:=20)
-    'Modification de la liste des options de la liste à choix multiple'
-    liste.List = Array("Option 1", "Option 2", "Option 3")
-    'Modification de la valeur de l'option sélectionnée dans la liste à choix multiple'
-    liste.Value = "Option 2" 
-End Sub
 ```
 
 </div>
