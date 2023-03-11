@@ -22,4 +22,4 @@ Le responsable du cours est Fabien Schloesser et la page a été créée par [Ro
 - [Séance 3 - VBA: Fonctions et procédures, variables, tests et boucles](seances/s3-vba-1.md)
 - [Séance 4 - VBA: Structures itératives et communication avec Excel](seances/s4-vba-2.md)
 - [Séance 5 - VBA: Tableaux et Enregistrements](seances/s5-vba-3.md)
-- Séance 6 - Eléments visuels
+- [Séance 6 - Eléments visuels](seances/s6-vba-4.md)

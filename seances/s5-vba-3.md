@@ -4,7 +4,11 @@
         Séance 6 - VBA: Eléments visuels
     </span>
 </p>
+<div style="text-align:center;">
+
 # Séance 5 - Tableaux et Enregistrements
+
+</div>
 
 ## Les tableaux
 
