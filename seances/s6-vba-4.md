@@ -405,7 +405,6 @@ End Sub
 
 Nous allons maintenant ajouter le code permettant de calculer le résultat de la conversion.
 
-<div class="exemple">
 
 ```vb
 
@@ -454,7 +453,6 @@ End Sub
 
 Une façon plus claire de faire ce code est d'utiliser un **Select Case`:
 
-<div class="exemple">
 
 ```vb
 
