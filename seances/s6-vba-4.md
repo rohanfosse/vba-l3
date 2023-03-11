@@ -201,11 +201,17 @@ Sub exemple_listeChoixMultiple()
     'Déclaration de la liste à choix multiple'
     Dim liste As ListBox
     'Création de la liste à choix multiple'
-    Set liste = ActiveSheet.ListBoxes.Add(Left:=20, Top:=20, Width:=50, Height:=50)
+    Set liste = ActiveSheet.ListBoxes.Add(Left:=20, Top:=20, Width:=100, Height:=70)
     'Modification de la liste des options de la liste à choix multiple'
     liste.List = Array("Option 1", "Option 2", "Option 3")
 End Sub
 ```
+
+Lors de l'exécution de la macro, la liste à choix multiple ci-dessous apparaît dans la feuille active.
+
+<div style="text-align:center;">
+![Image liste à choix multiple](screenshots/s6-liste-multiple.png)
+</div>
 
 </div>
 
