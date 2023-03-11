@@ -25,6 +25,8 @@ Comme pour les feuilles, des propriétés et des événements sont associés aux
 
 Voir la section <a href="s3-vba-1.html#-les-fenetres-predefinies" target="_blank"> Les fenêtres prédéfinies</a> de la séance 3.
 
+---
+
 ### Les contrôles de base
 
 Les contrôles de base sont les éléments visuels les plus simples. Ils peuvent être de la forme suivante :
@@ -92,6 +94,12 @@ Sub exemple_bouton()
     bouton.Caption = "Cliquez ici"
 End Sub
 ```
+
+Lors de l'exécution de la macro, le bouton ci-dessous apparaît dans la feuille active.
+
+<div style="text-align:center;">
+![Image bouton](screenshots/s6-bouton.png)
+</div>
 
 </div>
 
