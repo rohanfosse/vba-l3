@@ -1,7 +1,7 @@
 <p style="text-align:left;">
     [Retour au sommaire](../README.md)
     <span style="float:right;">
-        Séance 6 - VBA: Eléments visuels
+        [Séance 6 - VBA: Eléments visuels](s6-vba-4.md)
     </span>
 </p>
 <div style="text-align:center;">
@@ -24,11 +24,14 @@ Dim tableau(n) As type
 
 où `n` est le nombre d'éléments du tableau et `type` est le type des éléments du tableau.
 
-Par exemple, pour déclarer un tableau `notes` de 10 entiers, on écrit :
+<div class="exemple">
+Pour déclarer un tableau `notes` de 10 entiers, on écrit :
 
 ```vb
 Dim notes(10) As Integer
 ```
+
+</div>
 
 Si l'on souhaite donner un intervalle de valeurs à un tableau, on utilise la syntaxe suivante :
 
@@ -38,11 +41,14 @@ Dim tableau(a To b) As type
 
 où `a` et `b` sont les bornes de l'intervalle.
 
-Par exemple, pour déclarer un tableau `notes` d'entiers allant de 5 à 10, on écrit :
+<div class="exemple">
+Pour déclarer un tableau `notes` d'entiers allant de 5 à 10, on écrit :
 
 ```vb
 Dim notes(5 To 10) As Integer
 ```
+
+</div>
 
 Pour remplir les éléments d'un tableau, on utilise la syntaxe suivante :
 
@@ -52,7 +58,9 @@ tableau(i) = valeur
 
 où `i` est l'indice de l'élément à remplir et `valeur` est la valeur à affecter à l'élément.
 
-Par exemple, pour remplir le tableau `notes` avec 3 notes qui sont 10, 12, 14, on écrit :
+<div class="exemple">
+
+Pour remplir le tableau `notes` avec 3 notes qui sont 10, 12, 14, on écrit :
 
 ```vb
 Dim notes(1 To 3) As Integer
@@ -60,6 +68,8 @@ notes(1) = 10
 notes(2) = 12
 notes(3) = 14
 ```
+
+</div>
 
 ### Tableaux dynamiques
 

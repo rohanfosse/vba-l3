@@ -1,5 +1,8 @@
 <p style="text-align:left;">
-    [Retour au sommaire](../README.md)
+    [Séance 5 - Tableaux et Enregistrements](s5-vba-3.md)
+    <span style="float:right;">
+        [Retour au sommaire](../README.md)
+    </span>
 </p>
 
 <div style="text-align:center;">
