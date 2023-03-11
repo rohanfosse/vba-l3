@@ -20,7 +20,7 @@ Comme pour les feuilles, des propriétés et des événements sont associés aux
 
 #### Rappel des affichages et saisies de données
 
-Pour plus d'informations sur les affichages et les saisies de données, voir la section <a href="s3-vba-1.md#-les-fenetres-predefinies" target="_blank"> **Les fenêtres prédéfinies**</a> de la séance 3.
+Pour plus d'informations sur les affichages et les saisies de données, voir la section <a href="s3-vba-1.html#-les-fenetres-predefinies" target="_blank"> Les fenêtres prédéfinies</a> de la séance 3.
 
 ### Les contrôles de base
 
