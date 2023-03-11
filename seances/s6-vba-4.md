@@ -18,7 +18,7 @@ Ces dialogues se font par l'intermédiaire d'affichage et/ou saisie de données,
 
 Comme pour les feuilles, des propriétés et des événements sont associés aux contrôles.
 
-### Rappel des affichages et saisies de données
+#### Rappel des affichages et saisies de données
 
 Pour plus d'informations sur les affichages et les saisies de données, voir la section <a href="s3-vba-1.md#-les-fenetres-predefinies" target="_blank"> **Les fenêtres prédéfinies**</a> de la séance 3.
 
@@ -263,7 +263,7 @@ End Sub
 
 ## Exemples
 
-### Exemple 1 : Addition
+#### Exemple 1 : Addition
 
 Dans cet exemple, nous allons créer un formulaire permettant de saisir deux nombres et de calculer leur somme.
 
@@ -326,7 +326,7 @@ End Sub
 
 ---
 
-### Exemple 2 : Un convertisseur de devises
+#### Exemple 2 : Un convertisseur de devises
 
 Dans cet exemple, nous allons créer un formulaire permettant de saisir un montant dans une devise et de le convertir dans une autre devise.
 Les devises proposées seront:
