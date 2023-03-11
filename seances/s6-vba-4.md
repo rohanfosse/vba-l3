@@ -211,7 +211,7 @@ End Sub
 
 Les formulaires sont des boîtes de dialogue personnalisées qui permettent à l'utilisateur de saisir des données.
 
-### Création d'un formulaire
+#### Création d'un formulaire
 
 Pour créer un formulaire, il faut utiliser la méthode `Add` de la collection `UserForms`.
 
@@ -231,7 +231,7 @@ End Sub
 
 </div>
 
-### Ajout de contrôles
+#### Ajout de contrôles
 
 Pour ajouter un contrôle à un formulaire, il faut utiliser la méthode `Add` de la collection correspondante au type de contrôle que l'on souhaite ajouter.
 
