@@ -74,7 +74,7 @@ Lors de l'exécution de la macro, la zone de texte ci-dessous apparaît dans la 
 
 #### Bouton <a name="-bouton"></a>
 
-Le **bouton** (de la classe *Button* en **VBA`) permet d'exécuter une action.
+Le **bouton** (appelé *Button* en **VBA**) permet d'exécuter une action.
 
 ##### Propriétés
 
@@ -105,7 +105,7 @@ Lors de l'exécution de la macro, le bouton ci-dessous apparaît dans la feuille
 
 #### Case à cocher <a name="-case-a-cocher"></a>
 
-Les cases à cocher (**CheckBox** En **VBA`) permettent à l'utilisateur de sélectionner une ou plusieurs options dans une liste.
+Les cases à cocher (**CheckBox** En **VBA**) permettent à l'utilisateur de sélectionner une ou plusieurs options dans une liste.
 
 Les cases à cocher ne peuvent retourner que deux valeurs :
 
@@ -141,11 +141,18 @@ Sub exemple_caseACocher()
 End Sub
 ```
 
+Lors de l'exécution de la macro, la case à cocher ci-dessous apparaît dans la feuille active.
+
+<div style="text-align:center;">
+![Image case à cocher](screenshots/s6-cocher.png)
+</div>
+
+
 </div>
 
 #### Liste à choix multiple <a name="-liste-a-choix-multiple"></a>
 
-La **liste à choix multiple** (de la classe *ListBox* en **VBA** ) permet à l'utilisateur de sélectionner une ou **plusieurs** options dans une liste.
+La **liste à choix multiple** (appelé *ListBox* en **VBA** ) permet à l'utilisateur de sélectionner une ou **plusieurs** options dans une liste.
 
 ##### Propriétés
 
@@ -173,7 +180,7 @@ End Sub
 
 #### Liste déroulante <a name="-liste-deroulante"></a>
 
-La **liste déroulante** (de la classe *DropDown* en **VBA`) permet à l'utilisateur de sélectionner une option dans une liste.
+La **liste déroulante** (appelé *DropDown* en **VBA`) permet à l'utilisateur de sélectionner une option dans une liste.
 
 ##### Propriétés
 
