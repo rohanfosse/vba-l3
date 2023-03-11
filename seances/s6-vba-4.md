@@ -64,7 +64,9 @@ End Sub
 
 Lors de l'exécution de la macro, la zone de texte ci-dessous apparaît dans la feuille active.
 
+<div style="text-align:center;">
 ![Image zone text](screenshots/s6-zone-text.png)
+</div>
 
 </div>
 
