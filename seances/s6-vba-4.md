@@ -17,7 +17,7 @@
 
 Les **contrôles** sont des objets d'interaction grâce auxquels l'utilisateur construit un dialogue.
 
-Ces dialogues se font par l'intermédiaire d'affichage et/ou saisie de données, des ordres de calculs...
+Ces dialogues se font par l'intermédiaire d'affichage et/ou saisie de données.
 
 Comme pour les feuilles, des propriétés et des événements sont associés aux contrôles.
 
@@ -37,17 +37,17 @@ Les contrôles de base sont les éléments visuels les plus simples. Ils peuvent
 
 #### Zone de texte
 
-La **zone de texte** (de la classe *TextBox* en `VBA`) permet de saisir une information.
-
-**Il s'agit du seul contrôle permettant une saisie au clavier par l'utilisateur.**
+La **zone de texte** (appelée *TextBox* en **VBA**) permet de saisir une information.
 
 ##### Propriétés
 
 - **Text** : permet de récupérer ou de modifier le texte de la zone de texte.
+- **Font** : permet de récupérer ou de modifier la police de caractères de la zone de texte.
+- **Font.Size** : permet de récupérer ou de modifier la taille de la police de caractères de la zone de texte.
 
-La zone de texte peut être créée à l'aide de la méthode `Add` de la collection `TextBoxes` de la feuille active.
+La zone de texte peut être créée à l'aide de la méthode **Add** .
 
-On peut définir la taille et la position de la zone de texte en utilisant les paramètres `Left`, `Top`, `Width` et `Height`.
+On peut définir la taille de la zone de texte en utilisant les paramètres **Width** et **Height**.
 
 <div class="exemple">
 
@@ -56,17 +56,21 @@ Sub exemple_zoneTexte()
     'Déclaration de la zone de texte'
     Dim zone As TextBox
     'Création de la zone de texte'
-    Set zone = ActiveSheet.TextBoxes.Add(Left:=100, Top:=100, Width:=100, Height:=20)
+    Set zone = ActiveSheet.TextBoxes.Add(Width:=100, Height:=20)
     'Modification du texte de la zone de texte'
     zone.Text = "Bonjour" 
 End Sub
 ```
 
+Lors de l'exécution de la macro, la zone de texte ci-dessous apparaît dans la feuille active.
+
+![Image zone text](screenshots/s6-zone-test.png)
+
 </div>
 
 #### Bouton
 
-Le **bouton** (de la classe *Button* en `VBA`) permet d'exécuter une action.
+Le **bouton** (de la classe *Button* en **VBA`) permet d'exécuter une action.
 
 ##### Propriétés
 
@@ -91,7 +95,7 @@ End Sub
 
 #### Case à cocher
 
-Les cases à cocher (**CheckBox** En `VBA`) permettent à l'utilisateur de sélectionner une ou plusieurs options dans une liste.
+Les cases à cocher (**CheckBox** En **VBA`) permettent à l'utilisateur de sélectionner une ou plusieurs options dans une liste.
 
 Les cases à cocher ne peuvent retourner que deux valeurs :
 
@@ -131,7 +135,7 @@ End Sub
 
 #### Liste déroulante
 
-La **liste déroulante** (de la classe *DropDown* en `VBA`) permet à l'utilisateur de sélectionner une option dans une liste.
+La **liste déroulante** (de la classe *DropDown* en **VBA`) permet à l'utilisateur de sélectionner une option dans une liste.
 
 ##### Propriétés
 
@@ -157,7 +161,7 @@ End Sub
 
 </div>
 
-Si jamais l'on souhaite rajouter des options à une liste déroulante, il est possible de faire appel à la fonction `AddItem`.
+Si jamais l'on souhaite rajouter des options à une liste déroulante, il est possible de faire appel à la fonction **AddItem** 
 
 <div class="exemple">
 
@@ -182,7 +186,7 @@ End Sub
 
 #### Liste à choix multiple
 
-La **liste à choix multiple** (de la classe *ListBox* en `VBA`) permet à l'utilisateur de sélectionner une ou **plusieurs** options dans une liste.
+La **liste à choix multiple** (de la classe *ListBox* en **VBA** ) permet à l'utilisateur de sélectionner une ou **plusieurs** options dans une liste.
 
 ##### Propriétés
 
@@ -216,7 +220,7 @@ Les formulaires sont des boîtes de dialogue personnalisées qui permettent à l
 
 #### Création d'un formulaire
 
-Pour créer un formulaire, il faut utiliser la méthode `Add` de la collection `UserForms`.
+Pour créer un formulaire, il faut utiliser la méthode **Add** de la collection **UserForms** 
 
 <div class="exemple">
 
@@ -236,7 +240,7 @@ End Sub
 
 #### Ajout de contrôles
 
-Pour ajouter un contrôle à un formulaire, il faut utiliser la méthode `Add` de la collection correspondante au type de contrôle que l'on souhaite ajouter.
+Pour ajouter un contrôle à un formulaire, il faut utiliser la méthode **Add** de la collection correspondante au type de contrôle que l'on souhaite ajouter.
 
 <div class="exemple">
 
@@ -252,7 +256,7 @@ Sub exemple_formulaire()
     'Modification du titre du formulaire'
     formulaire.Caption = "Mon formulaire"
     'Création de la zone de texte'
-    Set zoneTexte = formulaire.TextBoxes.Add(Left:=100, Top:=100, Width:=100, Height:=20)
+    Set zoneTexte = formulaire.TextBoxes.Add(Width:=100, Height:=20)
     'Modification du nom de la zone de texte'
     zoneTexte.Name = "zoneTexte"
     'Modification du texte de la zone de texte'
@@ -292,7 +296,7 @@ Sub exemple_addition()
     formulaire.Caption = "Addition"
     
     'Création de la première zone de texte'
-    Set zone1 = formulaire.TextBoxes.Add(Left:=100, Top:=100, Width:=100, Height:=20)
+    Set zone1 = formulaire.TextBoxes.Add(Width:=100, Height:=20)
     'Modification du nom de la première zone de texte'
     zone1.Name = "zone1"
     'Modification du texte de la première zone de texte'
@@ -354,7 +358,7 @@ Sub exemple_convertisseurDevises()
     Set formulaire = Application.UserForms.Add 'Création du formulaire'
     formulaire.Caption = "Convertisseur de devises" 'Modification du titre du formulaire'
     
-    Set zone1 = formulaire.TextBoxes.Add(Left:=100, Top:=100, Width:=100, Height:=20) 'Création de la première zone de texte'
+    Set zone1 = formulaire.TextBoxes.Add(Width:=100, Height:=20) 'Création de la première zone de texte'
     zone1.Name = "zone1" 'Modification du nom de la première zone de texte'
     zone1.Text = "0" 'Modification du texte de la première zone de texte'
     
@@ -431,7 +435,7 @@ End Sub
     
 ```
 
-Une façon plus claire de faire ce code est d'utiliser un `Select Case`:
+Une façon plus claire de faire ce code est d'utiliser un **Select Case`:
 
 <div class="exemple">
 
