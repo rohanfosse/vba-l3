@@ -15,11 +15,41 @@
 
 ## Les contrôles
 
-Les **contrôles** sont des objets d'interaction grâce auxquels l'utilisateur construit un dialogue.
+Un objet est un type d'élément d'interface utilisateur que vous créez sur un formulaire .
+En fait, le formulaire lui-même est un objet.
+Chaque contrôle  se compose de trois éléments importants :
 
-Ces dialogues se font par l'intermédiaire d'affichage et/ou saisie de données.
+- Les propriétés qui décrivent l'objet,
+- les méthodes, qui permettent à l'objet de faire une action
+- Les événements sont ce qui se produit lorsqu'un objet fait une action.
 
-Comme pour les feuilles, des propriétés et des événements sont associés aux contrôles.
+
+#### Propriétés du contrôle
+
+Tous les objets  peuvent être déplacés, redimensionnés ou personnalisés en définissant leurs propriétés.
+Une propriété est une valeur ou une caractéristique détenue par un objet.
+
+Pour définir une propriété, utilisez la syntaxe suivante :
+
+<div class="theorem">
+
+*Objet.Propriété = Valeur*
+
+Où:
+
+- Objet est le nom de l'objet que vous personnalisez.
+- Propriété est la caractéristique que vous souhaitez modifier.
+- Valeur est le nouveau paramètre de la propriété.
+</div>
+
+Par exemple, pour définir le titre du formulaire:
+
+<div class="exemple">
+Form1.Caption = "Hello"
+</div>
+
+Vous pouvez définir n'importe quelle propriété du formulaire à l'aide de la fenêtre Propriétés.
+La plupart des propriétés peuvent être définies ou lues pendant l'exécution de l'application.
 
 #### Rappel des affichages et saisies de données
 
@@ -160,19 +190,20 @@ La **liste à choix multiple** (appelé *ListBox* en **VBA** ) permet à l'utili
 - **List** : permet de récupérer ou de modifier la liste des options de la liste à choix multiple.
 - **Value** : permet de récupérer ou de modifier la valeur de l'option sélectionnée dans la liste à choix multiple.
 
+Les arguments **Left** et **Top** permettent de définir la position de la liste à choix multiple.
+
+Ils sont **obligatoires** lors de la création de la liste à choix multiple.
+
 <div class="exemple">
 
 ```vb
-
 Sub exemple_listeChoixMultiple()
     'Déclaration de la liste à choix multiple'
     Dim liste As ListBox
     'Création de la liste à choix multiple'
-    Set liste = ActiveSheet.ListBoxes.Add(Width:=100, Height:=20)
+    Set liste = ActiveSheet.ListBoxes.Add(Left:=20, Top:=20, Width:=50, Height:=50)
     'Modification de la liste des options de la liste à choix multiple'
     liste.List = Array("Option 1", "Option 2", "Option 3")
-    'Modification de la valeur de l'option sélectionnée dans la liste à choix multiple'
-    liste.Value = "Option 2" 
 End Sub
 ```
 
@@ -180,7 +211,7 @@ End Sub
 
 #### Liste déroulante <a name="-liste-deroulante"></a>
 
-La **liste déroulante** (appelé *DropDown* en **VBA`) permet à l'utilisateur de sélectionner une option dans une liste.
+La **liste déroulante** (appelé *ComboBox* en **VBA`) permet à l'utilisateur de sélectionner une option dans une liste.
 
 ##### Propriétés
 
@@ -191,12 +222,11 @@ La **liste déroulante** (appelé *DropDown* en **VBA`) permet à l'utilisateur 
 <div class="exemple">
 
 ```vb
-
 Sub exemple_listeDeroulante()
     'Déclaration de la liste déroulante'
     Dim liste As DropDown
     'Création de la liste déroulante'
-    Set liste = ActiveSheet.DropDowns.Add(Width:=100, Height:=20)
+    Set liste = ActiveSheet.DropDowns.Add(Left:=20, Top:=20, Width:=50, Height:=50)
     'Modification de la liste des options de la liste déroulante'
     liste.List = Array("Option 1", "Option 2", "Option 3")
     'Modification de la valeur de l'option sélectionnée dans la liste déroulante'
@@ -211,12 +241,11 @@ Si jamais l'on souhaite rajouter des options à une liste déroulante, il est po
 <div class="exemple">
 
 ```vb
-
 Sub exemple_listeDeroulante()
     'Déclaration de la liste déroulante'
     Dim liste As DropDown
     'Création de la liste déroulante'
-    Set liste = ActiveSheet.DropDowns.Add(Width:=100, Height:=20)
+    Set liste = ActiveSheet.DropDowns.Add(Left:=20, Top:=20, Width:=50, Height:=50)
     'Modification de la liste des options de la liste déroulante'
     liste.List = Array("Option 1", "Option 2", "Option 3")
     'Modification de la valeur de l'option sélectionnée dans la liste déroulante'
@@ -242,12 +271,11 @@ Pour créer un formulaire, il faut utiliser la méthode **Add** de la collection
 <div class="exemple">
 
 ```vb
-
 Sub exemple_formulaire()
     'Déclaration du formulaire'
     Dim formulaire As UserForm
     'Création du formulaire'
-    Set formulaire = Application.UserForms.Add
+    Set formulaire = Application.UserForms.Add(Left:=20, Top:=20)
     'Modification du titre du formulaire'
     formulaire.Caption = "Mon formulaire"
 End Sub
@@ -262,7 +290,6 @@ Pour ajouter un contrôle à un formulaire, il faut utiliser la méthode **Add**
 <div class="exemple">
 
 ```vb
-
 Sub exemple_formulaire()
     'Déclaration du formulaire'
     Dim formulaire As UserForm
