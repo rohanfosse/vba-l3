@@ -89,7 +89,7 @@ Sub exemple_bouton()
     'Déclaration du bouton'
     Dim bouton As Button
     'Création du bouton' 
-    Set bouton = ActiveSheet.Buttons.Add(Left:=100, Top:=100, Width:=100, Height:=20) 
+    Set bouton = ActiveSheet.Buttons.Add(Width:=100, Height:=20) 
     'Modification du texte du bouton'
     bouton.Caption = "Cliquez ici"
 End Sub
@@ -133,7 +133,7 @@ Sub exemple_caseACocher()
     'Déclaration de la case à cocher'
     Dim caseACocher As CheckBox
     'Création de la case à cocher'
-    Set caseACocher = ActiveSheet.CheckBoxes.Add(Left:=100, Top:=100, Width:=100, Height:=20)
+    Set caseACocher = ActiveSheet.CheckBoxes.Add(Width:=100, Height:=20)
     'Modification du texte de la case à cocher'
     caseACocher.Caption = "Cocher"
     'Modification de l'état de la case à cocher'
@@ -168,7 +168,7 @@ Sub exemple_listeChoixMultiple()
     'Déclaration de la liste à choix multiple'
     Dim liste As ListBox
     'Création de la liste à choix multiple'
-    Set liste = ActiveSheet.ListBoxes.Add(Left:=100, Top:=100, Width:=100, Height:=20)
+    Set liste = ActiveSheet.ListBoxes.Add(Width:=100, Height:=20)
     'Modification de la liste des options de la liste à choix multiple'
     liste.List = Array("Option 1", "Option 2", "Option 3")
     'Modification de la valeur de l'option sélectionnée dans la liste à choix multiple'
@@ -196,7 +196,7 @@ Sub exemple_listeDeroulante()
     'Déclaration de la liste déroulante'
     Dim liste As DropDown
     'Création de la liste déroulante'
-    Set liste = ActiveSheet.DropDowns.Add(Left:=100, Top:=100, Width:=100, Height:=20)
+    Set liste = ActiveSheet.DropDowns.Add(Width:=100, Height:=20)
     'Modification de la liste des options de la liste déroulante'
     liste.List = Array("Option 1", "Option 2", "Option 3")
     'Modification de la valeur de l'option sélectionnée dans la liste déroulante'
@@ -216,7 +216,7 @@ Sub exemple_listeDeroulante()
     'Déclaration de la liste déroulante'
     Dim liste As DropDown
     'Création de la liste déroulante'
-    Set liste = ActiveSheet.DropDowns.Add(Left:=100, Top:=100, Width:=100, Height:=20)
+    Set liste = ActiveSheet.DropDowns.Add(Width:=100, Height:=20)
     'Modification de la liste des options de la liste déroulante'
     liste.List = Array("Option 1", "Option 2", "Option 3")
     'Modification de la valeur de l'option sélectionnée dans la liste déroulante'
