@@ -1,8 +1,5 @@
 <p style="text-align:left;">
     [Retour au sommaire](../README.md)
-    <span style="float:right;">
-        Séance 6 - VBA: Eléments visuels
-    </span>
 </p>
 
 <div style="text-align:center;">
@@ -49,9 +46,12 @@ La **zone de texte** (de la classe *TextBox* en `VBA`) permet de saisir une info
 
 ```vb
 Sub exemple_zoneTexte()
-    Dim zone As TextBox 'Déclaration de la zone de texte'
-    Set zone = ActiveSheet.TextBoxes.Add(Left:=100, Top:=100, Width:=100, Height:=20) 'Création de la zone de texte'
-    zone.Text = "Bonjour" 'Modification du texte de la zone de texte'
+    'Déclaration de la zone de texte'
+    Dim zone As TextBox
+    'Création de la zone de texte'
+    Set zone = ActiveSheet.TextBoxes.Add(Left:=100, Top:=100, Width:=100, Height:=20)
+    'Modification du texte de la zone de texte'
+    zone.Text = "Bonjour" 
 End Sub
 ```
 
@@ -65,14 +65,18 @@ Le **bouton** (de la classe *Button* en `VBA`) permet d'exécuter une action.
 
 - **Name** : permet de récupérer ou de modifier le nom du bouton.
 - **Caption** : permet de récupérer ou de modifier le texte du bouton.
+- **Enabled** : permet de récupérer ou de modifier l'état du bouton. Si la valeur est *True*, le bouton est actif. Si la valeur est *False*, le bouton est désactivé.
 
 <div class="exemple">
 
 ```vb
 Sub exemple_bouton()
-    Dim bouton As Button 'Déclaration du bouton'
-    Set bouton = ActiveSheet.Buttons.Add(Left:=100, Top:=100, Width:=100, Height:=20) 'Création du bouton'
-    bouton.Caption = "Cliquez ici" 'Modification du texte du bouton'
+    'Déclaration du bouton'
+    Dim bouton As Button
+    'Création du bouton' 
+    Set bouton = ActiveSheet.Buttons.Add(Left:=100, Top:=100, Width:=100, Height:=20) 
+    'Modification du texte du bouton'
+    bouton.Caption = "Cliquez ici"
 End Sub
 ```
 
@@ -105,10 +109,14 @@ Les principales propriétés du contrôle CheckBox sont :
 ```vb
 
 Sub exemple_caseACocher()
-    Dim caseACocher As CheckBox 'Déclaration de la case à cocher'
-    Set caseACocher = ActiveSheet.CheckBoxes.Add(Left:=100, Top:=100, Width:=100, Height:=20) 'Création de la case à cocher'
-    caseACocher.Caption = "Cocher" 'Modification du texte de la case à cocher'
-    caseACocher.Value = True 'Modification de l'état de la case à cocher'
+    'Déclaration de la case à cocher'
+    Dim caseACocher As CheckBox
+    'Création de la case à cocher'
+    Set caseACocher = ActiveSheet.CheckBoxes.Add(Left:=100, Top:=100, Width:=100, Height:=20)
+    'Modification du texte de la case à cocher'
+    caseACocher.Caption = "Cocher"
+    'Modification de l'état de la case à cocher'
+    caseACocher.Value = True
 End Sub
 ```
 
@@ -129,10 +137,14 @@ La **liste déroulante** (de la classe *DropDown* en `VBA`) permet à l'utilisat
 ```vb
 
 Sub exemple_listeDeroulante()
-    Dim liste As DropDown 'Déclaration de la liste déroulante'
-    Set liste = ActiveSheet.DropDowns.Add(Left:=100, Top:=100, Width:=100, Height:=20) 'Création de la liste déroulante'
-    liste.List = Array("Option 1", "Option 2", "Option 3") 'Modification de la liste des options de la liste déroulante'
-    liste.Value = "Option 2" 'Modification de la valeur de l'option sélectionnée dans la liste déroulante'
+    'Déclaration de la liste déroulante'
+    Dim liste As DropDown
+    'Création de la liste déroulante'
+    Set liste = ActiveSheet.DropDowns.Add(Left:=100, Top:=100, Width:=100, Height:=20)
+    'Modification de la liste des options de la liste déroulante'
+    liste.List = Array("Option 1", "Option 2", "Option 3")
+    'Modification de la valeur de l'option sélectionnée dans la liste déroulante'
+    liste.Value = "Option 2"
 End Sub
 ```
 
@@ -145,11 +157,16 @@ Si jamais l'on souhaite rajouter des options à une liste déroulante, il est po
 ```vb
 
 Sub exemple_listeDeroulante()
-    Dim liste As DropDown 'Déclaration de la liste déroulante'
-    Set liste = ActiveSheet.DropDowns.Add(Left:=100, Top:=100, Width:=100, Height:=20) 'Création de la liste déroulante'
-    liste.List = Array("Option 1", "Option 2", "Option 3") 'Modification de la liste des options de la liste déroulante'
-    liste.Value = "Option 2" 'Modification de la valeur de l'option sélectionnée dans la liste déroulante'
-    liste.AddItem "Option 4" 'Ajout d'une option à la liste déroulante'
+    'Déclaration de la liste déroulante'
+    Dim liste As DropDown
+    'Création de la liste déroulante'
+    Set liste = ActiveSheet.DropDowns.Add(Left:=100, Top:=100, Width:=100, Height:=20)
+    'Modification de la liste des options de la liste déroulante'
+    liste.List = Array("Option 1", "Option 2", "Option 3")
+    'Modification de la valeur de l'option sélectionnée dans la liste déroulante'
+    liste.Value = "Option 2"
+    'Ajout d'une option à la liste déroulante'
+    liste.AddItem "Option 4"
 End Sub
 
 ```
@@ -171,14 +188,20 @@ La **liste à choix multiple** (de la classe *ListBox* en `VBA`) permet à l'uti
 ```vb
 
 Sub exemple_listeChoixMultiple()
-    Dim liste As ListBox 'Déclaration de la liste à choix multiple'
-    Set liste = ActiveSheet.ListBoxes.Add(Left:=100, Top:=100, Width:=100, Height:=20) 'Création de la liste à choix multiple'
-    liste.List = Array("Option 1", "Option 2", "Option 3") 'Modification de la liste des options de la liste à choix multiple'
-    liste.Value = "Option 2" 'Modification de la valeur de l'option sélectionnée dans la liste à choix multiple'
+    'Déclaration de la liste à choix multiple'
+    Dim liste As ListBox
+    'Création de la liste à choix multiple'
+    Set liste = ActiveSheet.ListBoxes.Add(Left:=100, Top:=100, Width:=100, Height:=20)
+    'Modification de la liste des options de la liste à choix multiple'
+    liste.List = Array("Option 1", "Option 2", "Option 3")
+    'Modification de la valeur de l'option sélectionnée dans la liste à choix multiple'
+    liste.Value = "Option 2" 
 End Sub
 ```
 
 </div>
+
+---
 
 ## Les formulaires
 
@@ -193,9 +216,12 @@ Pour créer un formulaire, il faut utiliser la méthode `Add` de la collection `
 ```vb
 
 Sub exemple_formulaire()
-    Dim formulaire As UserForm 'Déclaration du formulaire'
-    Set formulaire = Application.UserForms.Add 'Création du formulaire'
-    formulaire.Caption = "Mon formulaire" 'Modification du titre du formulaire'
+    'Déclaration du formulaire'
+    Dim formulaire As UserForm
+    'Création du formulaire'
+    Set formulaire = Application.UserForms.Add
+    'Modification du titre du formulaire'
+    formulaire.Caption = "Mon formulaire"
 End Sub
 ```
 
@@ -210,19 +236,28 @@ Pour ajouter un contrôle à un formulaire, il faut utiliser la méthode `Add` d
 ```vb
 
 Sub exemple_formulaire()
-    Dim formulaire As UserForm 'Déclaration du formulaire'
-    Dim zoneTexte As TextBox 'Déclaration de la zone de texte'
-    Set formulaire = Application.UserForms.Add 'Création du formulaire'
-    formulaire.Caption = "Mon formulaire" 'Modification du titre du formulaire'
-    Set zoneTexte = formulaire.TextBoxes.Add(Left:=100, Top:=100, Width:=100, Height:=20) 'Création de la zone de texte'
-    zoneTexte.Name = "zoneTexte" 'Modification du nom de la zone de texte'
-    zoneTexte.Text = "Texte" 'Modification du texte de la zone de texte'
+    'Déclaration du formulaire'
+    Dim formulaire As UserForm
+    'Déclaration de la zone de texte'
+    Dim zoneTexte As TextBox
+    'Création du formulaire'
+    Set formulaire = Application.UserForms.Add
+    'Modification du titre du formulaire'
+    formulaire.Caption = "Mon formulaire"
+    'Création de la zone de texte'
+    Set zoneTexte = formulaire.TextBoxes.Add(Left:=100, Top:=100, Width:=100, Height:=20)
+    'Modification du nom de la zone de texte'
+    zoneTexte.Name = "zoneTexte"
+    'Modification du texte de la zone de texte'
+    zoneTexte.Text = "Texte"
 End Sub
 ```
 
 </div>
 
-## Exemple de contrôle
+---
+
+## Exemples
 
 ### Exemple 1 : Addition
 
@@ -233,37 +268,59 @@ Dans cet exemple, nous allons créer un formulaire permettant de saisir deux nom
 ```vb
 
 Sub exemple_addition()
-    Dim formulaire As UserForm 'Déclaration du formulaire'
-    Dim zone1 As TextBox 'Déclaration de la première zone de texte'
-    Dim zone2 As TextBox 'Déclaration de la seconde zone de texte'
-    Dim bouton As Button 'Déclaration du bouton'
-    Dim zoneResultat As TextBox 'Déclaration de la zone de texte contenant le résultat'
+    'Déclaration du formulaire'
+    Dim formulaire As UserForm
+    'Déclaration de la première zone de texte'
+    Dim zone1 As TextBox
+    'Déclaration de la seconde zone de texte'
+    Dim zone2 As TextBox
+    'Déclaration du bouton'
+    Dim bouton As Button
+    'Déclaration de la zone de texte contenant le résultat'
+    Dim zoneResultat As TextBox
     
-    Set formulaire = Application.UserForms.Add 'Création du formulaire'
-    formulaire.Caption = "Addition" 'Modification du titre du formulaire'
+    'Création du formulaire'
+    Set formulaire = Application.UserForms.Add
+    'Modification du titre du formulaire'
+    formulaire.Caption = "Addition"
     
-    Set zone1 = formulaire.TextBoxes.Add(Left:=100, Top:=100, Width:=100, Height:=20) 'Création de la première zone de texte'
-    zone1.Name = "zone1" 'Modification du nom de la première zone de texte'
-    zone1.Text = "0" 'Modification du texte de la première zone de texte'
+    'Création de la première zone de texte'
+    Set zone1 = formulaire.TextBoxes.Add(Left:=100, Top:=100, Width:=100, Height:=20)
+    'Modification du nom de la première zone de texte'
+    zone1.Name = "zone1"
+    'Modification du texte de la première zone de texte'
+    zone1.Text = "0"
     
-    Set zone2 = formulaire.TextBoxes.Add(Left:=100, Top:=150, Width:=100, Height:=20) 'Création de la seconde zone de texte'
-    zone2.Name = "zone2" 'Modification du nom de la seconde zone de texte'
-    zone2.Text = "0" 'Modification du texte de la seconde zone de texte'
+    'Création de la seconde zone de texte'
+    Set zone2 = formulaire.TextBoxes.Add(Left:=100, Top:=150, Width:=100, Height:=20)
+    'Modification du nom de la seconde zone de texte'
+    zone2.Name = "zone2"
+    'Modification du texte de la seconde zone de texte'
+    zone2.Text = "0"
     
-    Set bouton = formulaire.Buttons.Add(Left:=100, Top:=200, Width:=100, Height:=20) 'Création du bouton'
-    bouton.Name = "bouton" 'Modification du nom du bouton'
-    bouton.Caption = "Calculer" 'Modification du texte du bouton'
+    'Création du bouton'
+    Set bouton = formulaire.Buttons.Add(Left:=100, Top:=200, Width:=100, Height:=20)
+    'Modification du nom du bouton'
+    bouton.Name = "bouton"
+    'Modification du texte du bouton'
+    bouton.Caption = "Calculer"
     
-    Set zoneResultat = formulaire.TextBoxes.Add(Left:=100, Top:=250, Width:=100, Height:=20) 'Création de la zone de texte contenant le résultat'
-    zoneResultat.Name = "zoneResultat" 'Modification du nom de la zone de texte contenant le résultat'
-    zoneResultat.Text = "0" 'Modification du texte de la zone de texte contenant le résultat'
+    'Création de la zone de texte contenant le résultat'
+    Set zoneResultat = formulaire.TextBoxes.Add(Left:=100, Top:=250, Width:=100, Height:=20)
+    'Modification du nom de la zone de texte contenant le résultat' 
+    zoneResultat.Name = "zoneResultat"
+    'Modification du texte de la zone de texte contenant le résultat'
+    zoneResultat.Text = "0"
     
-    formulaire.Show 'Affichage du formulaire'
+    'Affichage du formulaire'
+    formulaire.Show 
 End Sub
 
 ```
 
 </div>
+
+---
 
 ### Exemple 2 : Un convertisseur de devises
 
@@ -419,3 +476,4 @@ End Sub
 
 ```
 
+</div>
