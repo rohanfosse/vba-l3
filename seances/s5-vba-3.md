@@ -22,10 +22,10 @@ Pour déclarer un tableau, on utilise la syntaxe suivante :
 Dim tableau(n) As type
 ```
 
-où `n` est le nombre d'éléments du tableau et `type` est le type des éléments du tableau.
+où **n** est le nombre d'éléments du tableau et **type** est le type des éléments du tableau.
 
 <div class="exemple">
-Pour déclarer un tableau `notes` de 10 entiers, on écrit :
+Pour déclarer un tableau **notes** de 10 entiers, on écrit :
 
 ```vb
 Dim notes(10) As Integer
@@ -39,10 +39,10 @@ Si l'on souhaite donner un intervalle de valeurs à un tableau, on utilise la sy
 Dim tableau(a To b) As type
 ```
 
-où `a` et `b` sont les bornes de l'intervalle.
+où **a** et **b** sont les bornes de l'intervalle.
 
 <div class="exemple">
-Pour déclarer un tableau `notes` d'entiers allant de 5 à 10, on écrit :
+Pour déclarer un tableau **notes** d'entiers allant de 5 à 10, on écrit :
 
 ```vb
 Dim notes(5 To 10) As Integer
@@ -56,11 +56,11 @@ Pour remplir les éléments d'un tableau, on utilise la syntaxe suivante :
 tableau(i) = valeur
 ```
 
-où `i` est l'indice de l'élément à remplir et `valeur` est la valeur à affecter à l'élément.
+où **i** est l'indice de l'élément à remplir et **valeur** est la valeur à affecter à l'élément.
 
 <div class="exemple">
 
-Pour remplir le tableau `notes` avec 3 notes qui sont 10, 12, 14, on écrit :
+Pour remplir le tableau **notes** avec 3 notes qui sont 10, 12, 14, on écrit :
 
 ```vb
 Dim notes(1 To 3) As Integer
@@ -92,10 +92,10 @@ L'idée de l'agorithme est la suivante :
 
 On vérifie d'abord que les deux tableaux ont la même taille.
 
-- Si ce n'est pas le cas, on affiche `les tableaux sont différents` et on sort de la procédure.
+- Si ce n'est pas le cas, on affiche **les tableaux sont différents** et on sort de la procédure.
 - Sinon, on parcourt les deux tableaux et on compare les éléments.
-    - Si on trouve un élément différent, on affiche `les tableaux sont différents` et on sort de la procédure.
-    - Si on arrive au bout des deux tableaux sans avoir trouvé d'élément différent, on affiche `les tableaux sont identiques`.
+    - Si on trouve un élément différent, on affiche **les tableaux sont différents** et on sort de la procédure.
+    - Si on arrive au bout des deux tableaux sans avoir trouvé d'élément différent, on affiche **les tableaux sont identiques**.
 
 L'algorithme peut être écrit en VBA de la manière suivante :
 
@@ -147,7 +147,7 @@ MsgBox "L'élément " & element & " n'est pas dans le tableau"
 
 ##### A la fin du tableau
 
-On souhaite écrire un algorithme qui permet d'ajouter un élément dans un tableau à la fin du tableau. Pour cela, on crée un nouveau tableau de taille `n + 1` et on copie les éléments du tableau initial dans le nouveau tableau. Enfin, on insère l'élément à la fin du tableau.
+On souhaite écrire un algorithme qui permet d'ajouter un élément dans un tableau à la fin du tableau. Pour cela, on crée un nouveau tableau de taille **n + 1** et on copie les éléments du tableau initial dans le nouveau tableau. Enfin, on insère l'élément à la fin du tableau.
 
 L'algorithme peut être écrit en VBA de la manière suivante :
 
@@ -165,7 +165,7 @@ tableau(UBound(tableau)) = element
 
 ##### A une position p
 
-On souhaite écrire un algorithme qui permet d'ajouter un élément dans un tableau à une position donnée. Pour cela, on crée un nouveau tableau de taille `n + 1` et on copie les éléments du tableau initial dans le nouveau tableau. Ensuite, on décale les éléments du tableau initial à partir de la position `p` vers la droite. Enfin, on insère l'élément à la position `p`.
+On souhaite écrire un algorithme qui permet d'ajouter un élément dans un tableau à une position donnée. Pour cela, on crée un nouveau tableau de taille **n + 1** et on copie les éléments du tableau initial dans le nouveau tableau. Ensuite, on décale les éléments du tableau initial à partir de la position **p** vers la droite. Enfin, on insère l'élément à la position **p**.
 
 L'algorithme peut être écrit en VBA de la manière suivante :
 
@@ -191,7 +191,7 @@ tableau(position) = element
 
 ##### La position de l'élement à supprimer est connue
 
-On souhaite écrire un algorithme qui permet de supprimer un élément dans un tableau à une position donnée. Pour cela, on décale les éléments du tableau à partir de la position `p` vers la gauche. Enfin, on crée un nouveau tableau de taille `n - 1` et on copie les éléments du tableau initial dans le nouveau tableau.
+On souhaite écrire un algorithme qui permet de supprimer un élément dans un tableau à une position donnée. Pour cela, on décale les éléments du tableau à partir de la position **p** vers la gauche. Enfin, on crée un nouveau tableau de taille **n - 1** et on copie les éléments du tableau initial dans le nouveau tableau.
 
 L'algorithme peut être écrit en VBA de la manière suivante :
 
@@ -212,7 +212,7 @@ ReDim tableau(UBound(tableau) - 1)
 
 ##### La position de l'élement à supprimer n'est pas connue
 
-On souhaite écrire un algorithme qui permet de supprimer un élément dans un tableau mais sans connaitre sa position. Pour cela, on parcourt le tableau et on compare l'élément courant avec l'élément à supprimer. Si on trouve l'élément à supprimer, on décale les éléments du tableau à partir de la position `p` vers la gauche. Enfin, on crée un nouveau tableau de taille `n - 1` et on copie les éléments du tableau initial dans le nouveau tableau.
+On souhaite écrire un algorithme qui permet de supprimer un élément dans un tableau mais sans connaitre sa position. Pour cela, on parcourt le tableau et on compare l'élément courant avec l'élément à supprimer. Si on trouve l'élément à supprimer, on décale les éléments du tableau à partir de la position **p** vers la gauche. Enfin, on crée un nouveau tableau de taille **n - 1** et on copie les éléments du tableau initial dans le nouveau tableau.
 
 L'algorithme peut être écrit en VBA de la manière suivante :
 
@@ -305,9 +305,12 @@ Type Enregistrement
 End Type
 ```
 
-avec `Eregistrement` le nom de l'enregistrement, `Champ1`, `Champ2` et `Champ3` les noms des champs de l'enregistrement et `type1`, `type2` et `type3` les types des champs de l'enregistrement.
+avec **Enregistrement** le nom de l'enregistrement, **Champ1**, **Champ2** et **Champ3** les noms des champs de l'enregistrement et **type1**, **type2** et **type3** les types des champs de l'enregistrement.
 
-Par exemple, si l'on souhaite déclarer un enregistrement `Personne` qui contient un nom, un prénom et un âge, on peut écrire :
+
+<div class="exemple">
+
+Si l'on souhaite déclarer un enregistrement **Personne** qui contient un nom, un prénom et un âge, on peut écrire :
 
 ```vb
 Type Personne
@@ -317,7 +320,9 @@ Type Personne
 End Type
 ```
 
-On peut ensuite déclarer une variable de type `Personne` :
+</div>
+
+On peut ensuite déclarer une variable de type **Personne** :
 
 ```vb
 Dim personne As Personne
@@ -333,7 +338,7 @@ personne.Age = 25
 
 ### Tableau d'enregistrements
 
-Il est possible de déclarer un tableau d'enregistrements de la manière suivante :
+Il est possible de déclarer un tableau d'enregistrements (ici de *Personne*) de la manière suivante :
 
 ```vb
 Dim tableau() As Personne
@@ -341,17 +346,23 @@ Dim tableau() As Personne
 
 Dans ce cas là, il est possible d'accéder aux champs de l'enregistrement de la manière suivante :
 
+<div class="exemple">
+
 ```vb
 tableau(0).Nom = "Dupont"
 tableau(0).Prenom = "Jean"
 tableau(0).Age = 25
 ```
 
+</div>
 
+### Instruction **With**
 
-### Instruction `With`
+L'instruction **With** permet d'accéder aux champs d'un enregistrement de manière plus concise.
 
-L'instruction `With` permet d'accéder aux champs d'un enregistrement de manière plus concise. Par exemple, si l'on souhaite accéder au champ `Nom` de l'enregistrement `personne`, on peut écrire :
+Par exemple, si l'on souhaite accéder au champ **Nom** de l'enregistrement **personne**, on peut écrire :
+
+<div class="exemple">
 
 ```vb
 With personne
@@ -359,10 +370,16 @@ With personne
 End With
 ```
 
-Si l'on souhaite accéder au champ `Nom` de l'enregistrement `tableau(0)`, on peut écrire :
+</div>
+
+Si l'on souhaite accéder au champ **Nom** de l'enregistrement **tableau(0)**, on peut écrire :
+
+<div class="exemple">
 
 ```vb
 With tableau(0)
     .Nom = "Dupont"
 End With
 ```
+
+</div>
