@@ -37,9 +37,9 @@ Pour définir une propriété, utilisez la syntaxe suivante :
 
 Où:
 
-- Objet est le nom de l'objet que vous personnalisez.
-- Propriété est la caractéristique que vous souhaitez modifier.
-- Valeur est le nouveau paramètre de la propriété.
+- *Objet* est le nom de l'objet que vous personnalisez.
+- *Propriété* est la caractéristique que vous souhaitez modifier.
+- *Valeur* est le nouveau paramètre de la propriété.
 </div>
 
 Par exemple, pour définir le titre du formulaire:
@@ -73,9 +73,14 @@ La **zone de texte** (appelée *TextBox* en **VBA**) permet de saisir une inform
 
 ##### Propriétés
 
+Voici les principales propriétés de la zone de texte :
+
 - **Text** : permet de récupérer ou de modifier le texte de la zone de texte.
 - **Font** : permet de récupérer ou de modifier la police de caractères de la zone de texte.
 - **Font.Size** : permet de récupérer ou de modifier la taille de la police de caractères de la zone de texte.
+
+Pour une liste de plus de propriétés, voir la page <a href="https://www.javatpoint.com/vb-net-textbox-control" target="_blank">TextBox Object</a>.
+
 
 La zone de texte peut être créée à l'aide de la méthode **Add** .
 
