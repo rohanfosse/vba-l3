@@ -207,6 +207,7 @@ On souhaite écrire un algorithme qui permet de supprimer un élément dans un t
 
 L'algorithme peut être écrit en VBA de la manière suivante :
 
+<div class="exemple">
 <details>
 
 ```vb
@@ -221,6 +222,7 @@ ReDim tableau(UBound(tableau) - 1)
 ```
 
 </details>
+</div>
 
 ##### La position de l'élement à supprimer n'est pas connue
 
