@@ -81,7 +81,6 @@ Voici les principales propriétés de la zone de texte :
 
 Pour une liste de plus de propriétés, voir la page <a href="https://www.javatpoint.com/vb-net-textbox-control" target="_blank">TextBox Object</a>.
 
-
 La zone de texte peut être créée à l'aide de la méthode **Add** .
 
 On peut définir la taille de la zone de texte en utilisant les paramètres **Width** et **Height**.
