@@ -323,19 +323,27 @@ Set app = Application
 
 La méthode **Run** permet d'exécuter une macro :
 
+<div class="exemple">
+
 ```vb
 Dim app As Application
 Set app = Application
 app.Run "NomDeLaMacro"
 ```
 
+</div>
+
 La méthode **Run** permet aussi d'exécuter une macro avec des paramètres :
+
+<div class="exemple">
 
 ```vb
 Dim app As Application
 Set app = Application
 app.Run "NomDeLaMacro", "param1", "param2"
 ```
+
+</div>
 
 ---
 
