@@ -15,9 +15,9 @@
 
 ## Les boucles <a name="les-boucles"></a>
 
-### Boucle `While` <a name="boucle-while"></a>
+### Boucle **While** <a name="boucle-while"></a>
 
-La boucle `While` permet d'exécuter une instruction tant qu'une condition est vraie.
+La boucle **While** permet d'exécuter une instruction tant qu'une condition est vraie.
 
 La syntaxe est la suivante :
 
@@ -62,9 +62,9 @@ Si ce n'est pas le cas, on redemande à l'utilisateur de saisir un nombre.
 
 </div>
 
-### Boucle `Do While` <a name="boucle-do-while"></a>
+### Boucle **Do While** <a name="boucle-do-while"></a>
 
-La boucle `Do While` permet d'exécuter une instruction tant qu'une condition est vraie. Elle est similaire à la boucle `While` mais la condition est testée **à la fin** de l'exécution de l'instruction.
+La boucle **Do While** permet d'exécuter une instruction tant qu'une condition est vraie. Elle est similaire à la boucle **While** mais la condition est testée **à la fin** de l'exécution de l'instruction.
 
 La syntaxe est la suivante :
 
@@ -74,7 +74,7 @@ Do
 Loop While condition
 ```
 
-La différence avec la boucle `While`, c'est que les instructions sont exécutées au moins une fois.
+La différence avec la boucle **While** , c'est que les instructions sont exécutées au moins une fois.
 
 <div class="exemple">
 
@@ -92,7 +92,7 @@ Loop While i <= 10
 
 </div>
 
-Si nous reprenons le même exemple que la boucle `While`, on obtient le code suivant :
+Si nous reprenons le même exemple que la boucle **While** , on obtient le code suivant :
 
 ```vb
 Dim nombre As Integer
@@ -102,9 +102,9 @@ Do
 Loop While nombre < 1 Or nombre > 10
 ```
 
-### Boucle `Do Loop Until` <a name="boucle-do-until"></a>
+### Boucle **Do Loop Until** <a name="boucle-do-until"></a>
 
-La boucle `Do Loop Until` permet d'exécuter une instruction tant qu'une condition est **fausse**. Elle est similaire à la boucle `Do While` mais la condition est testée à la fin de l'exécution de l'instruction.
+La boucle **Do Loop Until** permet d'exécuter une instruction tant qu'une condition est **fausse**. Elle est similaire à la boucle **Do While** mais la condition est testée à la fin de l'exécution de l'instruction.
 
 La syntaxe est la suivante :
 
@@ -126,7 +126,7 @@ Do
 Loop Until i > 10
 ```
 
-Si nous reprenons le même exemple que la boucle `While`, on obtient le code suivant :
+Si nous reprenons le même exemple que la boucle **While`, on obtient le code suivant :
 
 ```vb
 Dim nombre As Integer
@@ -138,9 +138,9 @@ Do
 Loop Until nombre >= 1 And nombre <= 10
 ```
 
-### Boucle `For` <a name="boucle-for"></a>
+### Boucle **For** <a name="boucle-for"></a>
 
-La boucle `For` permet d'exécuter une instruction un certain nombre de fois.
+La boucle **For** permet d'exécuter une instruction un certain nombre de fois.
 
 La syntaxe est la suivante :
 
@@ -150,7 +150,7 @@ For i = valeur_de_depart To valeur_de_fin Step pas
 Next i
 ```
 
-Step sert à définir le pas d'itération. Il est toutefois optionnel. Si on ne le précise pas, le pas vaut 1.
+*Step* sert à définir le pas d'itération. Il est toutefois optionnel. Si on ne le précise pas, le pas vaut 1.
 
 Par exemple, pour afficher les nombres de 1 à 10, on utilise la syntaxe suivante :
 
@@ -160,7 +160,7 @@ For i = 1 To 10
 Next i
 ```
 
-On peut aussi utiliser la boucle `For` pour parcourir un tableau. Par exemple, pour afficher les valeurs d'un tableau `tab` de taille 3, on utilise la syntaxe suivante :
+On peut aussi utiliser la boucle **For** pour parcourir un tableau. Par exemple, pour afficher les valeurs d'un tableau **tab** de taille 3, on utilise la syntaxe suivante :
 
 ```vb
 Dim tab(2) As Integer
@@ -184,9 +184,9 @@ For i = 0 To 2
     Next i
 ```
 
-#### Boucle `For Each In Next` <a name="boucle-for-each-in-next"></a>
+#### Boucle **For Each In Next** <a name="boucle-for-each-in-next"></a>
 
-La boucle `For Each In Next` permet d'exécuter une instruction pour chaque élément d'un tableau.
+La boucle **For Each In Next** permet d'exécuter une instruction pour chaque élément d'un tableau.
 
 La syntaxe est la suivante :
 
@@ -196,7 +196,7 @@ For Each element In tableau
 Next element
 ```
 
-Par exemple, pour afficher les valeurs d'un tableau `tab` de taille 3, on utilise la syntaxe suivante :
+Par exemple, pour afficher les valeurs d'un tableau **tab** de taille 3, on utilise la syntaxe suivante :
 
 ```vb
 Dim tab(2) As Integer
@@ -215,30 +215,30 @@ Next element
 
 ### Range <a name="range"></a>
 
-Le type `Range` permet de manipuler des cellules ou des plages de cellules.
+Le type **Range** permet de manipuler des cellules ou des plages de cellules.
 
-Pour créer un objet `Range`, on utilise la syntaxe suivante :
+Pour créer un objet **Range** , on utilise la syntaxe suivante :
 
 ```vb
 Dim range As Range
 Set range = Range("A1")
 ```
 
-On peut aussi créer un objet `Range` à partir d'une plage de cellules :
+On peut aussi créer un objet **Range** à partir d'une plage de cellules :
 
 ```vb
 Dim range As Range
 Set range = Range("A1:B2")
 ```
 
-On peut aussi créer un objet `Range` à partir d'une plage de cellules en utilisant les coordonnées :
+On peut aussi créer un objet **Range** à partir d'une plage de cellules en utilisant les coordonnées :
 
 ```vb
 Dim range As Range
 Set range = Range(Cells(1, 1), Cells(2, 2))
 ```
 
-La méthode `Clear` permet de supprimer le contenu d'une cellule ou d'une plage de cellules :
+La méthode **Clear** permet de supprimer le contenu d'une cellule ou d'une plage de cellules :
 
 ```vb
 Dim range As Range
@@ -246,7 +246,7 @@ Set range = Range("A1:B2")
 range.Clear
 ```
 
-La méthode `Value` permet de récupérer la valeur d'une cellule ou d'une plage de cellules :
+La méthode **Value** permet de récupérer la valeur d'une cellule ou d'une plage de cellules :
 
 ```vb
 Dim range As Range
@@ -254,7 +254,7 @@ Set range = Range("A1:B2")
 MsgBox range.Value
 ```
 
-La méthode `Cells` permet de spécifier une cellule à partir d'une plage de cellules :
+La méthode **Cells** permet de spécifier une cellule à partir d'une plage de cellules :
 
 ```vb
 Dim range As Range
@@ -267,16 +267,16 @@ range.Cells(2, 2).Value = 4
 
 ### Application <a name="application"></a>
 
-L'objet `Application` permet de manipuler Excel.
+L'objet **Application** permet de manipuler Excel.
 
-Pour créer un objet `Application`, on utilise la syntaxe suivante :
+Pour créer un objet **Application** , on utilise la syntaxe suivante :
 
 ```vb
 Dim app As Application
 Set app = Application
 ```
 
-La méthode `Run` permet d'exécuter une macro :
+La méthode **Run** permet d'exécuter une macro :
 
 ```vb
 Dim app As Application
@@ -284,7 +284,7 @@ Set app = Application
 app.Run "NomDeLaMacro"
 ```
 
-La méthode `Run` permet aussi d'exécuter une macro avec des paramètres :
+La méthode **Run** permet aussi d'exécuter une macro avec des paramètres :
 
 ```vb
 Dim app As Application
@@ -299,7 +299,7 @@ app.Run "NomDeLaMacro", "param1", "param2"
 #### Exercice 1 <a name="exercice-1-4"></a>
 
 <div class="exercice">
-Ecrire une fonction qui demande à l'utilisateur un entier **n** et fait la somme des entiers de 1 à **n**.
+Ecrire une fonction qui demande à l'utilisateur un entier **n** et fait la somme des entiers de 1 à **n** .
 Ecrire une procédure qui affiche le résultat de la fonction.
 
 ##### Correction
@@ -336,11 +336,11 @@ End Sub
 
 <div class="exercice">
 
-Ecrire une fonction ``double_tableau`` qui prend en paramètre un tableau d'entiers ``tab`` et sa taille ``n``. La fonction renvoie un booléen indiquant si le tableau ne contient que des entiers pairs.
+Ecrire une fonction **`double_tableau`** qui prend en paramètre un tableau d'entiers **tab** et sa taille **n**. La fonction renvoie un booléen indiquant si le tableau ne contient que des entiers pairs.
 
-Par exemple, si ``tab`` contient les valeurs ``1, 2, 3, 4``, la fonction renvoie ``False`` mais renvoie ``True`` si ``tab`` contient les valeurs ``2, 4, 6, 8``.
+Par exemple, si **tab** contient les valeurs **1, 2, 3, 4**, la fonction renvoie **False** mais renvoie **True** si **tab** contient les valeurs **2, 4, 6, 8**.
 
-Vous pouvez utiliser l'opérateur ``Mod`` pour calculer le modulo. Par exemple, ``5 Mod 2`` renvoie ``1``.
+Vous pouvez utiliser l'opérateur **Mod** pour calculer le modulo. Par exemple, **5 Mod 2** renvoie **1**.
 
 ##### Correction
 
@@ -372,7 +372,7 @@ End Function
 
 <div class="exercice">
 
-Ecrire une fonction `fibonacci` qui prend en paramètre un entier `n` et retourne un tableau contenant les `n` premiers termes de la suite de Fibonacci. Le type de retour de la fonction est `Variant` car on ne connait pas à l'avance la taille du tableau.
+Ecrire une fonction **fibonacci** qui prend en paramètre un entier **n** et retourne un tableau contenant les **n** premiers termes de la suite de Fibonacci. Le type de retour de la fonction est **Variant** car on ne connait pas à l'avance la taille du tableau.
 
 Pour rappel, la suite de Fibonacci est définie par la relation suivante :
 
