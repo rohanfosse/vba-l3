@@ -23,13 +23,13 @@ La syntaxe est la suivante :
 
 ```vb
 While condition
-    instruction
+    'instruction'
 Wend
 ```
 
 <div class="exemple">
 
-Par exemple, si l'on souhaite afficher les nombres de 1 à 10, le code sera le suivant :
+Si l'on souhaite afficher les nombres de 1 à 10, le code sera le suivant :
 
 ```vb
 Dim i As Integer
