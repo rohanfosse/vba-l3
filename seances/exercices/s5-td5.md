@@ -246,3 +246,135 @@ End Sub
 </details>
 
 </div>
+
+---
+
+## Exercice 5
+
+On considère la feuille de calcul (*Feuille3*) suivante:
+
+![s5-exo5](screenshots/s5-exo5.png)
+
+Ecrivez en VB un programme permettant de calculer la valeur totale du stock (simme des produits des prix par les quantités en stock) et de l'inscrire dans la cellule **F4**.
+
+<div style="border-left:solid #17a589 4px;padding-left:10px; ">
+
+#### Correction
+
+<details>
+
+```vb
+Sub Ex_5()
+
+    Dim t(1 To 5, 1 To 2) As Double
+    Dim i As Integer
+    Dim somme As Double
+
+    somme = 0
+
+    For i = 1 To 5
+        t(i, 1) = Feuil3.Cells(i + 1, 2)
+        t(i, 2) = Feuil3.Cells(i + 1, 3)
+    Next
+
+    For i = 1 To 5
+        somme = somme + t(i, 1) * t(i, 2)
+    Next
+    Feuil3.Cells(4, 6) = Format(somme, "# €")
+End Sub
+
+```
+
+</details>
+
+</div>
+
+---
+
+## Exercice 6
+
+Recopiez le code ci-dessous puis expliquez ce qu'il réalise.
+
+```vb
+Const tmax = 100
+
+Sub exo6()
+    Dim t(1 To tmax) As Integer
+    Dim i As Integer
+    Dim nc As Integer
+    Dim tmp As Integer
+    Dim permut As Integer
+
+    permut = 1
+    i = 1
+
+    While Feuil1.Cells(1, i) <> "" And i <= tmax
+        i = i + 1
+    Wend
+
+    nc = i - 1
+
+    For i = 1 To nc
+        t(i) = Feuil1.Cells(1, i)
+    Next
+
+    While permut = 1
+        permut = 0
+        For i = 1 To nc - 1
+            If t(i) > t(i + 1) Then
+                permut = 1
+                tmp = t(i)
+                t(i) = t(i + 1)
+                t(i + 1) = tmp
+            End If
+        Next
+    Wend
+
+    For i = 1 To nc
+        Feuil1.Cells(2, i) = t(i)
+    Next
+End Sub
+
+```
+
+<div style="border-left:solid #17a589 4px;padding-left:10px; ">
+
+#### Correction
+
+<details>
+
+Le programme ci-dessus permet de trier un tableau de nombres entiers en ordre croissant.
+
+</details>
+
+</div>
+
+---
+
+## Exercice 7
+
+
+<div style="border-left:solid #17a589 4px;padding-left:10px; ">
+
+#### Correction
+
+<details>
+
+Créer une liste de chaînes de caractères comportant les éléments "Le ", "printemps", "arrive."
+
+Ecrire ensuite une procédure affichant, à l'aide de la liste, la phrase: "Le printemps arrive".
+
+
+Sub Ex_7()
+Dim l As Variant, phrase As String, i As Integer
+l = Array("Le", "printemps", "arrive")
+phrase = ""
+For i = 0 To 2
+    phrase = phrase & Space(1) & l(i)
+Next i
+Debug.Print phrase
+End Sub
+
+</details>
+
+</div>
