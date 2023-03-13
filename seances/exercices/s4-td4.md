@@ -59,7 +59,7 @@ Ecrire une fonction permettant de calculer le prix actualisé d'un produit, apr�
 
 *NB: la fonction prendra en paramètres d'entrée le prix initial p et le nombre d'années n.*
 
-Obtiendrait-on la même valeur en appliquant le taux *n x 5\%* au prix initial?
+Obtiendrait-on la même valeur en appliquant le taux *n x 5%* au prix initial?
 
 <div style="border-left:solid #17a589 4px;padding-left:10px; ">
 
@@ -151,7 +151,9 @@ End Sub
 
 ##### Question 2
 
-Reprendre la question précédente, en mettant en oeuvre la formule de récurrence du calcul des montatns annuels capitalisés: *C_{n} = C_{n-1} x (1+i)*.
+Reprendre la question précédente, en mettant en oeuvre la formule de récurrence du calcul des montants annuels capitalisés:
+
+$$ C_{n} = C_{n-1} x (1+i) $$
 
 <div style="border-left:solid #17a589 4px;padding-left:10px; ">
 
@@ -189,7 +191,7 @@ End Sub
 
 Ecrire un programme qui affiche tous les nombres parfaits compris entre 2 et 10000.
 
-Un nombre parfait est un enteier égale à la somme de ses diviseurs, lui exclu.
+Un nombre parfait est un entier égal à la somme de ses diviseurs, lui exclu.
 
 Par exemple, 28 est un nombre parfait car *1+2+4+7+14=28*.
 
@@ -201,21 +203,21 @@ Par exemple, 28 est un nombre parfait car *1+2+4+7+14=28*.
 
 ```vb
 Sub exo4()
-    Dim i As Integer
-    Dim j As Integer
+    Dim nombre As Integer
+    Dim diviseur As Integer
     Dim somme As Integer
     
-    For i = 2 To 10000
+    For nombre = 2 To 10000
         somme = 0
-        For j = 1 To i - 1
-            If i Mod j = 0 Then
-                somme = somme + j
+        For diviseur = 1 To nombre - 1
+            If nombre Mod diviseur = 0 Then
+                somme = somme + diviseur
             End If
-        Next j
-        If somme = i Then
-            MsgBox i
+        Next diviseur
+        If somme = nombre Then
+            MsgBox nombre
         End If
-    Next i
+    Next nombre
 End Sub
 ```
 
