@@ -13,9 +13,9 @@
 
 ## Exercice 1
 
-Ecrire une procédure demandant à l'utilisateur de saisir un nombre *n*, puis affichant *n* fois le message `Message i` (avec i prenant les valeurs de 1 à *n*).
+Ecrire une procédure demandant à l'utilisateur de saisir un nombre *n*, puis affichant *n* fois le message **Message i** (avec i prenant les valeurs de 1 à *n*).
 
-Donner trois variantes de cette procédure: l'une avec une boucle `For`, l'autre avec une boucle `While` et la dernière avec une boucle `Do While`.
+Donner trois variantes de cette procédure: l'une avec une boucle **For**, l'autre avec une boucle **While** et la dernière avec une boucle **Do While**.
 
 <div style="border-left:solid #17a589 4px;padding-left:10px; ">
 
