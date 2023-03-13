@@ -364,16 +364,17 @@ Créer une liste de chaînes de caractères comportant les éléments "Le ", "pr
 
 Ecrire ensuite une procédure affichant, à l'aide de la liste, la phrase: "Le printemps arrive".
 
-
+```vb
 Sub Ex_7()
-Dim l As Variant, phrase As String, i As Integer
-l = Array("Le", "printemps", "arrive")
-phrase = ""
-For i = 0 To 2
-    phrase = phrase & Space(1) & l(i)
-Next i
-Debug.Print phrase
+    Dim l As Variant, phrase As String, i As Integer
+    l = Array("Le", "printemps", "arrive")
+    phrase = ""
+    For i = 0 To 2
+        phrase = phrase & Space(1) & l(i)
+    Next i
+    MsgBox phrase
 End Sub
+```
 
 </details>
 
