@@ -240,26 +240,40 @@ Le type **Range** permet de manipuler des cellules ou des plages de cellules.
 
 Pour créer un objet **Range** , on utilise la syntaxe suivante :
 
+<div class="exemple">
+
 ```vb
 Dim range As Range
 Set range = Range("A1")
 ```
 
+</div>
+
 On peut aussi créer un objet **Range** à partir d'une plage de cellules :
+
+<div class="exemple">
 
 ```vb
 Dim range As Range
 Set range = Range("A1:B2")
 ```
 
+</div>
+
 On peut aussi créer un objet **Range** à partir d'une plage de cellules en utilisant les coordonnées :
+
+<div class="exemple">
 
 ```vb
 Dim range As Range
 Set range = Range(Cells(1, 1), Cells(2, 2))
 ```
 
+</div>
+
 La méthode **Clear** permet de supprimer le contenu d'une cellule ou d'une plage de cellules :
+
+<div class="exemple">
 
 ```vb
 Dim range As Range
@@ -267,7 +281,11 @@ Set range = Range("A1:B2")
 range.Clear
 ```
 
+</div>
+
 La méthode **Value** permet de récupérer la valeur d'une cellule ou d'une plage de cellules :
+
+<div class="exemple">
 
 ```vb
 Dim range As Range
@@ -275,7 +293,11 @@ Set range = Range("A1:B2")
 MsgBox range.Value
 ```
 
+</div>
+
 La méthode **Cells** permet de spécifier une cellule à partir d'une plage de cellules :
+
+<div class="exemple">
 
 ```vb
 Dim range As Range
@@ -285,6 +307,8 @@ range.Cells(1, 2).Value = 2
 range.Cells(2, 1).Value = 3
 range.Cells(2, 2).Value = 4
 ```
+
+</div>
 
 ### Application <a name="application"></a>
 
