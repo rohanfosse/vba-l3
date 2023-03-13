@@ -167,6 +167,8 @@ Next i
 
 *Step* sert à définir le pas d'itération. Il est toutefois optionnel. Si on ne le précise pas, le pas vaut 1.
 
+*Next i* permet de terminer la boucle. Il est important de préciser *i* car il s'agit du nom de la variable de boucle.
+
 Par exemple, pour afficher les nombres de 1 à 10, on utilise la syntaxe suivante :
 
 ```vb
