@@ -43,28 +43,35 @@ Wend
 
 </div>
 
-Un autre exemple serait de demander à l'utilisateur de saisir un nombre tant que ce nombre n'est pas compris entre 1 et 10.
+Un autre exemple serait de demander à l'utilisateur de saisir un nombre. Tant que ce nombre n'est pas compris entre 1 et 10, on lui redemande.
 
 <div class ="exemple">
 
 ```vb
-Dim nombre As Integer
+Sub boucle_while()
+    Dim nombre As Integer
 
-nombre = InputBox("Entrez un nombre", "Nombre")
-
-While nombre < 1 Or nombre > 10
     nombre = InputBox("Entrez un nombre", "Nombre")
-Wend
+
+    While nombre < 1 Or nombre > 10
+        nombre = InputBox("Entrez un nombre", "Nombre")
+    Wend
+End Sub
 ```
 
-Dans cet exemple, on doit écrire deux fois le code `nombre = InputBox("Entrez un nombre", "Nombre")`. En effet, il faut d'abord que l'utilisateur saisisse un nombre, puis que le programme vérifie si ce nombre est compris entre 1 et 10.
+Dans cet exemple, on peut voir que l'on doit écrire deux fois le code `nombre = InputBox("Entrez un nombre", "Nombre")`.
+
+En effet, il faut d'abord que l'utilisateur saisisse un nombre, puis que le programme vérifie si ce nombre est compris entre 1 et 10.
+
 Si ce n'est pas le cas, on redemande à l'utilisateur de saisir un nombre.
 
 </div>
 
 ### Boucle **Do While** <a name="boucle-do-while"></a>
 
-La boucle **Do While** permet d'exécuter une instruction tant qu'une condition est vraie. Elle est similaire à la boucle **While** mais la condition est testée **à la fin** de l'exécution de l'instruction.
+La boucle **Do While** permet d'exécuter une instruction tant qu'une condition est vraie.
+
+Elle est similaire à la boucle **While** mais la condition est testée **à la fin** de l'exécution de l'instruction.
 
 La syntaxe est la suivante :
 
@@ -74,11 +81,11 @@ Do
 Loop While condition
 ```
 
-La différence avec la boucle **While** , c'est que les instructions sont exécutées au moins une fois.
+A la différence de la boucle **While** , les instructions sont exécutées **au moins une fois**.
 
 <div class="exemple">
 
-Par exemple, pour afficher les nombres de 1 à 10, on utilise la syntaxe suivante :
+Pour afficher les nombres de 1 à 10, le code sera le suivant :
 
 ```vb
 Dim i As Integer
@@ -114,7 +121,9 @@ Do
 Loop Until condition
 ```
 
-Par exemple, pour afficher les nombres de 1 à 10, on utilise la syntaxe suivante :
+<div class="exemple">
+
+Pour afficher les nombres de 1 à 10, le code sera le suivant :
 
 ```vb
 Dim i As Integer
@@ -126,21 +135,27 @@ Do
 Loop Until i > 10
 ```
 
-Si nous reprenons le même exemple que la boucle **While`, on obtient le code suivant :
+</div>
+
+Si nous reprenons le même exemple que la boucle **While**, on obtient le code suivant :
+
+<div class="exemple">
 
 ```vb
-Dim nombre As Integer
+Sub do_while()
+    Dim nombre As Integer
 
-nombre = InputBox("Entrez un nombre", "Nombre")
-
-Do
-    nombre = InputBox("Entrez un nombre", "Nombre")
-Loop Until nombre >= 1 And nombre <= 10
+    Do
+        nombre = InputBox("Entrez un nombre", "Nombre")
+    Loop Until nombre >= 1 And nombre <= 10
+End Sub
 ```
+
+</div>
 
 ### Boucle **For** <a name="boucle-for"></a>
 
-La boucle **For** permet d'exécuter une instruction un certain nombre de fois.
+La boucle **For** permet d'exécuter une instruction un nombre défini de fois.
 
 La syntaxe est la suivante :
 
@@ -160,27 +175,33 @@ For i = 1 To 10
 Next i
 ```
 
-On peut aussi utiliser la boucle **For** pour parcourir un tableau. Par exemple, pour afficher les valeurs d'un tableau **tab** de taille 3, on utilise la syntaxe suivante :
+On peut aussi utiliser la boucle **For** pour parcourir un tableau.
+
+<div class="exemple">
+
+Pour afficher les valeurs d'un tableau **tableau** de taille 3, le code sera le suivant :
 
 ```vb
-Dim tab(2) As Integer
-tab(0) = 1
-tab(1) = 2
-tab(2) = 3
+Dim tableau(2) As Integer
+tableau(0) = 1
+tableau(1) = 2
+tableau(2) = 3
 
 For i = 0 To 2
-    MsgBox tab(i)
+    MsgBox tableau(i)
 Next i
 ```
+
+</div>
 
 Une autre façon de définir le tableau est la suivante :
 
 ```vb
-Dim tab() As Variant
-tab = Array(1, 2, 3)
+Dim tableau() As Variant
+tableau = Array(1, 2, 3)
 
 For i = 0 To 2
-    MsgBox tab(i)
+    MsgBox tableau(i)
     Next i
 ```
 
@@ -196,15 +217,15 @@ For Each element In tableau
 Next element
 ```
 
-Par exemple, pour afficher les valeurs d'un tableau **tab** de taille 3, on utilise la syntaxe suivante :
+Par exemple, pour afficher les valeurs d'un tableau **tableau** de taille 3, on utilise la syntaxe suivante :
 
 ```vb
-Dim tab(2) As Integer
-tab(0) = 1
-tab(1) = 2
-tab(2) = 3
+Dim tableau(2) As Integer
+tableau(0) = 1
+tableau(1) = 2
+tableau(2) = 3
 
-For Each element In tab
+For Each element In tableau
     MsgBox element
 Next element
 ```
@@ -347,7 +368,7 @@ Vous pouvez utiliser l'opérateur **Mod** pour calculer le modulo. Par exemple, 
 <details>
 
 ```vb
-Function double_tableau(tab() As Integer, n As Integer) As Boolean
+Function double_tableau(tableau() As Integer, n As Integer) As Boolean
     Dim i As Integer
     Dim resultat As Boolean
 
@@ -355,7 +376,7 @@ Function double_tableau(tab() As Integer, n As Integer) As Boolean
     i = 0
 
     Do While i < n And resultat = True
-        If tab(i) Mod 2 <> 0 Then
+        If tableau(i) Mod 2 <> 0 Then
             resultat = False
         End If
         i = i + 1
@@ -388,14 +409,14 @@ f(n) = f(n-1) + f(n-2)
 
 ```vb
 Function fibonacci(n As Integer) As Variant
-    Dim tab(n) As Integer
+    Dim tableau(n) As Integer
     Dim i As Integer
 
-    tab(0) = 0
-    tab(1) = 1
+    tableau(0) = 0
+    tableau(1) = 1
 
     For i = 2 To n
-        tab(i) = tab(i - 1) + tab(i - 2)
+        tableau(i) = tableau(i - 1) + tableau(i - 2)
     Next i
 
     fibonacci = tab
