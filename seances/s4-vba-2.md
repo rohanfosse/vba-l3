@@ -82,7 +82,9 @@ Sub boucle_while()
 End Sub
 ```
 
-Dans cet exemple, on peut voir que l'on doit écrire deux fois le code `nombre = InputBox("Entrez un nombre", "Nombre")`.
+Dans cet exemple, on peut voir que l'on doit écrire deux fois le code
+
+`nombre = InputBox("Entrez un nombre", "Nombre")`.
 
 En effet, il faut d'abord que l'utilisateur saisisse un nombre, puis que le programme vérifie si ce nombre est compris entre 1 et 10.
 
