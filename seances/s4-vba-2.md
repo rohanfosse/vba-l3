@@ -94,9 +94,7 @@ Si ce n'est pas le cas, on redemande à l'utilisateur de saisir un nombre.
 
 La boucle **Do While** permet d'exécuter une instruction tant qu'une condition est vraie.
 
-Elle est similaire à la boucle **While** mais la condition est testée **à la fin** de l'exécution de l'instruction.
-
-La syntaxe est la suivante :
+Elle est similaire à la boucle **While** mais la condition est testée **à la fin** de l'exécution de l'instruction. La syntaxe est la suivante :
 
 ```vb
 Do
@@ -124,6 +122,8 @@ Loop While i <= 10
 
 Si nous reprenons le même exemple que la boucle **While** , on obtient le code suivant :
 
+<div class="exemple">
+
 ```vb
 Dim nombre As Integer
 
@@ -132,11 +132,11 @@ Do
 Loop While nombre < 1 Or nombre > 10
 ```
 
+</div>
+
 ### Boucle **Do Loop Until** <a name="boucle-do-until"></a>
 
-La boucle **Do Loop Until** permet d'exécuter une instruction tant qu'une condition est **fausse**. Elle est similaire à la boucle **Do While** mais la condition est testée à la fin de l'exécution de l'instruction.
-
-La syntaxe est la suivante :
+La boucle **Do Loop Until** permet d'exécuter une instruction tant qu'une condition est **fausse**. Elle est similaire à la boucle **Do While** mais la condition est testée à la fin de l'exécution de l'instruction. La syntaxe est la suivante :
 
 ```vb
 Do
@@ -259,7 +259,7 @@ Next element
 
 ## Communication avec Excel <a name="communication-avec-excel"></a>
 
-### Range <a name="range"></a>
+#### Range <a name="range"></a>
 
 Le type **Range** permet de manipuler des cellules ou des plages de cellules.
 
@@ -335,7 +335,7 @@ range.Cells(2, 2).Value = 4
 
 </div>
 
-### Application <a name="application"></a>
+#### Application <a name="application"></a>
 
 L'objet **Application** permet de manipuler Excel.
 
