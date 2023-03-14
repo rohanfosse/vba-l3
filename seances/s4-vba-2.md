@@ -377,27 +377,28 @@ app.Run "NomDeLaMacro", "param1", "param2"
 #### Exercice 1 <a name="exercice-1-4"></a>
 
 <div class="exercice">
-Ecrire une fonction qui demande à l'utilisateur un entier **n** et fait la somme des entiers de 1 à **n** .
-Ecrire une procédure qui affiche le résultat de la fonction.
+- Ecrire une fonction qui demande à l'utilisateur un entier **n** et fait la somme des entiers de 1 à **n**.
+- Ecrire une procédure qui affiche le résultat de la fonction.
 
 ##### Correction
 
+
 <details>
+
+Tout d'abord, comme on connait le nombre d'itérations, on sait que l'on peut utiliser une boucle **For**.
 
 ```vb
 Function sommeEntiers() As Integer
-    Dim nombre As Integer
+    Dim n As Integer
     Dim somme As Integer
     Dim i As Integer
 
-    n = InputBox("Entrez un nombre", "Nombre")
+    n = InputBox("Entrez un entier")
     somme = 0
-    i = 1
 
-    Do While i <= n
+    For i = 1 To n
         somme = somme + i
-        i = i + 1
-    Loop
+    Next i
 
     sommeEntiers = somme
 End Function
