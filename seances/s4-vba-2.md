@@ -387,6 +387,12 @@ app.Run "NomDeLaMacro", "param1", "param2"
 
 Tout d'abord, comme on connait le nombre d'itérations, on sait que l'on peut utiliser une boucle **For**.
 
+Ensuite, on crée une variable **somme** qui contiendra la somme des entiers de 1 à **n**.
+
+Enfin, on fait la somme des entiers de 1 à **n** en ajoutant la valeur de **i** à la variable **somme** à chaque itération.
+
+A la fin de la boucle, on renvoie la valeur de **somme** en oubliant pas de l'affecter à **sommeEntiers** (le nom de la fonction).
+
 ```vb
 Function sommeEntiers() As Integer
     Dim n As Integer
