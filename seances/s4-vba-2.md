@@ -100,6 +100,8 @@ Si ce n'est pas le cas, on redemande à l'utilisateur de saisir un nombre.
 
 </div>
 
+<div class="line"></div>
+
 ### Boucle **Do While** <a name="boucle-do-while"></a>
 
 La boucle **Do While** permet d'exécuter une instruction tant qu'une condition est vraie.
@@ -144,6 +146,8 @@ Loop While nombre < 1 Or nombre > 10
 
 </div>
 
+<div class="line"></div>
+
 ### Boucle **Do Loop Until** <a name="boucle-do-until"></a>
 
 La boucle **Do Loop Until** permet d'exécuter une instruction tant qu'une condition est **fausse**. Elle est similaire à la boucle **Do While** mais la condition est testée à la fin de l'exécution de l'instruction. La syntaxe est la suivante :
@@ -186,6 +190,8 @@ End Sub
 
 </div>
 
+<div class="line"></div>
+
 ### Boucle **For** <a name="boucle-for"></a>
 
 La boucle **For** permet d'exécuter une instruction un nombre défini de fois.
@@ -200,15 +206,20 @@ Next i
 
 *Step* sert à définir le pas d'itération. Il est toutefois optionnel. Si on ne le précise pas, le pas vaut 1.
 
-*Next i* permet de terminer la boucle. Il est important de préciser *i* car il s'agit du nom de la variable de boucle.
+***Next i*** permet de terminer la boucle. Il est important de préciser ***i*** car il s'agit du nom de la variable de boucle.
 
-Par exemple, pour afficher les nombres de 1 à 10, on utilise la syntaxe suivante :
+
+<begin class="exemple">
+
+Pour afficher les nombres de 1 à 10, le code sera le suivant :
 
 ```vb
 For i = 1 To 10 
     MsgBox i
 Next i
 ```
+
+</div>
 
 On peut aussi utiliser la boucle **For** pour parcourir un tableau.
 
@@ -242,7 +253,7 @@ For i = 0 To 2
 
 <div class="line"></div>
 
-#### Boucle For Each In Next <a name="boucle-for-each-in-next"></a>
+### Boucle For Each In Next <a name="boucle-for-each-in-next"></a>
 
 La boucle **For Each In Next** permet d'exécuter une instruction pour chaque élément d'un tableau.
 
@@ -254,7 +265,9 @@ For Each element In tableau
 Next element
 ```
 
-Par exemple, pour afficher les valeurs d'un tableau **tableau** de taille 3, on utilise la syntaxe suivante :
+Pour afficher les valeurs d'un tableau **tableau** de taille 3, le code sera le suivant:
+
+<div class="exemple">
 
 ```vb
 Dim tableau(2) As Integer
@@ -266,6 +279,8 @@ For Each element In tableau
     MsgBox element
 Next element
 ```
+
+</div>
 
 ---
 
