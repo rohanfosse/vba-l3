@@ -455,6 +455,8 @@ End Function
 </details>
 </div>
 
+<div class="line"></div>
+
 #### Exercice 3 <a name="exercice-3-4"></a>
 
 <div class="exercice">
