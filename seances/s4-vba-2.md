@@ -209,7 +209,7 @@ Next i
 ***Next i*** permet de terminer la boucle. Il est important de préciser ***i*** car il s'agit du nom de la variable de boucle.
 
 
-<begin class="exemple">
+<div class="exemple">
 
 Pour afficher les nombres de 1 à 10, le code sera le suivant :
 
