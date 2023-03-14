@@ -22,11 +22,15 @@ Une **structure d'itération** est une structure, dans le code, qui permet de re
 
 Les **structures itératives** fournissent un moyen d'effectuer des boucles sur des instructions : **la boucle** permet d'exécuter des itérations.
 
+<div class="line"></div>
+
 #### Condition d'arrêt
 
 Une boucle s'exécute un certain nombre de fois avant de s'interrompre et que la suite du programme poursuive son exécution. Si une boucle ne s’interrompt jamais, c'est une **boucle infinie** : le programme reste bloqué car la boucle se répète indéfiniment.
 
 Les structures itératives nécessitent donc **une condition d'arrêt**, c'est-à-dire une condition qui interrompt les itérations dès qu'elle est remplie.
+
+<div class="line"></div>
 
 #### Compteur
 
@@ -50,6 +54,8 @@ While condition
 Wend
 ```
 
+
+
 <div class="exemple">
 
 Si l'on souhaite afficher les nombres de 1 à 10, le code sera le suivant :
@@ -65,6 +71,8 @@ Wend
 ```
 
 </div>
+
+<div class="line"></div>
 
 Un autre exemple serait de demander à l'utilisateur de saisir un nombre. Tant que ce nombre n'est pas compris entre 1 et 10, on lui redemande.
 
@@ -232,7 +240,9 @@ For i = 0 To 2
     Next i
 ```
 
-#### Boucle **For Each In Next** <a name="boucle-for-each-in-next"></a>
+<div class="line"></div>
+
+#### Boucle For Each In Next <a name="boucle-for-each-in-next"></a>
 
 La boucle **For Each In Next** permet d'exécuter une instruction pour chaque élément d'un tableau.
 
@@ -418,6 +428,8 @@ End Sub
 
 </details>
 </div>
+
+<div class="line"></div>
 
 #### Exercice 2 <a name="exercice-2-4"></a>
 
