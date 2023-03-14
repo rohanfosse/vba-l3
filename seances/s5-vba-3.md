@@ -1,9 +1,7 @@
-<p style="text-align:left;">
-    [Retour au sommaire](../README.md)
-</p>
+
 
 <p style="text-align:left;">
-    [Retour au sommaire](../README.md)
+    [Séance 6 - Structures Iteratives et communications avec Excel](s4-vba-2.md)
     <span style="float:right;">
         [Séance 6 - VBA: Eléments visuels](s6-vba-4.md)
     </span>
@@ -13,6 +11,8 @@
 # Séance 5 - Tableaux et Enregistrements
 
 </div>
+
+---
 
 ## Les tableaux
 
