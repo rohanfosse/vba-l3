@@ -242,6 +242,8 @@ Next i
 
 Une autre façon de définir le tableau est la suivante :
 
+<div class="exemple">
+
 ```vb
 Dim tableau() As Variant
 tableau = Array(1, 2, 3)
@@ -250,6 +252,8 @@ For i = 0 To 2
     MsgBox tableau(i)
     Next i
 ```
+
+</div>
 
 <div class="line"></div>
 
@@ -404,8 +408,9 @@ app.Run "NomDeLaMacro", "param1", "param2"
 #### Exercice 1 <a name="exercice-1-4"></a>
 
 <div class="exercice">
-- Ecrire une fonction qui demande à l'utilisateur un entier **n** et fait la somme des entiers de 1 à **n**.
-- Ecrire une procédure qui affiche le résultat de la fonction.
+Ecrire une fonction qui demande à l'utilisateur un entier **n** et fait la somme des entiers de **1 à n**.
+
+Puis, ecrire une procédure qui affiche le résultat de la fonction.
 
 ##### Correction
 
@@ -450,7 +455,7 @@ End Sub
 
 <div class="exercice">
 
-Ecrire une fonction **`double_tableau`** qui prend en paramètre un tableau d'entiers **tab** et sa taille **n**. La fonction renvoie un booléen indiquant si le tableau ne contient que des entiers pairs.
+Ecrire une fonction **double_tableau** qui prend en paramètre un tableau d'entiers **tab** et sa taille **n**. La fonction renvoie un booléen indiquant si le tableau ne contient que des entiers pairs.
 
 Par exemple, si **tab** contient les valeurs **1, 2, 3, 4**, la fonction renvoie **False** mais renvoie **True** si **tab** contient les valeurs **2, 4, 6, 8**.
 
