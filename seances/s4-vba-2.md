@@ -18,9 +18,11 @@
 
 Lorsque l'on répète plusieurs fois les mêmes actions, on parle **d'itération**.
 
-Une **structure d'itération** est une structure, dans le code, qui permet de rejouer les mêmes actions, avec d'éventuelles petites différences. Par exemple appliquer une même séquence d'actions à une variable différente à chaque itération. Il existe plusieurs types de structures itératives, mais elles sont généralement **communes** entre les différents langages.
+Une **structure d'itération** permet de rejouer les mêmes actions, avec d'éventuelles petites différences.
 
 Les **structures itératives** fournissent un moyen d'effectuer des boucles sur des instructions : **la boucle** permet d'exécuter des itérations.
+
+Il existe plusieurs types de structures itératives, mais elles sont généralement **communes** entre les différents langages.
 
 <div class="line"></div>
 
