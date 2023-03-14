@@ -13,6 +13,28 @@
 
 ---
 
+#### Une itération
+
+Lorsque l'on répète plusieurs fois les mêmes actions, on parle d'itération.
+
+Une structure d'itération est une structure, dans le code, qui permet de rejouer les mêmes actions, avec d'éventuelles petites différences. Par exemple appliquer une même séquence d'actions à une variable différente à chaque itération. Il existe plusieurs types de structures itératives, mais elles sont généralement communes entre les différents langages.
+
+Les structures itératives fournissent un moyen d'effectuer des boucles sur des instructions : **la boucle** permet d'exécuter des itérations.
+
+#### Condition d'arrêt
+
+Une boucle s'exécute un certain nombre de fois avant de s'interrompre et que la suite du programme poursuive son exécution. Si une boucle ne s’interrompt jamais, c'est une boucle infinie : le programme reste bloqué car la boucle se répète indéfiniment.
+
+Les structures itératives nécessitent donc une condition d'arrêt, c'est-à-dire une condition qui interrompt les itérations dès qu'elle est remplie.
+
+##### Compteur
+
+Un compteur est souvent utilisé à l'intérieur de la boucle : une variable entière, généralement initialisée à 0, est incrémentée à chaque nouvelle itération. Le compteur permet ainsi simplement de compter le nombre d'itérations déjà effectué.
+
+La valeur du compteur est très souvent utilisée dans la condition de sortie, pour interrompre la boucle au bout d'un certain nombre d'itération.
+
+---
+
 ## Les boucles <a name="les-boucles"></a>
 
 ### Boucle **While** <a name="boucle-while"></a>
