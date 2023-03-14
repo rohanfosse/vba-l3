@@ -1,5 +1,9 @@
 <p style="text-align:left;">
     [Retour au sommaire](../README.md)
+</p>
+
+<p style="text-align:left;">
+    [Retour au sommaire](../README.md)
     <span style="float:right;">
         [Séance 6 - VBA: Eléments visuels](s6-vba-4.md)
     </span>
