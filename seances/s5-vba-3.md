@@ -14,6 +14,8 @@
 
 Il arrive souvent que l'on ait besoin de stocker plusieurs valeurs d'un même type. Par exemple, on peut vouloir stocker toutes les notes d'un élèves. Pour cela, on utilise un tableau.
 
+---
+
 ### Déclaration d'un tableau
 
 Pour déclarer un tableau, on utilise la syntaxe suivante :
@@ -71,6 +73,8 @@ notes(3) = 14
 
 </div>
 
+---
+
 ### Tableaux dynamiques
 
 Si l'on ne précise pas la taille du tableau au moment de la déclaration,
@@ -83,6 +87,8 @@ Pour déclarer un tableau dynamique, on utilise la syntaxe suivante :
 ```vb
 Dim tableau() As type
 ```
+
+---
 
 ### Algorithmes sur les tableaux
 
@@ -120,7 +126,9 @@ End If
 
 </details>
 
-#### Recherche d'un élément dans un tableau
+---
+
+### Recherche d'un élément dans un tableau
 
 On souhaite écrire un algorithme qui permet de rechercher un élément dans un tableau. Pour cela, on parcourt le tableau et on compare l'élément courant avec l'élément recherché. Si on trouve l'élément recherché, on affiche l'indice de l'élément et on sort de la procédure. Si on arrive au bout du tableau sans avoir trouvé l'élément recherché, on affiche un message d'erreur.
 
@@ -143,7 +151,9 @@ MsgBox "L'élément " & element & " n'est pas dans le tableau"
 
 </details>
 
-#### Ajout d'un élément dans un tableau
+---
+
+### Ajout d'un élément dans un tableau
 
 ##### A la fin du tableau
 
@@ -187,7 +197,9 @@ tableau(position) = element
 
 </details>
 
-#### Suppression d'un élément dans un tableau
+---
+
+### Suppression d'un élément dans un tableau
 
 ##### La position de l'élement à supprimer est connue
 
@@ -195,6 +207,7 @@ On souhaite écrire un algorithme qui permet de supprimer un élément dans un t
 
 L'algorithme peut être écrit en VBA de la manière suivante :
 
+<div class="exemple">
 <details>
 
 ```vb
@@ -209,6 +222,7 @@ ReDim tableau(UBound(tableau) - 1)
 ```
 
 </details>
+</div>
 
 ##### La position de l'élement à supprimer n'est pas connue
 
@@ -236,7 +250,9 @@ Next i
 
 </details>
 
-#### Tri d'un tableau
+---
+
+### Tri d'un tableau
 
 ##### Tri par sélection
 
@@ -355,6 +371,8 @@ tableau(0).Age = 25
 ```
 
 </div>
+
+---
 
 ### Instruction **With**
 
