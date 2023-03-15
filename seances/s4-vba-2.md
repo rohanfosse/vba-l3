@@ -1,7 +1,7 @@
 <p style="text-align:left;">
     [Retour au sommaire](../README.md)
     <span style="float:right;">
-        [Séance 5 - VBA: Tableaux et Enregistrements](s4-vba-3.md)
+        [Séance 5 - VBA: Tableaux et Enregistrements](s5-vba-3.md)
     </span>
 </p>
 
