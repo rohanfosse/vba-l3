@@ -48,6 +48,7 @@ Dim tableau(a To b) As type
 où **a** et **b** sont les bornes de l'intervalle.
 
 <div class="exemple">
+
 Pour déclarer un tableau **notes** d'entiers allant de 5 à 10, on écrit :
 
 ```vb
@@ -92,9 +93,13 @@ Pour déclarer un tableau dynamique, on utilise la syntaxe suivante :
 Dim tableau() As type
 ```
 
+C'est la même syntaxe que pour les tableaux statiques, sauf qu'on ne précise pas la taille du tableau.
+
 ---
 
 ### Algorithmes sur les tableaux
+
+Ces algorithmes sont donnés pour vous aider à comprendre comment fonctionnent les tableaux. Vous n'êtes pas obligés de les connaître par coeur.
 
 #### Comparaison de deux tableaux
 
@@ -134,7 +139,13 @@ End If
 
 #### Recherche d'un élément dans un tableau
 
-On souhaite écrire un algorithme qui permet de rechercher un élément dans un tableau. Pour cela, on parcourt le tableau et on compare l'élément courant avec l'élément recherché. Si on trouve l'élément recherché, on affiche l'indice de l'élément et on sort de la procédure. Si on arrive au bout du tableau sans avoir trouvé l'élément recherché, on affiche un message d'erreur.
+On souhaite écrire un algorithme qui permet de **rechercher un élément** dans un tableau.
+
+Pour cela, on parcourt le tableau et on compare l'élément courant avec l'élément recherché.
+
+Si on trouve l'élément recherché, on affiche l'indice de l'élément et on sort de la procédure.
+
+Si on arrive au bout du tableau sans avoir trouvé l'élément recherché, on affiche un message d'erreur.
 
 L'algorithme peut être écrit en VBA de la manière suivante :
 
@@ -157,7 +168,7 @@ MsgBox "L'élément " & element & " n'est pas dans le tableau"
 
 ---
 
-### Ajout d'un élément dans un tableau
+#### Ajout d'un élément dans un tableau
 
 ##### A la fin du tableau
 
@@ -176,6 +187,8 @@ tableau(UBound(tableau)) = element
 ```
 
 </details>
+
+<div class="line"></div>
 
 ##### A une position p
 
