@@ -55,7 +55,7 @@ MsgBox note5
 
 <div class="line"></div>
 
-Dans notre cas, il était possible d'écrire la fonction parceque l'on ne souhaitait que saisir et afficher cinq notes. Mais si l'on souhaitait en saisir 100, comment ferions-nous ?
+Dans notre cas, il est possible d'écrire la fonction parceque l'on ne souhaitait que saisir et afficher cinq notes. Mais si l'on souhaitait en saisir 100, comment ferions-nous ?
 
 Comme les variables ont des noms différents, on ne peut **pas utiliser de boucle**, ce qui allonge considérablement le code et le rend très répétitif.
 
@@ -140,6 +140,7 @@ notes(3) = 14
 
 ### Tableaux dynamiques
 
+
 Si l'on ne précise pas la taille du tableau au moment de la déclaration,
 le tableau est appelé **dynamique**.
 
@@ -157,9 +158,15 @@ C'est la même syntaxe que pour les tableaux statiques, sauf qu'on ne précise p
 
 ### Algorithmes sur les tableaux
 
-Ces algorithmes sont donnés pour vous aider à comprendre comment fonctionnent les tableaux. Vous n'êtes pas obligés de les connaître par coeur.
+#### Notes importantes
 
-Ils pourront cependant vous êtes utiles lors des différents exercices que vous aurez à faire.
+Ces **algorithmes** sont donnés pour vous aider à comprendre comment fonctionnent les tableaux.
+
+**Vous n'êtes pas obligés de les connaître par coeur.**
+
+Ils pourront cependant vous êtes **utiles** lors des différents exercices que vous aurez à faire.
+
+<div class="line"></div>
 
 #### Comparaison de deux tableaux
 
@@ -167,10 +174,12 @@ L'idée de l'agorithme est la suivante :
 
 On vérifie d'abord que les deux tableaux ont la même taille.
 
-- Si ce n'est pas le cas, on affiche **les tableaux sont différents** et on sort de la procédure.
-- Sinon, on parcourt les deux tableaux et on compare les éléments.
-    - Si on trouve un élément différent, on affiche **les tableaux sont différents** et on sort de la procédure.
-    - Si on arrive au bout des deux tableaux sans avoir trouvé d'élément différent, on affiche **les tableaux sont identiques**.
+1. Si ce n'est pas le cas, on affiche **les tableaux sont différents** et on sort de la procédure.
+2. Sinon, on parcourt les deux tableaux et on compare les éléments.
+    1. Si on trouve un élément différent, on affiche **les tableaux sont différents** et on sort de la procédure.
+    2. Si on arrive au bout des deux tableaux sans avoir trouvé d'élément différent, on affiche **les tableaux sont identiques**.
+
+![Comparaison de deux tableaux](screenshots/s5-comp-tableau.gif)
 
 L'algorithme peut être écrit en VBA de la manière suivante :
 
