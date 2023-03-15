@@ -49,6 +49,8 @@ MsgBox note1 & vbCrLf & note2 & vbCrLf & note3 & vbCrLf & note4 & vbCrLf & note5
 
 </details>
 
+<div class="line"></div>
+
 Imaginons que si l'on voulait réaliser cet algorithme avec 100 notes, cela deviendrait fastidieux.
 
 Comme les variables ont des noms différents, on ne peut **pas** utiliser de boucle, ce qui allonge considérablement le code et le rend très répétitif.
@@ -61,12 +63,15 @@ Pour résoudre ce problème, il existe un type de données qui permet de défini
 
 Un tableau est une suite d’éléments de même type. Il utilise plusieurs cases mémoire à l’aide d’un seul nom.
 
-Comme toutes les cases portent le même nom, elles se différencient par un numéro ou un indice.
+Comme toutes les cases portent le même nom, elles se différencient par un **numéro** ou un **indice**.
 
-
-Nous pouvons représenter schématiquement un tableau nommé **Note** composé de cinq cases:
+Nous pouvons représenter schématiquement un tableau **Notes** composé de cinq cases:
 
 ![Tableau](screenshots/s5-tableau.png)
+
+Ainsi dans cette exemple, si l'on souhaite accéder à la note **13**, on appellera **Notes[3]** (puisque 13 est à la troisième case de notre tableau).
+
+---
 
 ### Déclaration d'un tableau
 
