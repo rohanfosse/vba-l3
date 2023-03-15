@@ -21,9 +21,7 @@ il devient difficile de donner un nom à chaque variable.
 
 <div class="exemple">
 
-Ecrire un algorithme permettant de saisir cinq notes et de les afficher après avoir multiplié toutes les notes par trois.
-
-<details>
+Si l'on souhaite écrire un algorithme permettant de saisir cinq notes et de les afficher après avoir multiplié toutes les notes par trois, on pourrait écrire :
 
 ```vb
 Dim note1 As Integer
@@ -47,13 +45,13 @@ note5 = note5 * 3
 MsgBox note1 & vbCrLf & note2 & vbCrLf & note3 & vbCrLf & note4 & vbCrLf & note5
 ```
 
-</details>
+</div>
 
 <div class="line"></div>
 
-Imaginons que si l'on voulait réaliser cet algorithme avec 100 notes, cela deviendrait fastidieux.
+Dans notre cas, il était possible d'écrire la fonction parceque l'on ne souhaitait que saisir et afficher cinq notes. Mais si l'on souhaitait en saisir 100, comment ferions-nous ?
 
-Comme les variables ont des noms différents, on ne peut **pas** utiliser de boucle, ce qui allonge considérablement le code et le rend très répétitif.
+Comme les variables ont des noms différents, on ne peut **pas utiliser de boucle**, ce qui allonge considérablement le code et le rend très répétitif.
 
 Pour résoudre ce problème, il existe un type de données qui permet de définir plusieurs variables de même type : **les tableaux**.
 
@@ -61,7 +59,7 @@ Pour résoudre ce problème, il existe un type de données qui permet de défini
 
 ## Les tableaux
 
-Un tableau est une suite d’éléments de même type. Il utilise plusieurs cases mémoire à l’aide d’un seul nom.
+Un **tableau** est une suite d’éléments de même type. Il utilise plusieurs cases mémoire à l’aide d’un seul nom.
 
 Comme toutes les cases portent le même nom, elles se différencient par un **numéro** ou un **indice**.
 
@@ -69,7 +67,8 @@ Nous pouvons représenter schématiquement un tableau **Notes** composé de cinq
 
 ![Tableau](screenshots/s5-tableau.png)
 
-Ainsi dans cette exemple, si l'on souhaite accéder à la note **13**, on appellera **Notes[3]** (puisque 13 est à la troisième case de notre tableau).
+Ainsi dans cette exemple, si l'on souhaite accéder à la note **13**, on appelera **Notes[3]** (puisque 13 est à la troisième case de notre tableau).
+
 
 ---
 
@@ -84,10 +83,10 @@ Dim tableau(n) As type
 où **n** est le nombre d'éléments du tableau et **type** est le type des éléments du tableau.
 
 <div class="exemple">
-Pour déclarer un tableau **notes** de 10 entiers, on écrit :
+Pour déclarer un tableau **notes** de 5 entiers, on écrit :
 
 ```vb
-Dim notes(10) As Integer
+Dim notes(5) As Integer
 ```
 
 </div>
