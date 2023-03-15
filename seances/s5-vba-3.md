@@ -59,7 +59,14 @@ Pour résoudre ce problème, il existe un type de données qui permet de défini
 
 ## Les tableaux
 
-Un tableau est une variable qui permet de stocker plusieurs valeurs de même type.
+Un tableau est une suite d’éléments de même type. Il utilise plusieurs cases mémoire à l’aide d’un seul nom.
+
+Comme toutes les cases portent le même nom, elles se différencient par un numéro ou un indice.
+
+
+Nous pouvons représenter schématiquement un tableau nommé **Note** composé de cinq cases:
+
+![Tableau](screenshots/s5-tableau.png)
 
 ### Déclaration d'un tableau
 
