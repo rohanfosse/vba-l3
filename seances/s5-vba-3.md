@@ -101,6 +101,8 @@ C'est la même syntaxe que pour les tableaux statiques, sauf qu'on ne précise p
 
 Ces algorithmes sont donnés pour vous aider à comprendre comment fonctionnent les tableaux. Vous n'êtes pas obligés de les connaître par coeur.
 
+Ils pourront cependant vous êtes utiles lors des différents exercices que vous aurez à faire.
+
 #### Comparaison de deux tableaux
 
 L'idée de l'agorithme est la suivante :
@@ -147,9 +149,9 @@ Si on trouve l'élément recherché, on affiche l'indice de l'élément et on so
 
 Si on arrive au bout du tableau sans avoir trouvé l'élément recherché, on affiche un message d'erreur.
 
-L'algorithme peut être écrit en VBA de la manière suivante :
 
-<details>
+<div class = "exercice">
+
 
 ```vb
 Dim tableau() As Integer
@@ -164,7 +166,8 @@ Next i
 MsgBox "L'élément " & element & " n'est pas dans le tableau"
 ```
 
-</details>
+</div>
+
 
 ---
 
@@ -174,9 +177,7 @@ MsgBox "L'élément " & element & " n'est pas dans le tableau"
 
 On souhaite écrire un algorithme qui permet d'ajouter un élément dans un tableau à la fin du tableau. Pour cela, on crée un nouveau tableau de taille **n + 1** et on copie les éléments du tableau initial dans le nouveau tableau. Enfin, on insère l'élément à la fin du tableau.
 
-L'algorithme peut être écrit en VBA de la manière suivante :
-
-<details>
+<div class="exercice">
 
 ```vb
 Dim tableau() As Integer
@@ -186,17 +187,22 @@ ReDim tableau(UBound(tableau) + 1)
 tableau(UBound(tableau)) = element
 ```
 
-</details>
+</div>
+
 
 <div class="line"></div>
 
 ##### A une position p
 
-On souhaite écrire un algorithme qui permet d'ajouter un élément dans un tableau à une position donnée. Pour cela, on crée un nouveau tableau de taille **n + 1** et on copie les éléments du tableau initial dans le nouveau tableau. Ensuite, on décale les éléments du tableau initial à partir de la position **p** vers la droite. Enfin, on insère l'élément à la position **p**.
+On souhaite écrire un algorithme qui permet d'ajouter un élément dans un tableau à une position donnée. 
 
-L'algorithme peut être écrit en VBA de la manière suivante :
+Pour cela, on crée un nouveau tableau de taille **n + 1** et on copie les éléments du tableau initial dans le nouveau tableau.
 
-<details>
+Ensuite, on décale les éléments du tableau initial à partir de la position **p** vers la droite.
+
+Enfin, on insère l'élément à la position **p**.
+
+<div class="exercice">
 
 ```vb
 Dim tableau() As Integer
@@ -212,7 +218,7 @@ Next i
 tableau(position) = element
 ```
 
-</details>
+</div>
 
 ---
 
@@ -220,12 +226,13 @@ tableau(position) = element
 
 ##### La position de l'élement à supprimer est connue
 
-On souhaite écrire un algorithme qui permet de supprimer un élément dans un tableau à une position donnée. Pour cela, on décale les éléments du tableau à partir de la position **p** vers la gauche. Enfin, on crée un nouveau tableau de taille **n - 1** et on copie les éléments du tableau initial dans le nouveau tableau.
+On souhaite écrire un algorithme qui permet de supprimer un élément dans un tableau à une position donnée.
 
-L'algorithme peut être écrit en VBA de la manière suivante :
+Pour cela, on décale les éléments du tableau à partir de la position **p** vers la gauche.
+
+Enfin, on crée un nouveau tableau de taille **n - 1** et on copie les éléments du tableau initial dans le nouveau tableau.
 
 <div class="exemple">
-<details>
 
 ```vb
 Dim tableau() As Integer
@@ -238,16 +245,22 @@ Next i
 ReDim tableau(UBound(tableau) - 1)
 ```
 
-</details>
 </div>
+
+<div class="line"></div>
 
 ##### La position de l'élement à supprimer n'est pas connue
 
-On souhaite écrire un algorithme qui permet de supprimer un élément dans un tableau mais sans connaitre sa position. Pour cela, on parcourt le tableau et on compare l'élément courant avec l'élément à supprimer. Si on trouve l'élément à supprimer, on décale les éléments du tableau à partir de la position **p** vers la gauche. Enfin, on crée un nouveau tableau de taille **n - 1** et on copie les éléments du tableau initial dans le nouveau tableau.
+On souhaite écrire un algorithme qui permet de supprimer un élément dans un tableau mais sans connaitre sa position.
 
-L'algorithme peut être écrit en VBA de la manière suivante :
+Pour cela, on parcourt le tableau et on compare l'élément courant avec l'élément à supprimer.
 
-<details>
+Si on trouve l'élément à supprimer, on décale les éléments du tableau à partir de la position **p** vers la gauche.
+
+Enfin, on crée un nouveau tableau de taille **n - 1** et on copie les éléments du tableau initial dans le nouveau tableau.
+
+
+<div class="exemple">
 
 ```vb
 
@@ -265,7 +278,7 @@ For i = 0 To UBound(tableau)
 Next i
 ```
 
-</details>
+</div>
 
 ---
 
@@ -273,11 +286,12 @@ Next i
 
 ##### Tri par sélection
 
-Le tri par sélection consiste à parcourir le tableau et à échanger l'élément courant avec le plus petit élément du tableau. On répète cette opération jusqu'à ce que le tableau soit trié.
+Le **tri par sélection** consiste à parcourir le tableau et à échanger l'élément courant avec le plus petit élément du tableau.
 
-L'algorithme peut être écrit de la manière suivante :
+On répète cette opération jusqu'à ce que le tableau soit trié.
 
-<details>
+
+<div class="exemple">
 
 ```vb
 Dim tableau() As Integer
@@ -297,15 +311,17 @@ For i = 0 To UBound(tableau) - 1
 Next i
 ```
 
-</details>
+</div>
+
+<div class="line"></div>
 
 ##### Tri par insertion
 
-Le tri par insertion consiste à parcourir le tableau et à insérer l'élément courant dans la partie triée du tableau. On répète cette opération jusqu'à ce que le tableau soit trié. Pour plus d'informations, lire la page wikipédia sur [le tri par insertion](https://fr.wikipedia.org/wiki/Tri_par_insertion).
+Le tri par insertion consiste à parcourir le tableau et à insérer l'élément courant dans la partie triée du tableau. On répète cette opération jusqu'à ce que le tableau soit trié.
 
-L'algorithme peut être écrit de la manière suivante :
+Pour plus d'informations, lire la page wikipédia sur [le tri par insertion](https://fr.wikipedia.org/wiki/Tri_par_insertion).
 
-<details>
+<div class="exemple">
 
 ```vb
 
@@ -324,11 +340,15 @@ For i = 1 To UBound(tableau)
 Next i
 ```
 
-</details>
+</div>
+
+---
 
 ## Les enregitrements
 
-Un enregistrement est un type de données qui permet de regrouper plusieurs variables de types différents. Il est possible de déclarer un enregistrement de la manière suivante :
+Un **enregistrement** est un type de données qui permet de regrouper plusieurs variables de types différents.
+
+On peut déclarer un enregistrement de la manière suivante :
 
 ```vb
 Type Enregistrement
@@ -339,7 +359,6 @@ End Type
 ```
 
 avec **Enregistrement** le nom de l'enregistrement, **Champ1**, **Champ2** et **Champ3** les noms des champs de l'enregistrement et **type1**, **type2** et **type3** les types des champs de l'enregistrement.
-
 
 <div class="exemple">
 
