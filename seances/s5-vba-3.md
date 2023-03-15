@@ -16,6 +16,8 @@
 
 ## Avant de commencer
 
+<div class="line"></div>
+
 Imaginons que dans un programme, nous avons besoin d’un grand nombre de variables,
 il devient difficile de donner un nom à chaque variable.
 
