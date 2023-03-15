@@ -14,11 +14,52 @@
 
 ---
 
-## Les tableaux
+## Avant de commencer
 
-Il arrive souvent que l'on ait besoin de stocker plusieurs valeurs d'un même type. Par exemple, on peut vouloir stocker toutes les notes d'un élèves. Pour cela, on utilise un tableau.
+Imaginons que dans un programme, nous avons besoin d’un grand nombre de variables,
+il devient difficile de donner un nom à chaque variable.
+
+<div class="exemple">
+
+Ecrire un algorithme permettant de saisir cinq notes et de les afficher après avoir multiplié toutes les notes par trois.
+
+<details>
+
+```vb
+Dim note1 As Integer
+Dim note2 As Integer
+Dim note3 As Integer
+Dim note4 As Integer
+Dim note5 As Integer
+
+note1 = InputBox("Saisir la note 1")
+note2 = InputBox("Saisir la note 2")
+note3 = InputBox("Saisir la note 3")
+note4 = InputBox("Saisir la note 4")
+note5 = InputBox("Saisir la note 5")
+
+note1 = note1 * 3
+note2 = note2 * 3
+note3 = note3 * 3
+note4 = note4 * 3
+note5 = note5 * 3
+
+MsgBox note1 & vbCrLf & note2 & vbCrLf & note3 & vbCrLf & note4 & vbCrLf & note5
+```
+
+</details>
+
+Imaginons que si l'on voulait réaliser cet algorithme avec 100 notes, cela deviendrait fastidieux.
+
+Comme les variables ont des noms différents, on ne peut **pas** utiliser de boucle, ce qui allonge considérablement le code et le rend très répétitif.
+
+Pour résoudre ce problème, il existe un type de données qui permet de définir plusieurs variables de même type : **les tableaux**.
 
 ---
+
+## Les tableaux
+
+Un tableau est une variable qui permet de stocker plusieurs valeurs de même type.
 
 ### Déclaration d'un tableau
 
