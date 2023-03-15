@@ -132,7 +132,7 @@ End If
 
 ---
 
-### Recherche d'un élément dans un tableau
+#### Recherche d'un élément dans un tableau
 
 On souhaite écrire un algorithme qui permet de rechercher un élément dans un tableau. Pour cela, on parcourt le tableau et on compare l'élément courant avec l'élément recherché. Si on trouve l'élément recherché, on affiche l'indice de l'élément et on sort de la procédure. Si on arrive au bout du tableau sans avoir trouvé l'élément recherché, on affiche un message d'erreur.
 
@@ -203,7 +203,7 @@ tableau(position) = element
 
 ---
 
-### Suppression d'un élément dans un tableau
+#### Suppression d'un élément dans un tableau
 
 ##### La position de l'élement à supprimer est connue
 
@@ -256,7 +256,7 @@ Next i
 
 ---
 
-### Tri d'un tableau
+#### Tri d'un tableau
 
 ##### Tri par sélection
 
