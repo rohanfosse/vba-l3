@@ -42,7 +42,11 @@ note3 = note3 * 3
 note4 = note4 * 3
 note5 = note5 * 3
 
-MsgBox note1 & vbCrLf & note2 & vbCrLf & note3 & vbCrLf & note4 & vbCrLf & note5
+MsgBox note1
+MsgBox note2
+MsgBox note3
+MsgBox note4
+MsgBox note5
 ```
 
 </div>
