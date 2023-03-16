@@ -105,11 +105,11 @@ Les différents blocs de code sont :
 
 En informatique, une fonction est une séquence d'instructions qui effectuent une tâche spécifique et qui peuvent être appelées et réutilisées plusieurs fois dans un programme.
 
-Une fonction peut être comparée à une recette de cuisine. Tout comme une recette de cuisine décrit les étapes à suivre pour préparer un plat, une fonction décrit les étapes à suivre pour accomplir une tâche particulière dans un programme. Les fonctions prennent souvent des entrées, appelées arguments, et peuvent renvoyer une sortie, appelée valeur de retour.
+Une fonction peut être comparée à une recette de cuisine. Tout comme une recette de cuisine décrit les étapes à suivre pour préparer un plat, une fonction décrit les étapes à suivre pour accomplir une tâche particulière dans un programme. Les fonctions prennent souvent des entrées, appelées **arguments**, et peuvent renvoyer une sortie, appelée **valeur de retour**.
 
-Par exemple, une fonction "**additionner**" pourrait prendre deux nombres comme arguments et renvoyer la somme de ces nombres comme valeur de retour. Cette fonction pourrait être appelée plusieurs fois dans un programme pour effectuer des opérations d'addition différentes.
+Par exemple, une fonction "**additionner**" pourrait prendre deux nombres comme arguments et renvoyer la somme de ces nombres comme valeur de retour. Cette fonction pourrait être appelée **plusieurs fois** dans un programme pour effectuer des opérations d'addition différentes.
 
-Une fonction est une procédure qui renvoie une valeur. Pour déclarer une fonction, on utilise la syntaxe suivante :
+Pour déclarer une fonction, on utilise la syntaxe suivante :
 
 ```vb
 Function nom_fonction() As type_variable
