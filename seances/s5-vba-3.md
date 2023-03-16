@@ -400,6 +400,68 @@ End Function
 
 </div>
 
+<div class="line"></div>
+
+#### Exercice 3
+
+<div class="exercice">
+
+Définir un type **Etudiant** contenant **un nom**, **un prénom** et un **tableau de notes**. Ecrire une procédure qui demande à l'utilisateur de saisir un nombre **n** puis de saisir **n** étudiants. Puis, on veut écrire une fonction **moyenne** qui calcule la moyenne des notes de l'étudiant. Enfin, on veut afficher la moyenne des notes de chaque étudiant.
+
+<details>
+
+```vb
+
+Sub exercice3()
+    Dim n As Integer
+    Dim etudiants() As Etudiant
+    Dim i As Integer
+
+    n = InputBox("Saisir le nombre d'étudiants")
+    ReDim etudiants(n)
+
+    For i = 1 To n
+        etudiants(i).Nom = InputBox("Saisir le nom de l'étudiant " & i)
+        etudiants(i).Prenom = InputBox("Saisir le prénom de l'étudiant " & i)
+        etudiants(i).Notes = saisirNotes()
+    Next i
+
+    For i = 1 To n
+        MsgBox "La moyenne de " & etudiants(i).Nom & " " & etudiants(i).Prenom & " est " & moyenne(etudiants(i).Notes)
+    Next i
+End Sub
+
+Function saisirNotes() As Integer()
+    Dim n As Integer
+    Dim notes() As Integer
+    Dim i As Integer
+
+    n = InputBox("Saisir le nombre de notes")
+    ReDim notes(n)
+
+    For i = 1 To n
+        notes(i) = InputBox("Saisir la note " & i)
+    Next i
+
+    saisirNotes = notes
+End Function
+
+Function moyenne(tableau() As Integer) As Integer
+    Dim i As Integer
+    Dim somme As Integer
+
+    For i = 1 To UBound(tableau)
+        somme = somme + tableau(i)
+    Next i
+
+    moyenne = somme / UBound(tableau)
+End Function
+```
+
+</details>
+
+</div>
+
 ### Pour aller plus loin: algorithmes sur les tableaux
 
 #### Notes importantes
