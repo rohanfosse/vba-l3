@@ -20,7 +20,7 @@ Supposons qu'un programme nécessite un grand nombre de variables, il devient al
 
 <div class="exemple">
 
-Si l'on souhaite écrire un algorithme permettant de saisir cinq notes et de les afficher après avoir multiplié toutes les notes par trois, on pourrait écrire :
+Si l'on souhaite écrire un programme permettant de saisir cinq notes et de les afficher après avoir multiplié toutes les notes par trois, on pourrait écrire :
 
 ```vb
 Dim note1 As Integer
@@ -226,7 +226,7 @@ où **n** est le nombre d'éléments du tableau.
 
 ---
 
-## Les enregitrements
+## Les enregistrements
 
 Un **enregistrement** est un type de données qui permet de regrouper plusieurs variables de types différents.
 
