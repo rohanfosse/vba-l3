@@ -18,7 +18,21 @@ Pensez à activer la case Développeur dans les options d'Excel. Pour cela, alle
 
 ## Les variables <a name="-les-variables"></a>
 
-Une variable est un espace mémoire qui permet de stocker une valeur. En **VBA**, on peut déclarer des variables de plusieurs types :
+Une **variable** en informatique est une sorte de **boîte** dans laquelle on peut mettre une valeur qui peut être utilisée ou modifiée par le programme. Elle permet au programme de **stocker** des informations temporairement ou de façon permanente.
+
+<div class="exemple">
+Imaginez que vous êtes en train de préparer votre démenagement et que vous disposez de carton pour ranger vos affaires. Vous pouvez écrire sur chaque carton ce qu'il contient (par exemple un carton **vaisselle** qui va contenir toute votre vaisselle). Dans ce carton, vous pouvez mettre des assiettes, des verres, des bols, etc.
+
+Un autre carton **livre** peut contenir tous vos livres. Les cartons représentent les variables.
+
+Vous pouvez remplir les cartons et les vider. De la même manière, vous pouvez **modifier** les valeurs des variables.
+
+Chaque type de carton ne peut contenir qu'un type d'objet. Par exemple, un carton **vaisselle** ne peut contenir que des assiettes, des verres, des bols, etc. Il ne peut pas contenir des livres. C'est exactement la même chose pour une variable en informatique. Une variable ne peut contenir qu'un seul **type** de valeur à la fois.
+
+En informatique, on appelle cela les **types de variables**.
+</div>
+
+En **VBA**, on peut déclarer des variables de plusieurs types :
 
 - **Integer**  : entier
 - **Long**  : entier long
@@ -43,7 +57,10 @@ Pour déclarer une variable **a**  de type **Integer**, on utilise la syntaxe su
 Dim a As Integer
 ```
 
+Si nous reprenons l'analogie avec les cartons, on peut dire que la variable **a**  est un carton qui contient un entier. On ne peut donc y stocker qu'un seul entier, mais on peut le modifier à tout moment.
+
 </div>
+
 
 Pour déclarer plusieurs variables de même type, on peut utiliser la syntaxe suivante :
 
