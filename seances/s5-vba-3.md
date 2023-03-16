@@ -290,6 +290,22 @@ tableau(0).Age = 25
 
 </div>
 
+<div class="exemple">
+Si l'on souhaite déclarer un tableau de deux enregistrements de type *Personne*, on peut écrire :
+
+```vb
+Dim tableau(1 To 2) As Personne
+
+tableau(1).Nom = "Dupont"
+tableau(1).Prenom = "Jean"
+tableau(1).Age = 25
+
+tableau(2).Nom = "Durand"
+tableau(2).Prenom = "Paul"
+tableau(2).Age = 30
+```
+</div>
+
 ---
 
 ### Instruction **With**
