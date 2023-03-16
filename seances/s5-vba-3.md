@@ -16,7 +16,6 @@
 
 ## Avant de commencer
 
-
 Supposons qu'un programme nécessite un grand nombre de variables, il devient alors compliqué de leur attribuer chacun un nom.
 
 <div class="exemple">
@@ -271,7 +270,7 @@ personne.Prenom = "Jean"
 personne.Age = 25
 ```
 
-### Tableau d'enregistrements
+#### Tableau d'enregistrements
 
 Il est possible de déclarer un tableau d'enregistrements (ici de *Personne*) de la manière suivante :
 
@@ -297,9 +296,9 @@ tableau(0).Age = 25
 
 L'instruction **With** permet d'accéder aux champs d'un enregistrement de manière plus concise.
 
-Par exemple, si l'on souhaite accéder au champ **Nom** de l'enregistrement **personne**, on peut écrire :
-
 <div class="exemple">
+Si l'on souhaite accéder au champ **Nom** de l'enregistrement **personne**, on peut écrire :
+
 
 ```vb
 With personne
@@ -317,6 +316,34 @@ Si l'on souhaite accéder au champ **Nom** de l'enregistrement **tableau(0)**, o
 With tableau(0)
     .Nom = "Dupont"
 End With
+```
+
+</div>
+
+#### Exemple d'application
+
+<div class="exemple">
+
+On souhaite définir un tableau de **Personne** de taille **n**, où **n** est saisi par l'utilisateur. On demande ensuite à l'utilisateur de saisir les champs de chaque enregistrement.
+
+```vb
+
+Sub saisirPersonnes()
+    Dim n As Integer
+    Dim personnes() As Personne
+    Dim i As Integer
+
+    n = InputBox("Saisir le nombre de personnes")
+    ReDim personnes(n)
+
+    For i = 1 To n
+        With personnes(i)
+            .Nom = InputBox("Saisir le nom de la personne " & i)
+            .Prenom = InputBox("Saisir le prénom de la personne " & i)
+            .Age = InputBox("Saisir l'âge de la personne " & i)
+        End With
+    Next i
+End Sub
 ```
 
 </div>
@@ -751,5 +778,3 @@ Next i
 ```
 
 </div>
-
----
