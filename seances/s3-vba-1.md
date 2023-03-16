@@ -107,7 +107,7 @@ En informatique, une fonction est une séquence d'instructions qui effectuent un
 
 Une fonction peut être comparée à une recette de cuisine. Tout comme une recette de cuisine décrit les étapes à suivre pour préparer un plat, une fonction décrit les étapes à suivre pour accomplir une tâche particulière dans un programme. Les fonctions prennent souvent des entrées, appelées **arguments**, et peuvent renvoyer une sortie, appelée **valeur de retour**.
 
-Par exemple, une fonction "**additionner**" pourrait prendre deux nombres comme arguments et renvoyer la somme de ces nombres comme valeur de retour. Cette fonction pourrait être appelée **plusieurs fois** dans un programme pour effectuer des opérations d'addition différentes.
+Par exemple, une fonction **additionner** pourrait prendre deux nombres comme arguments et renvoyer la somme de ces nombres comme valeur de retour. Cette fonction pourrait être appelée **plusieurs fois** dans un programme pour effectuer des opérations d'addition différentes.
 
 Pour déclarer une fonction, on utilise la syntaxe suivante :
 
@@ -149,7 +149,6 @@ End Function
 ```
 
 </div>
-
 
 Une fonction peut avoir plusieurs paramètres. Pour déclarer une fonction avec plusieurs paramètres, on utilise la syntaxe suivante :
 
@@ -203,7 +202,13 @@ Pour appeler une procédure, il suffit de cliquer sur le code de la procédure e
 
 ## Les conditions <a name="-les-conditions"></a>
 
-Une insctruction conditonnelle est une instruction qui permet d'exécuter un bloc de code si une condition est vérifiée.
+En informatique, une condition est un test logique qui permet de prendre une décision en fonction d'une situation donnée.
+
+On peut comparer une condition à une bifurcation dans un chemin : si une condition est remplie, on prend un chemin spécifique ; sinon, on prend un autre chemin.
+
+Par exemple, imaginons que vous écrivez un programme pour vérifier si une personne est autorisée à acheter de l'alcool en fonction de son âge. Vous pouvez utiliser une condition pour tester si l'âge de la personne est supérieur ou égal à 18 ans. Si la condition est vraie, alors la personne est autorisée à acheter de l'alcool ; sinon, elle ne l'est pas.
+
+En informatique, on utilise souvent des instructions conditionnelles, comme "si" ou "if" en anglais, pour mettre en place des conditions. Ces instructions permettent au programme de décider quoi faire en fonction de la situation rencontrée.
 
 Pour définir une condition, on utilise la syntaxe suivante :
 
