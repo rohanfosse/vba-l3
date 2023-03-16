@@ -325,6 +325,81 @@ End With
 
 ---
 
+## Exercices corrigés
+
+#### Exercice 1
+
+<div class="exercice">
+
+Ecrire une procédure qui demande à l'utilisateur de saisir un nombre **n** et qui stocke dans un tableau dynamique les **n** premiers nombres pairs. Puis, afficher les éléments du tableau.
+
+<details>
+
+```vb
+Sub exercice1()
+    Dim n As Integer
+    Dim tableau() As Integer
+    Dim i As Integer
+
+    n = InputBox("Saisir le nombre de nombres pairs")
+    ReDim tableau(n)
+
+    For i = 1 To n
+        tableau(i) = 2 * i
+    Next i
+
+    For i = 1 To n
+        MsgBox tableau(i)
+    Next i
+End Sub
+```
+
+</details>
+</div>
+
+<div class="line"></div>
+
+#### Exercice 2
+
+<div class="exercice">
+
+Ecrire une procédure qui demande à l'utilisateur de saisir un nombre **n** puis de saisir **n** notes. Puis, on veut écrire une fonction **moyenne** qui calcule la moyenne des notes saisies. Enfin, on veut afficher la moyenne des notes.
+
+<details>
+
+```vb
+
+Sub exercice2()
+    Dim n As Integer
+    Dim notes() As Integer
+    Dim i As Integer
+
+    n = InputBox("Saisir le nombre de notes")
+    ReDim notes(n)
+
+    For i = 1 To n
+        notes(i) = InputBox("Saisir la note " & i)
+    Next i
+
+    MsgBox "La moyenne est " & moyenne(notes, n)
+End Sub
+
+Function moyenne(tableau() As Integer, n As Integer) As Integer
+    Dim i As Integer
+    Dim somme As Integer
+
+    For i = 1 To n
+        somme = somme + tableau(i)
+    Next i
+
+    moyenne = somme / n
+End Function
+```
+
+</details>
+
+</div>
+
 ### Pour aller plus loin: algorithmes sur les tableaux
 
 #### Notes importantes
