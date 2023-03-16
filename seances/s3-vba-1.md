@@ -94,44 +94,20 @@ Il est important de noter que si l'on ouvre un bloc de code, il faut le fermer a
 
 Les différents blocs de code sont :
 
-- **Sub**  : pour définir une procédure
 - **Function**  : pour définir une fonction
+- **Sub**  : pour définir une procédure
 - **If**  : pour définir une condition
-- **For**  : pour définir une boucle for
-- **While**  : pour définir une boucle while
-- **Do**  : pour définir une boucle do while
 - **Select Case**  : pour définir une condition switch
 
 ---
 
-## Les procédures <a name="-les-procedures"></a>
-
-Une procédure est une fonction qui ne renvoie pas de valeur.
-Pour déclarer une procédure, on utilise la syntaxe suivante :
-
-```vb
-Sub nom_procédure()
-    ' instructions '
-End Sub
-```
-
-<div class="exemple">
-
-Pour déclarer la procédure **afficher_message**, on utilise la syntaxe suivante :
-
-```vb
-Sub afficher_message()
-    MsgBox "Mon message"
-End Sub
-```
-
-</div>
-
-Pour appeler une procédure, il suffit de cliquer sur le code de la procédure et d'appuyer sur **F5**.
-
----
-
 ## Les fonctions <a name="-les-fonctions"></a>
+
+En informatique, une fonction est une séquence d'instructions qui effectuent une tâche spécifique et qui peuvent être appelées et réutilisées plusieurs fois dans un programme.
+
+Une fonction peut être comparée à une recette de cuisine. Tout comme une recette de cuisine décrit les étapes à suivre pour préparer un plat, une fonction décrit les étapes à suivre pour accomplir une tâche particulière dans un programme. Les fonctions prennent souvent des entrées, appelées arguments, et peuvent renvoyer une sortie, appelée valeur de retour.
+
+Par exemple, une fonction "**additionner**" pourrait prendre deux nombres comme arguments et renvoyer la somme de ces nombres comme valeur de retour. Cette fonction pourrait être appelée plusieurs fois dans un programme pour effectuer des opérations d'addition différentes.
 
 Une fonction est une procédure qui renvoie une valeur. Pour déclarer une fonction, on utilise la syntaxe suivante :
 
@@ -173,17 +149,7 @@ End Function
 ```
 
 </div>
-Pour afficher cette fonction, on peut définir la procédure suivante :
 
-<div class="exemple">
-
-```vb
-Sub afficher_a()
-    MsgBox retourner_a()
-End Sub
-```
-
-</div>
 
 Une fonction peut avoir plusieurs paramètres. Pour déclarer une fonction avec plusieurs paramètres, on utilise la syntaxe suivante :
 
@@ -206,31 +172,32 @@ End Function
 
 </div>
 
-Pour appeler cette fonction, on peut définir la procédure suivante :
+---
+
+## Les procédures <a name="-les-procedures"></a>
+
+Une procédure est une fonction qui ne renvoie pas de valeur.
+Pour déclarer une procédure, on utilise la syntaxe suivante :
+
+```vb
+Sub nom_procédure()
+    ' instructions '
+End Sub
+```
 
 <div class="exemple">
+
+Pour déclarer la procédure **afficher_message**, on utilise la syntaxe suivante :
+
 ```vb
-Sub afficher_aire_rectangle()
-    MsgBox aire_rectangle(10, 5)
+Sub afficher_message()
+    MsgBox "Mon message"
 End Sub
 ```
 
 </div>
 
-
-Il est important de noter que dans l'appel de la fonction **aire_rectangle**, on ne met pas les noms des paramètres mais on donne directement les **valeurs** des paramètres.
-
-Ainsi, une autre façon d'appeler cette procédure serait par exemple :
-
-<div class="exemple">
-
-```vb
-Sub afficher_aire_rectangle()
-    MsgBox aire_rectangle(8, 10)
-End Sub
-```
-
-</div>
+Pour appeler une procédure, il suffit de cliquer sur le code de la procédure et d'appuyer sur **F5**.
 
 ---
 
