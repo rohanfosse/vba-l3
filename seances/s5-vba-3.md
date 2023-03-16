@@ -166,27 +166,26 @@ ReDim notes(5)
 
 </div>
 
-#### Changement de taille d'un tableau dynamique
-
-Pour changer la taille d'un tableau dynamique, on utilise la syntaxe suivante :
-
-```vb
-
-ReDim tableau(n+k)
-```
-
-où **n** est le nombre d'éléments du tableau, **k** est le nombre d'éléments à ajouter et **type** est le type des éléments du tableau.
+On veut écrire une procédure qui crée un tableau dynamique de taille **n** avec **n** saisi par l'utilisateur. On demandera ensuite à l'utilisateur de saisir les éléments du tableau.
 
 <div class="exemple">
 
-Pour ajouter 3 éléments à notre tableau **notes**, on écrit :
-
 ```vb
 
-ReDim notes(5+3)
+Sub saisirNotes()
+    Dim n As Integer
+    Dim notes() As Integer
+    Dim i As Integer
+
+    n = InputBox("Saisir le nombre de notes")
+    ReDim notes(n)
+
+    For i = 1 To n
+        notes(i) = InputBox("Saisir la note " & i)
+    Next i
+End Sub
 ```
 
-Le tableau **notes** contient maintenant 8 éléments.
 </div>
 
 
