@@ -192,6 +192,43 @@ Le tableau **notes** contient maintenant 8 éléments.
 
 ---
 
+### Parcours d'un tableau
+
+Pour afficher les éléments  d'un tableau, on utilise la syntaxe suivante :
+
+```vb
+For i = 1 To n
+    MsgBox tableau(i)
+Next i
+```
+
+où **n** est le nombre d'éléments du tableau.
+
+<div class="exemple">
+
+Pour afficher les éléments du tableau **notes**, on écrit :
+
+```vb
+For i = 1 To 5
+    MsgBox notes(i)
+Next i
+```
+
+</div>
+
+<div class="line"></div>
+
+Si l'on souhaite remplir le tableau avec des valeurs saisies par l'utilisateur, on utilise la syntaxe suivante :
+
+```vb
+For i = 1 To n
+    tableau(i) = InputBox("Saisir la note " & i)
+Next i
+```
+
+où **n** est le nombre d'éléments du tableau.
+
+
 ### Algorithmes sur les tableaux
 
 #### Notes importantes
