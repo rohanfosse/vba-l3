@@ -12,22 +12,22 @@
 
 ## Avant de commencer
 
-Pensez à activer la case Développeur dans les options d'Excel. Pour cela, allez dans le menu `Fichier` puis `Options` et cliquez sur `Personnaliser le ruban`. Dans la fenêtre qui s'ouvre, cliquez sur `Développeur` dans la liste de gauche et cochez la case `Afficher la barre de développeur`.
+Pensez à activer la case Développeur dans les options d'Excel. Pour cela, allez dans le menu **Fichier**  puis **Options**  et cliquez sur **Personnaliser le ruban**. Dans la fenêtre qui s'ouvre, cliquez sur **Développeur**  dans la liste de gauche et cochez la case **Afficher la barre de développeur**.
 
 ---
 
 ## Les variables <a name="-les-variables"></a>
 
-Une variable est un espace mémoire qui permet de stocker une valeur. En `VBA`, on peut déclarer des variables de plusieurs types :
+Une variable est un espace mémoire qui permet de stocker une valeur. En **VBA**, on peut déclarer des variables de plusieurs types :
 
-- `Integer` : entier
-- `Long` : entier long
-- `Single` : nombre à virgule flottante
-- `Double` : nombre à virgule flottante
-- `String` : chaîne de caractères
-- `Boolean` : booléen (vrai ou faux)
+- **Integer**  : entier
+- **Long**  : entier long
+- **Single**  : nombre à virgule flottante
+- **Double**  : nombre à virgule flottante
+- **String**  : chaîne de caractères
+- **Boolean**  : booléen (vrai ou faux)
 
-Il existe aussi un type `Variant` qui permet de stocker n'importe quel type de variable.
+Il existe aussi un type **Variant**  qui permet de stocker n'importe quel type de variable.
 
 Pour déclarer une variable, on utilise la syntaxe suivante :
 
@@ -37,7 +37,7 @@ Dim nom_variable As type_variable
 
 <div class="exemple">
 
-Pour déclarer une variable `a` de type `Integer`, on utilise la syntaxe suivante :
+Pour déclarer une variable **a**  de type **Integer**, on utilise la syntaxe suivante :
 
 ```vb
 Dim a As Integer
@@ -57,7 +57,7 @@ Attention, la syntaxe suivante n'est pas valide:
 Dim a, b, c As Integer
 ```
 
-En effet, on défini ici les variables `a` et `b` comme étant de type `Variant` et la variable `c` comme étant de type `Integer`.
+En effet, on défini ici les variables **a**  et **b**  comme étant de type **Variant**  et la variable **c**  comme étant de type **Integer**.
 
 ---
 
@@ -73,17 +73,17 @@ Bloc nom()
 End Bloc
 ```
 
-Il est important de noter que si l'on ouvre un bloc de code, il faut le fermer avec `End Bloc`.
+Il est important de noter que si l'on ouvre un bloc de code, il faut le fermer avec **End Bloc**.
 
 Les différents blocs de code sont :
 
-- `Sub` : pour définir une procédure
-- `Function` : pour définir une fonction
-- `If` : pour définir une condition
-- `For` : pour définir une boucle for
-- `While` : pour définir une boucle while
-- `Do` : pour définir une boucle do while
-- `Select Case` : pour définir une condition switch
+- **Sub**  : pour définir une procédure
+- **Function**  : pour définir une fonction
+- **If**  : pour définir une condition
+- **For**  : pour définir une boucle for
+- **While**  : pour définir une boucle while
+- **Do**  : pour définir une boucle do while
+- **Select Case**  : pour définir une condition switch
 
 ---
 
@@ -100,7 +100,7 @@ End Sub
 
 <div class="exemple">
 
-Pour déclarer la procédure `afficher_message`, on utilise la syntaxe suivante :
+Pour déclarer la procédure **afficher_message**, on utilise la syntaxe suivante :
 
 ```vb
 Sub afficher_message()
@@ -110,7 +110,7 @@ End Sub
 
 </div>
 
-Pour appeler une procédure, il suffit de cliquer sur le code de la procédure et d'appuyer sur `F5`.
+Pour appeler une procédure, il suffit de cliquer sur le code de la procédure et d'appuyer sur **F5**.
 
 ---
 
@@ -127,13 +127,13 @@ End Function
 
 Comme la fonction retourne une valeur, il est important de préciser le type de la valeur retournée.
 
-La ligne `nom_fonction = valeur` permet de renvoyer une valeur à la fonction.
+La ligne **nom_fonction = valeur**  permet de renvoyer une valeur à la fonction.
 
 Il est important de noter que le type de la fonction et de la valeur retournée doivent être **identiques**.
 
 <div class="exemple">
 
-Par exemple, pour déclarer une fonction `retourner_a` qui retourne la lettre "a", on utilise la syntaxe suivante :
+Par exemple, pour déclarer une fonction **retourner_a**  qui retourne la lettre "a", on utilise la syntaxe suivante :
 
 ```vb
 Function retourner_a() As String
@@ -143,9 +143,9 @@ End Function
 
 </div>
 
-Dans notre exemple, la fonction `retourner_a` retourne une valeur de type `String`.
+Dans notre exemple, la fonction **retourner_a**  retourne une valeur de type **String**.
 
-Si jamais nous souhaitons retourner une valeur de type `Integer`, par exemple `1`, il faut modifier la fonction comme suit :
+Si jamais nous souhaitons retourner une valeur de type **Integer**, par exemple **1**, il faut modifier la fonction comme suit :
 
 <div class="exemple">
 
@@ -177,7 +177,7 @@ Function nom_fonction(paramètre1 As type_variable, paramètre2 As type_variable
 End Function
 ```
 
-Par exemple, si nous souhaitons déclarer une fonction `aire_rectangle` qui retourne l'aire d'un rectangle, on utilise la syntaxe suivante :
+Par exemple, si nous souhaitons déclarer une fonction **aire_rectangle**  qui retourne l'aire d'un rectangle, on utilise la syntaxe suivante :
 
 <div class="exemple">
 
@@ -201,7 +201,7 @@ End Sub
 </div>
 
 
-Il est important de noter que dans l'appel de la fonction `aire_rectangle`, on ne met pas les noms des paramètres mais on donne directement les **valeurs** des paramètres.
+Il est important de noter que dans l'appel de la fonction **aire_rectangle**, on ne met pas les noms des paramètres mais on donne directement les **valeurs** des paramètres.
 
 Ainsi, une autre façon d'appeler cette procédure serait par exemple :
 
@@ -229,7 +229,7 @@ If condition Then
 End If
 ```
 
-Si jamais la condition n'est pas vérifiée, le bloc d'instructions n'est pas exécuté. Pour exécuter un bloc d'instructions si la condition n'est pas vérifiée, on utilise le mot clé `else`.
+Si jamais la condition n'est pas vérifiée, le bloc d'instructions n'est pas exécuté. Pour exécuter un bloc d'instructions si la condition n'est pas vérifiée, on utilise le mot clé **else**.
 
 Dans ce cas, on utilise la syntaxe suivante :
 
@@ -241,9 +241,9 @@ Else
 End If
 ```
 
-Le `else if` est une condition supplémentaire qui est exécutée si la condition précédente n'est pas vérifiée. Il peut se traduire par `sinon si` en français.
+Le **else if**  est une condition supplémentaire qui est exécutée si la condition précédente n'est pas vérifiée. Il peut se traduire par **sinon si**  en français.
 
-Pour définir une condition avec plusieurs `else if`, on utilise la syntaxe suivante :
+Pour définir une condition avec plusieurs **else if**, on utilise la syntaxe suivante :
 
 ```vb
 If condition Then
@@ -259,7 +259,7 @@ End If
 
 <div class="exemple">
 
-Prenons l'exemple d'une fonction `appreciation` qui retourne une appréciation différente suivant une note donné en paramètre.
+Prenons l'exemple d'une fonction **appreciation**  qui retourne une appréciation différente suivant une note donné en paramètre.
 
 On peut définir cette fonction comme suit :
 
@@ -285,10 +285,10 @@ End Function
 
 Dans ce code, plusieurs points sont à noter :
 
-- La fonction `appreciation` retourne une valeur de type `String`.
-- La fonction `appreciation` a un paramètre `note` de type `Integer`.
+- La fonction **appreciation**  retourne une valeur de type **String**.
+- La fonction **appreciation**  a un paramètre **note**  de type **Integer**.
 - Si jamais une condition n'est pas vérifiée, alors on passe à la condition suivante.
-- Si jamais aucune condition n'est vérifiée, alors on exécute le `else`.
+- Si jamais aucune condition n'est vérifiée, alors on exécute le **else**.
 
 Pour appeler cette fonction, on peut définir la procédure suivante :
 
@@ -298,7 +298,7 @@ Sub afficher_appreciation()
 End Sub
 ```
 
-De la même façon que précédement, il est à noter que la valeur du paramètre `note` peut être n'importe quelle valeur de type `Integer`.
+De la même façon que précédement, il est à noter que la valeur du paramètre **note**  peut être n'importe quelle valeur de type **Integer**.
 
 </div>
 
@@ -308,14 +308,14 @@ De la même façon que précédement, il est à noter que la valeur du paramètr
 
 Les opérateurs logiques permettent de comparer des valeurs entre elles. Les opérateurs logiques sont les suivants :
 
-- `=` : égal à
-- `<>` : différent de
-- `>` : supérieur à
-- `<` : inférieur à
-- `>=` : supérieur ou égal à
-- `<=` : inférieur ou égal à
+- **=**  : égal à
+- **<>**  : différent de
+- **>**  : supérieur à
+- **<**  : inférieur à
+- **>=**  : supérieur ou égal à
+- **<=**  : inférieur ou égal à
 
-Par exemple, pour comparer deux variables `a` et `b`, on utilise la syntaxe suivante :
+Par exemple, pour comparer deux variables **a**  et **b**, on utilise la syntaxe suivante :
 
 ```vb
 If a = b Then
@@ -325,12 +325,12 @@ End If
 
 Si l'on souhaite faire plusieurs comparaisons à la suite, on peut utiliser les opérateurs logiques suivants :
 
-- `And` : et
-- `Or` : ou
-- `Not` : non
+- **And**  : et
+- **Or**  : ou
+- **Not**  : non
 
 <div class="exemple">
-Par exemple, pour comparer deux variables `a` et `b`, on utilise la syntaxe suivante :
+Par exemple, pour comparer deux variables **a**  et **b**, on utilise la syntaxe suivante :
 
 ```vb
 If a = b And a > 0 Then
@@ -344,7 +344,7 @@ End If
 
 ## Select Case <a name="-select-case"></a>
 
-Pour définir une condition avec plusieurs `else if`, il existe une autre méthode utilisant la syntaxe suivante :
+Pour définir une condition avec plusieurs **else if**, il existe une autre méthode utilisant la syntaxe suivante :
 
 ```vb
  Select Case variable
@@ -359,20 +359,20 @@ Pour définir une condition avec plusieurs `else if`, il existe une autre métho
 End Select
 ```
 
-Les deux façons de définir une condition sont **équivalentes**, le `Select Case` est simplement une méthode plus concise.
+Les deux façons de définir une condition sont **équivalentes**, le **Select Case**  est simplement une méthode plus concise.
 
-Les mots clés autorisés dans un `Case` sont les suivants :
+Les mots clés autorisés dans un **Case**  sont les suivants :
 
-- `Is` : égal à
-- `Is Not` : différent de
-- `>` : supérieur à
-- `<` : inférieur à
-- `>=` : supérieur ou égal à
-- `<=` : inférieur ou égal à
-- `To` : entre
+- **Is**  : égal à
+- **Is Not**  : différent de
+- **>**  : supérieur à
+- **<**  : inférieur à
+- **>=**  : supérieur ou égal à
+- **<=**  : inférieur ou égal à
+- **To**  : entre
 
 <div class="exemple">
-Si nous reprenons l'exemple de la fonction `appreciation` précédente, on peut définir cette fonction comme suit :
+Si nous reprenons l'exemple de la fonction **appreciation**  précédente, on peut définir cette fonction comme suit :
 
 ```vb
 Function appreciation_select(note As Integer) As String
@@ -393,7 +393,7 @@ Function appreciation_select(note As Integer) As String
 End Function
 ```
 
-Il faut noter que puisque j'ai changé le nom de la fonction en `appreciation_select` (pour ne pas confondre avec la fonction `appreciation` précédente), je dois modifier l'affectation `appreciation_select` (à la place de `appreciation`).
+Il faut noter que puisque j'ai changé le nom de la fonction en **appreciation_select**  (pour ne pas confondre avec la fonction **appreciation**  précédente), je dois modifier l'affectation **appreciation_select**  (à la place de **appreciation`).
 
 Une façon de traduire ce code en français serait :
 
@@ -407,7 +407,7 @@ Je sélectionne la variable note.
 - Sinon, appréciation = "excellent"
 ```
 
-De la même façon que pour les `Else If`, on peut définir la procédure suivante pour appeler la fonction:
+De la même façon que pour les **Else If**, on peut définir la procédure suivante pour appeler la fonction:
 
 ```vb
 Sub afficher_appreciation()
@@ -423,21 +423,21 @@ Il existe plusieurs fenêtres prédéfinies en VBA.
 
 #### Fenêtre de saisie de texte (_InputBox_)
 
-La saisie de texte se fait avec la fenêtre `InputBox`.
+La saisie de texte se fait avec la fenêtre **InputBox**.
 
 <div class="exemple">
-Par exemple, pour afficher la fenêtre `InputBox` avec le message `Entrez un nombre` et stocker le résultat dans la variable `nombre`, on utilise la syntaxe suivante :
+Par exemple, pour afficher la fenêtre **InputBox**  avec le message **Entrez un nombre**  et stocker le résultat dans la variable **nombre**, on utilise la syntaxe suivante :
 
 ```vb
 Dim nombre As Integer ' Déclaration de la variable nombre de type Integer '
 nombre = InputBox("Entrez un nombre")
 ```
 
-A la suite de ça, la variable `nombre` contient la valeur saisit par l'utilisateur.
+A la suite de ça, la variable **nombre**  contient la valeur saisit par l'utilisateur.
 
 </div>
 
-Si l'on souhaite maintenant afficher la même fenêtre mais en changeant le titre par `Mon titre`, on utilise la syntaxe suivante :
+Si l'on souhaite maintenant afficher la même fenêtre mais en changeant le titre par **Mon titre**, on utilise la syntaxe suivante :
 
 <div class="exemple">
 
@@ -451,7 +451,7 @@ nombre = InputBox("Entrez un nombre", titre)
 
 </div>
 
-Enfin, si l'on souhaite en plus que la valeur par défaut soit `1`, on utilise la syntaxe suivante :
+Enfin, si l'on souhaite en plus que la valeur par défaut soit **1**, on utilise la syntaxe suivante :
 
 <div class="exemple">
 
@@ -468,17 +468,17 @@ nombre = InputBox("Entrez un nombre", titre, valeur_par_defaut)
 </div>
 
 
-Dans le cas où l'utilisateur ne saisit rien, la variable `nombre` contient la valeur `1`.
+Dans le cas où l'utilisateur ne saisit rien, la variable **nombre**  contient la valeur **1**.
 
 ---
 
 #### Fenêtre d'affichage de message (_MsgBox_)
 
-L'affichage d'un message se fait avec la fenêtre `MsgBox`.
+L'affichage d'un message se fait avec la fenêtre **MsgBox**.
 
 <div class="exemple">
 
-Par exemple, pour afficher la fenêtre `MsgBox` avec le message "a", on utilise la syntaxe suivante :
+Par exemple, pour afficher la fenêtre **MsgBox**  avec le message "a", on utilise la syntaxe suivante :
 
 ```vb
 MsgBox("Mon message")
@@ -496,7 +496,7 @@ MsgBox("Mon message" & v)
 
 </div>
 
-Il est possible de modifier les boutons affichés dans la fenêtre `MsgBox` en ajoutant des valeurs à la fin de la fonction.
+Il est possible de modifier les boutons affichés dans la fenêtre **MsgBox**  en ajoutant des valeurs à la fin de la fonction.
 
 Les noms, valeurs et significations pour les principaux boutons peuvent être trouvés dans le tableau suivant :
 
@@ -511,7 +511,7 @@ Les noms, valeurs et significations pour les principaux boutons peuvent être tr
 
 <div class="exemple">
 
-Par exemple, pour afficher la fenêtre `MsgBox` avec le message "Mon message" et le bouton "OK", on utilise la syntaxe suivante :
+Par exemple, pour afficher la fenêtre **MsgBox**  avec le message "Mon message" et le bouton "OK", on utilise la syntaxe suivante :
 
 ```vb
 resultat = MsgBox("Mon message", vbOKOnly)
@@ -519,9 +519,9 @@ resultat = MsgBox("Mon message", vbOKOnly)
 
 </div>
 
-La variable `resultat` contient la valeur `1` si l'utilisateur clique sur le bouton "OK".
+La variable **resultat**  contient la valeur **1**  si l'utilisateur clique sur le bouton "OK".
 
-Pour afficher la fenêtre `MsgBox` avec le message "Mon message", un bouton "OK' et le titre "Titre", on utilise la syntaxe suivante :
+Pour afficher la fenêtre **MsgBox**  avec le message "Mon message", un bouton "OK' et le titre "Titre", on utilise la syntaxe suivante :
 
 <div class="exemple">
 
@@ -531,7 +531,7 @@ resultat = MsgBox("Mon message", vbOKOnly, "Titre")
 
 </div>
 
-Pour afficher la fenêtre `MsgBox` avec le message "Mon message", le titre "Titre" et les boutons "Oui" et "Non", on utilise la syntaxe suivante :
+Pour afficher la fenêtre **MsgBox**  avec le message "Mon message", le titre "Titre" et les boutons "Oui" et "Non", on utilise la syntaxe suivante :
 
 <div class="exemple">
 
@@ -541,7 +541,7 @@ resultat = MsgBox("Mon Message", vbYesNo, "Titre")
 
 </div>
 
-On stocke la réponse de l'utilisateur dans la variable `resultat`. Si l'utilisateur clique sur le bouton "Oui", la variable `resultat` contient la valeur `6`. Si l'utilisateur clique sur le bouton "Non", la variable `resultat` contient la valeur `7`.
+On stocke la réponse de l'utilisateur dans la variable **resultat**. Si l'utilisateur clique sur le bouton "Oui", la variable **resultat**  contient la valeur **6**. Si l'utilisateur clique sur le bouton "Non", la variable **resultat**  contient la valeur **7**.
 
 
 <div class="exemple">
@@ -571,9 +571,9 @@ Si vous souhaitez vous entrainer, voici quelques exercices corrigés.
 #### Exercice 1 <a name="exercice-1"></a>
 
 <div class="exemple_blue">
-Ecrire une fonction `perimetre` calculant le perimètre d'un cercle prenant en paramètre un entier correspondant à son rayon. Le résultat sera un réel.
+Ecrire une fonction **perimetre**  calculant le perimètre d'un cercle prenant en paramètre un entier correspondant à son rayon. Le résultat sera un réel.
 La valeur 3.14 sera utilisée pour la constante pi.
-On affichera le résultat à l'aide d'une procédure `afficher_perimetre`.
+On affichera le résultat à l'aide d'une procédure **afficher_perimetre**.
 
 ##### Solution possible
 
@@ -593,7 +593,7 @@ End Sub
 #### Exercice 2 <a name="exercice-2"></a>
 
 <div class="exemple_blue">
-Ecrire une fonction `calculer_moyenne` calculant la moyenne de 3 notes qui seront données en paramètre de la fonction. Le résultat sera un réel.
+Ecrire une fonction **calculer_moyenne**  calculant la moyenne de 3 notes qui seront données en paramètre de la fonction. Le résultat sera un réel.
 
 ##### Solution possible
 
@@ -611,7 +611,7 @@ End Function
 #### Exercice 3 <a name="exercice-3"></a>
 
 <div class="exemple_blue">
-Ecrire une fonction `calculer_somme` calculant la somme de 2 entiers que l'utilisateur saisira à l'aide de deux fenêtres `InputBox`. Si l'utilisateur ne saisit pas de valeur, la valeur par défaut sera 0.
+Ecrire une fonction **calculer_somme**  calculant la somme de 2 entiers que l'utilisateur saisira à l'aide de deux fenêtres **InputBox**. Si l'utilisateur ne saisit pas de valeur, la valeur par défaut sera 0.
 
 ##### Solution possible
 

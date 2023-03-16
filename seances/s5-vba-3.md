@@ -254,13 +254,13 @@ Type Personne
 End Type
 ```
 
-</div>
-
 On peut ensuite déclarer une variable de type **Personne** :
 
 ```vb
 Dim personne As Personne
 ```
+
+</div>
 
 On peut ensuite accéder aux champs de l'enregistrement :
 
