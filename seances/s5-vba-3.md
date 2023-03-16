@@ -327,6 +327,11 @@ End With
 On souhaite définir un tableau de **Personne** de taille **n**, où **n** est saisi par l'utilisateur. On demande ensuite à l'utilisateur de saisir les champs de chaque enregistrement.
 
 ```vb
+Type Personne
+    Nom As String
+    Prenom As String
+    Age As Integer
+End Type
 
 Sub saisirPersonnes()
     Dim n As Integer
