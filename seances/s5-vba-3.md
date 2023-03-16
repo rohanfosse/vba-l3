@@ -264,11 +264,15 @@ Dim personne As Personne
 
 On peut ensuite accéder aux champs de l'enregistrement :
 
+<div class="exemple">
+
 ```vb
 personne.Nom = "Dupont"
 personne.Prenom = "Jean"
 personne.Age = 25
 ```
+
+</div>
 
 #### Tableau d'enregistrements
 
