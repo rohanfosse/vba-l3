@@ -153,6 +153,42 @@ Dim tableau() As type
 ReDim tableau(n)
 ```
 
+où **n** est le nombre d'éléments du tableau et **type** est le type des éléments du tableau.
+
+<div class="exemple">
+
+Pour déclarer un tableau **notes** de 5 entiers, on écrit :
+
+```vb
+Dim notes() As Integer
+ReDim notes(5)
+```
+
+</div>
+
+#### Changement de taille d'un tableau dynamique
+
+Pour changer la taille d'un tableau dynamique, on utilise la syntaxe suivante :
+
+```vb
+
+ReDim tableau(n+k)
+```
+
+où **n** est le nombre d'éléments du tableau, **k** est le nombre d'éléments à ajouter et **type** est le type des éléments du tableau.
+
+<div class="exemple">
+
+Pour ajouter 3 éléments à notre tableau **notes**, on écrit :
+
+```vb
+
+ReDim notes(5+3)
+```
+
+Le tableau **notes** contient maintenant 8 éléments.
+</div>
+
 
 ---
 
