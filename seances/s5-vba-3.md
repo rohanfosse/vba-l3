@@ -16,10 +16,8 @@
 
 ## Avant de commencer
 
-<div class="line"></div>
 
-Imaginons que dans un programme, nous avons besoin d’un grand nombre de variables,
-il devient difficile de donner un nom à chaque variable.
+Supposons qu'un programme nécessite un grand nombre de variables, il devient alors compliqué de leur attribuer chacun un nom.
 
 <div class="exemple">
 
@@ -461,6 +459,8 @@ End Function
 </details>
 
 </div>
+
+---
 
 ### Pour aller plus loin: algorithmes sur les tableaux
 
