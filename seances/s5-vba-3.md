@@ -227,8 +227,105 @@ Next i
 
 où **n** est le nombre d'éléments du tableau.
 
+---
 
-### Algorithmes sur les tableaux
+## Les enregitrements
+
+Un **enregistrement** est un type de données qui permet de regrouper plusieurs variables de types différents.
+
+On peut déclarer un enregistrement de la manière suivante :
+
+```vb
+Type Enregistrement
+    Champ1 As type1
+    Champ2 As type2
+    Champ3 As type3
+End Type
+```
+
+avec **Enregistrement** le nom de l'enregistrement, **Champ1**, **Champ2** et **Champ3** les noms des champs de l'enregistrement et **type1**, **type2** et **type3** les types des champs de l'enregistrement.
+
+<div class="exemple">
+
+Si l'on souhaite déclarer un enregistrement **Personne** qui contient un nom, un prénom et un âge, on peut écrire :
+
+```vb
+Type Personne
+    Nom As String
+    Prenom As String
+    Age As Integer
+End Type
+```
+
+</div>
+
+On peut ensuite déclarer une variable de type **Personne** :
+
+```vb
+Dim personne As Personne
+```
+
+On peut ensuite accéder aux champs de l'enregistrement :
+
+```vb
+personne.Nom = "Dupont"
+personne.Prenom = "Jean"
+personne.Age = 25
+```
+
+### Tableau d'enregistrements
+
+Il est possible de déclarer un tableau d'enregistrements (ici de *Personne*) de la manière suivante :
+
+```vb
+Dim tableau() As Personne
+```
+
+Dans ce cas là, il est possible d'accéder aux champs de l'enregistrement de la manière suivante :
+
+<div class="exemple">
+
+```vb
+tableau(0).Nom = "Dupont"
+tableau(0).Prenom = "Jean"
+tableau(0).Age = 25
+```
+
+</div>
+
+---
+
+### Instruction **With**
+
+L'instruction **With** permet d'accéder aux champs d'un enregistrement de manière plus concise.
+
+Par exemple, si l'on souhaite accéder au champ **Nom** de l'enregistrement **personne**, on peut écrire :
+
+<div class="exemple">
+
+```vb
+With personne
+    .Nom = "Dupont"
+End With
+```
+
+</div>
+
+Si l'on souhaite accéder au champ **Nom** de l'enregistrement **tableau(0)**, on peut écrire :
+
+<div class="exemple">
+
+```vb
+With tableau(0)
+    .Nom = "Dupont"
+End With
+```
+
+</div>
+
+---
+
+### Pour aller plus loin: algorithmes sur les tableaux
 
 #### Notes importantes
 
@@ -519,97 +616,3 @@ Next i
 </div>
 
 ---
-
-## Les enregitrements
-
-Un **enregistrement** est un type de données qui permet de regrouper plusieurs variables de types différents.
-
-On peut déclarer un enregistrement de la manière suivante :
-
-```vb
-Type Enregistrement
-    Champ1 As type1
-    Champ2 As type2
-    Champ3 As type3
-End Type
-```
-
-avec **Enregistrement** le nom de l'enregistrement, **Champ1**, **Champ2** et **Champ3** les noms des champs de l'enregistrement et **type1**, **type2** et **type3** les types des champs de l'enregistrement.
-
-<div class="exemple">
-
-Si l'on souhaite déclarer un enregistrement **Personne** qui contient un nom, un prénom et un âge, on peut écrire :
-
-```vb
-Type Personne
-    Nom As String
-    Prenom As String
-    Age As Integer
-End Type
-```
-
-</div>
-
-On peut ensuite déclarer une variable de type **Personne** :
-
-```vb
-Dim personne As Personne
-```
-
-On peut ensuite accéder aux champs de l'enregistrement :
-
-```vb
-personne.Nom = "Dupont"
-personne.Prenom = "Jean"
-personne.Age = 25
-```
-
-### Tableau d'enregistrements
-
-Il est possible de déclarer un tableau d'enregistrements (ici de *Personne*) de la manière suivante :
-
-```vb
-Dim tableau() As Personne
-```
-
-Dans ce cas là, il est possible d'accéder aux champs de l'enregistrement de la manière suivante :
-
-<div class="exemple">
-
-```vb
-tableau(0).Nom = "Dupont"
-tableau(0).Prenom = "Jean"
-tableau(0).Age = 25
-```
-
-</div>
-
----
-
-### Instruction **With**
-
-L'instruction **With** permet d'accéder aux champs d'un enregistrement de manière plus concise.
-
-Par exemple, si l'on souhaite accéder au champ **Nom** de l'enregistrement **personne**, on peut écrire :
-
-<div class="exemple">
-
-```vb
-With personne
-    .Nom = "Dupont"
-End With
-```
-
-</div>
-
-Si l'on souhaite accéder au champ **Nom** de l'enregistrement **tableau(0)**, on peut écrire :
-
-<div class="exemple">
-
-```vb
-With tableau(0)
-    .Nom = "Dupont"
-End With
-```
-
-</div>
