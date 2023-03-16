@@ -235,7 +235,7 @@ où **n** est le nombre d'éléments du tableau.
 
 Ces **algorithmes** sont donnés pour vous aider à comprendre comment fonctionnent les tableaux.
 
-**Vous n'êtes pas obligés de les connaître par coeur.**
+**Vous n'êtes pas obligés de les apprendre.**
 
 Ils pourront cependant vous êtes **utiles** lors des différents exercices que vous aurez à faire.
 
