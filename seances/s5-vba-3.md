@@ -150,9 +150,9 @@ Pour déclarer un tableau dynamique, on utilise la syntaxe suivante :
 
 ```vb
 Dim tableau() As type
+ReDim tableau(n)
 ```
 
-C'est la même syntaxe que pour les tableaux statiques, sauf qu'on ne précise pas la taille du tableau.
 
 ---
 
@@ -183,8 +183,6 @@ On vérifie d'abord que les deux tableaux ont la même taille.
 
 L'algorithme peut être écrit en VBA de la manière suivante :
 
-<details>
-
 ```vb
 Dim tableau1() As Integer
 Dim tableau2() As Integer
@@ -202,7 +200,46 @@ Else
 End If
 ```
 
-</details>
+<div class="line"></div>
+
+<div class="exemple">
+Si l'on veut définir une procédure **compare** qui permet de comparer deux tableaux, on peut écrire :
+
+```vb
+
+Sub compare(tableau1() As Integer, tableau2() As Integer)
+    If UBound(tableau1) = UBound(tableau2) Then
+        For i = 0 To UBound(tableau1)
+            If tableau1(i) <> tableau2(i) Then
+                MsgBox "Les tableaux sont différents"
+                Exit Sub
+            End If
+        Next i
+        MsgBox "Les tableaux sont identiques"
+    Else
+        MsgBox "Les tableaux sont différents"
+    End If
+End Sub
+```
+
+Une procédure qui permet d'exécuter l'algorithme précédent est donnée ci-dessous :
+
+```vb
+
+Sub try_compare()
+    Dim tableau1(1 To 3) As Integer
+    Dim tableau2(1 To 3) As Integer
+    tableau1(1) = 1
+    tableau1(2) = 2
+    tableau1(3) = 3
+    tableau2(1) = 1
+    tableau2(2) = 2
+    tableau2(3) = 3
+    compare tableau1, tableau2
+End Sub
+```
+
+</div>
 
 ---
 
