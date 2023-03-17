@@ -493,6 +493,35 @@ End Sub
 
 ---
 
+#### Exercice 3 <a name="exercice-3-4"></a>
+
+<div class="exercice">
+
+Ecrire une procédure demandant à l'utilisateur un entier **n** et l'écrire dans la cellule **A1** de la feuille **Feuil1**en utilisant l'objet **Range**.
+
+##### Correction
+
+
+<details>
+
+```vb
+Sub ecrireDansCellule()
+    Dim n As Integer
+    Dim range As Range
+
+    n = InputBox("Entrez un entier")
+    Set range = Range("A1")
+    range.Value = n
+End Sub
+```
+
+</details>
+
+</div>
+
+---
+
+
 ## Correction TD4 <a name="correction-td4-4"></a>
 
 Une correction du TD4 sera disponible prochainement.
