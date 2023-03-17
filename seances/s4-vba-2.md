@@ -457,76 +457,38 @@ End Sub
 
 <div class="exercice">
 
-Ecrire une fonction **double_tableau** qui prend en paramètre un tableau d'entiers **tab** et sa taille **n**. La fonction renvoie un booléen indiquant si le tableau ne contient que des entiers pairs.
+Ecrire une procédure prenant un entier **n** en paramètre et qui affiche les entiers **pairs** de 1 à **n**.
 
-Par exemple, si **tab** contient les valeurs **1, 2, 3, 4**, la fonction renvoie **False** mais renvoie **True** si **tab** contient les valeurs **2, 4, 6, 8**.
+Vous pouvez utiliser la fonction **Mod** pour tester si un entier est pair ou impair.
 
-Vous pouvez utiliser l'opérateur **Mod** pour calculer le modulo. Par exemple, **5 Mod 2** renvoie **1**.
+La syntaxe de la fonction **Mod** est la suivante :
+
+```vb
+
+n Mod x = y
+
+```
+
+Si **y** est égal à 0, alors **n** est divisible par **x**.
 
 ##### Correction
 
+
 <details>
 
+<div class="exemple">
+
 ```vb
-Function double_tableau(tableau() As Integer, n As Integer) As Boolean
+Sub afficherPairs(n As Integer)
     Dim i As Integer
-    Dim resultat As Boolean
 
-    resultat = True
-    i = 0
-
-    Do While i < n And resultat = True
-        If tableau(i) Mod 2 <> 0 Then
-            resultat = False
+    For i = 1 To n
+        If i Mod 2 = 0 Then
+            MsgBox i
         End If
-        i = i + 1
-    Loop
-
-    double_tableau = resultat
-End Function
-```
-
-</details>
-</div>
-
-<div class="line"></div>
-
-#### Exercice 3 <a name="exercice-3-4"></a>
-
-<div class="exercice">
-
-Ecrire une fonction **fibonacci** qui prend en paramètre un entier **n** et retourne un tableau contenant les **n** premiers termes de la suite de Fibonacci. Le type de retour de la fonction est **Variant** car on ne connait pas à l'avance la taille du tableau.
-
-Pour rappel, la suite de Fibonacci est définie par la relation suivante :
-
-```vb
-f(0) = 0
-f(1) = 1
-f(n) = f(n-1) + f(n-2)
-```
-
-##### Correction
-
-<details>
-
-```vb
-Function fibonacci(n As Integer) As Variant
-    Dim tableau(n) As Integer
-    Dim i As Integer
-
-    tableau(0) = 0
-    tableau(1) = 1
-
-    For i = 2 To n
-        tableau(i) = tableau(i - 1) + tableau(i - 2)
     Next i
-
-    fibonacci = tab
-End Function
+End Sub
 ```
-
-</details>
-</div>
 
 ---
 
