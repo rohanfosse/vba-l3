@@ -152,6 +152,8 @@ ReDim tableau(n)
 
 où **n** est le nombre d'éléments du tableau et **type** est le type des éléments du tableau.
 
+**Redim** permet de donner une taille au tableau.
+
 <div class="exemple">
 
 Pour déclarer un tableau **notes** de 5 entiers, on écrit :
@@ -163,9 +165,25 @@ ReDim notes(5)
 
 </div>
 
-On veut écrire une procédure qui crée un tableau dynamique de taille **n** avec **n** saisi par l'utilisateur. On demandera ensuite à l'utilisateur de saisir les éléments du tableau.
+Quelle est donc la différence entre un tableau **dynamique** et un tableau **statique** ?
+
+Dans un tableau statique, on doit déclarer la taille du tableau au moment de la **déclaration**. Dans un tableau dynamique, on peut déclarer la taille du tableau à **n'importe quel moment**.
+
+Ainsi, si l'on souhaite déclarer un tableau dynamique de taille **n** saisi par l'utilisateur, on écrit :
+
+```vb
+
+Dim notes() As Integer
+Dim n As Integer
+
+n = InputBox("Saisir le nombre de notes")
+
+ReDim notes(n)
+```
 
 <div class="exemple">
+
+On veut écrire une procédure qui crée un tableau dynamique de taille **n** avec **n** saisi par l'utilisateur. On demandera ensuite à l'utilisateur de saisir les éléments du tableau.
 
 ```vb
 
