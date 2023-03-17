@@ -476,8 +476,6 @@ Si **y** est égal à 0, alors **n** est divisible par **x**.
 
 <details>
 
-<div class="exemple">
-
 ```vb
 Sub afficherPairs(n As Integer)
     Dim i As Integer
@@ -489,6 +487,9 @@ Sub afficherPairs(n As Integer)
     Next i
 End Sub
 ```
+
+</details>
+</div>
 
 ---
 
