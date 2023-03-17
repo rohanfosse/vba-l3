@@ -497,7 +497,7 @@ End Sub
 
 <div class="exercice">
 
-Ecrire une procédure demandant à l'utilisateur un entier **n** et l'écrire dans la cellule **A1** de la feuille **Feuil1**en utilisant l'objet **Range**.
+Ecrire une procédure demandant à l'utilisateur un entier **n** et l'écrire dans la cellule **A1** en utilisant l'objet **Range**.
 
 ##### Correction
 
