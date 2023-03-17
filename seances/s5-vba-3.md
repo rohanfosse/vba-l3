@@ -436,7 +436,6 @@ Ecrire une procédure qui demande à l'utilisateur de saisir un nombre **n** pui
 <details>
 
 ```vb
-
 Sub exercice2()
     Dim n As Integer
     Dim notes() As Integer
@@ -479,7 +478,6 @@ Définir un type **Etudiant** contenant **un nom**, **un prénom** et un **table
 <details>
 
 ```vb
-
 Sub exercice3()
     Dim n As Integer
     Dim etudiants() As Etudiant
