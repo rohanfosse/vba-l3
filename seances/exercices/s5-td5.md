@@ -204,6 +204,7 @@ d'échanger les valeurs du tableau de la *Feuille1* si la première valeur est p
 <details>
 
 ```vb
+Const tmax = 100
 Sub Ex_4()
     Dim t(1 To tmax) As Double
     Dim i As Integer
@@ -255,7 +256,7 @@ On considère la feuille de calcul (*Feuille3*) suivante:
 
 ![s5-exo5](screenshots/s5-exo5.png)
 
-Ecrivez en VB un programme permettant de calculer la valeur totale du stock (simme des produits des prix par les quantités en stock) et de l'inscrire dans la cellule **F4**.
+Écrivez en VB un programme permettant de calculer la valeur totale du stock (somme des produits des prix par les quantités en stock) et de l'inscrire dans la cellule **F4**.
 
 <div style="border-left:solid #17a589 4px;padding-left:10px; ">
 
@@ -352,7 +353,10 @@ Le programme ci-dessus permet de trier un tableau de nombres entiers en ordre cr
 ---
 
 ## Exercice 7
+    
+Créer une liste de chaînes de caractères comportant les éléments "Le ", "printemps", "arrive."
 
+Ecrire ensuite une procédure affichant, à l'aide de la liste, la phrase: "Le printemps arrive".
 
 <div style="border-left:solid #17a589 4px;padding-left:10px; ">
 
@@ -360,9 +364,7 @@ Le programme ci-dessus permet de trier un tableau de nombres entiers en ordre cr
 
 <details>
 
-Créer une liste de chaînes de caractères comportant les éléments "Le ", "printemps", "arrive."
 
-Ecrire ensuite une procédure affichant, à l'aide de la liste, la phrase: "Le printemps arrive".
 
 ```vb
 Sub Ex_7()
