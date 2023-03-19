@@ -15,9 +15,7 @@ Le responsable du cours est Fabien Schloesser et la page a été créée par [Ro
 
 ### Groupe Rohan Fossé
 
-- Un examen blanc est disponible [ici](seances/examens/examen-blanc.md) pour vous entrainer.
-
-Vous pouvez me l'envoyer par [mail](mailto:rohan.fosse@labri.fr) si vous souhaitez une note indicative et une correction.
+- Un examen blanc est disponible [ici](seances/examens/examen-blanc.md) pour vous entrainer. Vous pouvez me l'envoyer par [mail](mailto:rohan.fosse@labri.fr) si vous souhaitez une note indicative et une correction.
 
 - Le deuxième contrôle continu se déroulera le Mardi 28 Mars 2023. Il portera **uniquement** sur VBA, de la séance 3 à la séance 5.
 
