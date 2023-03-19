@@ -203,6 +203,29 @@ End Sub
 
 </div>
 
+#### Taille d'un tableau dynamique
+
+Pour connaître la taille d'un tableau dynamique, on utilise la fonction suivante :
+
+```vb
+UBound(tableau)
+```
+
+<div class="exemple">
+
+On souhaite afficher les éléments d'un tableau dynamique passé en paramètre d'une procédure.
+
+```vb
+Sub parcourirTableau(tableau() As Integer)
+    Dim i As Integer
+
+    For i = 1 To UBound(tableau)
+        MsgBox tableau(i)
+    Next i
+End Sub
+```
+
+</div>
 
 ---
 
