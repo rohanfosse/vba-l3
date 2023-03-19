@@ -46,7 +46,7 @@ La valeur du compteur est très souvent utilisée dans la condition de sortie, p
 
 ### Boucle **While** <a name="boucle-while"></a>
 
-La boucle **While** permet d'exécuter une instruction tant qu'une condition est vraie.
+La boucle **While** (*Tant que* en français) permet d'exécuter une instruction tant qu'une condition est vraie.
 
 La syntaxe est la suivante :
 
@@ -63,12 +63,12 @@ Wend
 Si l'on souhaite afficher les nombres de 1 à 10, le code sera le suivant :
 
 ```vb
-Dim i As Integer
+Dim i As Integer 'On initialise le compteur'
 i = 1
 
 While i <= 10
     MsgBox i
-    i = i + 1
+    i = i + 1 'On incrémente (on augmente de 1) le compteur'
 Wend
 ```
 
