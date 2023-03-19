@@ -8,7 +8,11 @@
 
 </div>
 
+---
+
 Cet examen blanc a une durée de 1h. Il est à faire sur feuille. Aucun document n'est autorisé. Le barême est donné à titre indicatif.
+
+Si vous souhaitez vous entrainer, je vous conseille de le faire sur Bloc notes ou Word (pour ne pas avoir d'aide pour la mise en forme).
 
 ---
 
@@ -41,7 +45,7 @@ Ecrire une fonction **carré** qui prend en paramètre un nombre et qui retourne
 
 ### Exercice 2 (5 points)
 
-<div class="exemple">
+<div class="exercice">
 
 Écrire une procédure **multiplication** qui affiche la table de multiplication d'un nombre entier compris entre 1 et 10.
 
@@ -57,7 +61,7 @@ La table de multiplication doit ensuite être affichée à l'écran.
 
 ### Exercice 3 (3 points)
 
-<div class="exemple">
+<div class="exercice">
 
 Écrire une procédure **afficher_prix** qui prend en paramètre un entier **quantite** et un entier **prix_unitaire**.
 
@@ -71,7 +75,7 @@ Si la quantité est supérieure ou égale à 10, un rabais de **5%** sera appliq
 
 ### Exercice 4 (5 points)
 
-<div class="exemple">
+<div class="exercice">
 
 Écrire une fonction **recherche_prix_article** prenant en paramètres deux tableaux, l'un contenant des noms d'articles et l'autre contenant leurs prix.
 
