@@ -14,6 +14,8 @@
 
 Pensez à activer la case Développeur dans les options d'Excel. Pour cela, allez dans le menu **Fichier**  puis **Options**  et cliquez sur **Personnaliser le ruban**. Dans la fenêtre qui s'ouvre, cliquez sur **Développeur**  dans la liste de gauche et cochez la case **Afficher la barre de développeur**.
 
+Lorsque c'est fait, vous pouvez maintenant ouvrir la fenêtre de VBA en cliquant sur le bouton **Développeur**  dans la barre d'outils et en cliquant sur **Visual Basic**.
+
 ---
 
 ## Les variables <a name="-les-variables"></a>
@@ -75,6 +77,63 @@ Dim a, b, c As Integer
 ```
 
 En effet, on défini ici les variables **a**  et **b**  comme étant de type **Variant**  et la variable **c**  comme étant de type **Integer**.
+
+### Valeur d'une variable
+
+Pour changer la valeur d'une variable, on utilise la syntaxe suivante :
+
+```vb
+nom_variable = valeur
+```
+
+<div class="exemple">
+
+Si l'on souhaite déclarer une variable **a**  de type **Integer**  et lui donner la valeur **5** :
+
+```vb
+Dim a As Integer
+a = 5
+```
+
+</div>
+
+Pour afficher la valeur d'une variable, on utilise la syntaxe suivante :
+
+```vb
+MsgBox nom_variable
+```
+
+<div class="exemple">
+
+Si l'on souhaite afficher la valeur de la variable **a**  déclarée précédemment :
+
+```vb
+MsgBox a
+```
+
+</div>
+
+Si l'on souhaite changer la valeur d'une variable en fonction de sa valeur actuelle, on peut le faire de la manière suivante :
+
+```vb
+nom_variable = nom_variable + valeur
+```
+
+Dans notre cas, le **nom_variable** de gauche correspond à la **nouvelle** valeur de la variable.
+
+<div class="exemple">
+
+Si l'on souhaite augmenter la valeur de la variable **a**  de **1**  (on dit **incrémenter** en informatique):
+
+```vb
+Dim a As Integer
+a = 5
+a = a + 1 'On incrémente la valeur de a de 1'
+MsgBox a ' affiche 6'
+```
+
+</div>
+
 
 ---
 
