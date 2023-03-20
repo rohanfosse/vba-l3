@@ -3,7 +3,7 @@
 <p style="text-align:left;">
     [Séance 4 - Structures Iteratives et communications avec Excel](s4-vba-2.md)
     <span style="float:right;">
-        [Séance 6 - VBA: Eléments visuels](s6-vba-4.md)
+        Séance 6 - VBA: Eléments visuels
     </span>
 </p>
 <div style="text-align:center;">

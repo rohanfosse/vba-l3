@@ -11,8 +11,6 @@ Le responsable du cours est Fabien Schloesser et la page a été créée par [Ro
 
 - Les notes de cours sont en cours de rédaction. Elles seront mises à jour régulièrement.
 
-- Vous pouvez retrouver la correction du TD3 [ici](seances/exercices/s3-td3.md)
-
 ### Groupe Rohan Fossé
 
 - Un examen blanc est disponible [ici](seances/examens/examen-blanc.md) pour vous entrainer. Vous pouvez me l'envoyer par [mail](mailto:rohan.fosse@labri.fr) si vous souhaitez une note indicative et une correction.
@@ -28,4 +26,4 @@ Le responsable du cours est Fabien Schloesser et la page a été créée par [Ro
 - [Séance 3 - VBA: Fonctions et procédures, variables, tests et boucles](seances/s3-vba-1.md)
 - [Séance 4 - VBA: Structures itératives et communication avec Excel](seances/s4-vba-2.md)
 - [Séance 5 - VBA: Tableaux et Enregistrements](seances/s5-vba-3.md)
-- [Séance 6 - Eléments visuels](seances/s6-vba-4.md)
+- Séance 6 - Eléments visuels
