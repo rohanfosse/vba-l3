@@ -12,6 +12,7 @@
 </div>
 
 ---
+
 ## Avant de commencer <a name="avant-de-commencer"></a>
 
 #### Une itération
@@ -520,8 +521,3 @@ End Sub
 </div>
 
 ---
-
-
-## Correction TD4 <a name="correction-td4-4"></a>
-
-Une correction du TD4 sera disponible prochainement.

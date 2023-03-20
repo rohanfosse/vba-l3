@@ -23,7 +23,6 @@ Chaque contrôle  se compose de trois éléments importants :
 - les méthodes, qui permettent à l'objet de faire une action
 - Les événements sont ce qui se produit lorsqu'un objet fait une action.
 
-
 #### Propriétés du contrôle
 
 Tous les objets  peuvent être déplacés, redimensionnés ou personnalisés en définissant leurs propriétés.
