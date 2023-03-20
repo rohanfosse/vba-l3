@@ -134,7 +134,6 @@ MsgBox a ' affiche 6'
 
 </div>
 
-
 ---
 
 ## Les blocs de code <a name="-les-blocs-de-code"></a>
