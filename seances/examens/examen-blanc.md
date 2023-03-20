@@ -13,7 +13,7 @@
 Cet examen blanc a une durée de 1h. Il est à faire sur feuille. Aucun document n'est autorisé. Le barême est donné à titre indicatif.
 
 Si vous souhaitez vous entrainer, je vous conseille de le faire sur Bloc notes ou Word (pour ne pas avoir d'aide pour la mise en forme).
-
+ 
 ---
 
 
