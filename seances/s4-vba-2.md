@@ -57,8 +57,6 @@ While condition
 Wend
 ```
 
-
-
 <div class="exemple">
 
 Si l'on souhaite afficher les nombres de 1 à 10, le code sera le suivant :

@@ -679,7 +679,3 @@ End Function
 </div>
 
 ---
-
-## Correction TD3 <a name="correction-td3"></a>
-
-Vous pouvez trouver la correction du TD3 [ici](exercices/s3-td3.md)
