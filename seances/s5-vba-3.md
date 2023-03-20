@@ -104,7 +104,7 @@ où **a** et **b** sont les bornes de l'intervalle.
 
 <div class="exemple">
 
-Pour déclarer un tableau **notes** d'entiers allant de 5 à 10, on écrit :
+Pour déclarer un tableau **notes** d'entiers dont les indices vont de 5 à 10, on écrit :
 
 ```vb
 Dim notes(5 To 10) As Integer
@@ -141,7 +141,7 @@ notes(3) = 14
 Si l'on ne précise pas la taille du tableau au moment de la déclaration,
 le tableau est appelé **dynamique**.
 
-Les tableaux dynamiques sont utilisés lors l'on ne connait pas à l'avance le nombre d'éléments qu'il va falloir stocker.
+Les tableaux dynamiques sont utilisés lorsque l'on ne connaît pas à l'avance le nombre d'éléments qu'il va falloir stocker.
 
 Pour déclarer un tableau dynamique, on utilise la syntaxe suivante :
 
@@ -418,7 +418,7 @@ End Sub
 
 ## Exercices corrigés
 
-#### Exercice 1
+#### Exercice 1 : Remplissage d'un tableau dynamique
 
 <div class="exercice">
 
@@ -450,7 +450,7 @@ End Sub
 
 <div class="line"></div>
 
-#### Exercice 2
+#### Exercice 2 : Moyenne d'un tableau dynamique
 
 <div class="exercice">
 
@@ -492,7 +492,7 @@ End Function
 
 <div class="line"></div>
 
-#### Exercice 3
+#### Exercice 3 : Tableau d'enregistrements
 
 <div class="exercice">
 
@@ -501,6 +501,12 @@ Définir un type **Etudiant** contenant **un nom**, **un prénom** et un **table
 <details>
 
 ```vb
+Type Etudiant
+    Nom As String
+    Prenom As String
+    notes() As Integer
+End Type
+
 Sub exercice3()
     Dim n As Integer
     Dim etudiants() As Etudiant
@@ -553,7 +559,7 @@ End Function
 
 <div class="line"></div>
 
-#### Exercice 4 <a name="exercice-2-4"></a>
+#### Exercice 4 : Parcours de tableau <a name="exercice-2-4"></a>
 
 <div class="exercice">
 
@@ -591,7 +597,7 @@ End Function
 
 <div class="line"></div>
 
-#### Exercice 5 <a name="exercice-3-4"></a>
+#### Exercice 5 : Suite de Fibonnacci <a name="exercice-3-4"></a>
 
 <div class="exercice">
 
