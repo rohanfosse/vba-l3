@@ -328,9 +328,9 @@ Dans ce cas là, il est possible d'accéder aux champs de l'enregistrement de la
 <div class="exemple">
 
 ```vb
-tableau(0).Nom = "Dupont"
-tableau(0).Prenom = "Jean"
-tableau(0).Age = 25
+tableau(1).Nom = "Dupont"
+tableau(1).Prenom = "Jean"
+tableau(1).Age = 25
 ```
 
 </div>
@@ -369,12 +369,12 @@ End With
 
 </div>
 
-Si l'on souhaite accéder au champ **Nom** de l'enregistrement **tableau(0)**, on peut écrire :
+Si l'on souhaite accéder au champ **Nom** de l'enregistrement **tableau(1)**, on peut écrire :
 
 <div class="exemple">
 
 ```vb
-With tableau(0)
+With tableau(1)
     .Nom = "Dupont"
 End With
 ```
@@ -620,8 +620,8 @@ Function fibonacci(n As Integer) As Variant
     Dim tableau(n) As Integer
     Dim i As Integer
 
-    tableau(0) = 0
-    tableau(1) = 1
+    tableau(1) = 0
+    tableau(2) = 1
 
     For i = 2 To n
         tableau(i) = tableau(i - 1) + tableau(i - 2)
