@@ -36,7 +36,7 @@ Un tableur est un logiciel qui permet de manipuler des données sous forme de ta
 
 ### La feuille de calcul
 
-Une feuille de calcul est un tableau composé de lignes et de colonnes. Chaque cellule est identifiée par une lettre de colonne et un numéro de ligne. Par exemple, la cellule `A1` est la cellule de la première ligne et de la première colonne.
+Une feuille de calcul est un tableau composé de lignes et de colonnes. Chaque cellule est identifiée par une lettre de colonne et un numéro de ligne. Par exemple, la cellule **A1** est la cellule de la première ligne et de la première colonne.
 
 ### La formule
 
@@ -51,13 +51,13 @@ Dans Excel, il existe deux types de formules :
 
 Les formules de calcul permettent de faire des calculs sur des nombres. Elles sont composées d'opérateurs, de références, de fonctions et de constantes.
 
-Par exemple, la formule `=A1+B1` renvoie la somme des cellules A1 et B1.
+Par exemple, la formule **=A1+B1** renvoie la somme des cellules A1 et B1.
 
 #### Les formules de texte
 
 Les formules de texte permettent de manipuler du texte. Elles sont composées d'opérateurs, de références, de fonctions et de constantes.
 
-Par exemple, la formule `=CONCATENER(A1;B1)` renvoie la concaténation des cellules A1 et B1.
+Par exemple, la formule **=CONCATENER(A1;B1)** renvoie la concaténation des cellules A1 et B1.
 
 #### La barre de formule
 
@@ -71,19 +71,19 @@ Une référence est une adresse de cellule ou de plage de cellules. Elle peut ê
 
 Une référence absolue est une référence qui ne change pas lorsqu'elle est copiée ou déplacée. Elle est composée d'une lettre de colonne et d'un numéro de ligne précédés d'un signe de dollar ($).
 
-Par exemple, la référence absolue `$A$1` renvoie la valeur de la cellule A1. Si on copie cette référence dans une autre cellule, elle renverra toujours la valeur de la cellule A1. De même si on "étire" la référence vers le bas ou vers la droite.
+Par exemple, la référence absolue **$A$1** renvoie la valeur de la cellule A1. Si on copie cette référence dans une autre cellule, elle renverra toujours la valeur de la cellule A1. De même si on "étire" la référence vers le bas ou vers la droite.
 
 #### Référence relative
 
 Une référence relative est une référence qui change lorsqu'elle est copiée ou déplacée. Elle est composée d'une lettre de colonne et d'un numéro de ligne. Dans ce cas là, ni la ligne ni la colonne n'est fixée. 
 
-Par exemple, la référence relative `A1` renvoie la valeur de la cellule A1.
+Par exemple, la référence relative **A1** renvoie la valeur de la cellule A1.
 
 #### Référence mixte
 
 Une référence mixte est une référence où l'un des deux éléments (la lettre de colonne ou le numéro de ligne) est fixé et l'autre est relatif. Elle est composée d'une lettre de colonne et d'un numéro de ligne précédés d'un signe de dollar ($).
 
-Par exemple, la référence mixte `$A1` renvoie la valeur de la cellule A1. La colonne `A` est fixée mais pas la ligne.
+Par exemple, la référence mixte **$A1** renvoie la valeur de la cellule A1. La colonne **A** est fixée mais pas la ligne.
 Cela veut dire que si on "étire" la référence vers le bas, la colonne restera fixée mais la ligne changera. Mais si on "étire" la référence vers la droite, ni la colonne ni la ligne ne changeront.
 
 ### Les liaisons
@@ -92,23 +92,23 @@ Une liaison est une référence qui permet de faire référence à une plage de 
 
 #### Liaison entre deux cellules d'une même feuille de calcul
 
-C'est la référence définie précédemment, par exemple `=A1`.
+C'est la référence définie précédemment, par exemple **=A1**.
 
 #### Liaison entre deux cellules de deux feuilles de calcul
 
 Il faut cette fois-ci préciser le nom de la feuille de calcul.
 
-La syntaxe est la suivante : `=NomFeuille!CL` où `NomFeuille` est le nom de la feuille de calcul et `CL` est la référence de la cellule.
+La syntaxe est la suivante : **=NomFeuille!CL** où **NomFeuille** est le nom de la feuille de calcul et **CL** est la référence de la cellule.
 
-Par exemple, la liaison `=Feuille1!A1` renvoie la valeur de la cellule A1 de la feuille de calcul `Feuille1`.
+Par exemple, la liaison **=Feuille1!A1** renvoie la valeur de la cellule A1 de la feuille de calcul **Feuille1**.
 
 #### Liaison entre deux cellules de deux classeurs différents
 
 Il faut cette fois-ci préciser le nom du classeur et le nom de la feuille de calcul.
 
-La syntaxe est la suivante : `=NomClasseur!NomFeuille!CL` où `NomClasseur` est le nom du classeur, `NomFeuille` est le nom de la feuille de calcul et `CL` est la référence de la cellule.
+La syntaxe est la suivante : **=NomClasseur!NomFeuille!CL** où **NomClasseur** est le nom du classeur, **NomFeuille** est le nom de la feuille de calcul et **CL** est la référence de la cellule.
 
-Par exemple, la liaison `=Classeur1!Feuille1!A1` renvoie la valeur de la cellule A1 de la feuille de calcul `Feuille1` du classeur `Classeur1`.
+Par exemple, la liaison **=Classeur1!Feuille1!A1** renvoie la valeur de la cellule A1 de la feuille de calcul **Feuille1** du classeur **Classeur1**.
 
 ### Les messages d'erreurs
 
@@ -142,7 +142,7 @@ Elle est composée d'un nom de fonction (le nom du robot qui va effectuer les in
 
 La syntaxe d'une fonction est la suivante :
 
-`=NomFonction(Argument1;Argument2;...)` où `NomFonction` est le nom de la fonction, `Argument1`, `Argument2`, ... sont les arguments de la fonction.
+**=NomFonction(Argument1;Argument2;...)** où **NomFonction** est le nom de la fonction, **Argument1**, **Argument2**, ... sont les arguments de la fonction.
 
 ### Quelques fonctions de base
 
@@ -150,29 +150,29 @@ Pour essayer de mieux comprendre le fonctionnement des fonctions, nous allons vo
 
 #### Somme
 
-La fonction `SOMME` permet de calculer la somme des valeurs d'une plage de cellules.
+La fonction **SOMME** permet de calculer la somme des valeurs d'une plage de cellules.
 
-La syntaxe est la suivante : `=SOMME(CL)` où `CL` est la référence de la plage de cellules.
+La syntaxe est la suivante : **=SOMME(CL)** où **CL** est la référence de la plage de cellules.
 
-En reprenant l'analogie avec la vie réelle, on pourrait dire que la fonction `SOMME` est un robot qui va additionner les valeurs des cellules. On lui donne les cellules à additionner et il nous renvoie la somme.
+En reprenant l'analogie avec la vie réelle, on pourrait dire que la fonction **SOMME** est un robot qui va additionner les valeurs des cellules. On lui donne les cellules à additionner et il nous renvoie la somme.
 
-Par exemple, la formule `=SOMME(A1:A5)` renvoie la somme des valeurs des cellules A1 à A5.
+Par exemple, la formule **=SOMME(A1:A5)** renvoie la somme des valeurs des cellules A1 à A5.
 
 #### Moyenne
 
-La fonction `MOYENNE` permet de calculer la moyenne des valeurs d'une plage de cellules.
+La fonction **MOYENNE** permet de calculer la moyenne des valeurs d'une plage de cellules.
 
-La syntaxe est la suivante : `=MOYENNE(CL)` où `CL` est la référence de la plage de cellules.
+La syntaxe est la suivante : **=MOYENNE(CL)** où **CL** est la référence de la plage de cellules.
 
-Par exemple, la formule `=MOYENNE(A1:A5)` renvoie la moyenne des valeurs des cellules A1 à A5.
+Par exemple, la formule **=MOYENNE(A1:A5)** renvoie la moyenne des valeurs des cellules A1 à A5.
 
 #### Minimum
 
-La fonction `MIN` permet de renvoyer la valeur minimale d'une plage de cellules.
+La fonction **MIN** permet de renvoyer la valeur minimale d'une plage de cellules.
 
-La syntaxe est la suivante : `=MIN(CL)` où `CL` est la référence de la plage de cellules.
+La syntaxe est la suivante : **=MIN(CL)** où **CL** est la référence de la plage de cellules.
 
-Par exemple, la formule `=MIN(A1:A5)` renvoie la valeur minimale des valeurs des cellules A1 à A5.
+Par exemple, la formule **=MIN(A1:A5)** renvoie la valeur minimale des valeurs des cellules A1 à A5.
 
 ### Les instructions conditionnelles
 
@@ -197,23 +197,23 @@ Les principaux opérateurs de comparaison sont résumés dans le tableau suivant
 | >=                       | Supérieur ou égal à |
 | <=                       | Inférieur ou égal à |
 
-Les deux principales instructions conditionnelles sont la fonction `SI` et la fonction `NB.SI`. Il faut cependant noter qu'il en existe d'autres mais la syntaxe est similaire et elles ne sont généralement que des variantes de ces deux fonctions.
+Les deux principales instructions conditionnelles sont la fonction **SI** et la fonction **NB.SI**. Il faut cependant noter qu'il en existe d'autres mais la syntaxe est similaire et elles ne sont généralement que des variantes de ces deux fonctions.
 
 #### La fonction SI
 
-La fonction `SI` permet de renvoyer une valeur si une condition est vraie et une autre valeur si elle est fausse.
+La fonction **SI** permet de renvoyer une valeur si une condition est vraie et une autre valeur si elle est fausse.
 
-La syntaxe est la suivante : `=SI(Condition;ValeurSiVrai;ValeurSiFaux)` où `Condition` est l'expression logique, `ValeurSiVrai` est la valeur renvoyée si la condition est vraie et `ValeurSiFaux` est la valeur renvoyée si la condition est fausse.
+La syntaxe est la suivante : **=SI(Condition;ValeurSiVrai;ValeurSiFaux)** où **Condition** est l'expression logique, **ValeurSiVrai** est la valeur renvoyée si la condition est vraie et **ValeurSiFaux** est la valeur renvoyée si la condition est fausse.
 
-Par exemple, la formule `=SI(A1>10;A1;0)` renvoie la valeur de la cellule A1 si elle est supérieure à 10 et renvoie 0 sinon.
+Par exemple, la formule **=SI(A1>10;A1;0)** renvoie la valeur de la cellule A1 si elle est supérieure à 10 et renvoie 0 sinon.
 
 
 
 #### La fonction NB.SI
 
-La fonction `NB.SI` permet de compter le nombre de cellules qui vérifient une condition.
+La fonction **NB.SI** permet de compter le nombre de cellules qui vérifient une condition.
 
-La syntaxe est la suivante : `=NB.SI(CL;Condition)` où `CL` est la référence de la plage de cellules et `Condition` est l'expression logique.
+La syntaxe est la suivante : **=NB.SI(CL;Condition)** où **CL** est la référence de la plage de cellules et **Condition** est l'expression logique.
 
 Par exemple, considérons le tableau de ventes suivant, représentant de façon schématique un tableur:
 
@@ -225,9 +225,9 @@ Par exemple, considérons le tableau de ventes suivant, représentant de façon 
 |  **4** | C       | 15       |
 |  **5** | D       | 20       |
 
-La formule `=NB.SI(B2:B5;">10")` renvoie 2 car il y a 2 cellules qui vérifient la condition `>10` (les cellules B4 et B5).
+La formule **=NB.SI(B2:B5;">10")** renvoie 2 car il y a 2 cellules qui vérifient la condition **>10** (les cellules B4 et B5).
 
-Autre exemple, la formule `=NB.SI(B2:B5;"<=15")` renvoie 3 car il y a 3 cellules qui vérifient la condition `<=15` (les cellules B2, B3 et B4).
+Autre exemple, la formule **=NB.SI(B2:B5;"<=15")** renvoie 3 car il y a 3 cellules qui vérifient la condition **<=15** (les cellules B2, B3 et B4).
 
 ---
 
