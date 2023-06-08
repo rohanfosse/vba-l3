@@ -5,9 +5,11 @@
     </span>
 </p>
 
-# Excel - Fonction de base
+<h1 style="text-align: center;">Excel - Fonction de base</h1>
 
 ## Introduction
+
+Commençons par une petite introduction sur Excel.
 
 ### Objectifs
 
@@ -226,6 +228,8 @@ Par exemple, considérons le tableau de ventes suivant, représentant de façon 
 La formule `=NB.SI(B2:B5;">10")` renvoie 2 car il y a 2 cellules qui vérifient la condition `>10` (les cellules B4 et B5).
 
 Autre exemple, la formule `=NB.SI(B2:B5;"<=15")` renvoie 3 car il y a 3 cellules qui vérifient la condition `<=15` (les cellules B2, B3 et B4).
+
+---
 
 ## Ce qu'il faut retenir
 
