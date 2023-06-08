@@ -172,17 +172,13 @@ La syntaxe est la suivante : `=MIN(CL)` où `CL` est la référence de la plage 
 
 Par exemple, la formule `=MIN(A1:A5)` renvoie la valeur minimale des valeurs des cellules A1 à A5.
 
-### Les conditions
+### Les instructions conditionnelles
 
-Une condition est une expression qui permet de vérifier si une condition est vraie ou fausse. Elle est composée d'une expression logique et d'un opérateur de comparaison.
+Si l'on devait reprendre l'analogie avec notre robot, on pourrait dire que les instructions conditionnelles (ou plus simplement condition) sont des instructions qui permettent de dire au robot de faire quelque chose seulement si une condition est vraie. Par exemple, on pourrait lui dire d'avancer seulement si la porte est ouverte.
 
-#### La fonction SI
+En excel (et dans la grande majorité des langages de programmation), une condition est une expression qui permet de vérifier si une condition est vraie ou fausse. Elle est composée d'une expression logique et d'un opérateur de comparaison.
 
-La fonction `SI` permet de renvoyer une valeur si une condition est vraie et une autre valeur si elle est fausse.
-
-La syntaxe est la suivante : `=SI(Condition;ValeurSiVrai;ValeurSiFaux)` où `Condition` est l'expression logique, `ValeurSiVrai` est la valeur renvoyée si la condition est vraie et `ValeurSiFaux` est la valeur renvoyée si la condition est fausse.
-
-Par exemple, la formule `=SI(A1>10;A1;0)` renvoie la valeur de la cellule A1 si elle est supérieure à 10 et renvoie 0 sinon.
+Une expression logique est une expression qui renvoie une valeur booléenne (vrai ou faux). Elle est composée d'un ou plusieurs opérateurs logiques et d'un ou plusieurs opérandes.
 
 #### Les opérateurs de comparaison
 
@@ -199,10 +195,44 @@ Les principaux opérateurs de comparaison sont résumés dans le tableau suivant
 | >=                       | Supérieur ou égal à |
 | <=                       | Inférieur ou égal à |
 
+Les deux principales instructions conditionnelles sont la fonction `SI` et la fonction `NB.SI`. Il faut cependant noter qu'il en existe d'autres mais la syntaxe est similaire et elles ne sont généralement que des variantes de ces deux fonctions.
+
+#### La fonction SI
+
+La fonction `SI` permet de renvoyer une valeur si une condition est vraie et une autre valeur si elle est fausse.
+
+La syntaxe est la suivante : `=SI(Condition;ValeurSiVrai;ValeurSiFaux)` où `Condition` est l'expression logique, `ValeurSiVrai` est la valeur renvoyée si la condition est vraie et `ValeurSiFaux` est la valeur renvoyée si la condition est fausse.
+
+Par exemple, la formule `=SI(A1>10;A1;0)` renvoie la valeur de la cellule A1 si elle est supérieure à 10 et renvoie 0 sinon.
+
+
+
 #### La fonction NB.SI
 
 La fonction `NB.SI` permet de compter le nombre de cellules qui vérifient une condition.
 
 La syntaxe est la suivante : `=NB.SI(CL;Condition)` où `CL` est la référence de la plage de cellules et `Condition` est l'expression logique.
 
-Par exemple, considérons le tableau suivant, représentant un ensemble de ventes:
+Par exemple, considérons le tableau de ventes suivant, représentant de façon schématique un tableur:
+
+| /      | **A**   | **B**    |
+| **1**  | Produit | Quantité |
+| ------ |---------|----------|
+| **2**  | A       | 10       |
+| **3**  | B       | 5        |
+|  **4** | C       | 15       |
+|  **5** | D       | 20       |
+
+La formule `=NB.SI(B2:B5;">10")` renvoie 2 car il y a 2 cellules qui vérifient la condition `>10` (les cellules B4 et B5).
+
+Autre exemple, la formule `=NB.SI(B2:B5;"<=15")` renvoie 3 car il y a 3 cellules qui vérifient la condition `<=15` (les cellules B2, B3 et B4).
+
+## Ce qu'il faut retenir
+
+- Excel est un tableur qui permet de faire des calculs et de représenter des données sous forme de tableau.
+- Un tableur est composé de cellules qui sont identifiées par une lettre et un nombre.
+- Une cellule peut contenir une valeur ou une formule.
+- Une formule est une expression qui renvoie une valeur.
+- Une formule est composée d'un signe égal, d'une ou plusieurs références de cellules et d'un ou plusieurs opérateurs.
+- Les opérateurs sont des symboles qui permettent de faire des opérations sur des valeurs.
+- Les conditions sont des expressions qui permettent de vérifier si une condition est vraie ou fausse.
