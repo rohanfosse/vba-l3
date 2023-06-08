@@ -318,6 +318,92 @@ Ici, la fonction RECHERCHEV cherche la valeur 3 dans la plage A1:A3 et trouve qu
 
 ---
 
+## Les fonctions ET, OU, NON
+
+### La fonction ET
+
+La fonction **ET** permet de vérifier si toutes les conditions sont vraies. Elle renvoie la valeur VRAI si toutes les conditions sont vraies et FAUX si au moins une condition est fausse. La fonction **ET** peut prendre jusqu'à 255 arguments.
+
+La syntaxe de la fonction **ET** est la suivante:
+
+```vb
+ET(condition1; [condition2]; ...)
+```
+
+<div class="exemple">
+
+**Exemple 1:**
+
+Considérons la formule suivante:
+
+```vb
+=ET(A1>0; A1<10)
+```
+
+Cette formule vérifie si la valeur de la cellule A1 est comprise entre 0 et 10. Si c'est le cas, la fonction ET renvoie la valeur VRAI, sinon elle renvoie la valeur FAUX.
+
+**Exemple 2:**
+
+Considérons la formule suivante:
+
+```vb
+=ET(A1>0; A1<10; A2<>5)
+```
+
+Cette formule vérifie si la valeur de la cellule A1 est comprise entre 0 et 10 et si la valeur de la cellule A2 est différente de 5. Si c'est le cas, la fonction ET renvoie la valeur VRAI, sinon elle renvoie la valeur FAUX.
+
+</div>
+
+### La fonction OU
+
+De la même manière, la fonction **OU** permet de vérifier si au moins une des conditions est vraie. Elle renvoie la valeur VRAI si au moins une condition est vraie et FAUX si toutes les conditions sont fausses. La fonction **OU** peut prendre jusqu'à 255 arguments.
+
+La syntaxe de la fonction **OU** est la suivante:
+
+```vb
+OU(condition1; [condition2]; ...)
+```
+
+<div class="exemple">
+
+**Exemple**
+
+Considérons la formule suivante:
+
+```vb
+=OU(A1>0; A1<10)
+```
+
+Cette formule vérifie si la valeur de la cellule A1 est supérieure à 0 ou si elle est inférieure à 10. Si c'est le cas, la fonction OU renvoie la valeur VRAI, sinon elle renvoie la valeur FAUX.
+
+</div>
+
+### La fonction NON
+
+La fonction **NON** permet d'inverser la valeur d'une condition. Elle renvoie la valeur VRAI si la condition est fausse et FAUX si la condition est vraie.
+
+La syntaxe de la fonction **NON** est la suivante:
+
+```vb
+NON(condition)
+```
+
+<div class="exemple">
+
+**Exemple**
+
+Considérons la formule suivante:
+
+```vb
+=NON(A1>0)
+```
+
+Cette formule vérifie si la valeur de la cellule A1 est inférieure ou égale à 0. Si c'est le cas, la fonction NON renvoie la valeur VRAI, sinon elle renvoie la valeur FAUX.
+
+</div>
+
+---
+
 ## Ce qu'il faut retenir
 
 * La fonction **INDEX** permet de renvoyer la valeur d'une cellule dans une plage de cellules.
