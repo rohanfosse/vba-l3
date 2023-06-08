@@ -16,7 +16,7 @@ Pour ce premier cours, nous avons plusieurs objectifs :
 - Découvrir l'interface d'Excel
 - Découvrir les formules de base
 - Découvrir les références
-- Découvrir les fonctions de base
+- Découvrir les fonctions et les conditions
 
 ### Prérequis
 
@@ -236,3 +236,10 @@ Autre exemple, la formule `=NB.SI(B2:B5;"<=15")` renvoie 3 car il y a 3 cellules
 - Une formule est composée d'un signe égal, d'une ou plusieurs références de cellules et d'un ou plusieurs opérateurs.
 - Les opérateurs sont des symboles qui permettent de faire des opérations sur des valeurs.
 - Les conditions sont des expressions qui permettent de vérifier si une condition est vraie ou fausse.
+
+<p style="text-align:left;">
+    [Retour au sommaire](../README.md)
+    <span style="float:right;">
+        [Séance 2 - Excel: Fonction de bases - suite](s2-excel-2.md)
+    </span>
+</p>
