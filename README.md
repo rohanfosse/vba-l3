@@ -15,7 +15,7 @@ Vous pouvez utiliser ce dépôt de deux manières différentes :
 - Vous pouvez télécharger l'ensemble des fichiers en cliquant sur le bouton vert `Clone or download` puis `Download ZIP`. Vous aurez alors l'ensemble des fichiers sur votre ordinateur. Vous pourrez alors les consulter hors ligne. Cependant, vous ne pourrez pas bénéficier des mises à jour.
 Vous êtes libre de déposer ces fichiers sur votre propre dépôt, de les modifier, de les redistribuer, etc. Cependant, vous devez conserver la licence MIT, c'est à dire que vous devez conserver la mention de l'auteur (moi) et de la licence (MIT).
 
-- Vous pouvez également consulter les fichiers en ligne, au lien [suivant](https://rohanfosse.com/excelVBA)
+- Vous pouvez également consulter les fichiers en ligne, au lien [suivant](excel.rohanfosse.com)
 
 Vous pourrez alors consulter les fichiers en ligne. Vous pourrez également bénéficier des mises à jour. Cependant, vous ne pourrez pas les modifier. Vous pouvez cependant me faire des suggestions d'amélioration en ouvrant une `issue` sur le dépôt. J'essaierai de vous répondre rapidement et de prendre en compte vos remarques dans les mises à jour.
 

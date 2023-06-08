@@ -9,7 +9,6 @@
 
 Maintenant que nous avons revu le fonctionnement de base d'Excel, nous allons voir quelques fonctions qui permettent de manipuler les données.
 
-
 ## La fonction INDEX
 
 La fonction **INDEX** permet de récupérer une valeur d'une cellule à partir de sa position dans un tableau.
