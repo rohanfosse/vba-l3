@@ -126,6 +126,36 @@ Les principaux codes d'erreur sont résumés dans le tableau suivant :
 | #REF!         | Référence incorrecte |
 | #VALUE!       | Valeur incorrecte |
 
+---
+
+## Mise en forme conditionnelle
+
+La mise en forme conditionnelle est une fonctionnalité d'Excel qui vous permet de modifier l'apparence des cellules en fonction de certaines conditions. C'est un outil puissant pour l'analyse de données, car il permet de mettre en évidence visuellement des informations importantes, des tendances ou des anomalies dans vos données.
+
+### Comment appliquer une mise en forme conditionnelle
+
+Pour appliquer une mise en forme conditionnelle, suivez les étapes suivantes :
+
+    Sélectionnez la plage de cellules à laquelle vous souhaitez appliquer la mise en forme conditionnelle.
+    Dans le menu supérieur, cliquez sur "Mise en forme conditionnelle" dans l'onglet "Accueil".
+    Choisissez le type de mise en forme conditionnelle que vous souhaitez appliquer. Excel propose plusieurs options, comme les jeux d'icônes, les barres de données, les échelles de couleurs, et plus encore.
+    Définissez les conditions pour votre mise en forme. Par exemple, vous pouvez mettre en évidence les cellules qui contiennent une valeur supérieure à une certaine quantité.
+
+### Personnalisation de l'apparence des cellules
+
+Lorsque vous définissez une mise en forme conditionnelle, vous pouvez personnaliser l'apparence des cellules qui répondent à la condition. Vous pouvez changer la couleur de fond de la cellule, le style de police, la couleur de police, et plus encore. Cela vous permet de rendre vos feuilles de calcul plus lisibles et attrayantes visuellement.
+
+### Gestion de plusieurs règles de mise en forme conditionnelle
+
+Excel vous permet de définir plusieurs règles de mise en forme conditionnelle pour une même plage de cellules. Si plusieurs règles s'appliquent à une même cellule, Excel applique la règle qui est en haut de la liste. Vous pouvez changer l'ordre des règles en utilisant les boutons "Monter" et "Descendre" dans le gestionnaire de règles de mise en forme conditionnelle.
+
+### Exemples pratiques
+
+Supposons que vous ayez une feuille de calcul avec les ventes de différents produits. Vous pourriez utiliser la mise en forme conditionnelle pour :
+
+    Mettre en évidence les produits qui ont des ventes supérieures à une certaine quantité. Par exemple, vous pourriez mettre en évidence en vert les produits qui ont des ventes supérieures à 100.
+    Utiliser des barres de données pour visualiser les ventes de chaque produit. Les barres de données vous permettent de voir rapidement quels produits ont les ventes les plus élevées et les plus basses.
+    Utiliser une échelle de couleurs pour montrer les variations de ventes. Par exemple, vous pourriez utiliser une échelle de couleurs du rouge au vert, où le rouge représente les ventes les plus basses et le vert les ventes les plus élevées.
 
 ---
 
