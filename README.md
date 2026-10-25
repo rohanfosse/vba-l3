@@ -1,5 +1,7 @@
 # Programmation VBA
 
+> Le cours d'Excel se poursuit, à jour, dans le [parcours Excel de Page vive](https://pagevive.fr/excel), le manuel en ligne qui rassemble désormais mes cours.
+
 Vous trouverez ici des notes de cours relatives au cours d' Excel et de VBA.
 
 Ce support a été utilisé dans le cadre d'un enseignement dans la Licence 3 Economie et Gestion de l'Université de Bordeaux - Montaigne.
